@@ -113,10 +113,10 @@ const CaseStudyPage: React.FC = () => {
 
       {/* STAR Method Content Sections */}
       <section className="py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Situation */}
           <div className="mb-16">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6">Situation</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.situation}
@@ -126,7 +126,7 @@ const CaseStudyPage: React.FC = () => {
 
           {/* Task */}
           <div className="mb-16">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6">Task</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.task}
@@ -136,7 +136,7 @@ const CaseStudyPage: React.FC = () => {
 
           {/* Action */}
           <div className="mb-16">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6">Action</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.action}
@@ -146,7 +146,7 @@ const CaseStudyPage: React.FC = () => {
 
           {/* Result */}
           <div className="mb-16">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6">Result</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.result}
@@ -219,7 +219,7 @@ const CaseStudyPage: React.FC = () => {
 
       {/* Navigation */}
       <section className="py-16 bg-white border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Back to Case Studies */}
             <Link
