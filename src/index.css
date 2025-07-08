@@ -36,4 +36,20 @@
   .card {
     @apply bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
   }
+
+  /* Page transition animations */
+  .page-transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    will-change: opacity, transform;
+  }
+  
+  .page-hidden {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .page-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

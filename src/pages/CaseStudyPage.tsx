@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faExternalLinkAlt, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
 
@@ -63,13 +64,13 @@ const CaseStudyPage: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         
         {/* Project Details Card */}
-        <div className="absolute bottom-8 left-8 right-8 lg:left-16 lg:right-auto lg:max-w-md bg-white bg-opacity-95 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+        <div className="absolute bottom-8 left-8 right-8 lg:left-16 lg:right-auto lg:max-w-md bg-white bg-opacity-70 backdrop-blur-md rounded-lg p-6 shadow-xl border border-white border-opacity-20">
           <h1 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-2">
             {caseStudy.title}
           </h1>
           <p className="text-gray-600 mb-4">{caseStudy.subtitle}</p>
           
-          <div className="grid grid-cols-2 gap-4 text-sm">
+          <div className="grid grid-cols-2 gap-4 text-sm mb-6">
             <div>
               <span className="font-medium text-gray-500">Client:</span>
               <p className="text-black">{caseStudy.client}</p>
@@ -87,6 +88,26 @@ const CaseStudyPage: React.FC = () => {
               <p className="text-black">{caseStudy.tools.join(', ')}</p>
             </div>
           </div>
+
+          {/* Interactive Prototype Button */}
+          {caseStudy.figmaLink && (
+            <a
+              href={caseStudy.figmaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-3 rounded-lg font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
+            >
+              <FontAwesomeIcon 
+                icon={faFigma} 
+                className="text-lg group-hover:scale-110 transition-transform duration-300" 
+              />
+              <span>View Interactive Prototype</span>
+              <FontAwesomeIcon 
+                icon={faExternalLinkAlt} 
+                className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+              />
+            </a>
+          )}
         </div>
       </section>
 
@@ -172,17 +193,24 @@ const CaseStudyPage: React.FC = () => {
             ))}
           </div>
 
-          {/* Figma Prototype Link */}
+          {/* Secondary Prototype Link */}
           {caseStudy.figmaLink && (
             <div className="text-center mt-12">
               <a
                 href={caseStudy.figmaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
               >
-                View Interactive Prototype
-                <FontAwesomeIcon icon={faExternalLinkAlt} className="text-sm" />
+                <FontAwesomeIcon 
+                  icon={faFigma} 
+                  className="text-lg group-hover:scale-110 transition-transform duration-300" 
+                />
+                <span>View Interactive Prototype</span>
+                <FontAwesomeIcon 
+                  icon={faExternalLinkAlt} 
+                  className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+                />
               </a>
             </div>
           )}
