@@ -11,7 +11,39 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Miro', 'Principle'],
     tags: ['Sports Analytics', 'Data Platform', 'Sponsorship'],
     headerImage: '/images/case-studies/relo-census/header.jpg',
-    projectBrief: 'Relo Census is a next-generation sponsorship data platform designed to revolutionize how brands and agencies evaluate team, asset, and brand valuations across major U.S. sports leagues. This comprehensive platform transforms complex sponsorship data into actionable insights, enabling smarter investment decisions and stronger revenue impact for stakeholders in the sports industry.',
+    projectBrief: `
+      <div class="project-brief-content">
+        <div class="brief-section mb-8">
+          <h3 class="brief-title">What is Census?</h3>
+          <p class="brief-intro">Census is a modular, persona-driven sponsorship analytics platform designed to help clients:</p>
+          <ul class="brief-list">
+            <li><i class="fas fa-chart-line"></i>Evaluate sponsorship performance across leagues and channels</li>
+            <li><i class="fas fa-balance-scale"></i>Benchmark competitors and industry activity</li>
+            <li><i class="fas fa-chart-bar"></i>Build insights and reports tailored to internal needs</li>
+            <li><i class="fas fa-brain"></i>Make smarter, faster, more informed decisions</li>
+          </ul>
+        </div>
+        
+        <div class="brief-section mb-8">
+          <h4 class="brief-subtitle">Census was built from the ground up to be:</h4>
+          <ul class="brief-list">
+            <li><i class="fas fa-puzzle-piece"></i>UX-first, modular, and componentized</li>
+            <li><i class="fas fa-expand-arrows-alt"></i>Scalable across leagues (MLB, NBA, F1, NFL, etc.)</li>
+            <li><i class="fas fa-cog"></i>Powered by Relo's proprietary CV engine</li>
+            <li><i class="fas fa-link"></i>Separate but complementary to MVC</li>
+          </ul>
+        </div>
+        
+        <div class="brief-section">
+          <h4 class="brief-subtitle">Key Features:</h4>
+          <ul class="brief-list">
+            <li><i class="fas fa-user-friends"></i>Sponsorship Evaluation Page with persona-based views</li>
+            <li><i class="fas fa-filter"></i>Advanced filtering by placement, league, content type</li>
+            <li><i class="fas fa-database"></i>Data Explorer + Dashboard Builder with save/share capabilities</li>
+          </ul>
+        </div>
+      </div>
+    `,
     situation: 'Relo Metrics needed a revolutionary sponsorship data platform that would allow brands and agencies to make smarter decisions about team, asset, and brand valuations across major U.S. leagues. The existing tools were fragmented and didn\'t provide the comprehensive insights needed for strategic decision-making.',
     task: 'Led usability and design strategy for this next-gen sponsorship data platform. The goal was to deliver a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues.',
     action: 'Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.',

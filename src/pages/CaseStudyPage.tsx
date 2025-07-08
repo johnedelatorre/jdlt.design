@@ -121,9 +121,10 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
                 Project Brief
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {caseStudy.projectBrief}
-              </p>
+              <div 
+                className="text-lg text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: caseStudy.projectBrief }}
+              />
             </div>
           </div>
 
