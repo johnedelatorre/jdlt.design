@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExternalLinkAlt, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
@@ -114,10 +114,26 @@ const CaseStudyPage: React.FC = () => {
       {/* STAR Method Content Sections */}
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Project Brief */}
+          <div className="mb-16">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
+                Project Brief
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {caseStudy.projectBrief}
+              </p>
+            </div>
+          </div>
+
           {/* Situation */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6">Situation</h2>
+              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
+                Situation
+              </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.situation}
               </p>
@@ -127,7 +143,10 @@ const CaseStudyPage: React.FC = () => {
           {/* Task */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6">Task</h2>
+              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                Task
+              </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.task}
               </p>
@@ -137,7 +156,10 @@ const CaseStudyPage: React.FC = () => {
           {/* Action */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6">Action</h2>
+              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faCogs} className="text-green-600" />
+                Action
+              </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.action}
               </p>
@@ -147,7 +169,10 @@ const CaseStudyPage: React.FC = () => {
           {/* Result */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6">Result</h2>
+              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
+                Result
+              </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {caseStudy.result}
               </p>

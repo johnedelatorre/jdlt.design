@@ -8,6 +8,7 @@ export interface CaseStudy {
   tools: string[];
   tags: string[];
   headerImage: string;
+  projectBrief: string;
   situation: string;
   task: string;
   action: string;
