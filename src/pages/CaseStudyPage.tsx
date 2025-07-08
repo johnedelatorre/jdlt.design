@@ -1,0 +1,252 @@
+import React, { useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faExternalLinkAlt, faEye } from '@fortawesome/free-solid-svg-icons';
+import { caseStudies } from '../data/caseStudies';
+import ImageModal from '../components/ImageModal';
+
+
+const CaseStudyPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const caseStudy = caseStudies.find((cs) => cs.id === id);
+  const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
+  const previousCaseStudy = currentIndex > 0 ? caseStudies[currentIndex - 1] : null;
+  const nextCaseStudy = currentIndex < caseStudies.length - 1 ? caseStudies[currentIndex + 1] : null;
+
+  if (!caseStudy) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-serif font-bold mb-4">Case Study Not Found</h1>
+          <Link to="/" className="btn-primary">
+            Back to Home
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const openModal = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const previousImage = () => {
+    setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : caseStudy.images.length - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev < caseStudy.images.length - 1 ? prev + 1 : 0));
+  };
+
+  return (
+    <div>
+      {/* Header Image with Project Details Overlay */}
+      <section className="relative h-[60vh] lg:h-[70vh] overflow-hidden">
+        <img
+          src={caseStudy.headerImage}
+          alt={caseStudy.title}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IiM5ZWEzYTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5IZWFkZXIgSW1hZ2UgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+';
+          }}
+        />
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
+        
+        {/* Project Details Card */}
+        <div className="absolute bottom-8 left-8 right-8 lg:left-16 lg:right-auto lg:max-w-md bg-white bg-opacity-95 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+          <h1 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-2">
+            {caseStudy.title}
+          </h1>
+          <p className="text-gray-600 mb-4">{caseStudy.subtitle}</p>
+          
+          <div className="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <span className="font-medium text-gray-500">Client:</span>
+              <p className="text-black">{caseStudy.client}</p>
+            </div>
+            <div>
+              <span className="font-medium text-gray-500">Role:</span>
+              <p className="text-black">{caseStudy.role}</p>
+            </div>
+            <div>
+              <span className="font-medium text-gray-500">Year:</span>
+              <p className="text-black">{caseStudy.year}</p>
+            </div>
+            <div>
+              <span className="font-medium text-gray-500">Tools:</span>
+              <p className="text-black">{caseStudy.tools.join(', ')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STAR Method Content Sections */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Situation */}
+          <div className="mb-16">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+              <h2 className="font-serif text-3xl font-bold text-black mb-6">Situation</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {caseStudy.situation}
+              </p>
+            </div>
+          </div>
+
+          {/* Task */}
+          <div className="mb-16">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+              <h2 className="font-serif text-3xl font-bold text-black mb-6">Task</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {caseStudy.task}
+              </p>
+            </div>
+          </div>
+
+          {/* Action */}
+          <div className="mb-16">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+              <h2 className="font-serif text-3xl font-bold text-black mb-6">Action</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {caseStudy.action}
+              </p>
+            </div>
+          </div>
+
+          {/* Result */}
+          <div className="mb-16">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-12 shadow-sm">
+              <h2 className="font-serif text-3xl font-bold text-black mb-6">Result</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {caseStudy.result}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final Designs Gallery */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4">
+              Final Designs
+            </h2>
+            <p className="text-lg text-gray-600">
+              Click on any image to view it in full size
+            </p>
+          </div>
+
+          {/* Image Gallery Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {caseStudy.images.map((image, index) => (
+              <div
+                key={index}
+                className="group relative aspect-video bg-gray-200 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300"
+                onClick={() => openModal(index)}
+              >
+                <img
+                  src={image}
+                  alt={`Design ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRlc2lnbiAke2luZGV4ICsgMX08L3RleHQ+PC9zdmc+';
+                  }}
+                />
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <FontAwesomeIcon icon={faEye} className="text-white text-2xl" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Figma Prototype Link */}
+          {caseStudy.figmaLink && (
+            <div className="text-center mt-12">
+              <a
+                href={caseStudy.figmaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200"
+              >
+                View Interactive Prototype
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="text-sm" />
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Navigation */}
+      <section className="py-16 bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Back to Case Studies */}
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors duration-200"
+            >
+              <FontAwesomeIcon icon={faArrowLeft} />
+              View Other Case Studies
+            </Link>
+
+            {/* Previous/Next Navigation */}
+            <div className="flex items-center gap-4">
+              {previousCaseStudy && (
+                <Link
+                  to={`/case-study/${previousCaseStudy.id}`}
+                  className="text-center group"
+                >
+                  <p className="text-sm text-gray-500 mb-1">Previous</p>
+                  <p className="font-medium text-gray-900 group-hover:text-black transition-colors duration-200">
+                    {previousCaseStudy.title}
+                  </p>
+                </Link>
+              )}
+              
+              {previousCaseStudy && nextCaseStudy && (
+                <div className="h-8 w-px bg-gray-300" />
+              )}
+              
+              {nextCaseStudy && (
+                <Link
+                  to={`/case-study/${nextCaseStudy.id}`}
+                  className="text-center group"
+                >
+                  <p className="text-sm text-gray-500 mb-1">Next</p>
+                  <p className="font-medium text-gray-900 group-hover:text-black transition-colors duration-200">
+                    {nextCaseStudy.title}
+                  </p>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        images={caseStudy.images}
+        currentIndex={currentImageIndex}
+        onPrevious={previousImage}
+        onNext={nextImage}
+      />
+    </div>
+  );
+};
+
+export default CaseStudyPage; 
