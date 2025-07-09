@@ -214,8 +214,13 @@ const CaseStudyPage: React.FC = () => {
               </h2>
               <div 
                 className="text-lg text-gray-700 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: caseStudy.action }}
+                dangerouslySetInnerHTML={{ __html: caseStudy.action.replace('<div class="personas-viewer-placeholder">', '<div class="personas-viewer-placeholder" style="display: none;">') }}
               />
+              
+              {/* Persona Viewer for Relo Census case study - positioned after Action 2 */}
+              {caseStudy.id === 'relo-census-dashboard' && (
+                <PersonaViewer onPersonaClick={openPersonaModal} />
+              )}
             </div>
           </div>
 
@@ -232,12 +237,7 @@ const CaseStudyPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Persona Viewer for Relo Census case study */}
-          {caseStudy.id === 'relo-census-dashboard' && (
-            <div className="mb-16">
-              <PersonaViewer onPersonaClick={openPersonaModal} />
-            </div>
-          )}
+
         </div>
       </section>
 
