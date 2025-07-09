@@ -212,7 +212,168 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
-    action: 'Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.',
+    action: `
+      <div class="action-content">
+        <div class="action-intro mb-8">
+          <p class="action-description">
+            Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.
+          </p>
+        </div>
+
+        <div class="action-item mb-12">
+          <div class="action-header mb-6">
+            <div class="action-number">
+              <i class="fas fa-tools text-blue-600"></i>
+              <span class="action-label">ACTION 1</span>
+            </div>
+            <h4 class="action-title">Build the Design Infrastructure for Speed + Scale</h4>
+            <p class="action-subtitle">Create a scalable UI system and eliminate visual/functional inconsistencies</p>
+          </div>
+          
+          <div class="action-details">
+            <ul class="action-list">
+              <li class="action-list-item">
+                <i class="fas fa-search text-purple-500"></i>
+                <span>Audited every screen and deconstructed core UI patterns to create a component-based design library</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-layer-group text-indigo-500"></i>
+                <span>Introduced a centralized Figma system with tokens, variants, and interaction states</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-code text-green-500"></i>
+                <span>Embedded design logic into Vercel v0.dev to rapidly generate working UI code for early engineer testing</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-sitemap text-orange-500"></i>
+                <span>Defined shared page architecture for all dashboards (views, filters, tagging, export logic, chart builder)</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-check-double text-teal-500"></i>
+                <span>Setup design QA practices to maintain fidelity and reduce dev back-and-forth</span>
+              </li>
+            </ul>
+            
+            <div class="action-result">
+              <div class="result-card">
+                <i class="fas fa-chart-line text-emerald-500"></i>
+                <p class="result-text">
+                  <strong>Result:</strong> Engineers could reuse logic and UI for multiple dashboards. Stakeholders understood layouts instantly. Shipping velocity improved with fewer revisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-item mb-12">
+          <div class="action-header mb-6">
+            <div class="action-number">
+              <i class="fas fa-users text-green-600"></i>
+              <span class="action-label">ACTION 2</span>
+            </div>
+            <h4 class="action-title">Run Persona-Driven UX Research to Guide Feature Strategy</h4>
+            <p class="action-subtitle">Validate assumptions, discover use cases, and humanize product decisions</p>
+          </div>
+          
+          <div class="action-details">
+            <div class="action-overview mb-6">
+              <p class="overview-text">
+                Partnered with our VP of Marketing to evolve outdated personas into modern archetypes:
+              </p>
+            </div>
+            
+            <ul class="persona-list mb-6">
+              <li class="persona-list-item">
+                <i class="fas fa-chart-bar text-blue-500"></i>
+                <span><strong>Agency Analysts</strong> needing speed + deck-ready insights</span>
+              </li>
+              <li class="persona-list-item">
+                <i class="fas fa-bullseye text-purple-500"></i>
+                <span><strong>Brand Marketers</strong> needing ROI views and presentation-ready dashboards</span>
+              </li>
+              <li class="persona-list-item">
+                <i class="fas fa-handshake text-orange-500"></i>
+                <span><strong>Rightsholders</strong> needing real-time reporting to upsell partners</span>
+              </li>
+            </ul>
+            
+            <ul class="action-list">
+              <li class="action-list-item">
+                <i class="fas fa-comments text-cyan-500"></i>
+                <span>Ran moderated interviews and card sorting sessions to identify workflow priorities and feature opportunities</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-sync-alt text-indigo-500"></i>
+                <span>Facilitated cross-functional research syncs to share learnings and align roadmap themes</span>
+              </li>
+            </ul>
+            
+            <div class="action-result">
+              <div class="result-card">
+                <i class="fas fa-lightbulb text-amber-500"></i>
+                <p class="result-text">
+                  <strong>Result:</strong> Personas became foundational to product planning. Engineering and Product used them to validate whether a feature served a real job-to-be-done.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="personas-viewer">
+          <h4 class="personas-viewer-title">User Personas</h4>
+          <p class="personas-viewer-subtitle">Click on any persona to view detailed insights</p>
+          <div class="personas-grid" id="personas-grid">
+            <div class="persona-card" data-persona="agencies">
+              <img 
+                src="/images/case-studies/relo-census/agencies-persona.png" 
+                alt="Agencies Persona" 
+                class="persona-image"
+                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFnZW5jaWVzIFBlcnNvbmE8L3RleHQ+PC9zdmc+'"
+              />
+              <div class="persona-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="persona-label">
+                <i class="fas fa-chart-bar text-blue-600"></i>
+                <span>Agencies</span>
+              </div>
+            </div>
+            
+            <div class="persona-card" data-persona="brands">
+              <img 
+                src="/images/case-studies/relo-census/brands-persona.png" 
+                alt="Brands Persona" 
+                class="persona-image"
+                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJyYW5kcyBQZXJzb25hPC90ZXh0Pjwvc3ZnPg=='"
+              />
+              <div class="persona-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="persona-label">
+                <i class="fas fa-bullseye text-purple-600"></i>
+                <span>Brands</span>
+              </div>
+            </div>
+            
+            <div class="persona-card" data-persona="rightsholder">
+              <img 
+                src="/images/case-studies/relo-census/rightsholder-persona.png" 
+                alt="Rightsholder Persona" 
+                class="persona-image"
+                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlJpZ2h0c2hvbGRlciBQZXJzb25hPC90ZXh0Pjwvc3ZnPg=='"
+              />
+              <div class="persona-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="persona-label">
+                <i class="fas fa-handshake text-orange-600"></i>
+                <span>Rightsholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     result: 'Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.',
     images: [
       '/images/case-studies/relo-census/design1.jpg',

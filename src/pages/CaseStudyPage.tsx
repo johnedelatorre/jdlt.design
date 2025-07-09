@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
+import PersonaModal from '../components/PersonaModal';
 
 
 const CaseStudyPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isPersonaModalOpen, setIsPersonaModalOpen] = useState(false);
+  const [currentPersonaIndex, setCurrentPersonaIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -46,6 +49,74 @@ const CaseStudyPage: React.FC = () => {
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev < caseStudy.images.length - 1 ? prev + 1 : 0));
   };
+
+  // Persona data for Relo Census case study
+  const personas = [
+    {
+      id: 'agencies',
+      name: 'Agencies',
+      image: '/images/case-studies/relo-census/agencies-persona.png',
+      alt: 'Agencies Persona - Agency Analyst needing speed and deck-ready insights'
+    },
+    {
+      id: 'brands',
+      name: 'Brands',
+      image: '/images/case-studies/relo-census/brands-persona.png',
+      alt: 'Brands Persona - Brand Marketer needing ROI views and presentation-ready dashboards'
+    },
+    {
+      id: 'rightsholder',
+      name: 'Rightsholder',
+      image: '/images/case-studies/relo-census/rightsholder-persona.png',
+      alt: 'Rightsholder Persona - Rightsholder needing real-time reporting to upsell partners'
+    }
+  ];
+
+  // Persona modal handlers
+  const openPersonaModal = (personaId: string) => {
+    const index = personas.findIndex(p => p.id === personaId);
+    if (index !== -1) {
+      setCurrentPersonaIndex(index);
+      setIsPersonaModalOpen(true);
+    }
+  };
+
+  const closePersonaModal = () => {
+    setIsPersonaModalOpen(false);
+  };
+
+  const previousPersona = () => {
+    setCurrentPersonaIndex((prev) => (prev > 0 ? prev - 1 : personas.length - 1));
+  };
+
+  const nextPersona = () => {
+    setCurrentPersonaIndex((prev) => (prev < personas.length - 1 ? prev + 1 : 0));
+  };
+
+  // Add event listeners for persona cards after content is rendered
+  useEffect(() => {
+    if (caseStudy && caseStudy.id === 'relo-census-dashboard') {
+      const personaCards = document.querySelectorAll('.persona-card');
+      
+      const handlePersonaClick = (event: Event) => {
+        const target = event.currentTarget as HTMLElement;
+        const personaId = target.getAttribute('data-persona');
+        if (personaId) {
+          openPersonaModal(personaId);
+        }
+      };
+
+      personaCards.forEach(card => {
+        card.addEventListener('click', handlePersonaClick);
+      });
+
+      return () => {
+        personaCards.forEach(card => {
+          card.removeEventListener('click', handlePersonaClick);
+        });
+      };
+    }
+  }, [caseStudy]);
 
   return (
     <div>
@@ -163,9 +234,10 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faCogs} className="text-green-600" />
                 Action
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {caseStudy.action}
-              </p>
+              <div 
+                className="text-lg text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: caseStudy.action }}
+              />
             </div>
           </div>
 
@@ -301,6 +373,18 @@ const CaseStudyPage: React.FC = () => {
         onPrevious={previousImage}
         onNext={nextImage}
       />
+
+      {/* Persona Modal */}
+      {caseStudy.id === 'relo-census-dashboard' && (
+        <PersonaModal
+          isOpen={isPersonaModalOpen}
+          onClose={closePersonaModal}
+          personas={personas}
+          currentIndex={currentPersonaIndex}
+          onPrevious={previousPersona}
+          onNext={nextPersona}
+        />
+      )}
     </div>
   );
 };
