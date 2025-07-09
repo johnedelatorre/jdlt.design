@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
@@ -269,7 +269,8 @@ const CaseStudyPage: React.FC = () => {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4 flex items-center justify-center gap-3">
+              <FontAwesomeIcon icon={faPalette} className="text-indigo-600" />
               Final Designs
             </h2>
             <p className="text-lg text-gray-600">
