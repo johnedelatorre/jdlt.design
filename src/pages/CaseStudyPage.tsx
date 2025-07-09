@@ -218,10 +218,13 @@ const CaseStudyPage: React.FC = () => {
               {/* Split action content at personas placeholder for proper positioning */}
               {(() => {
                 if (caseStudy.id === 'relo-census-dashboard') {
-                  const parts = caseStudy.action.split('<div class="personas-viewer-placeholder">');
+                  // Split by the complete placeholder block including comment and closing div
+                  const placeholderPattern = '        <div class="personas-viewer-placeholder">\n          <!-- Persona viewer will be rendered as React component -->\n        </div>';
+                  const parts = caseStudy.action.split(placeholderPattern);
+                  
                   if (parts.length === 2) {
                     const beforePersonas = parts[0];
-                    const afterPersonas = parts[1].split('</div>')[1] || '';
+                    const afterPersonas = parts[1];
                     
                     return (
                       <div className="text-lg text-gray-700 leading-relaxed">
