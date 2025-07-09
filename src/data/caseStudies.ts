@@ -658,19 +658,16 @@ export const caseStudies: CaseStudy[] = [
               <span>Ensure internal teams could onboard and scale with minimal training</span>
             </li>
           </ul>
-        </div>
-        
-        <div class="brief-section">
-          <div class="impact-card bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
-            <div class="impact-header flex items-center gap-3 mb-4">
-              <i class="fas fa-rocket text-blue-600"></i>
-              <h4 class="impact-title font-semibold text-black">Strategic Impact</h4>
-            </div>
-            <p class="impact-description text-gray-700">
-              The initiative would become the foundation for Relo's next-generation data products, as well as a blueprint for external client-facing dashboards in future phases.
-            </p>
-          </div>
-        </div>
+                 </div>
+         
+         <div class="brief-section mt-8">
+           <div class="strategic-impact">
+             <p class="impact-note text-sm text-gray-600 italic border-l-4 border-blue-300 pl-4 py-2">
+               <i class="fas fa-rocket text-blue-500 mr-2"></i>
+               The initiative would become the foundation for Relo's next-generation data products, as well as a blueprint for external client-facing dashboards in future phases.
+             </p>
+           </div>
+         </div>
       </div>
     `,
     situation: 'Relo\'s core analytics tool needed a complete UI/UX overhaul to improve user adoption and satisfaction. The existing interface lacked modern usability standards and clarity, hindering user engagement across the platform.',
