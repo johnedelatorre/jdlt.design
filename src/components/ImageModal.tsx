@@ -68,6 +68,26 @@ const ImageModal: React.FC<ImageModalProps> = ({
       />
 
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
+        {/* Left Arrow - Outside modal container */}
+        <button
+          type="button"
+          onClick={onPrevious}
+          className="absolute left-8 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-4 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-110"
+        >
+          <span className="sr-only">Previous image</span>
+          <FontAwesomeIcon icon={faChevronLeft} className="h-6 w-6" />
+        </button>
+
+        {/* Right Arrow - Outside modal container */}
+        <button
+          type="button"
+          onClick={onNext}
+          className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-4 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-110"
+        >
+          <span className="sr-only">Next image</span>
+          <FontAwesomeIcon icon={faChevronRight} className="h-6 w-6" />
+        </button>
+
         <DialogPanel
           transition
           className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-6xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
@@ -83,26 +103,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
               <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
             </button>
           </div>
-
-          {/* Left Arrow - Positioned on left side of modal */}
-          <button
-            type="button"
-            onClick={onPrevious}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-3 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            <span className="sr-only">Previous image</span>
-            <FontAwesomeIcon icon={faChevronLeft} className="h-6 w-6" />
-          </button>
-
-          {/* Right Arrow - Positioned on right side of modal */}
-          <button
-            type="button"
-            onClick={onNext}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-3 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            <span className="sr-only">Next image</span>
-            <FontAwesomeIcon icon={faChevronRight} className="h-6 w-6" />
-          </button>
 
           {/* Modal content */}
           <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
