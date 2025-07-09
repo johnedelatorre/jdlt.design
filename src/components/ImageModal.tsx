@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react';
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -63,66 +63,96 @@ const ImageModal: React.FC<ImageModalProps> = ({
     }
   };
 
+  // Extract design name from filename
+  const getDesignName = (imagePath: string) => {
+    const filename = imagePath.split('/').pop() || '';
+    return filename.replace('.png', '').replace('.jpg', '').replace('.jpeg', '');
+  };
+
+  const currentDesignName = getDesignName(images[currentIndex]);
+
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50" onKeyDown={handleKeyDown}>
       <DialogBackdrop
         transition
-        className="fixed inset-0 bg-black/95 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+        className="fixed inset-0 bg-gray-500/75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
         <DialogPanel
           transition
-          className="relative w-full h-full max-w-7xl max-h-full transform transition-all data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+          className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 sm:w-auto sm:max-w-7xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
         >
-          {/* Close Button */}
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-200 z-10"
-            aria-label="Close modal"
-          >
-            <FontAwesomeIcon icon={faTimes} className="text-2xl" />
-          </button>
-
-          {/* Navigation Buttons */}
-          {images.length > 1 && (
-            <>
-              <button
-                onClick={onPrevious}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200 z-10"
-                aria-label="Previous image"
-              >
-                <FontAwesomeIcon icon={faChevronLeft} className="text-3xl" />
-              </button>
-              <button
-                onClick={onNext}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200 z-10"
-                aria-label="Next image"
-              >
-                <FontAwesomeIcon icon={faChevronRight} className="text-3xl" />
-              </button>
-            </>
-          )}
-
-          {/* Image Container */}
-          <div className="w-full h-full flex items-center justify-center p-8">
-            <img
-              src={images[currentIndex]}
-              alt={`Design ${currentIndex + 1}`}
-              className="max-w-full max-h-full object-contain"
-              onError={(e) => {
-                // Fallback to a placeholder if image fails to load
-                (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-              }}
-            />
+          {/* Header with close button */}
+          <div className="absolute right-0 top-0 pr-4 pt-4 z-10">
+            <button
+              type="button"
+              onClick={onClose}
+              className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            >
+              <span className="sr-only">Close</span>
+              <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
+            </button>
           </div>
 
-          {/* Image Counter */}
-          {images.length > 1 && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+          {/* Modal content */}
+          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div className="sm:flex sm:items-start">
+              <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                
+                {/* Title */}
+                <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4">
+                  {currentDesignName}
+                </DialogTitle>
+                
+                {/* Image container */}
+                <div className="mt-2 flex justify-center mb-6">
+                  <img
+                    src={images[currentIndex]}
+                    alt={`Design: ${currentDesignName}`}
+                    className="w-auto h-auto max-w-6xl max-h-[calc(100vh-200px)] object-contain rounded-lg shadow-lg"
+                    onError={(e) => {
+                      // Fallback to a placeholder if image fails to load
+                      (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+                    }}
+                  />
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          {/* Footer with navigation */}
+          <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            
+            {/* Next Button */}
+            <button
+              type="button"
+              onClick={onNext}
+              disabled={currentIndex === images.length - 1}
+              className="inline-flex w-full justify-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 disabled:opacity-50 disabled:cursor-not-allowed sm:ml-3 sm:w-auto"
+            >
+              Next
+              <FontAwesomeIcon icon={faChevronRight} className="ml-2 h-4 w-4" />
+            </button>
+            
+            {/* Counter */}
+            <div className="mt-3 inline-flex w-full justify-center items-center px-3 py-2 text-sm text-gray-500 sm:mt-0 sm:w-auto">
               {currentIndex + 1} of {images.length}
             </div>
-          )}
+            
+            {/* Previous Button */}
+            <button
+              type="button"
+              onClick={onPrevious}
+              disabled={currentIndex === 0}
+              className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed sm:mt-0 sm:w-auto"
+            >
+              <FontAwesomeIcon icon={faChevronLeft} className="mr-2 h-4 w-4" />
+              Previous
+            </button>
+            
+          </div>
         </DialogPanel>
       </div>
     </Dialog>
