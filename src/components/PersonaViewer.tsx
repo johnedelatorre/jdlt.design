@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faChartBar, faBullseye, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faChartBar, faBullseye, faHandshake, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 interface PersonaViewerProps {
   onPersonaClick: (personaId: string) => void;
@@ -43,7 +43,10 @@ const PersonaViewer: React.FC<PersonaViewerProps> = ({ onPersonaClick }) => {
 
   return (
     <div style={{marginTop: '4rem', padding: '2rem', background: 'linear-gradient(to bottom right, #f9fafb, #ffffff)', border: '1px solid #e5e7eb', borderRadius: '0.75rem'}}>
-      <h4 style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', fontFamily: 'serif', textAlign: 'center', marginBottom: '0.5rem'}}>User Personas</h4>
+      <h4 style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', fontFamily: 'serif', textAlign: 'center', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem'}}>
+        <FontAwesomeIcon icon={faUsers} style={{color: '#059669', fontSize: '1.25rem'}} />
+        User Personas
+      </h4>
       <p style={{color: '#6b7280', textAlign: 'center', marginBottom: '2rem'}}>Click on any persona to view detailed insights</p>
       <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem'}}>
         {personas.map((persona) => (
