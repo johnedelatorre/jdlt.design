@@ -45,20 +45,12 @@ const CaseStudyPage: React.FC = () => {
 
   const previousImage = useCallback(() => {
     if (!caseStudy) return;
-    setCurrentImageIndex((prev) => {
-      const newIndex = prev > 0 ? prev - 1 : caseStudy.images.length - 1;
-      console.log('Previous clicked: current index', prev, '-> new index', newIndex, 'total images', caseStudy.images.length);
-      return newIndex;
-    });
+    setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : caseStudy.images.length - 1));
   }, [caseStudy]);
 
   const nextImage = useCallback(() => {
     if (!caseStudy) return;
-    setCurrentImageIndex((prev) => {
-      const newIndex = prev < caseStudy.images.length - 1 ? prev + 1 : 0;
-      console.log('Next clicked: current index', prev, '-> new index', newIndex, 'total images', caseStudy.images.length);
-      return newIndex;
-    });
+    setCurrentImageIndex((prev) => (prev < caseStudy.images.length - 1 ? prev + 1 : 0));
   }, [caseStudy]);
 
   // Persona data for Relo Census case study

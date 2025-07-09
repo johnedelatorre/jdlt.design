@@ -52,17 +52,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
     };
   }, [isOpen, onClose, onPrevious, onNext]);
 
-  // Handle keyboard navigation within the modal
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      onPrevious();
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      onNext();
-    }
-  };
-
   // Extract design name from filename
   const getDesignName = (imagePath: string) => {
     const filename = imagePath.split('/').pop() || '';
@@ -72,10 +61,10 @@ const ImageModal: React.FC<ImageModalProps> = ({
   const currentDesignName = getDesignName(images[currentIndex]);
 
   return (
-    <Dialog open={isOpen} onClose={onClose} className="relative z-50" onKeyDown={handleKeyDown}>
+    <Dialog open={isOpen} onClose={onClose} className="relative z-50">
       <DialogBackdrop
         transition
-        className="fixed inset-0 bg-gray-500/75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+        className="fixed inset-0 bg-black/80 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
@@ -83,17 +72,37 @@ const ImageModal: React.FC<ImageModalProps> = ({
           transition
           className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-6xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
         >
-          {/* Header with close button */}
+          {/* Close button */}
           <div className="absolute right-0 top-0 pr-4 pt-4 z-10">
             <button
               type="button"
               onClick={onClose}
-              className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="rounded-md bg-white/90 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 p-2"
             >
               <span className="sr-only">Close</span>
-              <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
+              <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
             </button>
           </div>
+
+          {/* Left Arrow - Positioned on left side of modal */}
+          <button
+            type="button"
+            onClick={onPrevious}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-3 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <span className="sr-only">Previous image</span>
+            <FontAwesomeIcon icon={faChevronLeft} className="h-6 w-6" />
+          </button>
+
+          {/* Right Arrow - Positioned on right side of modal */}
+          <button
+            type="button"
+            onClick={onNext}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-3 shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <span className="sr-only">Next image</span>
+            <FontAwesomeIcon icon={faChevronRight} className="h-6 w-6" />
+          </button>
 
           {/* Modal content */}
           <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
@@ -112,7 +121,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
                     alt={`Design: ${currentDesignName}`}
                     className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
                     onError={(e) => {
-                      // Fallback to a placeholder if image fails to load
                       (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
                     }}
                   />
@@ -122,36 +130,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
           </div>
 
-          {/* Footer with navigation - Fixed at bottom */}
-          <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 flex-shrink-0">
-            
-            {/* Next Button */}
-            <button
-              type="button"
-              onClick={onNext}
-              disabled={currentIndex === images.length - 1}
-              className="inline-flex w-full justify-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 disabled:opacity-50 disabled:cursor-not-allowed sm:ml-3 sm:w-auto"
-            >
-              Next
-              <FontAwesomeIcon icon={faChevronRight} className="ml-2 h-4 w-4" />
-            </button>
-            
-            {/* Counter */}
-            <div className="mt-3 inline-flex w-full justify-center items-center px-3 py-2 text-sm text-gray-500 sm:mt-0 sm:w-auto">
+          {/* Footer with counter */}
+          <div className="bg-gray-50 px-4 py-3 sm:px-6 flex-shrink-0 text-center">
+            <div className="text-sm text-gray-500 font-medium">
               {currentIndex + 1} of {images.length}
             </div>
-            
-            {/* Previous Button */}
-            <button
-              type="button"
-              onClick={onPrevious}
-              disabled={currentIndex === 0}
-              className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed sm:mt-0 sm:w-auto"
-            >
-              <FontAwesomeIcon icon={faChevronLeft} className="mr-2 h-4 w-4" />
-              Previous
-            </button>
-            
           </div>
         </DialogPanel>
       </div>
