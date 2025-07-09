@@ -449,7 +449,7 @@ export const caseStudies: CaseStudy[] = [
           </div>
           
           <div class="metrics-grid grid md:grid-cols-2 gap-6">
-            <div class="metric-item">
+            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="metric-header flex items-center gap-3 mb-2">
                 <i class="fas fa-chart-line text-green-600"></i>
                 <span class="metric-value font-bold text-2xl text-black">92%</span>
@@ -457,7 +457,7 @@ export const caseStudies: CaseStudy[] = [
               <p class="metric-description text-gray-700">reduction in manual reporting workload for CS and Clients</p>
             </div>
             
-            <div class="metric-item">
+            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="metric-header flex items-center gap-3 mb-2">
                 <i class="fas fa-clock text-purple-600"></i>
                 <span class="metric-value font-bold text-2xl text-black">45%</span>
@@ -465,7 +465,7 @@ export const caseStudies: CaseStudy[] = [
               <p class="metric-description text-gray-700">faster setup times for new users onboarding into Census</p>
             </div>
             
-            <div class="metric-item">
+            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="metric-header flex items-center gap-3 mb-2">
                 <i class="fas fa-search-plus text-orange-600"></i>
                 <span class="metric-value font-bold text-2xl text-black">30%</span>
@@ -473,7 +473,7 @@ export const caseStudies: CaseStudy[] = [
               <p class="metric-description text-gray-700">faster insight discovery via "Create a View" and saved dashboards</p>
             </div>
             
-            <div class="metric-item">
+            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="metric-header flex items-center gap-3 mb-2">
                 <i class="fas fa-trophy text-amber-600"></i>
                 <span class="metric-value font-bold text-lg text-black">Default QBR Output</span>
@@ -494,9 +494,9 @@ export const caseStudies: CaseStudy[] = [
             </p>
           </div>
           
-          <div class="impact-list space-y-6">
-            <div class="impact-item flex items-start gap-4">
-              <div class="impact-icon">
+          <div class="impact-list space-y-4">
+            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
+              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                 <i class="fas fa-presentation text-blue-600"></i>
               </div>
               <div class="impact-content">
@@ -506,8 +506,8 @@ export const caseStudies: CaseStudy[] = [
               </div>
             </div>
             
-            <div class="impact-item flex items-start gap-4">
-              <div class="impact-icon">
+            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
+              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                 <i class="fas fa-tachometer-alt text-green-600"></i>
               </div>
               <div class="impact-content">
@@ -517,8 +517,8 @@ export const caseStudies: CaseStudy[] = [
               </div>
             </div>
             
-            <div class="impact-item flex items-start gap-4">
-              <div class="impact-icon">
+            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
+              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
                 <i class="fas fa-code-branch text-purple-600"></i>
               </div>
               <div class="impact-content">
@@ -541,8 +541,8 @@ export const caseStudies: CaseStudy[] = [
             </p>
           </div>
           
-          <div class="learning-grid grid md:grid-cols-2 gap-8">
-            <div class="learning-item">
+          <div class="learning-grid grid md:grid-cols-2 gap-6">
+            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="learning-header flex items-center gap-3 mb-4">
                 <span class="learning-emoji text-2xl">🧩</span>
                 <h4 class="learning-title font-semibold text-black">Technical Ingenuity</h4>
@@ -552,7 +552,7 @@ export const caseStudies: CaseStudy[] = [
               </p>
             </div>
             
-            <div class="learning-item">
+            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="learning-header flex items-center gap-3 mb-4">
                 <span class="learning-emoji text-2xl">🧭</span>
                 <h4 class="learning-title font-semibold text-black">Developer Advocacy</h4>
@@ -562,7 +562,7 @@ export const caseStudies: CaseStudy[] = [
               </p>
             </div>
             
-            <div class="learning-item">
+            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="learning-header flex items-center gap-3 mb-4">
                 <span class="learning-emoji text-2xl">🤝</span>
                 <h4 class="learning-title font-semibold text-black">Mentorship in Practice</h4>
@@ -572,7 +572,7 @@ export const caseStudies: CaseStudy[] = [
               </p>
             </div>
             
-            <div class="learning-item">
+            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
               <div class="learning-header flex items-center gap-3 mb-4">
                 <span class="learning-emoji text-2xl">🔄</span>
                 <h4 class="learning-title font-semibold text-black">Cross-functional Momentum</h4>
