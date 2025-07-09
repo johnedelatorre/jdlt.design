@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,7 @@ import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
 import PersonaModal from '../components/PersonaModal';
+import PersonaViewer from '../components/PersonaViewer';
 
 
 const CaseStudyPage: React.FC = () => {
@@ -93,30 +94,7 @@ const CaseStudyPage: React.FC = () => {
     setCurrentPersonaIndex((prev) => (prev < personas.length - 1 ? prev + 1 : 0));
   };
 
-  // Add event listeners for persona cards after content is rendered
-  useEffect(() => {
-    if (caseStudy && caseStudy.id === 'relo-census-dashboard') {
-      const personaCards = document.querySelectorAll('.persona-card');
-      
-      const handlePersonaClick = (event: Event) => {
-        const target = event.currentTarget as HTMLElement;
-        const personaId = target.getAttribute('data-persona');
-        if (personaId) {
-          openPersonaModal(personaId);
-        }
-      };
 
-      personaCards.forEach(card => {
-        card.addEventListener('click', handlePersonaClick);
-      });
-
-      return () => {
-        personaCards.forEach(card => {
-          card.removeEventListener('click', handlePersonaClick);
-        });
-      };
-    }
-  }, [caseStudy]);
 
   return (
     <div>
@@ -253,6 +231,13 @@ const CaseStudyPage: React.FC = () => {
               </p>
             </div>
           </div>
+
+          {/* Persona Viewer for Relo Census case study */}
+          {caseStudy.id === 'relo-census-dashboard' && (
+            <div className="mb-16">
+              <PersonaViewer onPersonaClick={openPersonaModal} />
+            </div>
+          )}
         </div>
       </section>
 

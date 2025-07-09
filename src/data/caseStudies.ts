@@ -319,58 +319,8 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
 
-        <div class="personas-viewer">
-          <h4 class="personas-viewer-title">User Personas</h4>
-          <p class="personas-viewer-subtitle">Click on any persona to view detailed insights</p>
-          <div class="personas-grid" id="personas-grid">
-            <div class="persona-card" data-persona="agencies">
-              <img 
-                src="/images/case-studies/relo-census/agencies-persona.png" 
-                alt="Agencies Persona" 
-                class="persona-image"
-                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFnZW5jaWVzIFBlcnNvbmE8L3RleHQ+PC9zdmc+'"
-              />
-              <div class="persona-overlay">
-                <i class="fas fa-eye"></i>
-              </div>
-              <div class="persona-label">
-                <i class="fas fa-chart-bar text-blue-600"></i>
-                <span>Agencies</span>
-              </div>
-            </div>
-            
-            <div class="persona-card" data-persona="brands">
-              <img 
-                src="/images/case-studies/relo-census/brands-persona.png" 
-                alt="Brands Persona" 
-                class="persona-image"
-                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJyYW5kcyBQZXJzb25hPC90ZXh0Pjwvc3ZnPg=='"
-              />
-              <div class="persona-overlay">
-                <i class="fas fa-eye"></i>
-              </div>
-              <div class="persona-label">
-                <i class="fas fa-bullseye text-purple-600"></i>
-                <span>Brands</span>
-              </div>
-            </div>
-            
-            <div class="persona-card" data-persona="rightsholder">
-              <img 
-                src="/images/case-studies/relo-census/rightsholder-persona.png" 
-                alt="Rightsholder Persona" 
-                class="persona-image"
-                onError="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlJpZ2h0c2hvbGRlciBQZXJzb25hPC90ZXh0Pjwvc3ZnPg=='"
-              />
-              <div class="persona-overlay">
-                <i class="fas fa-eye"></i>
-              </div>
-              <div class="persona-label">
-                <i class="fas fa-handshake text-orange-600"></i>
-                <span>Rightsholder</span>
-              </div>
-            </div>
-          </div>
+        <div class="personas-viewer-placeholder">
+          <!-- Persona viewer will be rendered as React component -->
         </div>
       </div>
     `,
