@@ -135,7 +135,83 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
-    task: 'Led usability and design strategy for this next-gen sponsorship data platform. The goal was to deliver a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues.',
+    task: `
+      <div class="task-content">
+        <div class="task-intro mb-8">
+          <p class="task-description">
+            Led usability and design strategy for this next-gen sponsorship data platform. The goal was to deliver a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues.
+          </p>
+        </div>
+
+        <div class="task-item mb-10">
+          <div class="task-header mb-6">
+            <div class="task-number">
+              <i class="fas fa-drafting-compass text-blue-600"></i>
+              <span class="task-label">TASK 1</span>
+            </div>
+            <h4 class="task-title">Re-architect the Platform from First Principles</h4>
+          </div>
+          
+          <p class="task-overview mb-6">
+            My first task was to diagnose and structure the platform's UX problems: overlapping navigation, unclear workflows, and disconnected tagging/filters. These issues had built up incrementally—so the fix couldn't be cosmetic.
+          </p>
+          
+          <div class="task-needs">
+            <p class="task-needs-title">I needed to:</p>
+            <ul class="task-list">
+              <li class="task-list-item">
+                <i class="fas fa-cube text-orange-500"></i>
+                <span>Establish a new information architecture</span>
+              </li>
+              <li class="task-list-item">
+                <i class="fas fa-map-marker-alt text-blue-500"></i>
+                <span>Define clear entry points for placement, filter, and export logic</span>
+              </li>
+              <li class="task-list-item">
+                <i class="fas fa-brain text-purple-500"></i>
+                <span>Help teams agree on a single model of how the product should behave</span>
+              </li>
+              <li class="task-list-item">
+                <i class="fas fa-check-circle text-green-500"></i>
+                <span>Preserve core features while redesigning the way users moved through them</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <div class="task-header mb-6">
+            <div class="task-number">
+              <i class="fas fa-puzzle-piece text-green-600"></i>
+              <span class="task-label">TASK 2</span>
+            </div>
+            <h4 class="task-title">Deliver a Modular System That Could Scale</h4>
+          </div>
+          
+          <p class="task-overview mb-6">
+            Once the foundational UX logic was redefined, the next task was to build modular, reusable patterns that could scale across the business—serving future tools, new personas, and faster engineering cycles.
+          </p>
+          
+          <div class="task-needs">
+            <p class="task-needs-title">This included:</p>
+            <ul class="task-list">
+              <li class="task-list-item">
+                <i class="fas fa-puzzle-piece text-indigo-500"></i>
+                <span>A full design system</span>
+              </li>
+              <li class="task-list-item">
+                <i class="fas fa-calculator text-teal-500"></i>
+                <span>Visual and logic-based component libraries</span>
+              </li>
+              <li class="task-list-item">
+                <i class="fas fa-sync-alt text-cyan-500"></i>
+                <span>Save/export/tagging UX that was both flexible and trusted</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `,
     action: 'Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.',
     result: 'Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.',
     images: [
