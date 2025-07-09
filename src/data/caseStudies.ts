@@ -429,7 +429,162 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
-    result: 'Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.',
+    result: `
+      <div class="results-content">
+        <div class="results-intro mb-8">
+          <p class="results-description text-lg text-gray-700 leading-relaxed">
+            Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.
+          </p>
+        </div>
+
+        <div class="results-section mb-12">
+          <div class="section-header mb-8">
+            <h3 class="results-title flex items-center gap-3 mb-4">
+              <i class="fas fa-rocket text-blue-600"></i>
+              Platform Success
+            </h3>
+            <p class="results-subtitle text-gray-600">
+              Measurable improvements in efficiency and user experience
+            </p>
+          </div>
+          
+          <div class="metrics-grid grid md:grid-cols-2 gap-6">
+            <div class="metric-item">
+              <div class="metric-header flex items-center gap-3 mb-2">
+                <i class="fas fa-chart-line text-green-600"></i>
+                <span class="metric-value font-bold text-2xl text-black">92%</span>
+              </div>
+              <p class="metric-description text-gray-700">reduction in manual reporting workload for CS and Clients</p>
+            </div>
+            
+            <div class="metric-item">
+              <div class="metric-header flex items-center gap-3 mb-2">
+                <i class="fas fa-clock text-purple-600"></i>
+                <span class="metric-value font-bold text-2xl text-black">45%</span>
+              </div>
+              <p class="metric-description text-gray-700">faster setup times for new users onboarding into Census</p>
+            </div>
+            
+            <div class="metric-item">
+              <div class="metric-header flex items-center gap-3 mb-2">
+                <i class="fas fa-search-plus text-orange-600"></i>
+                <span class="metric-value font-bold text-2xl text-black">30%</span>
+              </div>
+              <p class="metric-description text-gray-700">faster insight discovery via "Create a View" and saved dashboards</p>
+            </div>
+            
+            <div class="metric-item">
+              <div class="metric-header flex items-center gap-3 mb-2">
+                <i class="fas fa-trophy text-amber-600"></i>
+                <span class="metric-value font-bold text-lg text-black">Default QBR Output</span>
+              </div>
+              <p class="metric-description text-gray-700">Census dashboards became the default QBR output used by Sales and CS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-section mb-12">
+          <div class="section-header mb-8">
+            <h3 class="results-title flex items-center gap-3 mb-4">
+              <i class="fas fa-building text-indigo-600"></i>
+              Business Impact
+            </h3>
+            <p class="results-subtitle text-gray-600">
+              Organizational transformation and cultural shifts
+            </p>
+          </div>
+          
+          <div class="impact-list space-y-6">
+            <div class="impact-item flex items-start gap-4">
+              <div class="impact-icon">
+                <i class="fas fa-presentation text-blue-600"></i>
+              </div>
+              <div class="impact-content">
+                <p class="impact-text text-gray-700">
+                  <strong>Sales teams used Census dashboards in 70%+ of client renewal and upsell decks</strong>
+                </p>
+              </div>
+            </div>
+            
+            <div class="impact-item flex items-start gap-4">
+              <div class="impact-icon">
+                <i class="fas fa-tachometer-alt text-green-600"></i>
+              </div>
+              <div class="impact-content">
+                <p class="impact-text text-gray-700">
+                  <strong>Product velocity increased</strong> due to clear specs, modular patterns, and design QA gates
+                </p>
+              </div>
+            </div>
+            
+            <div class="impact-item flex items-start gap-4">
+              <div class="impact-icon">
+                <i class="fas fa-code-branch text-purple-600"></i>
+              </div>
+              <div class="impact-content">
+                <p class="impact-text text-gray-700">
+                  <strong>Design became embedded into the SDLC</strong> engineers began asking for UX input upstream
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-section">
+          <div class="section-header mb-8">
+            <h3 class="results-title flex items-center gap-3 mb-4">
+              <i class="fas fa-lightbulb text-yellow-600"></i>
+              What I Learned
+            </h3>
+            <p class="results-subtitle text-gray-600">
+              Key insights and growth from this challenging project
+            </p>
+          </div>
+          
+          <div class="learning-grid grid md:grid-cols-2 gap-8">
+            <div class="learning-item">
+              <div class="learning-header flex items-center gap-3 mb-4">
+                <span class="learning-emoji text-2xl">🧩</span>
+                <h4 class="learning-title font-semibold text-black">Technical Ingenuity</h4>
+              </div>
+              <p class="learning-description text-gray-700">
+                Designing within engineering constraints sparked creative yet scalable solutions.
+              </p>
+            </div>
+            
+            <div class="learning-item">
+              <div class="learning-header flex items-center gap-3 mb-4">
+                <span class="learning-emoji text-2xl">🧭</span>
+                <h4 class="learning-title font-semibold text-black">Developer Advocacy</h4>
+              </div>
+              <p class="learning-description text-gray-700">
+                I noticed the team's bandwidth pulling in multiple directions. By aligning sprint timelines and flagging burnout risks, I helped protect their focus and energy.
+              </p>
+            </div>
+            
+            <div class="learning-item">
+              <div class="learning-header flex items-center gap-3 mb-4">
+                <span class="learning-emoji text-2xl">🤝</span>
+                <h4 class="learning-title font-semibold text-black">Mentorship in Practice</h4>
+              </div>
+              <p class="learning-description text-gray-700">
+                I led workshops and peer sessions to build shared fluency around design systems, atomic components, and visual consistency—reducing friction and speeding alignment.
+              </p>
+            </div>
+            
+            <div class="learning-item">
+              <div class="learning-header flex items-center gap-3 mb-4">
+                <span class="learning-emoji text-2xl">🔄</span>
+                <h4 class="learning-title font-semibold text-black">Cross-functional Momentum</h4>
+              </div>
+              <p class="learning-description text-gray-700">
+                Embedding asynchronous design QA, visual tokens, and handoff routines improved designer-developer collaboration, boosting implementation quality and reducing rework.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     images: [
       '/images/case-studies/relo-census/design1.jpg',
       '/images/case-studies/relo-census/design2.jpg',

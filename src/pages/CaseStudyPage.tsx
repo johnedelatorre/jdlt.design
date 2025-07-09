@@ -254,9 +254,10 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
                 Result
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {caseStudy.result}
-              </p>
+              <div 
+                className="text-lg text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: caseStudy.result }}
+              />
             </div>
           </div>
 
