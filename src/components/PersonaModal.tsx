@@ -55,7 +55,7 @@ const PersonaModal = ({
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           <DialogPanel
             transition
-            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-4xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 sm:w-auto sm:max-w-7xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             {/* Header with close button */}
             <div className="absolute right-0 top-0 pr-4 pt-4 z-10">
@@ -84,7 +84,7 @@ const PersonaModal = ({
                     <img
                       src={currentPersona.image}
                       alt={currentPersona.alt}
-                      className="max-w-full max-h-96 object-contain rounded-lg shadow-lg"
+                      className="w-auto h-auto max-w-6xl max-h-screen object-contain rounded-lg shadow-lg"
                       onLoad={() => console.log('Headless UI modal image loaded:', currentPersona.id)}
                       onError={() => console.log('Headless UI modal image error:', currentPersona.id)}
                     />
