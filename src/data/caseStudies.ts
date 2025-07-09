@@ -4,11 +4,11 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 'relo-census-dashboard',
     title: 'Relo Census',
-    subtitle: 'Next-gen sponsorship data platform',
+    subtitle: 'Sports Analytics Dashboard Builder',
     client: 'Relo Metrics',
     role: 'Product Design Lead',
-    year: '2024',
-    tools: ['Figma', 'Miro', 'Principle'],
+    year: '2023 - 2024',
+    tools: ['Figma', 'UXPilot', 'Vercel'],
     tags: ['Sports Analytics', 'Data Platform', 'Sponsorship'],
     headerImage: '/images/case-studies/relo-census/header.jpg',
     projectBrief: `
