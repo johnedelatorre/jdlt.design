@@ -86,3 +86,13 @@
     @apply text-blue-600 text-sm mt-1 flex-shrink-0 w-4;
   }
 }
+
+/* Custom animations */
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

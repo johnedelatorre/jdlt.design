@@ -1,11 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faUser, faCog, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import CaseStudyCard from '../components/CaseStudyCard';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
 
 const HomePage: React.FC = () => {
+  const scrollToCaseStudies = () => {
+    const caseStudiesSection = document.getElementById('case-studies');
+    if (caseStudiesSection) {
+      caseStudiesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <div>
       {/* Hero/About Me Section */}
@@ -15,8 +25,55 @@ const HomePage: React.FC = () => {
             {/* Text Content */}
             <div>
               <h1 className="font-serif text-4xl lg:text-5xl font-bold text-black mb-6">
-                Full Stack Product Design Leader
+                Product Design & Usability Leader
               </h1>
+              
+              {/* New headline section with icons */}
+              <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+                <div className="flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed">
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faRocket} className="text-blue-600" />
+                    <span className="font-semibold text-gray-900">Full-Stack Product Design Lead @ Relo Metrics</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faSearch} className="text-green-600" />
+                    <span>Research & Design Strategy</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
+                    <span>AI-Led UX • Claude • Uizard</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-pink-600" />
+                    <span>Figma • UX Pilot • v0.dev • Cursor</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faMap} className="text-orange-600" />
+                    <span>Journey Mapping</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faUser} className="text-red-600" />
+                    <span>Human-Centric</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faCog} className="text-indigo-600" />
+                    <span>Scalable UX Systems • Design Thinking</span>
+                  </div>
+                </div>
+              </div>
+              
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 <strong>15+ years</strong> turning complex problems into delightful experiences—where <strong>User Research</strong> meets <strong>Interaction Design</strong>, <strong>Visual Design</strong> meets <strong>Front-End Development</strong>, and <strong>AI</strong> meets human intuition.
               </p>
@@ -61,7 +118,7 @@ const HomePage: React.FC = () => {
             </div>
 
             {/* Profile Photo */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex flex-col items-center lg:items-center gap-8">
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img
@@ -73,6 +130,42 @@ const HomePage: React.FC = () => {
                       (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2IiBmWD0iMjAiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOWVhM2E4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UHJvZmlsZSBQaG90bzwvdGV4dD48L3N2Zz4=';
                     }}
                   />
+                </div>
+              </div>
+              
+              {/* Scroll to Case Studies Button - Below photo, aligned with Relo Census top */}
+              <div className="flex justify-center mt-40">
+                <div className="relative">
+                  <button
+                    onClick={scrollToCaseStudies}
+                    className="group relative w-32 h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                    style={{
+                      animation: 'subtleBounce 2s ease-in-out infinite'
+                    }}
+                    aria-label="Scroll to case studies"
+                  >
+                    {/* Circular Text */}
+                    <div className="absolute inset-0">
+                      <svg className="w-full h-full" viewBox="0 0 120 120">
+                        <defs>
+                          <path id="circle" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+                        </defs>
+                        <text fontSize="10" fill="#6B7280" className="uppercase tracking-widest font-medium">
+                          <textPath href="#circle" startOffset="0%">
+                            scroll to case studies • scroll to case studies •
+                          </textPath>
+                        </text>
+                      </svg>
+                    </div>
+                    
+                    {/* Center Arrow */}
+                    <div className="relative z-10 flex items-center justify-center">
+                      <FontAwesomeIcon 
+                        icon={faArrowDown} 
+                        className="text-gray-600 text-xl group-hover:text-gray-800 transition-colors duration-300" 
+                      />
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
