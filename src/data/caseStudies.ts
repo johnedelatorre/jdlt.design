@@ -322,6 +322,111 @@ export const caseStudies: CaseStudy[] = [
         <div class="personas-viewer-placeholder">
           <!-- Persona viewer will be rendered as React component -->
         </div>
+
+        <div class="action-item mb-12">
+          <div class="action-header mb-6">
+            <div class="action-number">
+              <i class="fas fa-flask text-purple-600"></i>
+              <span class="action-label">ACTION 3</span>
+            </div>
+            <h4 class="action-title">Prototyping & Validation Loops with Stakeholders</h4>
+            <p class="action-subtitle">Use live prototypes to reduce ambiguity, align cross-functionally, and iterate faster</p>
+          </div>
+          
+          <div class="action-details">
+            <ul class="action-list">
+              <li class="action-list-item">
+                <i class="fas fa-laptop-code text-blue-500"></i>
+                <span>Created interactive prototypes using Vercel's v0.dev + Figma-to-code export, replicating real charting logic</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-user-check text-green-500"></i>
+                <span>Partnered with Customer Success to test prototypes with real clients before development</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-calendar-week text-orange-500"></i>
+                <span>Held weekly feedback demos with Product, Sales, and Engineering to remove blockers early</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-clipboard-list text-purple-500"></i>
+                <span>Turned qualitative feedback into design change logs, tracked through delivery</span>
+              </li>
+            </ul>
+            
+            <div class="action-result">
+              <div class="result-card">
+                <i class="fas fa-rocket text-indigo-500"></i>
+                <p class="result-text">
+                  <strong>Result:</strong> Removed guesswork from engineering. Feedback came earlier in the cycle. Features like "Create a View," tagging, and ROI alerting shipped faster and with greater confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-item mb-12">
+          <div class="action-header mb-6">
+            <div class="action-number">
+              <i class="fas fa-cubes text-orange-600"></i>
+              <span class="action-label">ACTION 4</span>
+            </div>
+            <h4 class="action-title">Design a Modular System Aligned with Developer Constraints</h4>
+            <p class="action-subtitle">Balance UX ambition with engineering capacity and phased delivery</p>
+          </div>
+          
+          <div class="action-details">
+            <div class="action-overview mb-6">
+              <p class="overview-text">
+                Co-created a phased rollout plan with the PM:
+              </p>
+            </div>
+            
+            <ul class="action-list mb-6">
+              <li class="action-list-item">
+                <i class="fas fa-flag text-blue-500"></i>
+                <span><strong>MVP - Release 1:</strong> Static dashboards + tagging logic + saved views</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-chart-bar text-green-500"></i>
+                <span><strong>R2 - Release 2:</strong> Chart builder and metrics selection</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-download text-purple-500"></i>
+                <span><strong>R3 - Release 3:</strong> Export logic + agency pitch templates + real-time API enhancements</span>
+              </li>
+            </ul>
+            
+            <div class="action-overview mb-6">
+              <p class="overview-text">
+                Documented handoff specs in clear UX-to-engineer artifacts including:
+              </p>
+            </div>
+            
+            <ul class="action-list">
+              <li class="action-list-item">
+                <i class="fas fa-sitemap text-cyan-500"></i>
+                <span>Interaction flows</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-exclamation-triangle text-amber-500"></i>
+                <span>Edge cases and logic states</span>
+              </li>
+              <li class="action-list-item">
+                <i class="fas fa-layer-group text-indigo-500"></i>
+                <span>UI states across data conditions (null, dense, outliers)</span>
+              </li>
+            </ul>
+            
+            <div class="action-result">
+              <div class="result-card">
+                <i class="fas fa-shipping-fast text-emerald-500"></i>
+                <p class="result-text">
+                  <strong>Result:</strong> Even with only 1 FE + 1 BE dev, we shipped 4 major releases over 6 months. The phased approach ensured progress while managing tech debt and burnout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     `,
     result: 'Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.',
