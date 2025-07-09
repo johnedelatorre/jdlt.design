@@ -630,7 +630,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-edge/design11.jpg',
       '/images/case-studies/relo-edge/design12.jpg',
     ],
-    figmaLink: 'https://www.figma.com/proto/relo-edge-redesign'
+    // figmaLink: '' // No prototype available
   },
   {
     id: 'relo-sponsorpulse-integration',
@@ -661,7 +661,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-sponsorpulse/design11.jpg',
       '/images/case-studies/relo-sponsorpulse/design12.jpg',
     ],
-    figmaLink: 'https://www.figma.com/proto/sponsorpulse-integration'
+    // figmaLink: '' // No prototype available
   },
   {
     id: 'medable-design-system',
@@ -692,7 +692,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/medable-design-system/design11.jpg',
       '/images/case-studies/medable-design-system/design12.jpg',
     ],
-    figmaLink: 'https://www.figma.com/proto/medable-design-system'
+    // figmaLink: '' // No prototype available
   },
   {
     id: 'medable-translation-tool',
@@ -717,7 +717,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/medable-translation/design5.jpg',
       '/images/case-studies/medable-translation/design6.jpg',
     ],
-    figmaLink: 'https://www.figma.com/proto/translation-tool'
+    // figmaLink: '' // No prototype available
   },
   {
     id: 'elysium-ai-dashboard',
@@ -748,6 +748,6 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/elysium-ai/design11.jpg',
       '/images/case-studies/elysium-ai/design12.jpg',
     ],
-    figmaLink: 'https://www.figma.com/proto/ai-dashboard'
+    // figmaLink: '' // No prototype available
   }
 ]; 
