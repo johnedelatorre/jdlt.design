@@ -215,15 +215,32 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faCogs} className="text-green-600" />
                 Action
               </h2>
-              <div 
-                className="text-lg text-gray-700 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: caseStudy.action.replace('<div class="personas-viewer-placeholder">', '<div class="personas-viewer-placeholder" style="display: none;">') }}
-              />
-              
-              {/* Persona Viewer for Relo Census case study - positioned after Action 2 */}
-              {caseStudy.id === 'relo-census-dashboard' && (
-                <PersonaViewer onPersonaClick={openPersonaModal} />
-              )}
+              {/* Split action content at personas placeholder for proper positioning */}
+              {(() => {
+                if (caseStudy.id === 'relo-census-dashboard') {
+                  const parts = caseStudy.action.split('<div class="personas-viewer-placeholder">');
+                  if (parts.length === 2) {
+                    const beforePersonas = parts[0];
+                    const afterPersonas = parts[1].split('</div>')[1] || '';
+                    
+                    return (
+                      <div className="text-lg text-gray-700 leading-relaxed">
+                        <div dangerouslySetInnerHTML={{ __html: beforePersonas }} />
+                        <PersonaViewer onPersonaClick={openPersonaModal} />
+                        <div dangerouslySetInnerHTML={{ __html: afterPersonas }} />
+                      </div>
+                    );
+                  }
+                }
+                
+                // Fallback for other case studies or if splitting fails
+                return (
+                  <div 
+                    className="text-lg text-gray-700 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: caseStudy.action }}
+                  />
+                );
+              })()}
             </div>
           </div>
 
