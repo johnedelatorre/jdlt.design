@@ -81,7 +81,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
         <DialogPanel
           transition
-          className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 sm:w-auto sm:max-w-7xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+          className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-6xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
         >
           {/* Header with close button */}
           <div className="absolute right-0 top-0 pr-4 pt-4 z-10">
@@ -96,21 +96,21 @@ const ImageModal: React.FC<ImageModalProps> = ({
           </div>
 
           {/* Modal content */}
-          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-            <div className="sm:flex sm:items-start">
-              <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
+            <div className="sm:flex sm:items-start h-full">
+              <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full h-full flex flex-col">
                 
                 {/* Title */}
-                <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4">
+                <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4 flex-shrink-0">
                   {currentDesignName}
                 </DialogTitle>
                 
-                {/* Image container */}
-                <div className="mt-2 flex justify-center mb-6">
+                {/* Image container - Fixed height container */}
+                <div className="flex-1 flex items-center justify-center mb-6 min-h-0">
                   <img
                     src={images[currentIndex]}
                     alt={`Design: ${currentDesignName}`}
-                    className="w-auto h-auto max-w-6xl max-h-[calc(100vh-200px)] object-contain rounded-lg shadow-lg"
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
                     onError={(e) => {
                       // Fallback to a placeholder if image fails to load
                       (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
@@ -122,8 +122,8 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
           </div>
 
-          {/* Footer with navigation */}
-          <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          {/* Footer with navigation - Fixed at bottom */}
+          <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 flex-shrink-0">
             
             {/* Next Button */}
             <button
