@@ -44,7 +44,97 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
-    situation: 'Relo Metrics needed a revolutionary sponsorship data platform that would allow brands and agencies to make smarter decisions about team, asset, and brand valuations across major U.S. leagues. The existing tools were fragmented and didn\'t provide the comprehensive insights needed for strategic decision-making.',
+    situation: `
+      <div class="situation-content">
+        <div class="situation-intro mb-8">
+          <h3 class="situation-title">Why Redesign Relo Edge?</h3>
+          <p class="situation-text">
+            Relo Edge (formerly the Media Value Center) had become the internal source of truth for sponsorship reporting—but it was no longer fit for purpose. Years of incremental feature requests had caused fragmentation across screens, inconsistencies in filtering logic, and misalignment between what teams expected and what the tool delivered.
+          </p>
+        </div>
+
+        <div class="situation-problems mb-8">
+          <p class="situation-subtitle">The result was a platform that:</p>
+          <ul class="problem-list">
+            <li class="problem-item">
+              <i class="fas fa-times-circle text-red-500"></i>
+              <span>Lacked intuitive navigation or grouping of features</span>
+            </li>
+            <li class="problem-item">
+              <i class="fas fa-times-circle text-red-500"></i>
+              <span>Delivered unreliable tagging and saved views</span>
+            </li>
+            <li class="problem-item">
+              <i class="fas fa-times-circle text-red-500"></i>
+              <span>Was built with no formal design system, QA flow, or UX architecture</span>
+            </li>
+            <li class="problem-item">
+              <i class="fas fa-times-circle text-red-500"></i>
+              <span>Required excessive manual effort from CS to generate reports</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="situation-teams mb-8">
+          <p class="situation-subtitle">Internally, multiple teams were struggling to get what they needed:</p>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-header">
+                <i class="fas fa-headset text-blue-600"></i>
+                <span class="team-label">CS</span>
+                <span class="team-name">Customer Success</span>
+              </div>
+              <p class="team-problem">Confused by tagging logic and unable to reuse views</p>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-header">
+                <i class="fas fa-chart-line text-green-600"></i>
+                <span class="team-label">SALES</span>
+                <span class="team-name">Sales</span>
+              </div>
+              <p class="team-problem">Needed polished exports for sponsorship pitches</p>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-header">
+                <i class="fas fa-bug text-purple-600"></i>
+                <span class="team-label">QA</span>
+                <span class="team-name">QA</span>
+              </div>
+              <p class="team-problem">Had to manually inspect UI logic with no shared rules or components</p>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-header">
+                <i class="fas fa-lightbulb text-orange-600"></i>
+                <span class="team-label">PROD</span>
+                <span class="team-name">Product</span>
+              </div>
+              <p class="team-problem">Lacked a scalable IA model or clear ownership of UX structure</p>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-header">
+                <i class="fas fa-code text-indigo-600"></i>
+                <span class="team-label">ENG</span>
+                <span class="team-name">Engineering</span>
+              </div>
+              <p class="team-problem">Bottlenecked by ad hoc feature requests and visual inconsistency</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="situation-conclusion">
+          <div class="conclusion-card">
+            <i class="fas fa-exclamation-triangle text-amber-500"></i>
+            <p class="conclusion-text">
+              This was not just a design refresh—it was a <strong>UX and IA intervention</strong> with operational impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    `,
     task: 'Led usability and design strategy for this next-gen sponsorship data platform. The goal was to deliver a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues.',
     action: 'Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.',
     result: 'Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.',

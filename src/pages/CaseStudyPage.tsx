@@ -135,9 +135,10 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
                 Situation
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {caseStudy.situation}
-              </p>
+              <div 
+                className="text-lg text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: caseStudy.situation }}
+              />
             </div>
           </div>
 
