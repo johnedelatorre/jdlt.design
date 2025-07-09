@@ -75,10 +75,13 @@ const CaseStudyPage: React.FC = () => {
 
   // Persona modal handlers
   const openPersonaModal = (personaId: string) => {
+    console.log('openPersonaModal called with:', personaId);
     const index = personas.findIndex(p => p.id === personaId);
+    console.log('Found persona index:', index);
     if (index !== -1) {
       setCurrentPersonaIndex(index);
       setIsPersonaModalOpen(true);
+      console.log('Modal should be opening');
     }
   };
 

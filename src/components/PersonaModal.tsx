@@ -27,31 +27,16 @@ const PersonaModal: React.FC<PersonaModalProps> = ({
   onNext,
 }) => {
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (!isOpen) return;
-      
-      switch (event.key) {
-        case 'Escape':
-          onClose();
-          break;
-        case 'ArrowLeft':
-          event.preventDefault();
-          onPrevious();
-          break;
-        case 'ArrowRight':
-          event.preventDefault();
-          onNext();
-          break;
-      }
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') onPrevious();
+      if (e.key === 'ArrowRight') onNext();
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    
-    // Prevent body scroll when modal is open
     if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
     }
 
     return () => {
@@ -60,77 +45,84 @@ const PersonaModal: React.FC<PersonaModalProps> = ({
     };
   }, [isOpen, onClose, onPrevious, onNext]);
 
-  if (!isOpen || personas.length === 0) return null;
+  if (!isOpen || !personas.length) {
+    return null;
+  }
 
   const currentPersona = personas[currentIndex];
 
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
-
   return (
-    <div 
-      className={`persona-modal-backdrop ${isOpen ? 'persona-modal-open' : ''}`}
-      onClick={handleBackdropClick}
-    >
-      <div className="persona-modal-container">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="persona-modal-close"
-          aria-label="Close modal"
-        >
-          <FontAwesomeIcon icon={faTimes} />
-        </button>
+    <div className="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      {/* Background backdrop */}
+      <div 
+        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        onClick={onClose}
+      ></div>
 
-        {/* Navigation Arrows */}
-        {personas.length > 1 && (
-          <>
-            <button
-              onClick={onPrevious}
-              className="persona-modal-nav persona-modal-nav-left"
-              aria-label="Previous persona"
-            >
-              <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
+      <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
             
-            <button
-              onClick={onNext}
-              className="persona-modal-nav persona-modal-nav-right"
-              aria-label="Next persona"
-            >
-              <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-          </>
-        )}
+            {/* Close button */}
+            <div className="absolute right-0 top-0 pr-4 pt-4">
+              <button
+                type="button"
+                className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                onClick={onClose}
+              >
+                <span className="sr-only">Close</span>
+                <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
+              </button>
+            </div>
 
-        {/* Image Container */}
-        <div className="persona-modal-image-container">
-          <img
-            src={currentPersona.image}
-            alt={currentPersona.alt}
-            className="persona-modal-image"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPiR7Y3VycmVudFBlcnNvbmEubmFtZX0gUGVyc29uYTwvdGV4dD48L3N2Zz4=`;
-            }}
-          />
-        </div>
+            {/* Modal content */}
+            <div className="sm:flex sm:items-start">
+              <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                
+                {/* Title */}
+                <h3 className="text-base font-semibold leading-6 text-gray-900 mb-4" id="modal-title">
+                  {currentPersona.name} Persona
+                </h3>
+                
+                {/* Image container */}
+                <div className="mt-2 flex justify-center">
+                  <img
+                    src={currentPersona.image}
+                    alt={currentPersona.alt}
+                    className="max-w-full max-h-96 object-contain rounded-lg shadow-lg"
+                  />
+                </div>
 
-        {/* Persona Info */}
-        <div className="persona-modal-info">
-          <h3 className="persona-modal-title">{currentPersona.name} Persona</h3>
-          {personas.length > 1 && (
-            <p className="persona-modal-counter">
-              {currentIndex + 1} of {personas.length}
-            </p>
-          )}
-        </div>
+                {/* Navigation */}
+                <div className="mt-6 flex items-center justify-between">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:opacity-50"
+                    onClick={onPrevious}
+                    disabled={currentIndex === 0}
+                  >
+                    <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
+                    Previous
+                  </button>
+                  
+                  <span className="text-sm text-gray-500">
+                    {currentIndex + 1} of {personas.length}
+                  </span>
+                  
+                  <button
+                    type="button"
+                    className="inline-flex justify-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:opacity-50"
+                    onClick={onNext}
+                    disabled={currentIndex === personas.length - 1}
+                  >
+                    Next
+                    <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
+                  </button>
+                </div>
 
-        {/* Keyboard Hint */}
-        <div className="persona-modal-hint">
-          <p>Use ← → arrow keys to navigate • Press ESC to close</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
