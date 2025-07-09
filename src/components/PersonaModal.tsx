@@ -84,7 +84,7 @@ const PersonaModal = ({
                     <img
                       src={currentPersona.image}
                       alt={currentPersona.alt}
-                      className="w-auto h-auto max-w-6xl max-h-screen object-contain rounded-lg shadow-lg"
+                      className="w-auto h-auto max-w-6xl max-h-[calc(100vh-200px)] object-contain rounded-lg shadow-lg"
                       onLoad={() => console.log('Headless UI modal image loaded:', currentPersona.id)}
                       onError={() => console.log('Headless UI modal image error:', currentPersona.id)}
                     />
