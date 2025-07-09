@@ -611,7 +611,68 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Sketch', 'InVision'],
     tags: ['Analytics Platform', 'UI/UX Redesign', 'Sports Data'],
     headerImage: '/images/case-studies/relo-edge/header.jpg',
-    projectBrief: 'Relo Edge is the core analytics platform that powers Relo Metrics\' sports data ecosystem. This comprehensive redesign project focused on modernizing the entire user experience, improving usability standards, and creating a foundation for enhanced user engagement and product adoption across the analytics suite.',
+    projectBrief: `
+      <div class="project-brief-content">
+        <div class="brief-section mb-8">
+          <h3 class="brief-title flex items-center gap-3 mb-4">
+            <i class="fas fa-question-circle text-blue-600"></i>
+            What is Relo Edge?
+          </h3>
+          <p class="brief-description mb-6">
+            Relo Edge was the internal evolution of a legacy tool called the <strong>Media Value Center (MVC)</strong>—originally built to help Customer Success teams measure, tag, and report on sponsorship performance across leagues, teams, and assets.
+          </p>
+          <p class="brief-description mb-6">
+            But over time, the tool became fragmented, confusing, and unscalable. The user experience was inconsistent. The data models lacked clarity. And critical reporting features were buried across disconnected workflows.
+          </p>
+        </div>
+        
+        <div class="brief-section mb-8">
+          <h3 class="brief-title flex items-center gap-3 mb-4">
+            <i class="fas fa-bullseye text-orange-600"></i>
+            The Ask
+          </h3>
+          <p class="brief-description mb-6">
+            Redesign the platform from the ground up to improve usability, trust, and internal efficiency—without disrupting existing workflows relied on by Customer Success and Sales.
+          </p>
+          
+          <h4 class="brief-subtitle mb-4">The redesign needed to:</h4>
+          <ul class="brief-list space-y-3">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-puzzle-piece text-purple-500 mt-1"></i>
+              <span>Consolidate fragmented tools into a unified, modern experience</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-shield-alt text-green-500 mt-1"></i>
+              <span>Build trust in tagging, filters, and metrics outputs</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-tools text-blue-500 mt-1"></i>
+              <span>Reduce dependency on engineering for minor updates</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-cubes text-indigo-500 mt-1"></i>
+              <span>Establish a modular, reusable design system for future tools</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-graduation-cap text-teal-500 mt-1"></i>
+              <span>Ensure internal teams could onboard and scale with minimal training</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="brief-section">
+          <div class="impact-card bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
+            <div class="impact-header flex items-center gap-3 mb-4">
+              <i class="fas fa-rocket text-blue-600"></i>
+              <h4 class="impact-title font-semibold text-black">Strategic Impact</h4>
+            </div>
+            <p class="impact-description text-gray-700">
+              The initiative would become the foundation for Relo's next-generation data products, as well as a blueprint for external client-facing dashboards in future phases.
+            </p>
+          </div>
+        </div>
+      </div>
+    `,
     situation: 'Relo\'s core analytics tool needed a complete UI/UX overhaul to improve user adoption and satisfaction. The existing interface lacked modern usability standards and clarity, hindering user engagement across the platform.',
     task: 'Directed a full UI/UX redesign of Relo\'s core analytics tool, focusing on modernizing the interface with best practices in usability and clarity to improve product adoption, user satisfaction, and engagement.',
     action: 'Led comprehensive user research, conducted usability audits, redesigned information architecture, and implemented modern design patterns. Collaborated with engineering teams to ensure technical feasibility while maintaining design integrity throughout implementation.',
