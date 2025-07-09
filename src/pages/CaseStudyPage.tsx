@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette } from '@fortawesome/free-solid-svg-icons';
@@ -39,17 +39,27 @@ const CaseStudyPage: React.FC = () => {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setIsModalOpen(false);
-  };
+  }, []);
 
-  const previousImage = () => {
-    setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : caseStudy.images.length - 1));
-  };
+  const previousImage = useCallback(() => {
+    if (!caseStudy) return;
+    setCurrentImageIndex((prev) => {
+      const newIndex = prev > 0 ? prev - 1 : caseStudy.images.length - 1;
+      console.log('Previous clicked: current index', prev, '-> new index', newIndex, 'total images', caseStudy.images.length);
+      return newIndex;
+    });
+  }, [caseStudy]);
 
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev < caseStudy.images.length - 1 ? prev + 1 : 0));
-  };
+  const nextImage = useCallback(() => {
+    if (!caseStudy) return;
+    setCurrentImageIndex((prev) => {
+      const newIndex = prev < caseStudy.images.length - 1 ? prev + 1 : 0;
+      console.log('Next clicked: current index', prev, '-> new index', newIndex, 'total images', caseStudy.images.length);
+      return newIndex;
+    });
+  }, [caseStudy]);
 
   // Persona data for Relo Census case study
   const personas = [
