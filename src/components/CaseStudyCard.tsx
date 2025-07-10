@@ -24,7 +24,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
         {/* Recent Project Badge */}
         {caseStudy.isRecent && (
           <div className="absolute top-3 right-3 z-10">
-            <div className="bg-black bg-opacity-85 backdrop-blur-sm text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-lg">
+            <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-medium px-2.5 py-1 rounded-md shadow-sm">
               Recent Project
             </div>
           </div>
