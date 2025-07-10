@@ -14,123 +14,158 @@ export const caseStudies: CaseStudy[] = [
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
-          <h3 class="brief-title">What is Census?</h3>
-          <p class="brief-intro">Census is a modular, persona-driven sponsorship analytics platform designed to help clients:</p>
-          <ul class="brief-list">
-            <li><i class="fas fa-chart-line"></i>Evaluate sponsorship performance across leagues and channels</li>
-            <li><i class="fas fa-balance-scale"></i>Benchmark competitors and industry activity</li>
-            <li><i class="fas fa-chart-bar"></i>Build insights and reports tailored to internal needs</li>
-            <li><i class="fas fa-brain"></i>Make smarter, faster, more informed decisions</li>
+          <p class="brief-description mb-6">
+            Relo Census is a modular, persona-driven sponsorship analytics platform built from the ground up to replace the company's legacy Media Value Center (MVC). Designed to help users evaluate brand performance, benchmark competitors, and generate insights across leagues and channels, Census aimed to be scalable, intuitive, and future-ready.
+          </p>
+          
+          <p class="brief-description mb-6">
+            When I joined Relo Metrics, the company needed to modernize its legacy analytics platform while building a next-generation solution. I was hired as the first product designer to lead the full end-to-end creation of Census: from defining the strategy and conducting research to designing the systems and final interface.
+          </p>
+          
+          <p class="brief-description">
+            My role wasn't just to deliver screens—it was to establish UX as a strategic function, bring design thinking into the org for the first time, and transform raw requirements into a platform that could scale across teams, personas, and verticals.
+          </p>
+        </div>
+        
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-rocket text-blue-600"></i>
+            The Complete Design Transformation
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">To do that, I led a complete shift in how the company thought about product design:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I pushed for a <strong>persona-driven experience</strong>, partnering with Customer Success and Marketing to conduct internal and external interviews that shaped our understanding of real user needs.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-cogs text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I introduced structured design processes—including daily design rituals, interactive prototypes, and modular component systems that engineers could build from.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-shipping-fast text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I collaborated deeply with a small dev team (only 1 frontend and 1 backend engineer) to ship the MVP in under 90 days—while still delivering a future-ready foundation for growth.</span>
+            </li>
           </ul>
         </div>
         
-        <div class="brief-section mb-8">
-          <h4 class="brief-subtitle">Census was built from the ground up to be:</h4>
-          <ul class="brief-list">
-            <li><i class="fas fa-puzzle-piece"></i>UX-first, modular, and componentized</li>
-            <li><i class="fas fa-expand-arrows-alt"></i>Scalable across leagues (MLB, NBA, F1, NFL, etc.)</li>
-            <li><i class="fas fa-cog"></i>Powered by Relo's proprietary CV engine</li>
-            <li><i class="fas fa-link"></i>Separate but complementary to MVC</li>
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-cubes text-indigo-600"></i>
+            Platform Architecture
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">Census was built to be:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-puzzle-piece text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>UX-first, modular, and componentized</strong>—focused on performance, scale, and reuse</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Scalable across verticals</strong> like MLB, NFL, NBA, F1, and global brands</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-eye text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Powered by Relo's proprietary Computer Vision engine</strong> for accurate asset tracking</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-link text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Separate but complementary to MVC</strong>, designed to evolve into the long-term replacement</span>
+            </li>
           </ul>
         </div>
         
-        <div class="brief-section">
-          <h4 class="brief-subtitle">Key Features:</h4>
-          <ul class="brief-list">
-            <li><i class="fas fa-user-friends"></i>Sponsorship Evaluation Page with persona-based views</li>
-            <li><i class="fas fa-filter"></i>Advanced filtering by placement, league, content type</li>
-            <li><i class="fas fa-database"></i>Data Explorer + Dashboard Builder with save/share capabilities</li>
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-star text-amber-600"></i>
+            Key Features
+          </h3>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-bar text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A Sponsorship Evaluation Dashboard with <strong>persona-based views</strong> tailored to each user type</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-filter text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A flexible View Builder with <strong>advanced filtering</strong> by placement, content type, league, platform</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-lightbulb text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Insight cards, benchmarking charts, and visual storytelling tools to drive decision-making</span>
+            </li>
           </ul>
+        </div>
+        
+        <div class="brief-section mt-10">
+          <div class="strategic-impact">
+            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">This case study tells the story of how I helped define, design, and deliver Relo Census—transforming raw business goals and Jira requirements into a scalable, user-centered product experience.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     `,
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">
-          <h3 class="situation-title">Why Redesign Relo Edge?</h3>
-          <p class="situation-text">
-            Relo Edge (formerly the Media Value Center) had become the internal source of truth for sponsorship reporting—but it was no longer fit for purpose. Years of incremental feature requests had caused fragmentation across screens, inconsistencies in filtering logic, and misalignment between what teams expected and what the tool delivered.
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            When I stepped into the Relo Census project, the environment was fragmented, reactive, and lacking even the most basic design infrastructure. Design had never been part of the product development process—engineers were accustomed to receiving Jira tickets or hand-drawn feature ideas from product managers and turning them directly into production code. This approach led to inconsistent workflows, disjointed experiences, and high friction for both internal teams and clients.
           </p>
         </div>
 
         <div class="situation-problems mb-8">
-          <p class="situation-subtitle">The result was a platform that:</p>
-          <ul class="problem-list">
-            <li class="problem-item">
-              <i class="fas fa-times-circle text-red-500"></i>
-              <span>Lacked intuitive navigation or grouping of features</span>
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            The company's existing internal tool—Media Value Center (MVC)—was still in use but had become bloated, unintuitive, and nearly impossible to scale. It was built without a clear understanding of its users and had become a patchwork of one-off features that served no one particularly well. Despite its flaws, MVC was relied on by Customer Success teams to report on multi-million dollar sponsorship performance, and its limitations were slowing down adoption, renewals, and expansion opportunities.
+          </p>
+        </div>
+
+        <div class="situation-leadership mb-8">
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            At the same time, the leadership team had ambitious goals for Census: they saw it as the future of Relo's product suite—a modular, extensible platform capable of supporting brands, rights holders, and agency partners across leagues like the NFL, NBA, MLB, and F1. But the vision lacked executional clarity. There were no defined user types. No research. No roadmap grounded in behavior or outcomes. Just a stack of feature asks and a team of two engineers to build it.
+          </p>
+        </div>
+
+        <div class="situation-challenges mb-8">
+          <p class="situation-subtitle text-gray-600 mb-6">In short, I entered a product-critical initiative where:</p>
+          
+          <ul class="challenge-list space-y-6">
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-ban text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Design had zero precedent or process</span>
             </li>
-            <li class="problem-item">
-              <i class="fas fa-times-circle text-red-500"></i>
-              <span>Delivered unreliable tagging and saved views</span>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-question-circle text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">No personas or validated user needs had been captured</span>
             </li>
-            <li class="problem-item">
-              <i class="fas fa-times-circle text-red-500"></i>
-              <span>Was built with no formal design system, QA flow, or UX architecture</span>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-list text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Product thinking defaulted to task lists, not systems or outcomes</span>
             </li>
-            <li class="problem-item">
-              <i class="fas fa-times-circle text-red-500"></i>
-              <span>Required excessive manual effort from CS to generate reports</span>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-code text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Engineering had no experience building from design specs or systems</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-eye text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">There was high visibility from leadership—but no shared understanding of direction</span>
             </li>
           </ul>
         </div>
 
-        <div class="situation-teams mb-8">
-          <p class="situation-subtitle">Internally, multiple teams were struggling to get what they needed:</p>
-          <div class="team-grid">
-            <div class="team-card">
-              <div class="team-header">
-                <i class="fas fa-headset text-blue-600"></i>
-                <span class="team-label">CS</span>
-                <span class="team-name">Customer Success</span>
-              </div>
-              <p class="team-problem">Confused by tagging logic and unable to reuse views</p>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-header">
-                <i class="fas fa-chart-line text-green-600"></i>
-                <span class="team-label">SALES</span>
-                <span class="team-name">Sales</span>
-              </div>
-              <p class="team-problem">Needed polished exports for sponsorship pitches</p>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-header">
-                <i class="fas fa-bug text-purple-600"></i>
-                <span class="team-label">QA</span>
-                <span class="team-name">QA</span>
-              </div>
-              <p class="team-problem">Had to manually inspect UI logic with no shared rules or components</p>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-header">
-                <i class="fas fa-lightbulb text-orange-600"></i>
-                <span class="team-label">PROD</span>
-                <span class="team-name">Product</span>
-              </div>
-              <p class="team-problem">Lacked a scalable IA model or clear ownership of UX structure</p>
-            </div>
-            
-            <div class="team-card">
-              <div class="team-header">
-                <i class="fas fa-code text-indigo-600"></i>
-                <span class="team-label">ENG</span>
-                <span class="team-name">Engineering</span>
-              </div>
-              <p class="team-problem">Bottlenecked by ad hoc feature requests and visual inconsistency</p>
-            </div>
-          </div>
-        </div>
-
         <div class="situation-conclusion">
-          <div class="conclusion-card">
-            <i class="fas fa-exclamation-triangle text-amber-500"></i>
-            <p class="conclusion-text">
-              This was not just a design refresh—it was a <strong>UX and IA intervention</strong> with operational impact.
-            </p>
+          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                Census wasn't just a dashboard design—it was a chance to rewire how the company approached product, design, and user value from the ground up. But that meant earning trust, creating structure, and turning chaos into clarity—under real deadlines, with minimal resources, and no historical UX baseline to build from.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -138,76 +173,91 @@ export const caseStudies: CaseStudy[] = [
     task: `
       <div class="task-content">
         <div class="task-intro mb-8">
-          <p class="task-description">
-            Led usability and design strategy for this next-gen sponsorship data platform. The goal was to deliver a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues.
+          <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
+            My primary task was to shift the organization from a "requirements-to-code" mindset to a modern product design culture—one rooted in clarity, usability, and user-centered thinking. At the time, engineers were coding directly from Jira tickets or basic hand-drawn sketches. There were no systems in place to ensure consistency, scalability, or even shared understanding across teams.
           </p>
         </div>
 
-        <div class="task-item mb-10">
+        <div class="task-focus mb-10">
           <div class="task-header mb-6">
-            <div class="task-number">
-              <i class="fas fa-drafting-compass text-blue-600"></i>
-              <span class="task-label">TASK 1</span>
+            <div class="task-number flex items-center gap-3">
+              <i class="fas fa-layer-group text-blue-600"></i>
+              <span class="task-label font-semibold text-blue-600">CORE TASK</span>
             </div>
-            <h4 class="task-title">Re-architect the Platform from First Principles</h4>
+            <h4 class="task-title text-xl font-bold text-gray-900 mb-4">Introduce and Implement a Design System</h4>
           </div>
           
-          <p class="task-overview mb-6">
-            My first task was to diagnose and structure the platform's UX problems: overlapping navigation, unclear workflows, and disconnected tagging/filters. These issues had built up incrementally—so the fix couldn't be cosmetic.
+          <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
+            A critical part of this task was to <strong>introduce and implement a design system</strong> from scratch. This wasn't just a visual upgrade—it was a foundational move to bring consistency to the product's visual and verbal language, reduce ambiguity during handoffs, and enable engineers to work more efficiently with clear, reusable UI patterns. The system needed to solve for:
           </p>
           
-          <div class="task-needs">
-            <p class="task-needs-title">I needed to:</p>
-            <ul class="task-list">
-              <li class="task-list-item">
-                <i class="fas fa-cube text-orange-500"></i>
-                <span>Establish a new information architecture</span>
+          <div class="task-needs mb-8">
+            <ul class="task-list space-y-4">
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-palette text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Design consistency across screens, flows, and features</span>
               </li>
-              <li class="task-list-item">
-                <i class="fas fa-map-marker-alt text-blue-500"></i>
-                <span>Define clear entry points for placement, filter, and export logic</span>
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-rocket text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Faster development cycles through reusable components</span>
               </li>
-              <li class="task-list-item">
-                <i class="fas fa-brain text-purple-500"></i>
-                <span>Help teams agree on a single model of how the product should behave</span>
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-project-diagram text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Clarity in how data, filters, charts, and cards should be structured and interact</span>
               </li>
-              <li class="task-list-item">
-                <i class="fas fa-check-circle text-green-500"></i>
-                <span>Preserve core features while redesigning the way users moved through them</span>
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">A modern, clean, scalable aesthetic that reflected the maturity of the product</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="task-item">
-          <div class="task-header mb-6">
-            <div class="task-number">
-              <i class="fas fa-puzzle-piece text-green-600"></i>
-              <span class="task-label">TASK 2</span>
-            </div>
-            <h4 class="task-title">Deliver a Modular System That Could Scale</h4>
+        <div class="task-responsibilities">
+          <div class="section-header mb-6">
+            <h4 class="section-title flex items-center gap-3 text-lg font-bold text-gray-900">
+              <i class="fas fa-tasks text-indigo-600"></i>
+              Beyond the Design System
+            </h4>
+            <p class="section-subtitle text-gray-600 mt-2">My responsibilities included:</p>
           </div>
           
-          <p class="task-overview mb-6">
-            Once the foundational UX logic was redefined, the next task was to build modular, reusable patterns that could scale across the business—serving future tools, new personas, and faster engineering cycles.
-          </p>
-          
-          <div class="task-needs">
-            <p class="task-needs-title">This included:</p>
-            <ul class="task-list">
-              <li class="task-list-item">
-                <i class="fas fa-puzzle-piece text-indigo-500"></i>
-                <span>A full design system</span>
-              </li>
-              <li class="task-list-item">
-                <i class="fas fa-calculator text-teal-500"></i>
-                <span>Visual and logic-based component libraries</span>
-              </li>
-              <li class="task-list-item">
-                <i class="fas fa-sync-alt text-cyan-500"></i>
-                <span>Save/export/tagging UX that was both flexible and trusted</span>
-              </li>
-            </ul>
+          <div class="responsibilities-list space-y-4">
+            <div class="responsibility-item flex items-start gap-4">
+              <i class="fas fa-handshake text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Building trust with engineers and transitioning workflows from one-off feature tickets to full UX flows and specs</span>
+            </div>
+            
+            <div class="responsibility-item flex items-start gap-4">
+              <i class="fas fa-language text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Translating ambiguous product requirements into clear, testable designs grounded in user behavior</span>
+            </div>
+            
+            <div class="responsibility-item flex items-start gap-4">
+              <i class="fas fa-users text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Leading a persona-driven approach to development—validating user types and their core needs through research with internal teams and clients</span>
+            </div>
+            
+            <div class="responsibility-item flex items-start gap-4">
+              <i class="fas fa-cubes text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Architecting a dashboard builder experience that was modular, scalable, and tailored to multiple user types</span>
+            </div>
+            
+            <div class="responsibility-item flex items-start gap-4">
+              <i class="fas fa-cogs text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Establishing a UX practice inside the organization that could ship quickly under pressure—without sacrificing quality or usability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-conclusion mt-10">
+          <div class="conclusion-card bg-purple-50 border-l-4 border-purple-300 p-6 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-star text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                Census couldn't just be another analytics tool. It had to prove that thoughtful design could lead to better decision-making, faster development, and stronger product-market alignment.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -215,217 +265,99 @@ export const caseStudies: CaseStudy[] = [
     action: `
       <div class="action-content">
         <div class="action-intro mb-8">
-          <p class="action-description">
+          <p class="action-description text-lg text-gray-700 leading-relaxed">
             Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.
           </p>
         </div>
 
-        <div class="action-item mb-12">
-          <div class="action-header mb-6">
-            <div class="action-number">
-              <i class="fas fa-tools text-blue-600"></i>
-              <span class="action-label">ACTION 1</span>
-            </div>
-            <h4 class="action-title">Build the Design Infrastructure for Speed + Scale</h4>
-            <p class="action-subtitle">Create a scalable UI system and eliminate visual/functional inconsistencies</p>
-          </div>
-          
-          <div class="action-details">
-            <ul class="action-list">
-              <li class="action-list-item">
-                <i class="fas fa-search text-purple-500"></i>
-                <span>Audited every screen and deconstructed core UI patterns to create a component-based design library</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-layer-group text-indigo-500"></i>
-                <span>Introduced a centralized Figma system with tokens, variants, and interaction states</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-code text-green-500"></i>
-                <span>Embedded design logic into Vercel v0.dev to rapidly generate working UI code for early engineer testing</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-sitemap text-orange-500"></i>
-                <span>Defined shared page architecture for all dashboards (views, filters, tagging, export logic, chart builder)</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-check-double text-teal-500"></i>
-                <span>Setup design QA practices to maintain fidelity and reduce dev back-and-forth</span>
-              </li>
-            </ul>
+        <div class="consolidated-actions mb-12">
+          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
             
-            <div class="action-result">
-              <div class="result-card">
-                <i class="fas fa-chart-line text-emerald-500"></i>
-                <p class="result-text">
-                  <strong>Result:</strong> Engineers could reuse logic and UI for multiple dashboards. Stakeholders understood layouts instantly. Shipping velocity improved with fewer revisions.
-                </p>
-              </div>
+            <div class="action-section mb-8">
+              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Evangelizing UX as a Strategic Discipline</h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Embedded directly with engineering from day one, modeling how design can remove ambiguity and improve outcomes</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Introduced a new working model centered around design specs, interactive prototypes, and system thinking—moving away from hand-drawn sketches and Jira-only workflows</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Set up async design rituals including Slack demos, Loom walkthroughs, and Notion-based documentation to keep design tightly looped into a fast-moving dev process</span>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
 
-        <div class="action-item mb-12">
-          <div class="action-header mb-6">
-            <div class="action-number">
-              <i class="fas fa-users text-green-600"></i>
-              <span class="action-label">ACTION 2</span>
+            <div class="action-section mb-8">
+              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. Research-Driven Persona Foundation</h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Partnered with Customer Success and Marketing to scope and conduct qualitative interviews with internal users and select clients</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Synthesized insights into three primary personas—Stakeholder, Brands, and Agencies—each tied to specific data needs, decision flows, and success metrics</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Used these personas to inform architecture, filtering logic, and the default view-building experience across the platform</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Ran alignment workshops to socialize personas and integrate them into product planning and UI decision-making</span>
+                </li>
+              </ul>
             </div>
-            <h4 class="action-title">Run Persona-Driven UX Research to Guide Feature Strategy</h4>
-            <p class="action-subtitle">Validate assumptions, discover use cases, and humanize product decisions</p>
-          </div>
-          
-          <div class="action-details">
-            <div class="action-overview mb-6">
-              <p class="overview-text">
-                Partnered with our VP of Marketing to evolve outdated personas into modern archetypes:
-              </p>
+
+            <div class="action-section mb-8">
+              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Implementing a Scalable, Modern Design System</h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Chose and implemented the Ant Design System to provide a strong UI foundation that aligned with our scalability and visual goals</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Designed a modular component set using Ant Design primitives and Ant Charts for dynamic data visualization, along with Font Awesome icons for clarity and accessibility</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Built out cards, filters, views, nav structures, tooltips, and layouts as reusable, systematized UI blocks—mapped to both persona needs and technical constraints</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Documented all components with usage patterns, interaction states, and spacing logic in Figma to support seamless engineering implementation</span>
+                </li>
+              </ul>
             </div>
-            
-            <ul class="persona-list mb-6">
-              <li class="persona-list-item">
-                <i class="fas fa-chart-bar text-blue-500"></i>
-                <span><strong>Agency Analysts</strong> needing speed + deck-ready insights</span>
-              </li>
-              <li class="persona-list-item">
-                <i class="fas fa-bullseye text-purple-500"></i>
-                <span><strong>Brand Marketers</strong> needing ROI views and presentation-ready dashboards</span>
-              </li>
-              <li class="persona-list-item">
-                <i class="fas fa-handshake text-orange-500"></i>
-                <span><strong>Rightsholders</strong> needing real-time reporting to upsell partners</span>
-              </li>
-            </ul>
-            
-            <ul class="action-list">
-              <li class="action-list-item">
-                <i class="fas fa-comments text-cyan-500"></i>
-                <span>Ran moderated interviews and card sorting sessions to identify workflow priorities and feature opportunities</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-sync-alt text-indigo-500"></i>
-                <span>Facilitated cross-functional research syncs to share learnings and align roadmap themes</span>
-              </li>
-            </ul>
-            
-            <div class="action-result">
-              <div class="result-card">
-                <i class="fas fa-lightbulb text-amber-500"></i>
-                <p class="result-text">
-                  <strong>Result:</strong> Personas became foundational to product planning. Engineering and Product used them to validate whether a feature served a real job-to-be-done.
-                </p>
-              </div>
+
+            <div class="action-section mb-8">
+              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. Prototype-Led Development and MVP Velocity</h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Used Vercel v0.dev and Cursor to generate high-fidelity, fully interactive prototypes early in the process—allowing stakeholders to test flows and engineers to preview logic before tickets were written</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Created low-friction feedback loops with engineers to test feasibility, validate assumptions, and reduce rework</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Shipped an MVP in under 90 days with just one frontend and one backend engineer, while designing for long-term platform extensibility (Release 2, 3+)</span>
+                </li>
+              </ul>
             </div>
+
           </div>
         </div>
 
         <div class="personas-viewer-placeholder">
           <!-- Persona viewer will be rendered as React component -->
-        </div>
-
-        <div class="action-item mb-12">
-          <div class="action-header mb-6">
-            <div class="action-number">
-              <i class="fas fa-flask text-purple-600"></i>
-              <span class="action-label">ACTION 3</span>
-            </div>
-            <h4 class="action-title">Prototyping & Validation Loops with Stakeholders</h4>
-            <p class="action-subtitle">Use live prototypes to reduce ambiguity, align cross-functionally, and iterate faster</p>
-          </div>
-          
-          <div class="action-details">
-            <ul class="action-list">
-              <li class="action-list-item">
-                <i class="fas fa-laptop-code text-blue-500"></i>
-                <span>Created interactive prototypes using Vercel's v0.dev + Figma-to-code export, replicating real charting logic</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-user-check text-green-500"></i>
-                <span>Partnered with Customer Success to test prototypes with real clients before development</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-calendar-week text-orange-500"></i>
-                <span>Held weekly feedback demos with Product, Sales, and Engineering to remove blockers early</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-clipboard-list text-purple-500"></i>
-                <span>Turned qualitative feedback into design change logs, tracked through delivery</span>
-              </li>
-            </ul>
-            
-            <div class="action-result">
-              <div class="result-card">
-                <i class="fas fa-rocket text-indigo-500"></i>
-                <p class="result-text">
-                  <strong>Result:</strong> Removed guesswork from engineering. Feedback came earlier in the cycle. Features like "Create a View," tagging, and ROI alerting shipped faster and with greater confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="action-item mb-12">
-          <div class="action-header mb-6">
-            <div class="action-number">
-              <i class="fas fa-cubes text-orange-600"></i>
-              <span class="action-label">ACTION 4</span>
-            </div>
-            <h4 class="action-title">Design a Modular System Aligned with Developer Constraints</h4>
-            <p class="action-subtitle">Balance UX ambition with engineering capacity and phased delivery</p>
-          </div>
-          
-          <div class="action-details">
-            <div class="action-overview mb-6">
-              <p class="overview-text">
-                Co-created a phased rollout plan with the PM:
-              </p>
-            </div>
-            
-            <ul class="action-list mb-6">
-              <li class="action-list-item">
-                <i class="fas fa-flag text-blue-500"></i>
-                <span><strong>MVP - Release 1:</strong> Static dashboards + tagging logic + saved views</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-chart-bar text-green-500"></i>
-                <span><strong>R2 - Release 2:</strong> Chart builder and metrics selection</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-download text-purple-500"></i>
-                <span><strong>R3 - Release 3:</strong> Export logic + agency pitch templates + real-time API enhancements</span>
-              </li>
-            </ul>
-            
-            <div class="action-overview mb-6">
-              <p class="overview-text">
-                Documented handoff specs in clear UX-to-engineer artifacts including:
-              </p>
-            </div>
-            
-            <ul class="action-list">
-              <li class="action-list-item">
-                <i class="fas fa-sitemap text-cyan-500"></i>
-                <span>Interaction flows</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-exclamation-triangle text-amber-500"></i>
-                <span>Edge cases and logic states</span>
-              </li>
-              <li class="action-list-item">
-                <i class="fas fa-layer-group text-indigo-500"></i>
-                <span>UI states across data conditions (null, dense, outliers)</span>
-              </li>
-            </ul>
-            
-            <div class="action-result">
-              <div class="result-card">
-                <i class="fas fa-shipping-fast text-emerald-500"></i>
-                <p class="result-text">
-                  <strong>Result:</strong> Even with only 1 FE + 1 BE dev, we shipped 4 major releases over 6 months. The phased approach ensured progress while managing tech debt and burnout.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     `,
@@ -614,63 +546,169 @@ export const caseStudies: CaseStudy[] = [
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
-          <h3 class="brief-title flex items-center gap-3 mb-4">
-            <i class="fas fa-question-circle text-blue-600"></i>
-            What is Relo Edge?
-          </h3>
           <p class="brief-description mb-6">
-            Relo Edge was the internal evolution of a legacy tool called the <strong>Media Value Center (MVC)</strong>—originally built to help Customer Success teams measure, tag, and report on sponsorship performance across leagues, teams, and assets.
+            Relo Census is a modular, persona-driven sponsorship analytics platform built from the ground up to replace the company's legacy Media Value Center (MVC). Designed to help users evaluate brand performance, benchmark competitors, and generate insights across leagues and channels, Census aimed to be scalable, intuitive, and future-ready.
           </p>
+          
           <p class="brief-description mb-6">
-            But over time, the tool became fragmented, confusing, and unscalable. The user experience was inconsistent. The data models lacked clarity. And critical reporting features were buried across disconnected workflows.
+            When I joined, there were no designers—only Jira tickets, hand sketches, and an engineering team that had never collaborated with design. Usability was inconsistent, and product direction was reactive. I was hired as the first product designer to lead the full end-to-end creation of Census: from defining the strategy and conducting research to designing the systems and final interface.
+          </p>
+          
+          <p class="brief-description">
+            My role wasn't just to deliver screens—it was to establish UX as a strategic function, bring design thinking into the org for the first time, and transform raw requirements into a platform that could scale across teams, personas, and verticals.
           </p>
         </div>
         
-        <div class="brief-section mb-8">
-          <h3 class="brief-title flex items-center gap-3 mb-4">
-            <i class="fas fa-bullseye text-orange-600"></i>
-            The Ask
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-rocket text-blue-600"></i>
+            The Complete Design Transformation
           </h3>
-          <p class="brief-description mb-6">
-            Redesign the platform from the ground up to improve usability, trust, and internal efficiency—without disrupting existing workflows relied on by Customer Success and Sales.
-          </p>
+          <p class="brief-subtitle mb-8 text-gray-600">To do that, I led a complete shift in how the company thought about product design:</p>
           
-          <h4 class="brief-subtitle mb-4">The redesign needed to:</h4>
-          <ul class="brief-list space-y-3">
-            <li class="flex items-start gap-3">
-              <i class="fas fa-puzzle-piece text-purple-500 mt-1"></i>
-              <span>Consolidate fragmented tools into a unified, modern experience</span>
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I pushed for a <strong>persona-driven experience</strong>, partnering with Customer Success and Marketing to conduct internal and external interviews that shaped our understanding of real user needs.</span>
             </li>
-            <li class="flex items-start gap-3">
-              <i class="fas fa-shield-alt text-green-500 mt-1"></i>
-              <span>Build trust in tagging, filters, and metrics outputs</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-cogs text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I introduced structured design processes—including daily design rituals, interactive prototypes, and modular component systems that engineers could build from.</span>
             </li>
-            <li class="flex items-start gap-3">
-              <i class="fas fa-tools text-blue-500 mt-1"></i>
-              <span>Reduce dependency on engineering for minor updates</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fas fa-cubes text-indigo-500 mt-1"></i>
-              <span>Establish a modular, reusable design system for future tools</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fas fa-graduation-cap text-teal-500 mt-1"></i>
-              <span>Ensure internal teams could onboard and scale with minimal training</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-shipping-fast text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">I collaborated deeply with a small dev team (only 1 frontend and 1 backend engineer) to ship the MVP in under 90 days—while still delivering a future-ready foundation for growth.</span>
             </li>
           </ul>
-                 </div>
-         
-         <div class="brief-section mt-8">
-           <div class="strategic-impact">
-             <p class="impact-note text-sm text-gray-600 italic border-l-4 border-blue-300 pl-4 py-2">
-               <i class="fas fa-rocket text-blue-500 mr-2"></i>
-               The initiative would become the foundation for Relo's next-generation data products, as well as a blueprint for external client-facing dashboards in future phases.
-             </p>
-           </div>
-         </div>
+        </div>
+        
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-cubes text-indigo-600"></i>
+            Platform Architecture
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">Census was built to be:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-puzzle-piece text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>UX-first, modular, and componentized</strong>—focused on performance, scale, and reuse</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Scalable across verticals</strong> like MLB, NFL, NBA, F1, and global brands</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-eye text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Powered by Relo's proprietary Computer Vision engine</strong> for accurate asset tracking</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-link text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Separate but complementary to MVC</strong>, designed to evolve into the long-term replacement</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-star text-amber-600"></i>
+            Key Features
+          </h3>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-bar text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A Sponsorship Evaluation Dashboard with <strong>persona-based views</strong> tailored to each user type</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-filter text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A flexible View Builder with <strong>advanced filtering</strong> by placement, content type, league, platform</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-lightbulb text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Insight cards, benchmarking charts, and visual storytelling tools to drive decision-making</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="brief-section mt-10">
+          <div class="strategic-impact">
+            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">This case study tells the story of how I helped define, design, and deliver Relo Census—transforming raw business goals and Jira requirements into a scalable, user-centered product experience.</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     `,
-    situation: 'Relo\'s core analytics tool needed a complete UI/UX overhaul to improve user adoption and satisfaction. The existing interface lacked modern usability standards and clarity, hindering user engagement across the platform.',
+    situation: `
+      <div class="situation-content">
+        <div class="situation-intro mb-8">
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            When I stepped into the Relo Census project, the environment was fragmented, reactive, and lacking even the most basic design infrastructure. Design had never been part of the product development process—engineers were accustomed to receiving Jira tickets or hand-drawn feature ideas from product managers and turning them directly into production code. This approach led to inconsistent workflows, disjointed experiences, and high friction for both internal teams and clients.
+          </p>
+        </div>
+
+        <div class="situation-problems mb-8">          
+          <div class="situation-mvc mb-8">
+            <p class="problem-description text-gray-700 leading-relaxed mb-6">
+              The company's existing internal tool—Media Value Center (MVC)—was still in use but had become bloated, unintuitive, and nearly impossible to scale. It was built without a clear understanding of its users and had become a patchwork of one-off features that served no one particularly well. Despite its flaws, MVC was relied on by Customer Success teams to report on multi-million dollar sponsorship performance, and its limitations were slowing down adoption, renewals, and expansion opportunities.
+            </p>
+          </div>
+
+          <div class="situation-vision mb-8">
+            <p class="vision-description text-gray-700 leading-relaxed mb-6">
+              At the same time, the leadership team had ambitious goals for Census: they saw it as the future of Relo's product suite—a modular, extensible platform capable of supporting brands, rights holders, and agency partners across leagues like the NFL, NBA, MLB, and F1. But the vision lacked executional clarity. There were no defined user types. No research. No roadmap grounded in behavior or outcomes. Just a stack of feature asks and a team of two engineers to build it.
+            </p>
+          </div>
+        </div>
+
+        <div class="situation-starting-point mb-8">
+          <div class="starting-point-header mb-6">
+            <h3 class="starting-point-title flex items-center gap-3 mb-4 text-xl font-semibold text-gray-900">
+              <i class="fas fa-exclamation-triangle text-orange-600"></i>
+              In short, I entered a product-critical initiative where:
+            </h3>
+          </div>
+          
+          <ul class="starting-point-list space-y-6">
+            <li class="starting-point-item flex items-start gap-4">
+              <i class="fas fa-times-circle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Design had zero precedent or process</strong></span>
+            </li>
+            <li class="starting-point-item flex items-start gap-4">
+              <i class="fas fa-question-circle text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>No personas or validated user needs had been captured</strong></span>
+            </li>
+            <li class="starting-point-item flex items-start gap-4">
+              <i class="fas fa-list text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Product thinking defaulted to task lists, not systems or outcomes</strong></span>
+            </li>
+            <li class="starting-point-item flex items-start gap-4">
+              <i class="fas fa-code text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Engineering had no experience building from design specs or systems</strong></span>
+            </li>
+            <li class="starting-point-item flex items-start gap-4">
+              <i class="fas fa-eye text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>There was high visibility from leadership—but no shared understanding of direction</strong></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="situation-conclusion">
+          <div class="conclusion-card bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <div class="conclusion-content flex items-start gap-4">
+              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                Census wasn't just a dashboard design—it was a chance to rewire how the company approached product, design, and user value from the ground up. But that meant earning trust, creating structure, and turning chaos into clarity—under real deadlines, with minimal resources, and no historical UX baseline to build from.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     task: 'Directed a full UI/UX redesign of Relo\'s core analytics tool, focusing on modernizing the interface with best practices in usability and clarity to improve product adoption, user satisfaction, and engagement.',
     action: 'Led comprehensive user research, conducted usability audits, redesigned information architecture, and implemented modern design patterns. Collaborated with engineering teams to ensure technical feasibility while maintaining design integrity throughout implementation.',
     result: 'Achieved higher adoption rates, better user satisfaction scores, and significantly more engagement across the board. The redesigned platform now serves as the foundation for Relo\'s analytics suite.',
