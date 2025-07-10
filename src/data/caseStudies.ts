@@ -363,157 +363,104 @@ export const caseStudies: CaseStudy[] = [
     `,
     result: `
       <div class="results-content">
-        <div class="results-intro mb-8">
-          <p class="results-description text-lg text-gray-700 leading-relaxed">
-            Delivered a platform that drives smarter decisions and stronger revenue impact. Users report significant improvements in their ability to evaluate sponsorship opportunities and make data-driven investment decisions across major sports leagues.
-          </p>
+        <div class="results-section mb-12">
+          <div class="section-header mb-8">
+            <h3 class="results-title flex items-center gap-3 mb-4">
+              <i class="fas fa-chart-bar text-blue-600"></i>
+              Results and Business Impact
+            </h3>
+          </div>
+          
+          <ul class="results-list space-y-4">
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>45% increase in internal adoption</strong> across Customer Success, Sales, and Product teams—Census became the new go-to platform for sponsorship analysis</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>30% faster load times</strong> and reduced UI clutter by streamlining views, filters, and interactions</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>92% satisfaction score</strong> during stakeholder rollout, with cross-functional praise for clarity, usability, and system consistency</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>25% decrease in internal support requests</strong>—users could now self-serve advanced filtering and data storytelling tasks</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Successfully shipped the MVP in under 90 days</strong> with only 2 engineers—transforming Jira feature tickets into a scalable, component-driven experience</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Ant Design system adoption</strong> allowed engineers to build new features faster, with consistent logic and visual polish across modules</span>
+            </li>
+          </ul>
         </div>
 
         <div class="results-section mb-12">
           <div class="section-header mb-8">
             <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-rocket text-blue-600"></i>
-              Platform Success
+              <i class="fas fa-trophy text-amber-600"></i>
+              Major Wins
             </h3>
-            <p class="results-subtitle text-gray-600">
-              Measurable improvements in efficiency and user experience
-            </p>
           </div>
           
-          <div class="metrics-grid grid md:grid-cols-2 gap-6">
-            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="metric-header flex items-center gap-3 mb-2">
-                <i class="fas fa-chart-line text-green-600"></i>
-                <span class="metric-value font-bold text-2xl text-black">92%</span>
-              </div>
-              <p class="metric-description text-gray-700">reduction in manual reporting workload for CS and Clients</p>
-            </div>
-            
-            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="metric-header flex items-center gap-3 mb-2">
-                <i class="fas fa-clock text-purple-600"></i>
-                <span class="metric-value font-bold text-2xl text-black">45%</span>
-              </div>
-              <p class="metric-description text-gray-700">faster setup times for new users onboarding into Census</p>
-            </div>
-            
-            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="metric-header flex items-center gap-3 mb-2">
-                <i class="fas fa-search-plus text-orange-600"></i>
-                <span class="metric-value font-bold text-2xl text-black">30%</span>
-              </div>
-              <p class="metric-description text-gray-700">faster insight discovery via "Create a View" and saved dashboards</p>
-            </div>
-            
-            <div class="metric-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="metric-header flex items-center gap-3 mb-2">
-                <i class="fas fa-trophy text-amber-600"></i>
-                <span class="metric-value font-bold text-lg text-black">Default QBR Output</span>
-              </div>
-              <p class="metric-description text-gray-700">Census dashboards became the default QBR output used by Sales and CS</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="results-section mb-12">
-          <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-building text-indigo-600"></i>
-              Business Impact
-            </h3>
-            <p class="results-subtitle text-gray-600">
-              Organizational transformation and cultural shifts
-            </p>
-          </div>
-          
-          <div class="impact-list space-y-4">
-            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
-              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                <i class="fas fa-presentation text-blue-600"></i>
-              </div>
-              <div class="impact-content">
-                <p class="impact-text text-gray-700">
-                  <strong>Sales teams used Census dashboards in 70%+ of client renewal and upsell decks</strong>
-                </p>
-              </div>
-            </div>
-            
-            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
-              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                <i class="fas fa-tachometer-alt text-green-600"></i>
-              </div>
-              <div class="impact-content">
-                <p class="impact-text text-gray-700">
-                  <strong>Product velocity increased</strong> due to clear specs, modular patterns, and design QA gates
-                </p>
-              </div>
-            </div>
-            
-            <div class="impact-item bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-4">
-              <div class="impact-icon flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                <i class="fas fa-code-branch text-purple-600"></i>
-              </div>
-              <div class="impact-content">
-                <p class="impact-text text-gray-700">
-                  <strong>Design became embedded into the SDLC</strong> engineers began asking for UX input upstream
-                </p>
-              </div>
-            </div>
-          </div>
+          <ul class="results-list space-y-4">
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Established the first formal UX practice at Relo</strong>—introducing systems thinking, structured design processes, and persona-driven product development</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Built long-term trust with engineering</strong> by pairing design clarity with dev-ready specs and component logic</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Designed and deployed a modular UI architecture</strong> using Ant Design and Ant Charts that remains extensible for future feature releases</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Created a product vision grounded in actual user behavior</strong>—not assumptions—resulting in stronger roadmap alignment across departments</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Turned a chaotic, ticket-driven development process</strong> into a repeatable, design-led approach for future 0→1 initiatives</span>
+            </li>
+          </ul>
         </div>
 
         <div class="results-section">
           <div class="section-header mb-8">
             <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-lightbulb text-yellow-600"></i>
+              <i class="fas fa-lightbulb text-green-600"></i>
               What I Learned
             </h3>
-            <p class="results-subtitle text-gray-600">
-              Key insights and growth from this challenging project
-            </p>
           </div>
           
-          <div class="learning-grid grid md:grid-cols-2 gap-6">
-            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="learning-header flex items-center gap-3 mb-4">
-                <span class="learning-emoji text-2xl">🧩</span>
-                <h4 class="learning-title font-semibold text-black">Technical Ingenuity</h4>
-              </div>
-              <p class="learning-description text-gray-700">
-                Designing within engineering constraints sparked creative yet scalable solutions.
-              </p>
-            </div>
-            
-            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="learning-header flex items-center gap-3 mb-4">
-                <span class="learning-emoji text-2xl">🧭</span>
-                <h4 class="learning-title font-semibold text-black">Developer Advocacy</h4>
-              </div>
-              <p class="learning-description text-gray-700">
-                I noticed the team's bandwidth pulling in multiple directions. By aligning sprint timelines and flagging burnout risks, I helped protect their focus and energy.
-              </p>
-            </div>
-            
-            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="learning-header flex items-center gap-3 mb-4">
-                <span class="learning-emoji text-2xl">🤝</span>
-                <h4 class="learning-title font-semibold text-black">Mentorship in Practice</h4>
-              </div>
-              <p class="learning-description text-gray-700">
-                I led workshops and peer sessions to build shared fluency around design systems, atomic components, and visual consistency—reducing friction and speeding alignment.
-              </p>
-            </div>
-            
-            <div class="learning-item bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <div class="learning-header flex items-center gap-3 mb-4">
-                <span class="learning-emoji text-2xl">🔄</span>
-                <h4 class="learning-title font-semibold text-black">Cross-functional Momentum</h4>
-              </div>
-              <p class="learning-description text-gray-700">
-                Embedding asynchronous design QA, visual tokens, and handoff routines improved designer-developer collaboration, boosting implementation quality and reducing rework.
-              </p>
-            </div>
-          </div>
+          <ul class="results-list space-y-4">
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>How to embed design thinking inside an org that had never worked with a designer</strong>—while maintaining trust and speed</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>The strategic leverage of a well-implemented design system</strong>—not just for aesthetics, but for scalability, velocity, and cross-team understanding</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>The power of user personas as more than just research artifacts</strong>—they became the blueprint for architecture, logic, and interaction models</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>How to balance MVP velocity with long-term scalability</strong> by making smart system-level decisions early (modularity, reusability, clarity)</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>That great design isn't just what's delivered</strong>—it's the culture, trust, and shared language it creates between teams</span>
+            </li>
+          </ul>
         </div>
       </div>
     `,
