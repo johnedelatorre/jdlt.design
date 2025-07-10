@@ -21,6 +21,15 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
           }}
         />
         
+        {/* Recent Project Badge */}
+        {caseStudy.isRecent && (
+          <div className="absolute top-3 right-3 z-10">
+            <div className="bg-black bg-opacity-85 backdrop-blur-sm text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-lg">
+              Recent Project
+            </div>
+          </div>
+        )}
+        
         {/* Project Details Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <div className="text-center text-white p-6">

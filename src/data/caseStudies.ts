@@ -11,6 +11,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'UXPilot', 'Vercel'],
     tags: ['Sports Analytics', 'Data Platform', 'Sponsorship'],
     headerImage: '/images/case-studies/relo-census/header.jpg',
+    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
@@ -490,6 +491,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Sketch', 'InVision'],
     tags: ['Analytics Platform', 'UI/UX Redesign', 'Sports Data'],
     headerImage: '/images/case-studies/relo-edge/header.jpg',
+    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
@@ -916,6 +918,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Zeplin', 'Hotjar'],
     tags: ['Integration Design', 'API Design', 'Data Analytics'],
     headerImage: '/images/case-studies/relo-sponsorpulse/header.jpg',
+    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">

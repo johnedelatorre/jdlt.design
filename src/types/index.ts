@@ -15,6 +15,7 @@ export interface CaseStudy {
   result: string;
   images: string[];
   figmaLink?: string;
+  isRecent?: boolean;
 }
 
 export interface NavigationItem {
