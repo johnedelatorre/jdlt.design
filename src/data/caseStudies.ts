@@ -1352,7 +1352,6 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Zeplin', 'Hotjar'],
     tags: ['Integration Design', 'API Design', 'Data Analytics'],
     headerImage: '/images/case-studies/relo-sponsorpulse/header.jpg',
-    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
@@ -2146,6 +2145,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Principle', 'Maze'],
     tags: ['Localization', 'Clinical Trials', 'Workflow Design'],
     headerImage: '/images/case-studies/medable-translation/header.jpg',
+    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
