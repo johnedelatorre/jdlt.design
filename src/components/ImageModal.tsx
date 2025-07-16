@@ -52,10 +52,19 @@ const ImageModal: React.FC<ImageModalProps> = ({
     };
   }, [isOpen, onClose, onPrevious, onNext]);
 
-  // Extract design name from filename
+  // Extract and format design name from filename
   const getDesignName = (imagePath: string) => {
     const filename = imagePath.split('/').pop() || '';
-    return filename.replace('.png', '').replace('.jpg', '').replace('.jpeg', '');
+    const nameWithoutExtension = filename.replace(/\.(png|jpg|jpeg|webp)$/i, '');
+    
+    // Replace hyphens and underscores with spaces, then convert to sentence case
+    const formattedName = nameWithoutExtension
+      .replace(/[-_]/g, ' ')
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+    
+    return formattedName;
   };
 
   const currentDesignName = getDesignName(images[currentIndex]);
@@ -68,45 +77,55 @@ const ImageModal: React.FC<ImageModalProps> = ({
       />
 
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
-        <div className="relative flex items-center w-full max-w-7xl">
-          {/* Left Arrow - Just outside modal container */}
-          <button
-            type="button"
-            onClick={onPrevious}
-            className="flex-shrink-0 mr-6 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-110"
-          >
-            <span className="sr-only">Previous image</span>
-            <FontAwesomeIcon icon={faChevronLeft} className="h-5 w-5" />
-          </button>
-
+        <div className="relative w-full max-w-7xl">
           <DialogPanel
             transition
             className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-6xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             {/* Close button */}
-            <div className="absolute right-0 top-0 pr-4 pt-4 z-10">
+            <div className="absolute right-0 top-0 pr-4 pt-4 z-20">
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-md bg-white/90 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 p-2"
+                className="rounded-md bg-white/90 hover:bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 p-2 shadow-md"
               >
                 <span className="sr-only">Close</span>
                 <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
               </button>
             </div>
 
+            {/* Left Arrow - Inside modal, left side */}
+            <button
+              type="button"
+              onClick={onPrevious}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-105"
+            >
+              <span className="sr-only">Previous image</span>
+              <FontAwesomeIcon icon={faChevronLeft} className="h-4 w-4" />
+            </button>
+
+            {/* Right Arrow - Inside modal, right side */}
+            <button
+              type="button"
+              onClick={onNext}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-105"
+            >
+              <span className="sr-only">Next image</span>
+              <FontAwesomeIcon icon={faChevronRight} className="h-4 w-4" />
+            </button>
+
             {/* Modal content */}
-            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
+            <div className="bg-white px-6 pt-6 pb-4 h-full flex flex-col">
               <div className="sm:flex sm:items-start h-full">
-                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full h-full flex flex-col">
+                <div className="mt-3 text-center sm:mt-0 sm:text-left w-full h-full flex flex-col">
                   
                   {/* Title */}
-                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4 flex-shrink-0">
+                  <DialogTitle as="h3" className="text-xl font-semibold leading-6 text-gray-900 mb-4 flex-shrink-0 font-serif">
                     {currentDesignName}
                   </DialogTitle>
                   
                   {/* Image container - Fixed height container */}
-                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0">
+                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0 px-12">
                     <img
                       src={images[currentIndex]}
                       alt={`Design: ${currentDesignName}`}
@@ -122,22 +141,12 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
 
             {/* Footer with counter */}
-            <div className="bg-gray-50 px-4 py-3 sm:px-6 flex-shrink-0 text-center">
+            <div className="bg-gray-50 px-6 py-3 flex-shrink-0 text-center border-t border-gray-200">
               <div className="text-sm text-gray-500 font-medium">
                 {currentIndex + 1} of {images.length}
               </div>
             </div>
           </DialogPanel>
-
-          {/* Right Arrow - Just outside modal container */}
-          <button
-            type="button"
-            onClick={onNext}
-            className="flex-shrink-0 ml-6 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-110"
-          >
-            <span className="sr-only">Next image</span>
-            <FontAwesomeIcon icon={faChevronRight} className="h-5 w-5" />
-          </button>
         </div>
       </div>
     </Dialog>
