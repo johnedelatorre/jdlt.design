@@ -921,8 +921,6 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
 
-        <hr class="border-gray-300 mb-12">
-
         <div class="action-section mb-12">
           <div class="action-header mb-6">
             <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
@@ -1008,8 +1006,6 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
 
-        <hr class="border-gray-300 mb-12">
-
         <div class="action-section mb-12">
           <div class="action-header mb-6">
             <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
@@ -1074,8 +1070,6 @@ export const caseStudies: CaseStudy[] = [
             </blockquote>
           </div>
         </div>
-
-        <hr class="border-gray-300 mb-12">
 
         <div class="action-section mb-8">
           <div class="action-header mb-6">
