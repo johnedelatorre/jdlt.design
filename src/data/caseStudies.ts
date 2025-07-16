@@ -1343,77 +1343,78 @@ export const caseStudies: CaseStudy[] = [
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3858%3A49934&node-id=3865-76794&viewport=399%2C328%2C0.02&t=R9l0Me4nlxZ2zxdr-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3865%3A76794'
   },
   {
-    id: 'relo-sponsorpulse-integration',
-    title: 'SponsorPulse Integration',
-    subtitle: 'Seamless third-party integration design',
-    client: 'Relo Metrics',
+    id: 'medable-translation-tool',
+    title: 'Translation Management Tool',
+    subtitle: 'Streamlining global clinical trial localization',
+    client: 'Medable',
     role: 'Product Designer',
-    year: '2023',
-    tools: ['Figma', 'Zeplin', 'Hotjar'],
-    tags: ['Integration Design', 'API Design', 'Data Analytics'],
-    headerImage: '/images/case-studies/relo-sponsorpulse/header.jpg',
+    year: '2022',
+    tools: ['Figma', 'Principle', 'Maze'],
+    tags: ['Localization', 'Clinical Trials', 'Workflow Design'],
+    headerImage: '/images/case-studies/medable-translation/header.jpg',
+    isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            The SponsorPulse Integration project seamlessly connected Relo's platform with SponsorPulse's third-party analytics capabilities, creating a unified experience for enhanced reporting and data analysis. This strategic integration expanded Relo's analytical capabilities while maintaining data consistency and user experience excellence.
+            The Translation Management Tool revolutionized global clinical trial localization by creating an integrated platform that transformed manual, error-prone translation processes into efficient, quality-controlled workflows. This comprehensive solution was designed to accelerate global clinical trial deployment while maintaining the highest standards of accuracy and regulatory compliance.
           </p>
           
           <p class="brief-description mb-6">
-            As Relo's existing analytics platform was powerful in its own right, the challenge was to integrate external data sources without creating friction or confusion for existing users. The goal was to make SponsorPulse feel like a native part of the Relo ecosystem, not a separate tool.
+            As Medable expanded into international markets, the company faced significant challenges managing multilingual clinical trial content across diverse regulatory environments. The existing translation process relied on email chains, spreadsheets, and manual handoffs that introduced errors and delays that could impact patient safety and trial timelines.
           </p>
           
           <p class="brief-description">
-            This integration would serve as a proof of concept for future third-party partnerships and establish patterns for how external data could be seamlessly incorporated into Relo's platform.
+            This tool would become the central hub for all clinical trial localization activities, supporting translation teams, clinical researchers, regulatory affairs specialists, and international project managers in a unified workflow.
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-link text-blue-600"></i>
-            Integration Strategy and Approach
+            <i class="fas fa-globe text-blue-600"></i>
+            Global Clinical Trial Localization
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The integration needed to accomplish several key objectives:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">The platform needed to address complex international healthcare requirements:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-exchange-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Create a <strong>seamless data flow</strong> between SponsorPulse and Relo's existing analytics infrastructure</span>
+              <i class="fas fa-shield-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Maintain <strong>regulatory compliance</strong> across different international healthcare standards and requirements</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-user-friends text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Maintain <strong>consistent user experience</strong> patterns and visual language across both platforms</span>
+              <i class="fas fa-users-md text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Support <strong>clinical accuracy</strong> through specialized medical translation workflows and terminology management</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-shield-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Ensure <strong>data accuracy and security</strong> throughout the integration process</span>
+              <i class="fas fa-clock text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Accelerate <strong>time-to-market</strong> for clinical trials in new international regions</span>
             </li>
           </ul>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-chart-line text-indigo-600"></i>
-            Enhanced Analytics Capabilities
+            <i class="fas fa-language text-indigo-600"></i>
+            Advanced Translation Workflow Features
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The integration would provide clients with:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">The tool was designed to include:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-database text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Expanded data sources</strong> for more comprehensive sponsorship analysis</span>
+              <i class="fas fa-route text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Multi-stage approval workflows</strong> with clinical reviewers, linguistic specialists, and regulatory approvers</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-chart-bar text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Enhanced reporting capabilities</strong> with SponsorPulse's specialized metrics</span>
+              <i class="fas fa-book-medical text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Medical terminology management</strong> with controlled vocabularies and consistency checking</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-sync-alt text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Real-time data synchronization</strong> for up-to-date insights and decision making</span>
+              <i class="fas fa-history text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Version control and audit trails</strong> for regulatory documentation and compliance tracking</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-puzzle-piece text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Unified dashboard experience</strong> combining the best of both platforms</span>
+              <i class="fas fa-chart-line text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Real-time progress tracking</strong> and automated reporting for project stakeholders</span>
             </li>
           </ul>
         </div>
@@ -1422,8 +1423,8 @@ export const caseStudies: CaseStudy[] = [
           <div class="strategic-impact">
             <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
               <div class="flex items-start gap-3">
-                <i class="fas fa-handshake text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This integration represented a strategic partnership that would expand Relo's market position while providing clients with best-in-class analytics capabilities from multiple specialized platforms.</span>
+                <i class="fas fa-heartbeat text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">This tool would directly impact global healthcare outcomes by enabling faster, more accurate clinical trial deployment across international markets.</span>
               </div>
             </div>
           </div>
@@ -2136,16 +2137,15 @@ export const caseStudies: CaseStudy[] = [
     // figmaLink: '' // No prototype available
   },
   {
-    id: 'medable-translation-tool',
-    title: 'Translation Management Tool',
-    subtitle: 'Streamlining global clinical trial localization',
-    client: 'Medable',
+    id: 'relo-sponsorpulse-integration',
+    title: 'SponsorPulse Integration',
+    subtitle: 'Seamless third-party integration design',
+    client: 'Relo Metrics',
     role: 'Product Designer',
-    year: '2022',
-    tools: ['Figma', 'Principle', 'Maze'],
-    tags: ['Localization', 'Clinical Trials', 'Workflow Design'],
-    headerImage: '/images/case-studies/medable-translation/header.jpg',
-    isRecent: true,
+    year: '2023',
+    tools: ['Figma', 'Zeplin', 'Hotjar'],
+    tags: ['Integration Design', 'API Design', 'Data Analytics'],
+    headerImage: '/images/case-studies/relo-sponsorpulse/header.jpg',
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
