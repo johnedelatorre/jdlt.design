@@ -745,78 +745,106 @@ export const caseStudies: CaseStudy[] = [
       <div class="task-content">
         <div class="task-intro mb-8">
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
-            My primary task was to direct a full UI/UX redesign of Relo's core analytics tool, focusing on modernizing the interface with best practices in usability and clarity. The goal was to dramatically improve product adoption, user satisfaction, and engagement metrics while maintaining the platform's robust analytical capabilities.
+            Reimagine the platform as a <strong>modern, role-aware, insights-forward experience</strong>, enabling internal teams to move faster, think clearer, and feel proud using the product.
           </p>
         </div>
 
-        <div class="task-focus mb-10">
+        <div class="task-section mb-10">
           <div class="task-header mb-6">
-            <div class="task-number flex items-center gap-3">
-              <i class="fas fa-paint-brush text-blue-600"></i>
-              <span class="task-label font-semibold text-blue-600">CORE REDESIGN OBJECTIVES</span>
-            </div>
-            <h4 class="task-title text-xl font-bold text-gray-900 mb-4">Modernize Interface and User Experience</h4>
+            <h4 class="task-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-drafting-compass text-blue-600"></i>
+              Re-architect the Platform from First Principles
+            </h4>
           </div>
           
           <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
-            The redesign needed to address critical usability issues while establishing a <strong>modern, scalable design foundation</strong> that could support future feature development. Key focus areas included:
+            <em>Diagnose and structure the platform's UX problems: overlapping navigation, unclear workflows, and disconnected tagging/filters. These issues had built up incrementally—so the fix couldn't be cosmetic.</em>
           </p>
           
           <div class="task-objectives mb-8">
             <ul class="task-list space-y-4">
               <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Improve user onboarding and reduce learning curve for new users</span>
+                <i class="fas fa-cubes text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Establish a new information architecture</span>
               </li>
               <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-chart-line text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Enhance data visualization clarity and accessibility</span>
+                <i class="fas fa-map-marker-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Define clear entry points for placement, filter, and export logic</span>
               </li>
               <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-mobile-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Implement responsive design for mobile and tablet users</span>
+                <i class="fas fa-brain text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Help teams agree on a single model of how the product should behave</span>
               </li>
               <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-search text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Streamline navigation and information architecture</span>
+                <i class="fas fa-check-circle text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Preserve core features while redesigning the way users moved through them</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="task-scope mb-8">
-          <div class="scope-header mb-6">
-            <h4 class="scope-title flex items-center gap-3 text-lg font-bold text-gray-900">
-              <i class="fas fa-target text-indigo-600"></i>
-              Design Scope and Requirements
+        <div class="task-section mb-10">
+          <div class="task-header mb-6">
+            <h4 class="task-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-layer-group text-purple-600"></i>
+              Deliver a Modular System That Could Scale
             </h4>
           </div>
           
-          <div class="scope-list space-y-4">
-            <div class="scope-item flex items-start gap-4">
-              <i class="fas fa-cogs text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Maintain technical feasibility while pushing visual and interaction boundaries</span>
-            </div>
-            
-            <div class="scope-item flex items-start gap-4">
-              <i class="fas fa-sync text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Ensure seamless migration path for existing users and their workflows</span>
-            </div>
-            
-            <div class="scope-item flex items-start gap-4">
-              <i class="fas fa-shield-alt text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Preserve data integrity and security standards throughout the redesign</span>
-            </div>
+          <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
+            <em>Build modular, reusable patterns that could scale across the business—serving future tools, new personas, and faster engineering cycles.</em>
+          </p>
+          
+          <div class="task-objectives mb-8">
+            <ul class="task-list space-y-4">
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">A full design system</span>
+              </li>
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-calculator text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Visual and logic-based component libraries</span>
+              </li>
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-sync-alt text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Save/export/tagging UX that was both flexible and trusted</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="task-conclusion mt-10">
-          <div class="conclusion-card bg-purple-50 border-l-4 border-purple-300 p-6 rounded-r-lg">
-            <div class="flex items-start gap-3">
-              <i class="fas fa-rocket text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <p class="conclusion-text text-gray-700 leading-relaxed">
-                This wasn't just a visual refresh—it was a complete transformation of how users interact with complex sports analytics data, making the platform both more powerful and more accessible.
-              </p>
+        <div class="task-section mb-8">
+          <div class="task-header mb-6">
+            <h4 class="task-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-bullseye text-red-600"></i>
+              Design & Usability Strategy Goals
+            </h4>
+          </div>
+          
+          <div class="task-goals space-y-3">
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed">Reduce friction and cognitive load</span>
+            </div>
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed">Support key workflows for brands, agencies, and rights holders</span>
+            </div>
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed">Introduce scalable design patterns</span>
+            </div>
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed">Elevate the product's visual and functional maturity to match our position in the market</span>
+            </div>
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed">Shift perception from "internal dashboard" to "internal product"</span>
+            </div>
+            <div class="goal-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-gray-700 leading-relaxed"><strong>Infuse delight & surprise into every step of the experience—from loading states to filter behavior, from hover previews to empty states.</strong></span>
             </div>
           </div>
         </div>
