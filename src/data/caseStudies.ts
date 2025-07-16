@@ -490,7 +490,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2023',
     tools: ['Figma', 'Sketch', 'InVision'],
     tags: ['Analytics Platform', 'UI/UX Redesign', 'Sports Data'],
-    headerImage: '/images/case-studies/relo-edge/header.jpg',
+    headerImage: '/images/case-studies/relo-edge/relo-edge-header.jpg',
     isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
