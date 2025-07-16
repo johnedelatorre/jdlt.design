@@ -852,87 +852,310 @@ export const caseStudies: CaseStudy[] = [
     `,
     action: `
       <div class="action-content">
-        <div class="action-intro mb-8">
-          <p class="action-description text-lg text-gray-700 leading-relaxed">
-            Led comprehensive user research, conducted usability audits, redesigned information architecture, and implemented modern design patterns. Collaborated closely with engineering teams to ensure technical feasibility while maintaining design integrity throughout the implementation process.
-          </p>
+        
+        <div class="action-section mb-12">
+          <div class="action-header mb-6">
+            <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-search text-blue-600"></i>
+              Action: Discovery & Internal Listening
+            </h3>
+          </div>
+          
+          <div class="action-details mb-8">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Conducted deep listening sessions with:</h4>
+            <ul class="action-points space-y-3">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>CS</strong> (frustration with prep time + unreadable tables)</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Sales</strong> (needed screenshot-worthy visuals)</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Product</strong> (worried about flow fragmentation)</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Marketing</strong> (wanted shareable UI)</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Engineering</strong> (sick of fixing UI exceptions manually)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="action-insights mb-8">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Surfaced core frictions:</h4>
+            <ul class="action-points space-y-3">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">No smart defaults or personalization</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Tribal knowledge required for basic tasks</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Actions buried or inconsistently placed</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Data architecture didn't match how teams worked</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quote-section mb-8">
+            <blockquote class="border-l-4 border-blue-300 bg-blue-50 p-6 rounded-r-lg">
+              <p class="text-lg text-gray-700 italic mb-3 leading-relaxed">
+                "Could we go one step further and make this something they'd want to show off?" – PM
+              </p>
+              <p class="text-lg text-gray-700 italic leading-relaxed">
+                "If a CSM smiled the first time they opened this new dashboard, we knew we did our job." – <em>Design mantra from review sessions</em>
+              </p>
+            </blockquote>
+          </div>
         </div>
 
-        <div class="consolidated-actions mb-12">
-          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
+        <hr class="border-gray-300 mb-12">
+
+        <div class="action-section mb-12">
+          <div class="action-header mb-6">
+            <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-brain text-purple-600"></i>
+              Action: UX Redesign + Information Architecture
+            </h3>
+          </div>
+
+          <div class="action-details mb-8">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Reorganized around <strong>persona-based entry points</strong> (e.g., Rights Holders → Campaigns → Exposures)
+            </p>
             
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Comprehensive User Research and Usability Auditing</h4>
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Introduced:</h4>
+            <ul class="action-points space-y-3">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Persistent nav + sticky filters</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Smart cards with preview hovers</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Visual hierarchy with zoom-in/zoom-out tasks</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Contextual filters tied to metrics</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="action-testing mb-8">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Ran 1:1 walkthroughs and async testing with:</h4>
+            <ul class="action-points space-y-3">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>CSMs:</strong> "Can I get to my campaigns faster?"</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Analysts:</strong> "Can I break down exposure by region?"</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed"><strong>Sales:</strong> "Can I screenshot this and share it?"</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pullquote-section mb-8">
+            <div class="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-purple-400 p-6 rounded-r-lg">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-quote-left text-purple-600 text-xl self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <div>
+                  <p class="text-lg font-semibold text-purple-900 mb-3 leading-relaxed">
+                    <em>Pull-Quote from Our Process</em>
+                  </p>
+                  <p class="text-lg text-gray-700 italic mb-3 leading-relaxed">
+                    "Every design review ended with one final question: have we done enough to surprise and delight our users?"
+                  </p>
+                  <p class="text-lg text-gray-700 italic leading-relaxed">
+                    That lens changed how we thought about defaults, animations, and even scroll behavior.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-section">
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-star text-yellow-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  During every review cycle, I challenged our team with one goal:<br>
+                  <strong>"Can we surprise them here?"</strong><br>
+                  Whether it was a micro-interaction or a new chart layout, we aimed to inject elegance, speed, and joy into every corner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 mb-12">
+
+        <div class="action-section mb-12">
+          <div class="action-header mb-6">
+            <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-cube text-orange-600"></i>
+              Action: Design System Foundation
+            </h3>
+          </div>
+
+          <div class="action-details mb-8">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Replaced brittle, inconsistent UI with:
+            </p>
+            
+            <ul class="action-points space-y-3 mb-8">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Tokens for spacing, type, and elevation</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Modular components: cards, tables, drawers, tabs</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Themeable design tokens (light/dark, role-specific)</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Dev-ready handoff via Figma + Notion libraries</span>
+              </li>
+            </ul>
+
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Prototyped full flows using v0.dev:</h4>
+            <ul class="action-points space-y-3">
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Saved filters</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Responsive data tables</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Exposure preview workflows</span>
+              </li>
+              <li class="action-point flex items-start gap-3">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                <span class="text-lg text-gray-700 leading-relaxed">Role-adaptive dashboards</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quote-section">
+            <blockquote class="border-l-4 border-green-300 bg-green-50 p-6 rounded-r-lg">
+              <p class="text-lg text-gray-700 italic mb-3 leading-relaxed">
+                "This finally feels like a real product. I don't have to explain how to use it." – CS Lead
+              </p>
+              <p class="text-lg text-gray-700 italic leading-relaxed">
+                "It's sharp. I'd show this in a pitch deck." – Marketing
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 mb-12">
+
+        <div class="action-section mb-8">
+          <div class="action-header mb-6">
+            <h3 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-toolbox text-teal-600"></i>
+              Action: Building a Unified Design System
+            </h3>
+          </div>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-8">
+            Created <strong>scalable, developer-friendly patterns</strong> based on Ant Design with custom theming and logic.
+          </p>
+
+          <div class="system-sections space-y-8">
+            <div class="system-section">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-puzzle-piece text-blue-600"></i>
+                Core UI Components
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted in-depth user interviews with 25+ current users across different personas and use cases</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Smart data tables w/ filters, sorting</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Performed comprehensive usability audit identifying 40+ friction points in the existing interface</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Exposure cards and campaign layouts</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Analyzed user behavior data and heat maps to understand actual usage patterns versus intended workflows</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Notification toasts and saved query drawers</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Metric tiles, trend charts, media previews</span>
                 </li>
               </ul>
             </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. Information Architecture and Navigation Redesign</h4>
+            <div class="system-section">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-handshake text-purple-600"></i>
+                Developer Handoff
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Restructured information hierarchy using card sorting and tree testing methodologies</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Shared component specs via Figma libraries</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed intuitive navigation patterns that reduced cognitive load and improved task completion rates</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Tokens and breakpoints in dev-ready JSON</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created progressive disclosure patterns for complex analytical features and advanced filtering options</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">QA checklist via design-dev sync meetings</span>
                 </li>
               </ul>
             </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Modern Design Pattern Implementation</h4>
+            <div class="system-section">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-trophy text-green-600"></i>
+                System Wins
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Established consistent design language with improved typography, spacing, and visual hierarchy</span>
+                  <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Adopted across 2 more internal tools</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Implemented responsive design framework ensuring optimal experience across all device sizes</span>
+                  <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">New design ops velocity: <strong>2x faster design + handoff cycle</strong></span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Enhanced data visualization components with improved accessibility and interactive capabilities</span>
+                  <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Shared visual logic → fewer rework cycles and clearer expectations</span>
                 </li>
               </ul>
             </div>
-
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. Engineering Collaboration and Technical Implementation</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Worked closely with frontend and backend teams to ensure design feasibility and optimal performance</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created detailed design specifications and interactive prototypes for seamless developer handoff</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted regular design reviews and iterative testing throughout the development cycle</span>
-                </li>
-              </ul>
-            </div>
-
           </div>
         </div>
       </div>
