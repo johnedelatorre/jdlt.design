@@ -7,6 +7,8 @@ import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
 import PersonaModal from '../components/PersonaModal';
 import PersonaViewer from '../components/PersonaViewer';
+import LegacyScreenshotsModal from '../components/LegacyScreenshotsModal';
+import LegacyScreenshotsViewer from '../components/LegacyScreenshotsViewer';
 
 
 const CaseStudyPage: React.FC = () => {
@@ -15,6 +17,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPersonaModalOpen, setIsPersonaModalOpen] = useState(false);
   const [currentPersonaIndex, setCurrentPersonaIndex] = useState(0);
+  const [isLegacyScreenshotsModalOpen, setIsLegacyScreenshotsModalOpen] = useState(false);
+  const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -97,6 +101,62 @@ const CaseStudyPage: React.FC = () => {
 
   const nextPersona = () => {
     setCurrentPersonaIndex((prev) => (prev < personas.length - 1 ? prev + 1 : 0));
+  };
+
+  // Legacy screenshots data for Relo Edge case study
+  const legacyScreenshots = [
+    {
+      id: 'legacy-dashboard',
+      name: 'Legacy Dashboard Overview',
+      description: 'Poor spacing, heavy contrast, overwhelming density',
+      image: '/images/case-studies/relo-edge/legacy-dashboard-overview.png',
+      alt: 'Legacy Dashboard Overview - Poor spacing, heavy contrast, overwhelming density'
+    },
+    {
+      id: 'legacy-insights',
+      name: 'Legacy Automated Insights',
+      description: 'Charts lacked logic, and insights were buried',
+      image: '/images/case-studies/relo-edge/legacy-automated-insights.png',
+      alt: 'Legacy Automated Insights - Charts lacked logic, and insights were buried'
+    },
+    {
+      id: 'legacy-explorer',
+      name: 'Legacy Data Explorer',
+      description: 'Cluttered UI with dropdown stacking and no defaults',
+      image: '/images/case-studies/relo-edge/legacy-data-explorer.png',
+      alt: 'Legacy Data Explorer - Cluttered UI with dropdown stacking and no defaults'
+    },
+    {
+      id: 'legacy-social',
+      name: 'Legacy Social Media Views',
+      description: 'Overwhelming view of social media posts without relevant data',
+      image: '/images/case-studies/relo-edge/legacy-social-media-views.png',
+      alt: 'Legacy Social Media Views - Overwhelming view of social media posts without relevant data'
+    }
+  ];
+
+  // Legacy screenshots modal handlers
+  const openLegacyScreenshotsModal = (screenshotId: string) => {
+    console.log('openLegacyScreenshotsModal called with:', screenshotId);
+    const index = legacyScreenshots.findIndex(s => s.id === screenshotId);
+    console.log('Found screenshot index:', index);
+    if (index !== -1) {
+      setCurrentScreenshotIndex(index);
+      setIsLegacyScreenshotsModalOpen(true);
+      console.log('Legacy screenshots modal should be opening');
+    }
+  };
+
+  const closeLegacyScreenshotsModal = () => {
+    setIsLegacyScreenshotsModalOpen(false);
+  };
+
+  const previousLegacyScreenshot = () => {
+    setCurrentScreenshotIndex((prev) => (prev > 0 ? prev - 1 : legacyScreenshots.length - 1));
+  };
+
+  const nextLegacyScreenshot = () => {
+    setCurrentScreenshotIndex((prev) => (prev < legacyScreenshots.length - 1 ? prev + 1 : 0));
   };
 
 
@@ -189,10 +249,35 @@ const CaseStudyPage: React.FC = () => {
                 <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
                 Situation
               </h2>
-              <div 
-                className="text-lg text-gray-700 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: caseStudy.situation }}
-              />
+              {/* Split situation content at legacy screenshots placeholder for proper positioning */}
+              {(() => {
+                if (caseStudy.id === 'relo-edge-redesign') {
+                  // Split by the complete placeholder block including comment and closing div
+                  const placeholderPattern = '          <div class="legacy-screenshots-viewer-placeholder">\n            <!-- Legacy screenshots viewer will be rendered as React component -->\n          </div>';
+                  const parts = caseStudy.situation.split(placeholderPattern);
+                  
+                  if (parts.length === 2) {
+                    const beforeScreenshots = parts[0];
+                    const afterScreenshots = parts[1];
+                    
+                    return (
+                      <div className="text-lg text-gray-700 leading-relaxed">
+                        <div dangerouslySetInnerHTML={{ __html: beforeScreenshots }} />
+                        <LegacyScreenshotsViewer onScreenshotClick={openLegacyScreenshotsModal} />
+                        <div dangerouslySetInnerHTML={{ __html: afterScreenshots }} />
+                      </div>
+                    );
+                  }
+                }
+                
+                // Fallback for other case studies or if splitting fails
+                return (
+                  <div 
+                    className="text-lg text-gray-700 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: caseStudy.situation }}
+                  />
+                );
+              })()}
             </div>
           </div>
 
@@ -395,6 +480,18 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentPersonaIndex}
           onPrevious={previousPersona}
           onNext={nextPersona}
+        />
+      )}
+
+      {/* Legacy Screenshots Modal */}
+      {caseStudy.id === 'relo-edge-redesign' && (
+        <LegacyScreenshotsModal
+          isOpen={isLegacyScreenshotsModalOpen}
+          onClose={closeLegacyScreenshotsModal}
+          screenshots={legacyScreenshots}
+          currentIndex={currentScreenshotIndex}
+          onPrevious={previousLegacyScreenshot}
+          onNext={nextLegacyScreenshot}
         />
       )}
     </div>

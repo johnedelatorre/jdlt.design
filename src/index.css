@@ -521,6 +521,23 @@
   }
 }
 
+/* Legacy Screenshots Grid */
+.legacy-screenshots-grid {
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr !important;
+    max-width: 400px !important;
+  }
+}
+
+.legacy-screenshots-grid img {
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.legacy-screenshots-grid img:hover {
+  transform: scale(1.02);
+}
+
 /* Custom animations */
 @keyframes subtleBounce {
   0%, 100% {

@@ -495,75 +495,56 @@ export const caseStudies: CaseStudy[] = [
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
-          <p class="brief-description mb-6">
-            The Relo Edge Redesign transformed a legacy analytics platform into a modern, user-centered experience that dramatically improved user adoption and engagement. This comprehensive overhaul addressed years of accumulated design debt while establishing scalable patterns for future feature development.
-          </p>
+          <blockquote class="quote-section mb-8 border-l-8 border-blue-600 bg-gradient-to-r from-blue-50 to-blue-100 pl-8 py-6 rounded-r-xl shadow-lg relative">
+            <div class="absolute -left-4 top-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <i class="fas fa-quote-left text-white text-sm"></i>
+            </div>
+            <p class="quote-text text-xl font-bold text-blue-900 italic mb-3 leading-relaxed">
+              "In every design sprint, we asked one thing: how can we surprise and delight our customers just a little more?"
+            </p>
+            <p class="quote-description text-gray-700 leading-relaxed font-medium">
+              This question guided every flow, component, and interaction—from sticky filters to smart previews.
+            </p>
+          </blockquote>
           
-          <p class="brief-description mb-6">
-            When I joined the Relo Edge project, the platform was functional but outdated—complex navigation, inconsistent visual design, and workflows that had evolved organically without user research. Despite powerful analytical capabilities, user adoption was plateauing due to usability barriers that made the platform intimidating for new users and inefficient for experienced ones.
-          </p>
+          <div class="content-section mb-6 flex items-start gap-4">
+            <div class="icon-wrapper mt-1">
+              <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+            </div>
+            <p class="brief-description text-gray-700 leading-relaxed">
+              Relo Edge (formerly known as Media Value Center) is the internal analytics platform used across Customer Success, Sales, and Product to track, report, and optimize sponsorship performance. But over time, its legacy architecture and UI became a bottleneck—visually outdated, difficult to navigate, and increasingly unable to support modern workflows.
+            </p>
+          </div>
           
-          <p class="brief-description">
-            My role was to lead a complete UI/UX redesign that would modernize the interface while preserving the analytical depth that existing users relied on—essentially rebuilding the user experience from the ground up without disrupting core functionality.
-          </p>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-chart-line text-blue-600"></i>
-            Modernization Strategy and Approach
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The redesign focused on three key pillars:</p>
+          <div class="content-section mb-6 flex items-start gap-4">
+            <div class="icon-wrapper mt-1">
+              <i class="fas fa-user-tie text-purple-600 text-xl"></i>
+            </div>
+            <p class="brief-description text-gray-700 leading-relaxed">
+              As <strong>Lead Product Designer</strong>, I led the complete end-to-end redesign, driving a transformation from brittle workflows to a <strong>modular, intelligent, and role-specific product experience</strong>. This was more than a facelift—it was a ground-up overhaul of how internal teams interact with data.
+            </p>
+          </div>
           
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Create a <strong>user-first interface</strong> grounded in research and usability testing rather than assumptions</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-mobile-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Implement <strong>responsive design patterns</strong> that worked seamlessly across desktop, tablet, and mobile devices</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-layer-group text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Establish a <strong>scalable design system</strong> that could support rapid feature development without accumulating design debt</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-target text-indigo-600"></i>
-            Key Redesign Objectives
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The new Relo Edge would deliver:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-rocket text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Improved onboarding experience</strong> with guided tours and progressive feature disclosure</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-eye text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Enhanced data visualization</strong> with clearer charts, better color accessibility, and interactive elements</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-search text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Streamlined navigation</strong> that reduced clicks-to-insight and supported both novice and power user workflows</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-cogs text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Modern technical foundation</strong> ready for future integrations and feature expansions</span>
-            </li>
-          </ul>
+          <div class="content-section mb-6 flex items-start gap-4">
+            <div class="icon-wrapper mt-1">
+              <i class="fas fa-star text-amber-500 text-xl"></i>
+            </div>
+            <p class="brief-description text-gray-700 leading-relaxed">
+              <strong>North Star</strong>: Surprise and delight internal teams by turning a functional tool into a modern, elegant, and intuitive platform aligned with the Relo brand.
+            </p>
+          </div>
         </div>
         
         <div class="brief-section mt-10">
           <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+            <div class="impact-note text-gray-600 italic border-l-4 border-amber-300 pl-6 py-4 bg-amber-50 rounded-r">
               <div class="flex items-start gap-3">
-                <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This redesign would prove that thoughtful UX investment could dramatically improve user satisfaction and business metrics while setting the foundation for Relo's next phase of growth.</span>
+                <i class="fas fa-sparkles text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">
+                  <strong>In every iterative review with Product, Engineering, Sales, and Customer Success, we asked ourselves one core question:</strong><br>
+                  "What else can we do to surprise and delight our users?"<br><br>
+                  This mindset became our guiding light across every design artifact, layout decision, and micro-interaction.
+                </span>
               </div>
             </div>
           </div>
@@ -573,58 +554,189 @@ export const caseStudies: CaseStudy[] = [
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            When I began the Relo Edge redesign, the platform had been serving analytics customers for several years but was showing its age. The interface had grown organically through feature additions and quick fixes, resulting in inconsistent design patterns, confusing navigation hierarchies, and an overall user experience that didn't match the sophistication of the underlying data and analytics capabilities.
-          </p>
-        </div>
-
-        <div class="situation-problems mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            User research revealed significant friction points: new users struggled with onboarding and feature discovery, existing users had developed workarounds for common tasks, and mobile usage was virtually non-existent due to poor responsive design. Customer Success was receiving increasing requests for training and support, indicating that the interface itself had become a barrier to user success.
-          </p>
-        </div>
-
-        <div class="situation-business-impact mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            From a business perspective, user adoption rates had plateaued, and competitive analysis showed that newer analytics platforms were attracting customers with more modern, intuitive interfaces. Leadership recognized that without a significant UX investment, Relo Edge risked losing market position despite having strong analytical capabilities and a solid customer base.
-          </p>
+          <div class="content-section flex items-start gap-4">
+            <div class="icon-wrapper mt-1">
+              <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+            </div>
+            <p class="situation-text text-lg text-gray-700 leading-relaxed">
+              Relo MVC had become a source of <strong>daily friction</strong>. The UX was <em>rigid</em>, the UI was <em>dense</em>, and workflows were fragmented across duplicated views and inconsistent patterns. Engineers had built it quickly to support growth, but <strong>design had never played a foundational role</strong>—until now.
+            </p>
+          </div>
         </div>
 
         <div class="situation-challenges mb-8">
-          <p class="situation-subtitle text-gray-600 mb-6">The redesign needed to address several critical challenges:</p>
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-list-ul text-red-600"></i>
+            What we were up against:
+          </h3>
           
-          <ul class="challenge-list space-y-6">
+          <ul class="challenge-list space-y-4">
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-users text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Complex user workflows that had developed around the existing interface</span>
+              <i class="fas fa-eye-slash text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Visually outdated UI with poor hierarchy</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-mobile-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Poor responsive design limiting mobile and tablet usage</span>
+              <i class="fas fa-filter text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Filters that couldn't be saved or reused</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-chart-bar text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Data visualizations that were functional but not optimized for clarity or accessibility</span>
+              <i class="fas fa-table text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Dense data tables with no responsive logic</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-clock text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Aggressive timeline to deliver improvements before major customer renewals</span>
+              <i class="fas fa-puzzle-piece text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Fragmented workflows and duplicated navigation</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-code text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Technical constraints requiring careful coordination with engineering teams</span>
+              <i class="fas fa-user-cog text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">No personalization by role (everyone saw the same clutter)</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-comments text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">High reliance on Slack to answer <em>"how do I find this?"</em></span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-code text-gray-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Engineered UI without UX</strong>—flows felt forced, inconsistent, and lacked a user-centered lens</span>
             </li>
           </ul>
         </div>
 
-        <div class="situation-conclusion">
-          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
-            <div class="flex items-start gap-3">
-              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <p class="conclusion-text text-gray-700 leading-relaxed">
-                The redesign represented more than visual improvements—it was an opportunity to fundamentally rethink how users interact with complex analytics data and establish Relo Edge as a best-in-class platform that users would genuinely enjoy using.
+        <div class="situation-impact mb-8">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-chart-line-down text-red-600"></i>
+            Outdated UX, Low NPS, Frustrated Users
+          </h3>
+          
+          <ul class="impact-list space-y-4">
+            <li class="impact-item flex items-start gap-4">
+              <i class="fas fa-wrench text-gray-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">MVC platform had <strong>legacy UX built by engineers</strong> without formal design process</span>
+            </li>
+            <li class="impact-item flex items-start gap-4">
+              <i class="fas fa-palette text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Interface was <em>visually outdated</em> and not aligned with current brand systems</span>
+            </li>
+            <li class="impact-item flex items-start gap-4">
+              <i class="fas fa-frown text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>NPS score and qualitative feedback</strong> showed consistent dissatisfaction</span>
+            </li>
+            <li class="impact-item flex items-start gap-4">
+              <i class="fas fa-lock text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Rigid layout and static filters made personalized or comparative analysis <em>almost impossible</em></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="user-pain-points mb-8">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-user-injured text-red-600"></i>
+            User Pain Points:
+          </h3>
+          
+          <ul class="pain-points-list space-y-4">
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-sliders-h text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Filters were <strong>difficult to use and not intuitive</strong></span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Data tables required constant manual resizing and had <em>poor spacing</em></span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-save text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">No ability to <strong>save filters or queries</strong> for later reuse</span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-clock text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Lack of <em>real-time, automated, or trending insights</em></span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-eye-dropper text-gray-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Interface was <strong>dense, dark, and visually fatiguing</strong></span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-tachometer-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Users needed metrics surfaced to them—<em>fast, not buried</em></span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-file-excel text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Workarounds were the norm</strong>—users resorted to Excel exports and manual effort to find usable insights</span>
+            </li>
+            <li class="pain-item flex items-start gap-4">
+              <i class="fas fa-users-cog text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><em>One-size-fits-all UI</em>—brands, agencies, and rights holders all saw the same interface, regardless of their workflow or priorities</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="client-feedback mb-8">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-quote-left text-blue-600"></i>
+            Direct Client Feedback Quote:
+          </h3>
+          
+          <div class="feedback-quotes space-y-4">
+            <blockquote class="quote-card bg-gradient-to-r from-red-50 to-red-100 border-l-8 border-red-500 pl-8 py-6 rounded-r-xl shadow-lg relative">
+              <div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-quote-left text-white text-sm"></i>
+              </div>
+              <p class="quote-text text-lg font-bold text-red-900 italic mb-2 leading-relaxed">
+                "This UI makes everything feel harder than it is."
               </p>
+              <cite class="quote-attribution text-red-700 font-medium">– CS Manager</cite>
+            </blockquote>
+            
+            <blockquote class="quote-card bg-gradient-to-r from-orange-50 to-orange-100 border-l-8 border-orange-500 pl-8 py-6 rounded-r-xl shadow-lg relative">
+              <div class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-quote-left text-white text-sm"></i>
+              </div>
+              <p class="quote-text text-lg font-bold text-orange-900 italic mb-2 leading-relaxed">
+                "We have to use Excel just to build a client recap."
+              </p>
+              <cite class="quote-attribution text-orange-700 font-medium">– Analyst</cite>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="legacy-screenshots mb-8">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-receipt text-gray-600"></i>
+            Legacy Platform Screenshots
+          </h3>
+          
+          <blockquote class="description-quote bg-gradient-to-r from-gray-50 to-gray-100 border-l-8 border-gray-500 pl-8 py-6 rounded-r-xl shadow-lg relative mb-8">
+            <div class="absolute -left-4 top-4 w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center">
+              <i class="fas fa-info-circle text-white text-sm"></i>
             </div>
+            <p class="quote-text text-lg font-medium text-gray-900 italic leading-relaxed">
+              What our users saw every day—and what they had to work around
+            </p>
+          </blockquote>
+
+          <div class="legacy-screenshots-viewer-placeholder">
+            <!-- Legacy screenshots viewer will be rendered as React component -->
+          </div>
+
+          <div class="screenshots-descriptions mt-6">
+            <ul class="screenshots-list space-y-4">
+              <li class="screenshot-item flex items-start gap-4">
+                <i class="fas fa-chart-bar text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Legacy Dashboard Overview</strong> – Poor spacing, heavy contrast, overwhelming density</span>
+              </li>
+              <li class="screenshot-item flex items-start gap-4">
+                <i class="fas fa-search text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Legacy Automated Insights</strong> – Charts lacked logic, and insights were buried</span>
+              </li>
+              <li class="screenshot-item flex items-start gap-4">
+                <i class="fas fa-clipboard-list text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Legacy Data Explorer</strong> – Cluttered UI with dropdown stacking and no defaults</span>
+              </li>
+              <li class="screenshot-item flex items-start gap-4">
+                <i class="fas fa-folder text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Legacy Social Media Views</strong> – Overwhelming view of social media posts without relevant data</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
