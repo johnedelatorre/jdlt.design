@@ -484,11 +484,11 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 'relo-edge-redesign',
     title: 'Relo Edge',
-    subtitle: 'Core analytics tool modernization',
+    subtitle: 'Platform UX UI Redesign (from legacy MVC)',
     client: 'Relo Metrics',
     role: 'Product Design Lead',
-    year: '2023',
-    tools: ['Figma', 'Sketch', 'InVision'],
+    year: '2024 - 2025',
+    tools: ['Figma', 'Pendo', 'Cursor', 'Claude'],
     tags: ['Analytics Platform', 'UI/UX Redesign', 'Sports Data'],
     headerImage: '/images/case-studies/relo-edge/relo-edge-header.jpg',
     isRecent: true,
@@ -1018,7 +1018,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-edge/design11.jpg',
       '/images/case-studies/relo-edge/design12.jpg',
     ],
-    // figmaLink: '' // No prototype available
+    figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3858%3A49934&node-id=3865-76794&viewport=399%2C328%2C0.02&t=R9l0Me4nlxZ2zxdr-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3865%3A76794'
   },
   {
     id: 'relo-sponsorpulse-integration',
