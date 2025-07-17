@@ -1356,78 +1356,121 @@ export const caseStudies: CaseStudy[] = [
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
+          <h3 class="brief-title flex items-center gap-3 mb-6">
+            <i class="fas fa-language text-blue-600"></i>
+            Clinical Trials Translation & Certification Tool
+          </h3>
           <p class="brief-description mb-6">
-            The Translation Management Tool revolutionized global clinical trial localization by creating an integrated platform that transformed manual, error-prone translation processes into efficient, quality-controlled workflows. This comprehensive solution was designed to accelerate global clinical trial deployment while maintaining the highest standards of accuracy and regulatory compliance.
+            <strong>A centralized platform that transformed clinical-trial localization—cutting translation prep from 3–5 days per language to under 24 hours while ensuring global regulatory compliance.</strong>
           </p>
           
           <p class="brief-description mb-6">
-            As Medable expanded into international markets, the company faced significant challenges managing multilingual clinical trial content across diverse regulatory environments. The existing translation process relied on email chains, spreadsheets, and manual handoffs that introduced errors and delays that could impact patient safety and trial timelines.
+            As Medable expanded into international markets, its decentralized clinical trial model revealed a critical bottleneck: the localization of patient-facing content across multiple languages and regulatory regions. The legacy workflow—anchored in spreadsheets, email chains, and manual data handoffs—was slow, inconsistent, and introduced risk at every step.
           </p>
           
-          <p class="brief-description">
-            This tool would become the central hub for all clinical trial localization activities, supporting translation teams, clinical researchers, regulatory affairs specialists, and international project managers in a unified workflow.
+          <p class="brief-description mb-6">
+            Clinical Trials Managers (CTMs) routinely exported raw CSVs from Cortex AI and spent 60–72 hours cleaning, formatting, and manually splitting content before sending it to external vendors—only to re-clean files upon return. Internal Customer Success (CS) teams, lacking visibility, often duplicated work or escalated issues late in the process. The result: missed deadlines, regulatory friction, and growing operational debt.
+          </p>
+          
+          <p class="brief-description mb-6">
+            To address this, we designed the <strong>Translation Management Tool</strong>—a unified, audit-ready platform that became the central hub for all localization workflows. It streamlined how CTMs, linguistic vendors, clinical reviewers, and regulatory teams collaborated on multilingual content, enabling rapid, accurate translation delivery without compromising compliance or patient safety.
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
             <i class="fas fa-globe text-blue-600"></i>
-            Global Clinical Trial Localization
+            Global Requirements Addressed
           </h3>
           <p class="brief-subtitle mb-8 text-gray-600">The platform needed to address complex international healthcare requirements:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
               <i class="fas fa-shield-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Maintain <strong>regulatory compliance</strong> across different international healthcare standards and requirements</span>
+              <span class="text-gray-700 leading-relaxed">Ensure regulatory alignment across diverse international healthcare standards</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-users-md text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Support <strong>clinical accuracy</strong> through specialized medical translation workflows and terminology management</span>
+              <i class="fas fa-user-md text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Maintain clinical accuracy through medical terminology management and consistency controls</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-clock text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Accelerate <strong>time-to-market</strong> for clinical trials in new international regions</span>
+              <i class="fas fa-rocket text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Accelerate time-to-market for clinical trials across global regions</span>
             </li>
           </ul>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-language text-indigo-600"></i>
-            Advanced Translation Workflow Features
+            <i class="fas fa-brain text-indigo-600"></i>
+            Advanced Workflow Capabilities
           </h3>
           <p class="brief-subtitle mb-8 text-gray-600">The tool was designed to include:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
               <i class="fas fa-route text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Multi-stage approval workflows</strong> with clinical reviewers, linguistic specialists, and regulatory approvers</span>
+              <span class="text-gray-700 leading-relaxed">Multi-stage approval flows for linguistic, clinical, and regulatory review</span>
             </li>
             <li class="flex items-start gap-4">
               <i class="fas fa-book-medical text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Medical terminology management</strong> with controlled vocabularies and consistency checking</span>
+              <span class="text-gray-700 leading-relaxed">Controlled medical vocabularies with real-time consistency validation</span>
             </li>
             <li class="flex items-start gap-4">
               <i class="fas fa-history text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Version control and audit trails</strong> for regulatory documentation and compliance tracking</span>
+              <span class="text-gray-700 leading-relaxed">Built-in versioning and audit logs for FDA/EMA documentation</span>
             </li>
             <li class="flex items-start gap-4">
               <i class="fas fa-chart-line text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Real-time progress tracking</strong> and automated reporting for project stakeholders</span>
+              <span class="text-gray-700 leading-relaxed">Real-time status dashboards and automated stakeholder reporting</span>
             </li>
           </ul>
         </div>
         
-        <div class="brief-section mt-10">
-          <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
-              <div class="flex items-start gap-3">
-                <i class="fas fa-heartbeat text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This tool would directly impact global healthcare outcomes by enabling faster, more accurate clinical trial deployment across international markets.</span>
-              </div>
-            </div>
-          </div>
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-users text-green-600"></i>
+            Target Users
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">The platform was designed for:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-building text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>External:</strong> Clinical Trials Managers (e.g., AstraZeneca)</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-headset text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Internal:</strong> Customer Success, Localization Ops, Regulatory Affairs</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-user-tie text-indigo-600"></i>
+            My Role
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">My responsibilities included:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-search text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Lead Researcher & Strategist:</strong> Drove primary and secondary research, conducted shadowing, created journey maps and personas</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-sync-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Continuous Discovery Facilitator:</strong> Set up biweekly insight loops with internal and external stakeholders (inspired by Theresa Torres' framework)</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-drafting-compass text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Product Designer:</strong> Led design from early sketches to high-fidelity interactive prototypes built in the Nucleus Design System</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-link text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Cross-functional Connector:</strong> Partnered with Engineering and QA to co-define the JSON schema and implement a phased, low-risk release strategy</span>
+            </li>
+          </ul>
         </div>
       </div>
     `,
@@ -1435,49 +1478,85 @@ export const caseStudies: CaseStudy[] = [
       <div class="situation-content">
         <div class="situation-intro mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            Relo needed to integrate with SponsorPulse, a specialized third-party analytics platform, to provide enhanced reporting capabilities to their clients. The challenge was creating a seamless user experience that didn't feel like a separate tool or disrupt existing workflows that users had already mastered.
+            Before the redesign, Medable's translation workflow for global clinical trials was fragmented, manual, and dangerously inefficient—putting compliance, speed-to-market, and patient safety at risk.
           </p>
         </div>
 
-        <div class="situation-challenges mb-8">
+        <div class="situation-section mb-8">
+          <h4 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-puzzle-piece text-blue-600"></i>
+            Fragmented Workflow
+          </h4>
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            The existing Relo platform had its own robust analytics capabilities, but clients were requesting access to SponsorPulse's specialized metrics and reporting features. However, simply redirecting users to another platform would create friction, break user flows, and potentially lead to data inconsistencies.
+            Clinical Trials Managers (CTMs) submitted Jira tickets to request translation exports. Cortex AI would generate raw CSVs—flat, unstructured, and often corrupted by formatting errors. CTMs then spent 60–72 hours cleaning and color-coding spreadsheets, manually separating languages into Excel tabs. Once sent to vendors, the files often returned with structural mismatches—triggering another round of manual cleanup that could last 5–7 days.
+          </p>
+          
+          <blockquote class="quote-card bg-gradient-to-r from-blue-50 to-blue-100 border-l-8 border-blue-500 pl-8 py-6 rounded-r-xl shadow-lg relative">
+            <div class="absolute -left-4 top-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              <i class="fas fa-quote-left text-white text-sm"></i>
+            </div>
+            <p class="quote-text text-lg font-bold text-blue-900 italic mb-2 leading-relaxed">
+              <em>"One CTM said it took longer to prep and reformat the data than to conduct the actual translation."</em>
+            </p>
+            <cite class="quote-attribution text-blue-700 font-medium">*(See storyboard – Observational Studies)*</cite>
+          </blockquote>
+        </div>
+
+        <div class="situation-section mb-8">
+          <h4 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-handshake text-purple-600"></i>
+            Stakeholder Friction
+          </h4>
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            Internal Customer Success (CS) teams were caught in the middle—handling vague requests, fielding translation questions, and chasing down timelines. Vendors frequently misaligned strings or mislabeled tasks. Study sponsors demanded rapid turnarounds, but uncommunicated mid-study changes often reset the process entirely, forcing CTMs to restart the ticket cycle from scratch.
           </p>
         </div>
 
-        <div class="situation-complexity mb-8">
-          <p class="situation-subtitle text-gray-600 mb-6">The integration posed several complex challenges:</p>
+        <div class="situation-section mb-8">
+          <h4 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-cube text-orange-600"></i>
+            Data-Structure Liability
+          </h4>
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            The root of the chaos was the CSV format itself. It lacked semantic hierarchy—no grouping for tasks, assessments, or strings by study phase. A structured JSON format could have automated 80% of the workflow, but the product didn't yet support it. This gap made quality control nearly impossible and introduced massive regulatory risk.
+          </p>
+        </div>
+
+        <div class="situation-section mb-8">
+          <h4 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-money-bill-wave text-red-600"></i>
+            Cost of Inaction
+          </h4>
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            The inefficiencies carried serious downstream consequences:
+          </p>
           
-          <ul class="challenge-list space-y-6">
+          <ul class="challenge-list space-y-4">
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-code text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Two different API architectures that needed to communicate seamlessly</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-palette text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Conflicting design systems and visual languages between platforms</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Different user mental models and workflow expectations</span>
+              <i class="fas fa-exclamation-triangle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Trials risked missing IRB and FDA submission deadlines</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
               <i class="fas fa-clock text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Tight timeline to deliver integration before major client renewals</span>
+              <span class="text-gray-700 leading-relaxed">CTMs lost 25+ hours per week to manual hygiene tasks</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-lock text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Security and data privacy requirements for handling third-party data</span>
+              <i class="fas fa-headset text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">CS teams operated reactively, drowning in status updates</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-shield-alt text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Any translation mismatch could compromise patient-facing materials—jeopardizing trial integrity</span>
             </li>
           </ul>
         </div>
 
         <div class="situation-conclusion">
-          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
+          <div class="conclusion-card bg-red-50 border-l-4 border-red-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
-              <i class="fas fa-target text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <i class="fas fa-heartbeat text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                Success would be measured not just by technical functionality, but by how invisible the integration felt to end users—they should access enhanced capabilities without feeling like they're using a different platform.
+                With multiple global studies at risk and operational debt mounting, leadership finally greenlit a full redesign. The Translation Management Tool was no longer a nice-to-have—it was <strong>mission-critical</strong>.
               </p>
             </div>
           </div>
@@ -1487,40 +1566,149 @@ export const caseStudies: CaseStudy[] = [
     task: `
       <div class="task-content">
         <div class="task-intro mb-8">
-          <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
-            Design the integration interface and user experience for SponsorPulse within the Relo platform, ensuring data consistency, intuitive navigation between systems, and seamless workflow continuity. The integration needed to feel native to Relo while providing access to SponsorPulse's specialized analytics capabilities.
-          </p>
+          <h3 class="task-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-bullseye text-blue-600"></i>
+            Frame the Real Problem
+          </h3>
+          <ul class="task-list space-y-4 mb-8">
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Synthesized scattered feedback from stakeholders into a single, cohesive problem statement</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-crosshairs text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Focused the team on root causes—data structure, workflow inefficiencies, and lack of visibility</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-anchor text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Used this alignment to anchor the entire product strategy moving forward</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="task-focus mb-10">
-          <div class="task-number flex items-center gap-3">
-            <i class="fas fa-puzzle-piece text-blue-600"></i>
-            <span class="task-label font-semibold text-blue-600">INTEGRATION DESIGN CHALLENGE</span>
-          </div>
-          <h4 class="task-title text-xl font-bold text-gray-900 mb-4">Create Unified Multi-Platform Experience</h4>
+        <div class="task-section mb-8">
+          <h3 class="task-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-search text-orange-600"></i>
+            Run Deep Discovery
+          </h3>
+          <ul class="task-list space-y-4 mb-8">
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-users text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Conducted 12 one-hour interviews: 6 Clinical Trials Managers and 6 Customer Success team members</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-clipboard-list text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Transcribed and affinity-mapped insights to uncover shared pain points and behavioral patterns</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-video text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Shadowed 3 live translation exports over Zoom to observe real-world friction in workflow, handoffs, and tool use</span>
+            </li>
+          </ul>
         </div>
-        
-        <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
-          The core challenge was to <strong>bridge two distinct platforms</strong> while maintaining the integrity and strengths of each. This required careful analysis of both design systems and creation of unified patterns that would feel natural to existing Relo users.
-        </p>
-        
-        <div class="task-objectives mb-8">
+
+        <div class="task-section mb-8">
+          <h3 class="task-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-sync-alt text-purple-600"></i>
+            Launch Continuous Discovery
+          </h3>
+          <ul class="task-list space-y-4 mb-8">
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-calendar-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Established a biweekly research cadence inspired by Theresa Torres' framework</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-route text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Split tracks between external CTMs and internal CS teams to maintain focused insight loops</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <i class="fas fa-sitemap text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Maintained a living Opportunity Solution Tree to prioritize high-leverage problems and de-risk delivery</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="task-section mb-8">
+          <h3 class="task-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-compass text-green-600"></i>
+            Translate Insights into Strategy
+          </h3>
+          <div class="mb-6">
+            <ul class="task-list space-y-4 mb-6">
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-file-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Created key artifacts: personas, journey maps, and 5 UX pillars</span>
+              </li>
+            </ul>
+            
+            <div class="pillars-section ml-8 mb-6">
+              <ul class="pillars-list space-y-4">
+                <li class="pillar-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed font-semibold">Efficiency</span>
+                </li>
+                <li class="pillar-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed font-semibold">Simplicity</span>
+                </li>
+                <li class="pillar-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed font-semibold">Empowerment</span>
+                </li>
+                <li class="pillar-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed font-semibold">Communication</span>
+                </li>
+                <li class="pillar-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed font-semibold">User-Centricity</span>
+                </li>
+              </ul>
+            </div>
+            
+            <ul class="task-list space-y-4">
+              <li class="task-list-item flex items-start gap-4">
+                <i class="fas fa-bullseye text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">Used these to align stakeholders on measurable goals:</span>
+              </li>
+            </ul>
+            
+            <div class="goals-section ml-8 mt-4">
+              <ul class="goals-list space-y-4">
+                <li class="goal-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Reduce translation prep time to &lt;24 hours</span>
+                </li>
+                <li class="goal-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Eliminate re-clean cycles</span>
+                </li>
+                <li class="goal-item flex items-start gap-4">
+                  <i class="fas fa-arrow-right text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Achieve full JSON output compliance</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-section mb-8">
+          <h3 class="task-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-flask text-indigo-600"></i>
+            Prototype, Test, Iterate
+          </h3>
           <ul class="task-list space-y-4">
             <li class="task-list-item flex items-start gap-4">
-              <i class="fas fa-sitemap text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Map user journeys across both platforms to identify integration points</span>
+              <i class="fas fa-drafting-compass text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Designed low-fi wireframes, then mid-fi interactions, and final hi-fi screens in the Nucleus Design System</span>
             </li>
             <li class="task-list-item flex items-start gap-4">
-              <i class="fas fa-eye text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Design consistent visual language that respects both brand identities</span>
+              <i class="fas fa-users-cog text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Ran usability tests with 5 CTMs and 3 CS stakeholders per iteration</span>
             </li>
             <li class="task-list-item flex items-start gap-4">
-              <i class="fas fa-route text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Create intuitive navigation patterns for cross-platform workflows</span>
-            </li>
-            <li class="task-list-item flex items-start gap-4">
-              <i class="fas fa-database text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Establish data consistency and synchronization standards</span>
+              <i class="fas fa-recycle text-pink-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Iterated based on real-world feedback—directly shaping UI logic, export workflows, and validation states</span>
             </li>
           </ul>
         </div>
