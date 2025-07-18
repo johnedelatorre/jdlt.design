@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,8 @@ import PersonaModal from '../components/PersonaModal';
 import PersonaViewer from '../components/PersonaViewer';
 import LegacyScreenshotsModal from '../components/LegacyScreenshotsModal';
 import LegacyScreenshotsViewer from '../components/LegacyScreenshotsViewer';
+import ResearchArtifactsModal from '../components/ResearchArtifactsModal';
+import ResearchArtifactsViewer from '../components/ResearchArtifactsViewer';
 
 
 const CaseStudyPage: React.FC = () => {
@@ -19,6 +21,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentPersonaIndex, setCurrentPersonaIndex] = useState(0);
   const [isLegacyScreenshotsModalOpen, setIsLegacyScreenshotsModalOpen] = useState(false);
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
+  const [isResearchArtifactsModalOpen, setIsResearchArtifactsModalOpen] = useState(false);
+  const [currentArtifactIndex, setCurrentArtifactIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -37,6 +41,16 @@ const CaseStudyPage: React.FC = () => {
       </div>
     );
   }
+
+  // Preload images for better performance and eliminate hover lag
+  useEffect(() => {
+    if (caseStudy.images && caseStudy.images.length > 0) {
+      caseStudy.images.forEach((imageSrc) => {
+        const img = new Image();
+        img.src = imageSrc;
+      });
+    }
+  }, [caseStudy.images]);
 
   const openModal = (index: number) => {
     setCurrentImageIndex(index);
@@ -159,7 +173,138 @@ const CaseStudyPage: React.FC = () => {
     setCurrentScreenshotIndex((prev) => (prev < legacyScreenshots.length - 1 ? prev + 1 : 0));
   };
 
+  // Research artifacts data for Medable Translation Tool case study
+  const researchArtifacts = [
+    {
+      id: 'user-interview-questions-ctm',
+      name: 'User Interview Questions - Clinical Trials Manager',
+      description: 'Structured interview guide for CTMs covering workflow pain points and efficiency challenges',
+      image: '/images/case-studies/medable-translation-tool/1-user-interview-questions-clinical-trials-manager.png',
+      alt: 'User Interview Questions for Clinical Trials Managers - structured questions about translation workflows'
+    },
+    {
+      id: 'user-interview-questions-cs',
+      name: 'User Interview Questions - Customer Success Teams',
+      description: 'Interview framework for CS teams focusing on support challenges and process gaps',
+      image: '/images/case-studies/medable-translation-tool/2-user-interview-questions-customer-success-teams.png',
+      alt: 'User Interview Questions for Customer Success Teams - questions about support processes'
+    },
+    {
+      id: 'observational-studies',
+      name: 'Observational Studies',
+      description: 'Documentation of live workflow observations and behavioral pattern analysis',
+      image: '/images/case-studies/medable-translation-tool/3-observational-studies.png',
+      alt: 'Observational Studies - documentation of workflow observations and behavioral patterns'
+    },
+    {
+      id: 'assumptions-challenges',
+      name: 'User Interview Assumptions and Challenges',
+      description: 'Analysis of initial assumptions vs. discovered challenges from user interviews',
+      image: '/images/case-studies/medable-translation-tool/4-user-interview-assumptions-and-challenges.png',
+      alt: 'User Interview Assumptions and Challenges - comparison of initial assumptions with discoveries'
+    },
+    {
+      id: 'persona-ctm',
+      name: 'Persona - Clinical Trials Manager',
+      description: 'Detailed persona profile for CTM user type with goals, frustrations, and behaviors',
+      image: '/images/case-studies/medable-translation-tool/5-persona-clinical-trials-manager.png',
+      alt: 'Clinical Trials Manager Persona - detailed user profile with goals and frustrations'
+    },
+    {
+      id: 'persona-cs',
+      name: 'Persona - Customer Success Teams',
+      description: 'Customer Success team persona highlighting support challenges and workflow needs',
+      image: '/images/case-studies/medable-translation-tool/6-persona-customer-success-teams.png',
+      alt: 'Customer Success Teams Persona - profile focusing on support challenges and needs'
+    },
+    {
+      id: 'journey-map-ctm',
+      name: 'User Journey Map - Clinical Trials Manager',
+      description: 'End-to-end journey mapping for CTM translation workflow including pain points',
+      image: '/images/case-studies/medable-translation-tool/7-user-journey-map-clinical-trials-manager.png',
+      alt: 'User Journey Map for Clinical Trials Manager - translation workflow with pain points'
+    },
+    {
+      id: 'journey-map-cs',
+      name: 'User Journey Map - Customer Success Teams',
+      description: 'Journey mapping for CS support processes and intervention touchpoints',
+      image: '/images/case-studies/medable-translation-tool/8-user-journey-map-customer-success-teams.png',
+      alt: 'User Journey Map for Customer Success Teams - support processes and touchpoints'
+    },
+    {
+      id: 'research-synthesis',
+      name: 'Research Synthesis',
+      description: 'Comprehensive synthesis of all research findings and key insights',
+      image: '/images/case-studies/medable-translation-tool/9-research-synthesis.png',
+      alt: 'Research Synthesis - comprehensive analysis of all research findings'
+    },
+    {
+      id: 'key-insights',
+      name: 'Key Insights',
+      description: 'Critical insights distilled from research that informed design decisions',
+      image: '/images/case-studies/medable-translation-tool/10-key-insights.png',
+      alt: 'Key Insights - critical findings that informed design decisions'
+    },
+    {
+      id: 'design-pillars',
+      name: 'Experience Design Pillars',
+      description: 'Five core UX principles that guided all design and product decisions',
+      image: '/images/case-studies/medable-translation-tool/11-experience-design-pillars.png',
+      alt: 'Experience Design Pillars - core UX principles guiding design decisions'
+    },
+    {
+      id: 'solution-mapping',
+      name: 'Solution Mapping',
+      description: 'Strategic mapping of research insights to potential solution approaches',
+      image: '/images/case-studies/medable-translation-tool/12-solution-mapping.png',
+      alt: 'Solution Mapping - connecting research insights to solution approaches'
+    },
+    {
+      id: 'information-architecture',
+      name: 'Information Architecture',
+      description: 'Structured information architecture and system design foundation',
+      image: '/images/case-studies/medable-translation-tool/13-information-architecture.png',
+      alt: 'Information Architecture - structured system design and organization'
+    },
+    {
+      id: 'low-fidelity-prototype-data-table',
+      name: 'Low-Fidelity Prototype - Data Table',
+      description: 'Initial wireframe design for the translation data table interface showing layout and functionality',
+      image: '/images/case-studies/medable-translation-tool/14-low-fidelity-prototype-data-table.png',
+      alt: 'Low-fidelity prototype wireframe of the translation data table interface'
+    },
+    {
+      id: 'low-fidelity-prototype-export-form',
+      name: 'Low-Fidelity Prototype - Export Form',
+      description: 'Early wireframe design for the translation export form showing user workflow and form fields',
+      image: '/images/case-studies/medable-translation-tool/15-low-fidelity-prototype-export-form.png',
+      alt: 'Low-fidelity prototype wireframe of the translation export form interface'
+    }
+  ];
 
+  // Research artifacts modal handlers
+  const openResearchArtifactsModal = (artifactId: string) => {
+    console.log('openResearchArtifactsModal called with:', artifactId);
+    const index = researchArtifacts.findIndex(a => a.id === artifactId);
+    console.log('Found artifact index:', index);
+    if (index !== -1) {
+      setCurrentArtifactIndex(index);
+      setIsResearchArtifactsModalOpen(true);
+      console.log('Research artifacts modal should be opening');
+    }
+  };
+
+  const closeResearchArtifactsModal = () => {
+    setIsResearchArtifactsModalOpen(false);
+  };
+
+  const previousResearchArtifact = () => {
+    setCurrentArtifactIndex((prev) => (prev > 0 ? prev - 1 : researchArtifacts.length - 1));
+  };
+
+  const nextResearchArtifact = () => {
+    setCurrentArtifactIndex((prev) => (prev < researchArtifacts.length - 1 ? prev + 1 : 0));
+  };
 
   return (
     <div>
@@ -323,6 +468,25 @@ const CaseStudyPage: React.FC = () => {
                   }
                 }
                 
+                if (caseStudy.id === 'medable-translation-tool') {
+                  // Split by the complete placeholder block including comment and closing div
+                  const placeholderPattern = '          <div class="research-artifacts-viewer-placeholder">\n            <!-- Research artifacts viewer will be rendered as React component -->\n          </div>';
+                  const parts = caseStudy.action.split(placeholderPattern);
+                  
+                  if (parts.length === 2) {
+                    const beforeArtifacts = parts[0];
+                    const afterArtifacts = parts[1];
+                    
+                    return (
+                      <div className="text-lg text-gray-700 leading-relaxed">
+                        <div dangerouslySetInnerHTML={{ __html: beforeArtifacts }} />
+                        <ResearchArtifactsViewer onArtifactClick={openResearchArtifactsModal} />
+                        <div dangerouslySetInnerHTML={{ __html: afterArtifacts }} />
+                      </div>
+                    );
+                  }
+                }
+                
                 // Fallback for other case studies or if splitting fails
                 return (
                   <div 
@@ -366,11 +530,11 @@ const CaseStudyPage: React.FC = () => {
           </div>
 
           {/* Image Gallery Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={`grid md:grid-cols-2 ${caseStudy.id === 'medable-translation-tool' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
             {caseStudy.images.map((image, index) => (
               <div
                 key={index}
-                className="group relative aspect-video bg-gray-200 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300"
+                className="group relative aspect-video bg-gray-200 rounded-lg overflow-hidden cursor-pointer border border-gray-300 hover:shadow-xl hover:shadow-gray-400/20 transition-all duration-300"
                 onClick={() => openModal(index)}
               >
                 <img
@@ -469,6 +633,7 @@ const CaseStudyPage: React.FC = () => {
         currentIndex={currentImageIndex}
         onPrevious={previousImage}
         onNext={nextImage}
+        caseStudyId={caseStudy.id}
       />
 
       {/* Persona Modal */}
@@ -492,6 +657,18 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentScreenshotIndex}
           onPrevious={previousLegacyScreenshot}
           onNext={nextLegacyScreenshot}
+        />
+      )}
+
+      {/* Research Artifacts Modal */}
+      {caseStudy.id === 'medable-translation-tool' && (
+        <ResearchArtifactsModal
+          isOpen={isResearchArtifactsModalOpen}
+          onClose={closeResearchArtifactsModal}
+          artifacts={researchArtifacts}
+          currentIndex={currentArtifactIndex}
+          onPrevious={previousResearchArtifact}
+          onNext={nextResearchArtifact}
         />
       )}
     </div>

@@ -1152,6 +1152,23 @@ export const caseStudies: CaseStudy[] = [
             </div>
           </div>
         </div>
+
+        <div class="action-section mb-8">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-users-cog text-indigo-600"></i>
+            Change Management
+          </h4>
+          <ul class="action-points space-y-4">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-book text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Authored a training playbook for internal Customer Success teams and delivered two enablement workshops to ensure smooth adoption</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-flag text-violet-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Collaborated with Engineering to implement a phased rollout behind feature flags, allowing for gradual activation without interrupting ongoing study operations</span>
+            </li>
+          </ul>
+        </div>
       </div>
     `,
     result: `
@@ -1344,14 +1361,14 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: 'medable-translation-tool',
-    title: 'Translation Management Tool',
-    subtitle: 'Streamlining global clinical trial localization',
+    title: 'Medable',
+    subtitle: 'Streamlining The Clinical Trials Data Process',
     client: 'Medable',
-    role: 'Product Designer',
-    year: '2022',
-    tools: ['Figma', 'Principle', 'Maze'],
+    role: 'Product Design Lead',
+    year: '2022 - 2023',
+    tools: ['Figma', 'Miro', 'FigJam'],
     tags: ['Localization', 'Clinical Trials', 'Workflow Design'],
-    headerImage: '/images/case-studies/medable-translation/header.jpg',
+    headerImage: '/images/case-studies/medable-translation-tool/tmt-header.jpg',
     isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
@@ -1718,86 +1735,141 @@ export const caseStudies: CaseStudy[] = [
       <div class="action-content">
         <div class="action-intro mb-8">
           <p class="action-description text-lg text-gray-700 leading-relaxed">
-            Analyzed both platforms' design systems, created unified design patterns, designed data visualization components, and worked with both engineering teams to ensure smooth technical integration. The process required careful coordination between multiple stakeholders and technical teams.
+            Executed comprehensive research and continuous discovery practices to understand clinical translation workflows, synthesized findings into strategic design decisions, and implemented an end-to-end solution using the Nucleus Design System with validated prototypes and phased deployment strategy.
           </p>
         </div>
 
-        <div class="consolidated-actions mb-12">
-          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
-            
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Cross-Platform Design System Analysis</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted comprehensive audit of both Relo and SponsorPulse design systems, identifying commonalities and conflicts</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created component mapping between platforms to establish consistent interaction patterns</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Developed unified color palette and typography standards that honored both brand identities</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-microscope text-purple-600"></i>
+            User Research: Understanding and Defining The Problem
+          </h4>
+          
+          <p class="text-gray-700 leading-relaxed mb-6">
+            Comprehensive research process and documented artifacts that presented insights and research synthesis to Product, Engineering, Customer Success, and Upper Management teams.
+          </p>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. User Journey Mapping and Integration Points</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Mapped existing user workflows in Relo to identify optimal SponsorPulse integration touchpoints</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed seamless transition patterns that maintained user context across platforms</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created progressive disclosure patterns for SponsorPulse features within Relo's interface</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Data Visualization and Component Design</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed unified dashboard components that could display data from both platforms seamlessly</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created clear visual indicators to help users understand data sources and reliability</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Established consistent interaction patterns for filtering and analyzing integrated data sets</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. Engineering Collaboration and Technical Integration</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Collaborated with both Relo and SponsorPulse engineering teams to ensure design feasibility</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created detailed API integration specifications and data transformation requirements</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted iterative testing and refinement throughout the development and deployment process</span>
-                </li>
-              </ul>
-            </div>
-
+          <div class="research-artifacts-viewer-placeholder">
+            <!-- Research artifacts viewer will be rendered as React component -->
           </div>
+        </div>
+
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-search text-blue-600"></i>
+            Research Execution
+          </h4>
+              <ul class="action-points space-y-4">
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-comments text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Conducted in-depth contextual interviews with Clinical Trials Managers and Customer Success teams, pulling from a structured question set to uncover real workflow breakdowns</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-clipboard-list text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Transcribed and coded responses using Dovetail, surfacing six core insights that mapped directly to usability gaps, operational inefficiencies, and communication breakdowns</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-eye text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Observed live translation workflows to validate pain points and identify behavioral patterns not captured in interviews</span>
+                </li>
+              </ul>
+            </div>
+
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-lightbulb text-orange-600"></i>
+            Synthesis & Ideation
+          </h4>
+              <ul class="action-points space-y-4">
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-rocket text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Facilitated a remote design sprint with Product and Engineering, aligning around eight key "how-might-we" challenges derived from our Opportunity Solution Tree</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-sitemap text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Built a Solution Mapping board that categorized ideas into four strategic tracks: Process Improvement, System Optimization, Feature Addition, and Tool Enhancement</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-sort-amount-up text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Prioritized initiatives based on user impact, technical complexity, and regulatory alignment</span>
+                </li>
+              </ul>
+            </div>
+
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-sync-alt text-purple-600"></i>
+            Continuous Discovery Habits
+          </h4>
+              <ul class="action-points space-y-4">
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-calendar-week text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Set up a weekly feedback cadence focused on assumption testing, using low-fidelity prototypes shared in Zoom sessions to prompt job-to-be-done–style feedback</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-database text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Maintained a centralized research repository that linked every validated insight back to corresponding design artifacts in Figma—ensuring traceability across discovery, design, and delivery</span>
+                </li>
+              </ul>
+            </div>
+
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-drafting-compass text-green-600"></i>
+            Design & Prototyping
+          </h4>
+              <ul class="action-points space-y-4">
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-sitemap text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Created an end-to-end user flow diagram for the Translation Management Tool, bridging UI states, system logic, and user permissions</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-code text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Partnered with the Tech Lead to co-develop the information architecture and define the JSON output schema used to standardize multi-language export formats</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-desktop text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Built a high-fidelity prototype in the Nucleus Design System, including real-time JSON validation previews and built-in QA checkpoints for regulatory compliance</span>
+                </li>
+              </ul>
+            </div>
+
+        <div class="action-section mb-12">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-check-circle text-cyan-600"></i>
+            Validation & Iteration
+          </h4>
+              <ul class="action-points space-y-4">
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-mouse-pointer text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Ran remote unmoderated usability tests via Maze; improved time-on-task by 68% over the legacy workflow</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-chart-line text-pink-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Conducted A/B testing between the old CSV process and the new JSON-first interface—CTMs completed vendor hand-offs 4× faster</span>
+                </li>
+                <li class="action-point flex items-start gap-4">
+                  <i class="fas fa-file-alt text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Documented all testing outcomes in Confluence and secured go/no-go approval from the VP of Clinical Product to begin phased release</span>
+                </li>
+              </ul>
+            </div>
+
+        <div class="action-section mb-8">
+          <h4 class="action-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <i class="fas fa-users-cog text-indigo-600"></i>
+            Change Management
+          </h4>
+          <ul class="action-points space-y-4">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-book text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Authored a training playbook for internal Customer Success teams and delivered two enablement workshops to ensure smooth adoption</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-flag text-violet-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Collaborated with Engineering to implement a phased rollout behind feature flags, allowing for gradual activation without interrupting ongoing study operations</span>
+            </li>
+          </ul>
         </div>
       </div>
     `,
@@ -1805,106 +1877,118 @@ export const caseStudies: CaseStudy[] = [
       <div class="results-content">
         <div class="results-section mb-12">
           <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-chart-bar text-blue-600"></i>
-              Integration Success Metrics
+            <h3 class="results-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-trophy text-blue-600"></i>
+              Impact
             </h3>
           </div>
           
           <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>100% data accuracy</strong> achieved across all integrated metrics and reporting features</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-clock text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>76% reduction</strong> in translation prep time—from 72 hours to just 17 per language—achieved within the first 30 days of pilot launch</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Seamless user experience</strong> with 95% of users reporting the integration felt native to Relo</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-ban text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Zero re-clean loops</strong> in production—automated JSON exports replaced manual formatting, eliminating the multi-day back-and-forth with vendors</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>25% increase in client retention</strong> due to expanded analytics capabilities</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-chart-line text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>+45 point NPS increase</strong> from Clinical Trials Managers, citing "clarity," "confidence," and "finally feeling in control of the workflow"</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Zero integration-related support tickets</strong> in the first 90 days post-launch</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-headset text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Customer Success ticket backlog</strong> dropped from 38 to 6 per week, freeing up teams to support high-impact studies instead of chasing CSV errors</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Faster time-to-insight</strong> with 40% reduction in reporting workflow completion time</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-shield-alt text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>FDA submission readiness</strong> jumped from 67% to 97%—translating into faster patient onboarding, fewer regulatory escalations, and more predictable study timelines</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-dollar-sign text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Operational ROI:</strong> ~$220,000 in projected annual savings by reducing manual contractor hours, vendor corrections, and internal review loops</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-rocket text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>New business unlocked:</strong> Enterprise prospects began asking for early access to the tool as a differentiator—transforming it from an internal fix into a market-facing capability</span>
             </li>
           </ul>
         </div>
 
         <div class="results-section mb-12">
           <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-trophy text-amber-600"></i>
-              Business Impact and Revenue Growth
+            <h3 class="results-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-lightbulb text-green-600"></i>
+              What I Learned
             </h3>
           </div>
           
           <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Became a significant revenue driver</strong> with 35% of new client acquisitions citing the integration as a key factor</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-sync-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Continuous discovery isn't a UX tactic—it's a strategic operating system.</strong> Weekly touchpoints built stakeholder trust and created a culture of co-ownership across Product, Engineering, and Clinical teams</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Expanded market positioning</strong> by offering best-in-class analytics from multiple specialized platforms</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-file-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Artifacts drive alignment.</strong> Personas, journey maps, and UX principles weren't "nice to haves"—they became core tools for gaining cross-functional clarity and buy-in</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Established partnership model</strong> that became the template for future third-party integrations</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-code text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Designing with data engineers early avoids downstream debt.</strong> Co-authoring the JSON schema and information architecture saved weeks of potential rework and ensured UX intent flowed all the way to implementation</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Client satisfaction improvement</strong> with 90% rating the integration as "excellent" or "very good"</span>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-heart text-pink-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Change isn't just operational—it's emotional.</strong> The success of this tool hinged on how we introduced it—through training, context, and a phased rollout plan that respected existing workflows and user anxiety</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-shield-check text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Design can de-risk regulation.</strong> This wasn't just about UI polish or usability—it was about creating an auditable, compliant system that stands up to global health standards</span>
             </li>
           </ul>
         </div>
 
         <div class="results-section">
           <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-lightbulb text-green-600"></i>
-              Integration Design Insights
+            <h3 class="results-title text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-star text-yellow-600"></i>
+              Closing Reflection
             </h3>
           </div>
           
-          <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Invisible integrations are the most successful</strong>—users should gain power without feeling complexity</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Cross-platform design systems require careful orchestration</strong>—not just visual consistency but interaction consistency</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Data provenance and reliability indicators are crucial</strong> when combining multiple data sources</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Engineering collaboration from day one prevents design debt</strong> and ensures feasible solutions</span>
-            </li>
-          </ul>
+          <div class="reflection-content">
+            <div class="reflection-card bg-yellow-50 border-l-4 border-yellow-300 p-6 rounded-r-lg">
+              <div class="flex items-start gap-4">
+                <i class="fas fa-quote-left text-yellow-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <p class="reflection-text text-gray-700 leading-relaxed">
+                  What started as a messy, high-risk localization bottleneck became a high-leverage product capability—anchored in user empathy, built through system-level design, and delivered through strategic iteration. This case proved that thoughtful product design can drive not just workflow improvements, but business outcomes, trust, and lasting cultural change inside the organization.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     `,
     images: [
-      '/images/case-studies/relo-sponsorpulse/design1.jpg',
-      '/images/case-studies/relo-sponsorpulse/design2.jpg',
-      '/images/case-studies/relo-sponsorpulse/design3.jpg',
-      '/images/case-studies/relo-sponsorpulse/design4.jpg',
-      '/images/case-studies/relo-sponsorpulse/design5.jpg',
-      '/images/case-studies/relo-sponsorpulse/design6.jpg',
-      '/images/case-studies/relo-sponsorpulse/design7.jpg',
-      '/images/case-studies/relo-sponsorpulse/design8.jpg',
-      '/images/case-studies/relo-sponsorpulse/design9.jpg',
-      '/images/case-studies/relo-sponsorpulse/design10.jpg',
-      '/images/case-studies/relo-sponsorpulse/design11.jpg',
-      '/images/case-studies/relo-sponsorpulse/design12.jpg',
+      '/images/case-studies/medable-translation-tool/user-flow-diagram.jpg',
+      '/images/case-studies/medable-translation-tool/translations-list-view.jpg',
+      '/images/case-studies/medable-translation-tool/new-export-form-start.jpg',
+      '/images/case-studies/medable-translation-tool/select-export-by-assessment.jpg',
+      '/images/case-studies/medable-translation-tool/select-additional-languages.jpg',
+      '/images/case-studies/medable-translation-tool/select-assessments-button.jpg',
+      '/images/case-studies/medable-translation-tool/additional-languages-modal.jpg',
+      '/images/case-studies/medable-translation-tool/additional-languages-modal-languages-select.jpg',
+      '/images/case-studies/medable-translation-tool/select-push-notifications.jpg',
+      '/images/case-studies/medable-translation-tool/select-study-strings.jpg',
+      '/images/case-studies/medable-translation-tool/select-non-assessment-study-strings.jpg',
+      '/images/case-studies/medable-translation-tool/select-assessments-button.jpg',
+      '/images/case-studies/medable-translation-tool/select-assessments-modal.jpg',
+      '/images/case-studies/medable-translation-tool/select-assessments-modal-selected-states.jpg',
+      '/images/case-studies/medable-translation-tool/final-translation-package-request.jpg',
+      '/images/case-studies/medable-translation-tool/success-toast-message-translation-mgmt-confirm.jpg',
+      '/images/case-studies/medable-translation-tool/translation-ready-for-download.jpg',
+      '/images/case-studies/medable-translation-tool/download-hover-menu.jpg',
+      '/images/case-studies/medable-translation-tool/final-exported-json-files-architecture.png',
+      '/images/case-studies/medable-translation-tool/final-exported-json-files-structure.png',
     ],
     // figmaLink: '' // No prototype available
   },
@@ -2743,12 +2827,12 @@ export const caseStudies: CaseStudy[] = [
       </div>
     `,
     images: [
-      '/images/case-studies/medable-translation/design1.jpg',
-      '/images/case-studies/medable-translation/design2.jpg',
-      '/images/case-studies/medable-translation/design3.jpg',
-      '/images/case-studies/medable-translation/design4.jpg',
-      '/images/case-studies/medable-translation/design5.jpg',
-      '/images/case-studies/medable-translation/design6.jpg',
+      '/images/case-studies/medable-design-system/design1.jpg',
+      '/images/case-studies/medable-design-system/design2.jpg',
+      '/images/case-studies/medable-design-system/design3.jpg',
+      '/images/case-studies/medable-design-system/design4.jpg',
+      '/images/case-studies/medable-design-system/design5.jpg',
+      '/images/case-studies/medable-design-system/design6.jpg',
     ],
     // figmaLink: '' // No prototype available
   },
