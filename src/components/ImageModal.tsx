@@ -183,11 +183,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
         className="fixed inset-0 bg-black/80 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-0 z-10 flex items-center justify-center p-6">
-        <div className="relative w-full max-w-6xl">
+      <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
+        <div className="relative w-full max-w-4xl h-[80vh]">
           <DialogPanel
             transition
-            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in w-full max-h-[85vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in w-full h-full data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             {/* Close button */}
             <div className="absolute right-0 top-0 pr-4 pt-4 z-20">
@@ -222,25 +222,25 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </button>
 
             {/* Modal content */}
-            <div className="bg-white p-4 flex flex-col h-full max-h-[85vh]">
+            <div className="bg-white p-4 flex flex-col h-full">
               {/* Title */}
-              <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900 mb-2 flex-shrink-0">
+              <DialogTitle as="h3" className="text-sm font-semibold leading-5 text-gray-900 mb-2 flex-shrink-0">
                 {currentDesignInfo.title}
               </DialogTitle>
               
               {/* Subtitle */}
               {currentDesignInfo.subtitle && (
-                <p className="text-gray-600 mb-3 text-sm leading-relaxed flex-shrink-0">
+                <p className="text-gray-600 mb-2 text-xs leading-relaxed flex-shrink-0">
                   {currentDesignInfo.subtitle}
                 </p>
               )}
               
-              {/* Image container - Much more conservative sizing */}
-              <div className="flex-1 flex items-center justify-center mb-3 min-h-0 overflow-hidden px-4">
+              {/* Image container - SIMPLE and constrained */}
+              <div className="flex-1 flex items-center justify-center mb-2 min-h-0 p-2 bg-gray-50">
                 <img
                   src={images[currentIndex]}
                   alt={`Design: ${currentDesignInfo.title}`}
-                  className="max-w-full max-h-full w-auto h-auto object-contain border border-gray-300 rounded-lg"
+                  className="max-w-full max-h-full object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
                   }}
@@ -248,8 +248,8 @@ const ImageModal: React.FC<ImageModalProps> = ({
               </div>
               
               {/* Footer with counter */}
-              <div className="bg-gray-50 -mx-4 -mb-4 px-4 py-2 flex-shrink-0 text-center border-t border-gray-200">
-                <div className="text-xs text-gray-500 font-medium">
+              <div className="bg-gray-100 -mx-4 -mb-4 px-3 py-1 flex-shrink-0 text-center border-t border-gray-200">
+                <div className="text-xs text-gray-500">
                   {currentIndex + 1} of {images.length}
                 </div>
               </div>
