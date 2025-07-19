@@ -7,20 +7,37 @@ import { personalInfo } from '../data/personalInfo';
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const [hoveredTooltip, setHoveredTooltip] = useState<number | null>(null);
+  const [tooltipTimeout, setTooltipTimeout] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
+    // Clear any existing timeout to prevent flickering
+    if (tooltipTimeout) {
+      clearTimeout(tooltipTimeout);
+    }
+    setHoveredTooltip(index);
+  };
+
+  const handleMouseLeave = () => {
+    // Add a small delay to prevent flickering when moving between icons
+    const timeout = setTimeout(() => {
+      setHoveredTooltip(null);
+    }, 50);
+    setTooltipTimeout(timeout);
+  };
 
   const socialLinks = [
     {
       icon: faEnvelope,
       href: undefined, // No href for email - just tooltip
       label: 'Email',
-      tooltip: personalInfo.contact.email,
+      tooltip: personalInfo.contact.email, // Show actual email
       isEmail: true
     },
     {
       icon: faLinkedin,
       href: personalInfo.contact.linkedin,
       label: 'LinkedIn',
-      tooltip: 'LinkedIn Profile',
+      tooltip: personalInfo.contact.linkedin, // Show actual LinkedIn URL
       isEmail: false
     }
   ];
@@ -30,7 +47,7 @@ const Footer: React.FC = () => {
       icon: faInstagram,
       href: personalInfo.contact.instagram,
       label: 'Instagram',
-      tooltip: 'Instagram Profile',
+      tooltip: personalInfo.contact.instagram, // Show actual Instagram URL
       isEmail: false
     });
   }
@@ -40,7 +57,7 @@ const Footer: React.FC = () => {
       icon: faGithub,
       href: personalInfo.contact.github,
       label: 'GitHub',
-      tooltip: 'GitHub Profile',
+      tooltip: personalInfo.contact.github, // Show actual GitHub URL
       isEmail: false
     });
   }
@@ -72,8 +89,8 @@ const Footer: React.FC = () => {
                       <button
                         className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
                         aria-label={link.label}
-                        onMouseEnter={() => setHoveredTooltip(index)}
-                        onMouseLeave={() => setHoveredTooltip(null)}
+                        onMouseEnter={() => handleMouseEnter(index)}
+                        onMouseLeave={handleMouseLeave}
                       >
                         <FontAwesomeIcon icon={link.icon} className="text-sm" />
                       </button>
@@ -99,8 +116,8 @@ const Footer: React.FC = () => {
                         rel="noopener noreferrer"
                         className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
                         aria-label={link.label}
-                        onMouseEnter={() => setHoveredTooltip(index)}
-                        onMouseLeave={() => setHoveredTooltip(null)}
+                        onMouseEnter={() => handleMouseEnter(index)}
+                        onMouseLeave={handleMouseLeave}
                       >
                         <FontAwesomeIcon icon={link.icon} className="text-sm" />
                       </a>
