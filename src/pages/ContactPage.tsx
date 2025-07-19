@@ -16,11 +16,11 @@ const ContactPage: React.FC = () => {
   const copyToClipboard = async (text: string, type: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      setCopyStatus({ ...copyStatus, [type]: true });
+      setCopyStatus(prev => ({ ...prev, [type]: true }));
       
       // Reset the success message after 2 seconds
       setTimeout(() => {
-        setCopyStatus({ ...copyStatus, [type]: false });
+        setCopyStatus(prev => ({ ...prev, [type]: false }));
       }, 2000);
     } catch (err) {
       console.error('Failed to copy: ', err);
