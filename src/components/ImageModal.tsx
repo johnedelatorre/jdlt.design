@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +12,86 @@ interface ImageModalProps {
   onNext: () => void;
   caseStudyId?: string;
 }
+
+// PERFORMANCE FIX: Move outside component to prevent recreation on every render
+const MEDABLE_DESIGNS: { [key: string]: { title: string; subtitle: string } } = {
+  'user-flow-diagram.jpg': {
+    title: 'User Flow Diagram',
+    subtitle: 'Complete workflow mapping from translation request to final delivery'
+  },
+  'translations-list-view.jpg': {
+    title: 'Translations List View',
+    subtitle: 'Dashboard overview showing all active translation projects and their status'
+  },
+  'new-export-form-start.jpg': {
+    title: 'New Export Form Start',
+    subtitle: 'Initial step of the translation export process with clear navigation'
+  },
+  'select-export-by-assessment.jpg': {
+    title: 'Select Export By Assessment',
+    subtitle: 'Assessment-based content selection for targeted translation exports'
+  },
+  'select-additional-languages.jpg': {
+    title: 'Select Additional Languages',
+    subtitle: 'Multi-language selection interface for comprehensive localization'
+  },
+  'select-assessments-button.jpg': {
+    title: 'Select Assessments Button',
+    subtitle: 'Assessment selection interface with clear interaction patterns'
+  },
+  'additional-languages-modal.jpg': {
+    title: 'Additional Languages Modal',
+    subtitle: 'Modal interface for adding multiple target languages to translation projects'
+  },
+  'additional-languages-modal-languages-select.jpg': {
+    title: 'Additional Languages Modal Languages Select',
+    subtitle: 'Detailed language selection with regional variants and preferences'
+  },
+  'select-push-notifications.jpg': {
+    title: 'Select Push Notifications',
+    subtitle: 'Notification preferences for translation project updates and alerts'
+  },
+  'select-study-strings.jpg': {
+    title: 'Select Study Strings',
+    subtitle: 'Study-specific content selection for contextual translations'
+  },
+  'select-non-assessment-study-strings.jpg': {
+    title: 'Select Non-Assessment Study Strings',
+    subtitle: 'Non-assessment content selection for comprehensive study localization'
+  },
+  'select-assessments-modal.jpg': {
+    title: 'Select Assessments Modal',
+    subtitle: 'Assessment selection modal with filtering and search capabilities'
+  },
+  'select-assessments-modal-selected-states.jpg': {
+    title: 'Select Assessments Modal Selected States',
+    subtitle: 'Assessment modal showing selected items and confirmation states'
+  },
+  'final-translation-package-request.jpg': {
+    title: 'Final Translation Package Request',
+    subtitle: 'Comprehensive translation request summary with selected options'
+  },
+  'success-toast-message-translation-mgmt-confirm.jpg': {
+    title: 'Success Toast Message Translation Management Confirm',
+    subtitle: 'Success confirmation with clear feedback and next steps'
+  },
+  'translation-ready-for-download.jpg': {
+    title: 'Translation Ready For Download',
+    subtitle: 'Download-ready status with file management and access controls'
+  },
+  'download-hover-menu.jpg': {
+    title: 'Download Hover Menu',
+    subtitle: 'Contextual download options with file format selection'
+  },
+  'final-exported-json-files-architecture.png': {
+    title: 'Final Exported JSON Files Architecture',
+    subtitle: 'Technical architecture view of exported translation file structure'
+  },
+  'final-exported-json-files-structure.png': {
+    title: 'Final Exported JSON Files Structure',
+    subtitle: 'Detailed view of the standardized JSON export format for translations'
+  }
+};
 
 const ImageModal: React.FC<ImageModalProps> = ({
   isOpen,
@@ -54,92 +134,12 @@ const ImageModal: React.FC<ImageModalProps> = ({
     };
   }, [isOpen, onClose, onPrevious, onNext]);
 
-  // Get design info for Medable Translation Tool
+  // PERFORMANCE OPTIMIZED: Get design info for Medable Translation Tool
   const getMedableDesignInfo = (imagePath: string) => {
     const filename = imagePath.split('/').pop() || '';
-    
-    // Define specific titles and subtitles for Medable Translation Tool images
-    const medableDesigns: { [key: string]: { title: string; subtitle: string } } = {
-      'user-flow-diagram.jpg': {
-        title: 'User Flow Diagram',
-        subtitle: 'Complete workflow mapping from translation request to final delivery'
-      },
-      'translations-list-view.jpg': {
-        title: 'Translations List View',
-        subtitle: 'Dashboard overview showing all active translation projects and their status'
-      },
-      'new-export-form-start.jpg': {
-        title: 'New Export Form Start',
-        subtitle: 'Initial step of the translation export process with clear navigation'
-      },
-      'select-export-by-assessment.jpg': {
-        title: 'Select Export By Assessment',
-        subtitle: 'Assessment-based content selection for targeted translation exports'
-      },
-      'select-additional-languages.jpg': {
-        title: 'Select Additional Languages',
-        subtitle: 'Multi-language selection interface for comprehensive localization'
-      },
-      'select-assessments-button.jpg': {
-        title: 'Select Assessments Button',
-        subtitle: 'Assessment selection interface with clear interaction patterns'
-      },
-      'additional-languages-modal.jpg': {
-        title: 'Additional Languages Modal',
-        subtitle: 'Modal interface for adding multiple target languages to translation projects'
-      },
-      'additional-languages-modal-languages-select.jpg': {
-        title: 'Additional Languages Modal Languages Select',
-        subtitle: 'Detailed language selection with regional variants and preferences'
-      },
-      'select-push-notifications.jpg': {
-        title: 'Select Push Notifications',
-        subtitle: 'Notification preferences for translation project updates and alerts'
-      },
-      'select-study-strings.jpg': {
-        title: 'Select Study Strings',
-        subtitle: 'Study-specific content selection for clinical trial localization'
-      },
-      'select-non-assessment-study-strings.jpg': {
-        title: 'Select Non Assessment Study Strings',
-        subtitle: 'General study content selection excluding assessment-specific materials'
-      },
-      'select-assessments-modal.jpg': {
-        title: 'Select Assessments Modal',
-        subtitle: 'Modal interface for choosing specific clinical assessments for translation'
-      },
-      'select-assessments-modal-selected-states.jpg': {
-        title: 'Select Assessments Modal Selected States',
-        subtitle: 'Visual feedback showing selected assessments with clear state indicators'
-      },
-      'final-translation-package-request.jpg': {
-        title: 'Final Translation Package Request',
-        subtitle: 'Summary view before submitting translation request for processing'
-      },
-      'success-toast-message-translation-mgmt-confirm.jpg': {
-        title: 'Success Toast Message Translation Mgmt Confirm',
-        subtitle: 'Confirmation feedback indicating successful translation request submission'
-      },
-      'translation-ready-for-download.jpg': {
-        title: 'Translation Ready For Download',
-        subtitle: 'Completion state with download options for finalized translations'
-      },
-      'download-hover-menu.jpg': {
-        title: 'Download Hover Menu',
-        subtitle: 'Interactive menu showing available download formats and options'
-      },
-      'final-exported-json-files-architecture.png': {
-        title: 'Final Exported Json Files Architecture',
-        subtitle: 'Technical documentation showing JSON file structure and organization'
-      },
-      'final-exported-json-files-structure.png': {
-        title: 'Final Exported Json Files Structure',
-        subtitle: 'Detailed view of the standardized JSON export format for translations'
-      }
-    };
 
-    if (medableDesigns[filename]) {
-      return medableDesigns[filename];
+    if (MEDABLE_DESIGNS[filename]) {
+      return MEDABLE_DESIGNS[filename];
     }
 
     // Fallback for unrecognized files
@@ -171,10 +171,12 @@ const ImageModal: React.FC<ImageModalProps> = ({
     return formattedName;
   };
 
-  // Get title and subtitle based on case study
-  const currentDesignInfo = caseStudyId === 'medable-translation-tool' 
-    ? getMedableDesignInfo(images[currentIndex])
-    : { title: getDesignName(images[currentIndex]), subtitle: '' };
+  // PERFORMANCE OPTIMIZED: Memoize design info calculation
+  const currentDesignInfo = useMemo(() => {
+    return caseStudyId === 'medable-translation-tool' 
+      ? getMedableDesignInfo(images[currentIndex])
+      : { title: getDesignName(images[currentIndex]), subtitle: '' };
+  }, [caseStudyId, images, currentIndex]);
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
