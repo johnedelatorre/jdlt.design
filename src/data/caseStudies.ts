@@ -2327,78 +2327,64 @@ export const caseStudies: CaseStudy[] = [
     task: `
       <div class="task-content">
         <div class="task-intro mb-8">
+          <h3 class="task-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-bullseye text-blue-600"></i>
+            Core Objectives & Strategic Goals
+          </h3>
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
-            Create a comprehensive design system that would unify the visual language across all Medable products, improve design consistency, and accelerate the development process. The system needed to be robust enough for healthcare requirements while flexible enough to support rapid product iteration.
+            The challenge required a comprehensive approach to transform Medable's fragmented design ecosystem into a unified, scalable system that could support the complex needs of healthcare technology while accelerating product development.
           </p>
         </div>
 
-        <div class="task-focus mb-10">
-          <div class="task-header mb-6">
-            <div class="task-number flex items-center gap-3">
-              <i class="fas fa-layer-group text-blue-600"></i>
-              <span class="task-label font-semibold text-blue-600">DESIGN SYSTEM FOUNDATION</span>
-            </div>
-            <h4 class="task-title text-xl font-bold text-gray-900 mb-4">Build Scalable, Healthcare-Focused Design Infrastructure</h4>
-          </div>
-          
-          <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
-            The design system needed to address both <strong>immediate consistency issues</strong> and establish a foundation for long-term scalability. Healthcare-specific requirements included accessibility standards, clinical workflow patterns, and regulatory compliance considerations.
-          </p>
-          
-          <div class="task-components mb-8">
-            <ul class="task-list space-y-4">
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-atom text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Audit existing components and establish token-based design foundation</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-book-open text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Create comprehensive documentation and usage guidelines</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-code-branch text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Collaborate with developers to implement system in Storybook</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-universal-access text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Ensure accessibility compliance for healthcare professional workflows</span>
-              </li>
-            </ul>
-          </div>
+        <div class="task-objectives mb-10">
+          <ul class="task-list space-y-6">
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Create Medable's first end-to-end design system</strong> that could unify product experience across platforms, teams, and clinical workflows.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-tachometer-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Reduce design and engineering inefficiencies</strong> by replacing redundant, outdated components with reusable, scalable UI architecture.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-universal-access text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Integrate accessibility best practices</strong> and ensure the new system met WCAG standards and clinical compliance.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-sitemap text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Build governance and adoption strategy</strong> to align cross-functional teams—including product managers, engineers, marketers, and clinical teams.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-handshake text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Get organizational buy-in</strong> by developing a business case and demonstrating clear value through measurable KPIs.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-rocket text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Deliver a proof of concept</strong> showing how the system could improve velocity, quality, and clarity across the board.</span>
+            </li>
+            <li class="task-item flex items-start gap-4">
+              <i class="fas fa-graduation-cap text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Establish education and rollout frameworks</strong> so future teams could onboard quickly and adhere to system standards.</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="task-healthcare mb-8">
-          <div class="healthcare-header mb-6">
-            <h4 class="healthcare-title flex items-center gap-3 text-lg font-bold text-gray-900">
-              <i class="fas fa-heartbeat text-indigo-600"></i>
-              Healthcare-Specific Requirements
-            </h4>
-          </div>
-          
-          <div class="healthcare-list space-y-4">
-            <div class="healthcare-item flex items-start gap-4">
-              <i class="fas fa-shield-alt text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">HIPAA compliance patterns for patient data handling and display</span>
-            </div>
-            
-            <div class="healthcare-item flex items-start gap-4">
-              <i class="fas fa-clock text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Clinical workflow optimization for time-sensitive healthcare scenarios</span>
-            </div>
-            
-            <div class="healthcare-item flex items-start gap-4">
-              <i class="fas fa-users-cog text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Multi-role interface patterns for different healthcare professional types</span>
-            </div>
-          </div>
+        <div class="task-success-metrics mb-8">
+          <h3 class="success-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-chart-line text-emerald-600"></i>
+            Success Criteria & Impact Measurement
+          </h3>
+          <p class="success-description text-lg text-gray-700 leading-relaxed mb-6">
+            Success would be measured across multiple dimensions: <strong>technical efficiency</strong>, <strong>design consistency</strong>, <strong>team velocity</strong>, and ultimately <strong>healthcare professional satisfaction</strong> with the improved user experience.
+          </p>
         </div>
 
         <div class="task-conclusion mt-10">
-          <div class="conclusion-card bg-purple-50 border-l-4 border-purple-300 p-6 rounded-r-lg">
+          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
-              <i class="fas fa-hospital text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                Success would be measured not just by development efficiency gains, but by improved healthcare professional experiences and ultimately better patient outcomes.
+                <strong>This wasn't just about visual consistency—it was about creating systemic change</strong> that would transform how Medable built products, empowering teams to deliver better healthcare experiences faster and more reliably.
               </p>
             </div>
           </div>
