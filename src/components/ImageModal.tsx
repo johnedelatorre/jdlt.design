@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -102,6 +102,59 @@ const ImageModal: React.FC<ImageModalProps> = ({
   onNext,
   caseStudyId,
 }) => {
+  const [imageLoadStates, setImageLoadStates] = useState<{ [key: string]: 'loading' | 'loaded' | 'error' }>({});
+  const preloadedImages = useRef<{ [key: string]: HTMLImageElement }>({});
+
+  // PERFORMANCE BOOST: Preload adjacent images
+  useEffect(() => {
+    if (!isOpen || !images.length) return;
+
+    const preloadImage = (src: string) => {
+      if (preloadedImages.current[src]) return; // Already preloaded
+
+      const img = new Image();
+      setImageLoadStates(prev => ({ ...prev, [src]: 'loading' }));
+      
+      img.onload = () => {
+        preloadedImages.current[src] = img;
+        setImageLoadStates(prev => ({ ...prev, [src]: 'loaded' }));
+      };
+      
+      img.onerror = () => {
+        setImageLoadStates(prev => ({ ...prev, [src]: 'error' }));
+      };
+      
+      img.src = src;
+    };
+
+    // Preload current image immediately
+    preloadImage(images[currentIndex]);
+
+    // Preload next and previous images in background
+    const preloadAdjacent = () => {
+      // Preload next 2 images
+      for (let i = 1; i <= 2; i++) {
+        const nextIndex = currentIndex + i;
+        if (nextIndex < images.length) {
+          preloadImage(images[nextIndex]);
+        }
+      }
+
+      // Preload previous 2 images
+      for (let i = 1; i <= 2; i++) {
+        const prevIndex = currentIndex - i;
+        if (prevIndex >= 0) {
+          preloadImage(images[prevIndex]);
+        }
+      }
+    };
+
+    // Small delay to prioritize current image
+    const timer = setTimeout(preloadAdjacent, 100);
+    
+    return () => clearTimeout(timer);
+  }, [isOpen, currentIndex, images]);
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (!isOpen) return;
@@ -178,6 +231,9 @@ const ImageModal: React.FC<ImageModalProps> = ({
       : { title: getDesignName(images[currentIndex]), subtitle: '' };
   }, [caseStudyId, images, currentIndex]);
 
+  const currentImageSrc = images[currentIndex];
+  const currentImageState = imageLoadStates[currentImageSrc] || 'loading';
+
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
       <DialogBackdrop
@@ -240,15 +296,42 @@ const ImageModal: React.FC<ImageModalProps> = ({
                   )}
                   
                   {/* Image container - Fixed height container like legacy modal */}
-                  <div className="flex-1 flex items-center justify-center min-h-0">
+                  <div className="flex-1 flex items-center justify-center min-h-0 relative">
+                    {/* Loading spinner overlay */}
+                    {currentImageState === 'loading' && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
+                        <div className="flex items-center space-x-3">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+                          <span className="text-gray-600 font-medium">Loading image...</span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Main image */}
                     <img
-                      src={images[currentIndex]}
+                      src={currentImageSrc}
                       alt={`Design: ${currentDesignInfo.title}`}
-                      className="max-w-full max-h-full object-contain rounded-lg shadow-lg modal-image-border"
+                      className={`max-w-full max-h-full object-contain rounded-lg shadow-lg modal-image-border transition-opacity duration-300 ${
+                        currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
+                      }`}
+                      onLoad={() => {
+                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
+                      }}
                       onError={(e) => {
+                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
                         (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
                       }}
                     />
+
+                    {/* Error state */}
+                    {currentImageState === 'error' && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
+                        <div className="text-center">
+                          <div className="text-red-500 text-4xl mb-2">⚠️</div>
+                          <span className="text-gray-600">Failed to load image</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                 </div>
@@ -257,6 +340,13 @@ const ImageModal: React.FC<ImageModalProps> = ({
             {/* Counter overlay - Bottom center */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
               {currentIndex + 1} of {images.length}
+              
+              {/* Preload indicator for next images */}
+              {images.length > 1 && (
+                <span className="ml-2 text-xs opacity-75">
+                  {currentIndex < images.length - 1 && imageLoadStates[images[currentIndex + 1]] === 'loaded' && '• Next ready'}
+                </span>
+              )}
             </div>
             </div>
           </DialogPanel>
