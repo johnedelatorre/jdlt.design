@@ -31,6 +31,22 @@ const ProjectNavigator: React.FC = () => {
     return () => document.removeEventListener('keydown', handleEscKey);
   }, [isOpen]);
 
+  // Manage body overflow when drawer is open/closed
+  useEffect(() => {
+    if (isOpen) {
+      // Hide main page scrollbar when drawer is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Restore main page scrollbar when drawer is closed
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to restore scrollbar when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
     <>
       {/* Floating Action Button */}
