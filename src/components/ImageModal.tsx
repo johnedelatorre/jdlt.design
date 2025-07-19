@@ -244,31 +244,16 @@ const ImageModal: React.FC<ImageModalProps> = ({
       {/* Full-screen modal container */}
       <div className="fixed inset-0 z-10 flex flex-col">
         
-        {/* Top overlay - Title and close button */}
-        <div className="absolute top-0 left-0 right-0 z-20 bg-gradient-to-b from-black/70 via-black/40 to-transparent p-6">
-          <div className="flex items-start justify-between">
-            {/* Title section */}
-            <div className="flex-1 pr-4">
-              <DialogTitle as="h2" className="text-2xl font-semibold text-white mb-2 drop-shadow-lg">
-                {currentDesignInfo.title}
-              </DialogTitle>
-              {currentDesignInfo.subtitle && (
-                <p className="text-gray-200 text-base leading-relaxed drop-shadow-md max-w-3xl">
-                  {currentDesignInfo.subtitle}
-                </p>
-              )}
-            </div>
-            
-            {/* Close button */}
-            <button
-              type="button"
-              onClick={onClose}
-              className="flex-shrink-0 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
-            >
-              <span className="sr-only">Close</span>
-              <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
-            </button>
-          </div>
+        {/* Top overlay - Only close button */}
+        <div className="absolute top-0 right-0 z-20 p-6">
+          <button
+            type="button"
+            onClick={onClose}
+            className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 flex items-center justify-center"
+          >
+            <span className="sr-only">Close</span>
+            <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
+          </button>
         </div>
 
         {/* Main image container - Full screen */}
@@ -283,11 +268,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
           )}
 
-          {/* Main image */}
+          {/* Main image - Fit to height with max width constraint */}
           <img
             src={currentImageSrc}
             alt={`Design: ${currentDesignInfo.title}`}
-            className={`max-w-full max-h-full object-contain transition-opacity duration-300 ${
+            className={`h-full w-auto max-w-full object-contain transition-opacity duration-300 ${
               currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
             }`}
             onLoad={() => {
@@ -309,11 +294,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
           )}
 
-          {/* Navigation arrows */}
+          {/* Navigation arrows - Fixed vertical position */}
           <button
             type="button"
             onClick={onPrevious}
-            className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
           >
             <span className="sr-only">Previous image</span>
             <FontAwesomeIcon icon={faChevronLeft} className="h-5 w-5" />
@@ -322,17 +307,32 @@ const ImageModal: React.FC<ImageModalProps> = ({
           <button
             type="button"
             onClick={onNext}
-            className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
           >
             <span className="sr-only">Next image</span>
             <FontAwesomeIcon icon={faChevronRight} className="h-5 w-5" />
           </button>
         </div>
 
-        {/* Bottom overlay - Counter */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 flex justify-center">
-          <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
-            {currentIndex + 1} of {images.length}
+        {/* Bottom overlay - Title, subtitle, and counter */}
+        <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-6">
+          <div className="text-center space-y-3">
+            {/* Title and subtitle */}
+            <div className="space-y-2">
+              <DialogTitle as="h2" className="text-2xl font-semibold text-white drop-shadow-lg">
+                {currentDesignInfo.title}
+              </DialogTitle>
+              {currentDesignInfo.subtitle && (
+                <p className="text-gray-200 text-base leading-relaxed drop-shadow-md max-w-3xl mx-auto">
+                  {currentDesignInfo.subtitle}
+                </p>
+              )}
+            </div>
+            
+            {/* Counter */}
+            <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium inline-block">
+              {currentIndex + 1} of {images.length}
+            </div>
           </div>
         </div>
       </div>
