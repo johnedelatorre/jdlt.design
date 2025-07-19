@@ -124,6 +124,35 @@ npm run build
 
 The built files will be in the `dist` directory.
 
+## 🚀 Deployment
+
+This project uses a **two-branch deployment strategy** for safe production releases:
+
+### Branch Strategy
+- **`main`** - Development and testing (you work here)
+- **`production`** - Live production code (deployed to Vercel)
+
+### Deploy to Production
+```bash
+# Switch to production branch
+git checkout production
+
+# Merge tested changes from main
+git merge main
+
+# Deploy to Vercel
+git push origin production
+
+# Return to development
+git checkout main
+```
+
+### Live Sites
+- **Production**: [www.jdlt.design](https://www.jdlt.design) (from `production` branch)
+- **Development**: Continue working on `main` branch
+
+See `DEPLOYMENT.md` for detailed workflow instructions.
+
 ## 📱 Responsive Design
 
 The portfolio is fully responsive across all device sizes:
