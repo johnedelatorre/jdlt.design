@@ -29,33 +29,15 @@ const CaseStudyPage: React.FC = () => {
   const previousCaseStudy = currentIndex > 0 ? caseStudies[currentIndex - 1] : null;
   const nextCaseStudy = currentIndex < caseStudies.length - 1 ? caseStudies[currentIndex + 1] : null;
 
-  if (!caseStudy) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-3xl font-serif font-bold mb-4">Case Study Not Found</h1>
-          <Link to="/" className="btn-primary">
-            Back to Home
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   // Preload images for better performance and eliminate hover lag
   useEffect(() => {
-    if (caseStudy.images && caseStudy.images.length > 0) {
+    if (caseStudy && caseStudy.images && caseStudy.images.length > 0) {
       caseStudy.images.forEach((imageSrc) => {
         const img = new Image();
         img.src = imageSrc;
       });
     }
-  }, [caseStudy.images]);
-
-  const openModal = (index: number) => {
-    setCurrentImageIndex(index);
-    setIsModalOpen(true);
-  };
+  }, [caseStudy]);
 
   const closeModal = useCallback(() => {
     setIsModalOpen(false);
@@ -70,6 +52,24 @@ const CaseStudyPage: React.FC = () => {
     if (!caseStudy) return;
     setCurrentImageIndex((prev) => (prev < caseStudy.images.length - 1 ? prev + 1 : 0));
   }, [caseStudy]);
+
+  if (!caseStudy) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-serif font-bold mb-4">Case Study Not Found</h1>
+          <Link to="/" className="btn-primary">
+            Back to Home
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const openModal = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsModalOpen(true);
+  };
 
   // Persona data for Relo Census case study
   const personas = [
@@ -181,7 +181,7 @@ const CaseStudyPage: React.FC = () => {
   // Research artifacts modal handlers
   const openResearchArtifactsModal = (artifactId: string) => {
     console.log('openResearchArtifactsModal called with:', artifactId);
-    const index = researchArtifacts.findIndex((a: any) => a.id === artifactId);
+    const index = researchArtifacts.findIndex((a) => a.id === artifactId);
     console.log('Found artifact index:', index);
     if (index !== -1) {
       setCurrentArtifactIndex(index);

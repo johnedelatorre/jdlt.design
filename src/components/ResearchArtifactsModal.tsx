@@ -28,29 +28,6 @@ const ResearchArtifactsModal = ({
   onPrevious,
   onNext,
 }: ResearchArtifactsModalProps) => {
-  if (!artifacts.length) {
-    return null;
-  }
-
-  const currentArtifact = artifacts[currentIndex];
-
-  // Handle keyboard navigation
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      e.stopPropagation();
-      if (currentIndex > 0) {
-        onPrevious();
-      }
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      e.stopPropagation();
-      if (currentIndex < artifacts.length - 1) {
-        onNext();
-      }
-    }
-  };
-
   // Global keyboard event handler for better reliability
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
@@ -77,7 +54,28 @@ const ResearchArtifactsModal = ({
     };
   }, [isOpen, currentIndex, artifacts.length, onPrevious, onNext, onClose]);
 
+  if (!artifacts.length) {
+    return null;
+  }
 
+  const currentArtifact = artifacts[currentIndex];
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      e.stopPropagation();
+      if (currentIndex > 0) {
+        onPrevious();
+      }
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      e.stopPropagation();
+      if (currentIndex < artifacts.length - 1) {
+        onNext();
+      }
+    }
+  };
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50" onKeyDown={handleKeyDown}>

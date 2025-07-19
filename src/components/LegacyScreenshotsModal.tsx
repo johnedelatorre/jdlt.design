@@ -28,29 +28,6 @@ const LegacyScreenshotsModal = ({
   onPrevious,
   onNext,
 }: LegacyScreenshotsModalProps) => {
-  if (!screenshots.length) {
-    return null;
-  }
-
-  const currentScreenshot = screenshots[currentIndex];
-
-  // Handle keyboard navigation
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      e.stopPropagation();
-      if (currentIndex > 0) {
-        onPrevious();
-      }
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      e.stopPropagation();
-      if (currentIndex < screenshots.length - 1) {
-        onNext();
-      }
-    }
-  };
-
   // Global keyboard event handler for better reliability
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
@@ -76,6 +53,29 @@ const LegacyScreenshotsModal = ({
       document.removeEventListener('keydown', handleGlobalKeyDown);
     };
   }, [isOpen, currentIndex, screenshots.length, onPrevious, onNext, onClose]);
+
+  if (!screenshots.length) {
+    return null;
+  }
+
+  const currentScreenshot = screenshots[currentIndex];
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      e.stopPropagation();
+      if (currentIndex > 0) {
+        onPrevious();
+      }
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      e.stopPropagation();
+      if (currentIndex < screenshots.length - 1) {
+        onNext();
+      }
+    }
+  };
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50" onKeyDown={handleKeyDown}>
