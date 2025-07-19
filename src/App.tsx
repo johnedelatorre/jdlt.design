@@ -1,5 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import PageTransition from './components/PageTransition';
@@ -31,6 +33,8 @@ function App() {
       <Layout>
         <AppRoutes />
       </Layout>
+      <Analytics />
+      <SpeedInsights />
     </Router>
   );
 }
