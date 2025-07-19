@@ -2392,86 +2392,119 @@ export const caseStudies: CaseStudy[] = [
     action: `
       <div class="action-content">
         <div class="action-intro mb-8">
-          <p class="action-description text-lg text-gray-700 leading-relaxed">
-            Audited existing components, established design principles, created a token-based design system in Figma, built comprehensive component documentation, and collaborated with developers to implement the system in Storybook. The process required careful analysis of healthcare-specific needs and regulatory requirements.
+          <h3 class="action-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-cogs text-blue-600"></i>
+            Strategic Implementation Approach
+          </h3>
+          <p class="action-description text-lg text-gray-700 leading-relaxed mb-6">
+            The transformation required a systematic, multi-phase approach that balanced urgent consistency needs with long-term strategic positioning. Every decision was made with healthcare compliance, user safety, and organizational buy-in as primary considerations.
           </p>
         </div>
 
-        <div class="consolidated-actions mb-12">
-          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
-            
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Comprehensive Component Audit and Analysis</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Catalogued 200+ existing components across all Medable products, identifying patterns and inconsistencies</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Analyzed usage patterns and healthcare-specific requirements for each component type</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Interviewed healthcare professionals to understand clinical workflow requirements and pain points</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-10">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-search-plus text-red-600"></i>
+            Research, Audit, and Strategic Framing
+          </h3>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-microscope text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Conducted a <strong>full design audit of all existing products</strong>—identifying patterns of inconsistency, UX bottlenecks, and key component overlaps.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-map-marked-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Mapped <strong>friction points for users and developers across platforms</strong>—highlighting the cost of inconsistency in usability and engineering time.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-layer-group text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Identified <strong>core component redundancies and usability gaps</strong> (e.g. table responsiveness, visual hierarchy, navigation clarity).</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-line text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Compiled screenshots, metrics, and stakeholder pain points into a <strong>strategic narrative to build urgency and momentum</strong> around the redesign.</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. Token-Based Design Foundation</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Established comprehensive design token system for colors, typography, spacing, and elevation</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created semantic color system optimized for healthcare data visualization and accessibility</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Developed typography scale that supported both clinical data density and readability requirements</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-10">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-drafting-compass text-emerald-600"></i>
+            Design System Architecture & Visual Foundation
+          </h3>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-atom text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Created <strong>Nucleus</strong>, a unified design system based on Tailwind CSS, Storybook, and component-first principles.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-cubes text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Built <strong>over 50+ reusable, accessible components</strong> tied to a centralized token system—supporting light/dark modes, roles, and branding needs.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-palette text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Developed a <strong>token architecture</strong> for color, spacing, typography, and responsiveness—enabling future theming and scalable visual updates.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-handshake text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Partnered with Marketing to <strong>refresh visual identity</strong>—anchoring on a new core color system and modernizing the UI without breaking clinical familiarity.</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Component Library and Documentation</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Built comprehensive component library in Figma with all interaction states and usage variations</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created detailed documentation in Zeroheight covering component usage, accessibility, and healthcare compliance</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Established component governance processes and approval workflows for system evolution</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-10">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-universal-access text-indigo-600"></i>
+            Accessibility, Documentation, and Developer Enablement
+          </h3>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-shield-alt text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Integrated <strong>WCAG-compliant standards into every component</strong>—ensuring contrast ratios, focus states, keyboard nav, and ARIA patterns were fully embedded.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-book-open text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Created a <strong>full Storybook instance with live documentation and usage guidelines</strong>—reducing ambiguity between design and development teams.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-code-branch text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Worked closely with engineering to align on <strong>naming conventions, prop structures, and logic</strong> to ensure clean handoff and implementation.</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. Developer Collaboration and Implementation</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Collaborated with engineering teams to implement component library in Storybook with live examples</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created automated design token pipeline ensuring consistency between design and development</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted training sessions for designers and developers on system adoption and contribution processes</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-10">
+          <h3 class="section-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-users-cog text-orange-600"></i>
+            Cross-Functional Buy-In and Change Management
+          </h3>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-handshake text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Partnered with <strong>product, engineering, clinical ops, and QA</strong> to define shared goals and address concerns around system adoption.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-presentation text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Delivered <strong>stakeholder presentations and workshops</strong> to show how systematic design would improve performance and lower long-term risk.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-rocket text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Built a <strong>working proof of concept that showcased Nucleus in action</strong>—validating its speed, consistency, and reduced dev overhead.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-graduation-cap text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Developed <strong>internal training sessions and onboarding kits</strong> for designers and engineers—ensuring continued adoption post-launch.</span>
+            </li>
+          </ul>
+        </div>
 
+        <div class="action-conclusion mt-10">
+          <div class="conclusion-card bg-emerald-50 border-l-4 border-emerald-300 p-6 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-lightbulb text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                <strong>The success of Nucleus wasn't just in its technical execution—it was in the systematic change management</strong> that ensured adoption, reduced resistance, and created lasting organizational transformation across all of Medable's product development processes.
+              </p>
+            </div>
           </div>
         </div>
       </div>
