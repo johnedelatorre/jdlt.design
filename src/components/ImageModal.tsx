@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
+import { Dialog, DialogBackdrop, DialogTitle } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -238,111 +238,103 @@ const ImageModal: React.FC<ImageModalProps> = ({
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
       <DialogBackdrop
         transition
-        className="fixed inset-0 bg-black/80 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+        className="fixed inset-0 bg-black/90 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
-          <DialogPanel
-            transition
-            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-7xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
-          >
+      {/* Full-screen modal container */}
+      <div className="fixed inset-0 z-10 flex flex-col">
+        
+        {/* Top overlay - Title and close button */}
+        <div className="absolute top-0 left-0 right-0 z-20 bg-gradient-to-b from-black/70 via-black/40 to-transparent p-6">
+          <div className="flex items-start justify-between">
+            {/* Title section */}
+            <div className="flex-1 pr-4">
+              <DialogTitle as="h2" className="text-2xl font-semibold text-white mb-2 drop-shadow-lg">
+                {currentDesignInfo.title}
+              </DialogTitle>
+              {currentDesignInfo.subtitle && (
+                <p className="text-gray-200 text-base leading-relaxed drop-shadow-md max-w-3xl">
+                  {currentDesignInfo.subtitle}
+                </p>
+              )}
+            </div>
+            
             {/* Close button */}
-            <div className="absolute right-0 top-0 pr-4 pt-4 z-20">
-              <button
-                type="button"
-                onClick={onClose}
-                className="rounded-md bg-white/90 hover:bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 p-2 shadow-md"
-              >
-                <span className="sr-only">Close</span>
-                <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
-              </button>
-            </div>
-
-            {/* Left Arrow - Inside modal, left side */}
             <button
               type="button"
-              onClick={onPrevious}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-105"
+              onClick={onClose}
+              className="flex-shrink-0 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
             >
-              <span className="sr-only">Previous image</span>
-              <FontAwesomeIcon icon={faChevronLeft} className="h-4 w-4" />
+              <span className="sr-only">Close</span>
+              <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
             </button>
+          </div>
+        </div>
 
-            {/* Right Arrow - Inside modal, right side */}
-            <button
-              type="button"
-              onClick={onNext}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:scale-105"
-            >
-              <span className="sr-only">Next image</span>
-              <FontAwesomeIcon icon={faChevronRight} className="h-4 w-4" />
-            </button>
-
-            {/* Modal content */}
-            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
-              <div className="sm:flex sm:items-start h-full">
-                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full h-full flex flex-col">
-                  
-                  {/* Title */}
-                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-2 flex-shrink-0">
-                    {currentDesignInfo.title}
-                  </DialogTitle>
-                  
-                  {/* Subtitle */}
-                  {currentDesignInfo.subtitle && (
-                    <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-shrink-0">
-                      {currentDesignInfo.subtitle}
-                    </p>
-                  )}
-                  
-                  {/* Image container - Fixed height container like legacy modal */}
-                  <div className="flex-1 flex items-center justify-center min-h-0 relative">
-                    {/* Loading spinner overlay */}
-                    {currentImageState === 'loading' && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
-                        <div className="flex items-center space-x-3">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
-                          <span className="text-gray-600 font-medium">Loading image...</span>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Main image */}
-                    <img
-                      src={currentImageSrc}
-                      alt={`Design: ${currentDesignInfo.title}`}
-                      className={`max-w-full max-h-full object-contain rounded-lg shadow-lg modal-image-border transition-opacity duration-300 ${
-                        currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
-                      }`}
-                      onLoad={() => {
-                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
-                      }}
-                      onError={(e) => {
-                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
-                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-                      }}
-                    />
-
-                    {/* Error state */}
-                    {currentImageState === 'error' && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
-                        <div className="text-center">
-                          <div className="text-red-500 text-4xl mb-2">⚠️</div>
-                          <span className="text-gray-600">Failed to load image</span>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                </div>
+        {/* Main image container - Full screen */}
+        <div className="flex-1 flex items-center justify-center relative">
+          {/* Loading spinner overlay */}
+          {currentImageState === 'loading' && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="flex items-center space-x-3 bg-black/50 backdrop-blur-sm rounded-lg px-6 py-4">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
+                <span className="text-white font-medium">Loading image...</span>
               </div>
+            </div>
+          )}
 
-            {/* Counter overlay - Bottom center */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
-              {currentIndex + 1} of {images.length}
+          {/* Main image */}
+          <img
+            src={currentImageSrc}
+            alt={`Design: ${currentDesignInfo.title}`}
+            className={`max-w-full max-h-full object-contain transition-opacity duration-300 ${
+              currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
+            }`}
+            onLoad={() => {
+              setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
+            }}
+            onError={(e) => {
+              setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
+              (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+            }}
+          />
+
+          {/* Error state */}
+          {currentImageState === 'error' && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center bg-black/50 backdrop-blur-sm rounded-lg px-6 py-4">
+                <div className="text-red-400 text-4xl mb-2">⚠️</div>
+                <span className="text-white">Failed to load image</span>
+              </div>
             </div>
-            </div>
-          </DialogPanel>
+          )}
+
+          {/* Navigation arrows */}
+          <button
+            type="button"
+            onClick={onPrevious}
+            className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
+          >
+            <span className="sr-only">Previous image</span>
+            <FontAwesomeIcon icon={faChevronLeft} className="h-5 w-5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={onNext}
+            className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50"
+          >
+            <span className="sr-only">Next image</span>
+            <FontAwesomeIcon icon={faChevronRight} className="h-5 w-5" />
+          </button>
+        </div>
+
+        {/* Bottom overlay - Counter */}
+        <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 flex justify-center">
+          <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+            {currentIndex + 1} of {images.length}
+          </div>
+        </div>
       </div>
     </Dialog>
   );
