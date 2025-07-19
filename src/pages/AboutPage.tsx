@@ -454,7 +454,7 @@ const AboutPage: React.FC = () => {
             <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-gray-300"></div>
             
             <div className="space-y-8">
-              {careerData.map((career, index) => (
+              {careerData.map((career) => (
                 <CareerItem 
                   key={career.id} 
                   career={career} 
