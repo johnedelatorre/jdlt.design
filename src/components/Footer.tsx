@@ -10,13 +10,17 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       icon: faEnvelope,
-      href: `mailto:${personalInfo.contact.email}`,
-      label: 'Email'
+      href: undefined, // No href for email - just tooltip
+      label: 'Email',
+      tooltip: personalInfo.contact.email,
+      isEmail: true
     },
     {
       icon: faLinkedin,
       href: personalInfo.contact.linkedin,
-      label: 'LinkedIn'
+      label: 'LinkedIn',
+      tooltip: 'LinkedIn Profile',
+      isEmail: false
     }
   ];
 
@@ -24,7 +28,9 @@ const Footer: React.FC = () => {
     socialLinks.push({
       icon: faInstagram,
       href: personalInfo.contact.instagram,
-      label: 'Instagram'
+      label: 'Instagram',
+      tooltip: 'Instagram Profile',
+      isEmail: false
     });
   }
 
@@ -32,7 +38,9 @@ const Footer: React.FC = () => {
     socialLinks.push({
       icon: faGithub,
       href: personalInfo.contact.github,
-      label: 'GitHub'
+      label: 'GitHub',
+      tooltip: 'GitHub Profile',
+      isEmail: false
     });
   }
 
@@ -54,18 +62,34 @@ const Footer: React.FC = () => {
           <div className="text-center md:text-right">
             {/* Social Links */}
             <div className="flex items-center justify-center md:justify-end gap-4 mb-4">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
-                  aria-label={link.label}
-                >
-                  <FontAwesomeIcon icon={link.icon} className="text-sm" />
-                </a>
-              ))}
+              {socialLinks.map((link, index) => {
+                if (link.isEmail) {
+                  return (
+                    <button
+                      key={index}
+                      className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                      aria-label={link.label}
+                      title={link.tooltip}
+                    >
+                      <FontAwesomeIcon icon={link.icon} className="text-sm" />
+                    </button>
+                  );
+                } else {
+                  return (
+                    <a
+                      key={index}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                      aria-label={link.label}
+                      title={link.tooltip}
+                    >
+                      <FontAwesomeIcon icon={link.icon} className="text-sm" />
+                    </a>
+                  );
+                }
+              })}
             </div>
 
             {/* Copyright */}
