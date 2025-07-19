@@ -2336,38 +2336,36 @@ export const caseStudies: CaseStudy[] = [
           </p>
         </div>
 
-        <div class="task-objectives mb-10">
-          <ul class="task-list space-y-6">
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Create Medable's first end-to-end design system</strong> that could unify product experience across platforms, teams, and clinical workflows.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-tachometer-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Reduce design and engineering inefficiencies</strong> by replacing redundant, outdated components with reusable, scalable UI architecture.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-universal-access text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Integrate accessibility best practices</strong> and ensure the new system met WCAG standards and clinical compliance.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-sitemap text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Build governance and adoption strategy</strong> to align cross-functional teams—including product managers, engineers, marketers, and clinical teams.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-handshake text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Get organizational buy-in</strong> by developing a business case and demonstrating clear value through measurable KPIs.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-rocket text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Deliver a proof of concept</strong> showing how the system could improve velocity, quality, and clarity across the board.</span>
-            </li>
-            <li class="task-item flex items-start gap-4">
-              <i class="fas fa-graduation-cap text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Establish education and rollout frameworks</strong> so future teams could onboard quickly and adhere to system standards.</span>
-            </li>
-          </ul>
-        </div>
+        <ul class="space-y-6 mb-10">
+          <li class="flex items-start gap-4">
+            <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Create Medable's first end-to-end design system</strong> that could unify product experience across platforms, teams, and clinical workflows.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-tachometer-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Reduce design and engineering inefficiencies</strong> by replacing redundant, outdated components with reusable, scalable UI architecture.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-universal-access text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Integrate accessibility best practices</strong> and ensure the new system met WCAG standards and clinical compliance.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-sitemap text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Build governance and adoption strategy</strong> to align cross-functional teams—including product managers, engineers, marketers, and clinical teams.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-handshake text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Get organizational buy-in</strong> by developing a business case and demonstrating clear value through measurable KPIs.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-rocket text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Deliver a proof of concept</strong> showing how the system could improve velocity, quality, and clarity across the board.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-graduation-cap text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+            <span class="text-gray-700 leading-relaxed"><strong>Establish education and rollout frameworks</strong> so future teams could onboard quickly and adhere to system standards.</span>
+          </li>
+        </ul>
 
         <div class="task-success-metrics mb-8">
           <h3 class="success-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
