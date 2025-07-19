@@ -183,11 +183,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
         className="fixed inset-0 bg-black/80 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
-        <div className="relative w-full max-w-7xl">
+      <div className="fixed inset-0 z-10 flex items-center justify-center p-6">
+        <div className="relative w-full max-w-6xl">
           <DialogPanel
             transition
-            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-6xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in w-full max-h-[85vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             {/* Close button */}
             <div className="absolute right-0 top-0 pr-4 pt-4 z-20">
@@ -222,42 +222,39 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </button>
 
             {/* Modal content */}
-            <div className="bg-white px-6 pt-6 pb-4 h-full flex flex-col">
-              <div className="sm:flex sm:items-start h-full">
-                <div className="mt-3 text-center sm:mt-0 sm:text-left w-full h-full flex flex-col">
+            <div className="bg-white p-6 flex flex-col max-h-[85vh]">
+              <div className="flex flex-col">
                   
                   {/* Title */}
-                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4 flex-shrink-0">
+                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-3 flex-shrink-0">
                     {currentDesignInfo.title}
                   </DialogTitle>
                   
                   {/* Subtitle */}
                   {currentDesignInfo.subtitle && (
-                    <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                    <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-shrink-0">
                       {currentDesignInfo.subtitle}
                     </p>
                   )}
                   
-                  {/* Image container - Fixed height container */}
-                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0 px-6">
+                  {/* Image container - Properly constrained */}
+                  <div className="flex items-center justify-center mb-4 overflow-hidden">
                     <img
                       src={images[currentIndex]}
                       alt={`Design: ${currentDesignInfo.title}`}
-                      className="max-w-full max-h-[60vh] object-contain border border-gray-300 rounded-lg"
+                      className="max-w-full max-h-[50vh] w-auto h-auto object-contain border border-gray-300 rounded-lg"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
                       }}
                     />
                   </div>
 
-                </div>
-              </div>
-            </div>
-
-            {/* Footer with counter */}
-            <div className="bg-gray-50 px-6 py-3 flex-shrink-0 text-center border-t border-gray-200">
-              <div className="text-sm text-gray-500 font-medium">
-                {currentIndex + 1} of {images.length}
+                  {/* Footer with counter */}
+                  <div className="bg-gray-50 -mx-6 -mb-6 px-6 py-3 flex-shrink-0 text-center border-t border-gray-200 mt-4">
+                    <div className="text-sm text-gray-500 font-medium">
+                      {currentIndex + 1} of {images.length}
+                    </div>
+                  </div>
               </div>
             </div>
           </DialogPanel>
