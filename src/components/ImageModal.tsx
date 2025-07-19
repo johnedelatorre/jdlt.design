@@ -184,10 +184,9 @@ const ImageModal: React.FC<ImageModalProps> = ({
       />
 
       <div className="fixed inset-0 z-10 flex items-center justify-center p-4">
-        <div className="relative w-full max-w-4xl h-[80vh]">
           <DialogPanel
             transition
-            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in w-full h-full data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in sm:my-8 w-full max-w-7xl h-[90vh] data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             {/* Close button */}
             <div className="absolute right-0 top-0 pr-4 pt-4 z-20">
@@ -222,29 +221,35 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </button>
 
             {/* Modal content */}
-            <div className="bg-white p-4 flex flex-col h-full">
-              {/* Title */}
-              <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-3 flex-shrink-0">
-                {currentDesignInfo.title}
-              </DialogTitle>
-              
-              {/* Subtitle */}
-              {currentDesignInfo.subtitle && (
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-shrink-0">
-                  {currentDesignInfo.subtitle}
-                </p>
-              )}
-              
-              {/* Image container - With 40px spacing around image */}
-              <div className="flex items-center justify-center mb-3 p-10" style={{ height: 'calc(80vh - 280px)' }}>
-                <img
-                  src={images[currentIndex]}
-                  alt={`Design: ${currentDesignInfo.title}`}
-                  className="max-w-full max-h-full object-contain border border-gray-300 rounded-lg"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-                  }}
-                />
+            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col">
+              <div className="sm:flex sm:items-start h-full">
+                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full h-full flex flex-col">
+                  
+                  {/* Title */}
+                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-2 flex-shrink-0">
+                    {currentDesignInfo.title}
+                  </DialogTitle>
+                  
+                  {/* Subtitle */}
+                  {currentDesignInfo.subtitle && (
+                    <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-shrink-0">
+                      {currentDesignInfo.subtitle}
+                    </p>
+                  )}
+                  
+                  {/* Image container - Fixed height container like legacy modal */}
+                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0">
+                    <img
+                      src={images[currentIndex]}
+                      alt={`Design: ${currentDesignInfo.title}`}
+                      className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+                      }}
+                    />
+                  </div>
+
+                </div>
               </div>
               
               {/* Footer with counter */}
@@ -255,7 +260,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
               </div>
             </div>
           </DialogPanel>
-        </div>
       </div>
     </Dialog>
   );
