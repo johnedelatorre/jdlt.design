@@ -2511,92 +2511,79 @@ export const caseStudies: CaseStudy[] = [
     `,
     result: `
       <div class="results-content">
-        <div class="results-section mb-12">
-          <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-chart-bar text-blue-600"></i>
-              System Adoption and Efficiency Gains
-            </h3>
-          </div>
-          
-          <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>80% reduction in design inconsistencies</strong> across all Medable product touchpoints</span>
+        <div class="results-intro mb-8">
+          <h3 class="results-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-trophy text-amber-600"></i>
+            Transformational Impact & Measurable Outcomes
+          </h3>
+          <p class="results-description text-lg text-gray-700 leading-relaxed mb-6">
+            The Nucleus design system delivered immediate and lasting transformation across Medable's entire product ecosystem. The results exceeded expectations in both quantitative metrics and qualitative organizational change.
+          </p>
+        </div>
+
+        <div class="results-metrics mb-12">
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-stopwatch text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>40% reduction</strong> in design and development time by eliminating redundant effort and streamlining handoff.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>40% decrease in development time</strong> for new features using system components</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-cubes text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>50+ reusable components</strong> shipped and adopted across multiple product squads—accelerating prototyping and feature releases.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>100% adoption rate</strong> across all product teams within 6 months of launch</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-shield-check text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Zero accessibility violations</strong> reported in audits after rollout—thanks to baked-in WCAG compliance and QA-ready patterns.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>60% improvement in design-to-development handoff efficiency</strong> through standardized specifications</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-palette text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Unified design identity</strong> across products—leading to clearer workflows, improved user trust, and stronger brand perception.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Enhanced accessibility compliance</strong> with WCAG 2.1 AA standards across all components</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-file-medical text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Faster regulatory review cycles</strong> due to standardization and consistent component logic across interfaces.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-handshake text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Organizational alignment</strong> between design, engineering, and clinical teams—establishing design systems as a long-term investment, not a side project.</span>
             </li>
           </ul>
         </div>
 
-        <div class="results-section mb-12">
-          <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-trophy text-amber-600"></i>
-              Strategic Product Impact
-            </h3>
-          </div>
-          
-          <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Became the foundation for all future Medable products</strong> and platform expansions</span>
+        <div class="learnings-section mb-10">
+          <h3 class="learnings-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-lightbulb text-teal-600"></i>
+            What I Learned
+          </h3>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-cogs text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A successful design system is not just about components—it's about <strong>process, trust, and culture change</strong>.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Improved cross-product user experience</strong> with consistent interaction patterns</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-line text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Gaining buy-in required storytelling: <strong>translating UX problems into business impact</strong> and aligning teams around measurable value.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Accelerated market expansion</strong> by providing scalable design foundation</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-rocket text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Proof-of-concept prototypes are critical</strong>—they show, not tell, and remove fear by making the future tangible.</span>
             </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Enhanced team collaboration</strong> through shared design language and processes</span>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-book-open text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Accessibility, governance, and cross-functional documentation</strong> must be baked in from day one to scale adoption without regression.</span>
             </li>
           </ul>
         </div>
 
-        <div class="results-section">
-          <div class="section-header mb-8">
-            <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-lightbulb text-green-600"></i>
-              Healthcare Design System Insights
-            </h3>
+        <div class="results-conclusion mt-10">
+          <div class="conclusion-card bg-teal-50 border-l-4 border-teal-300 p-6 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-award text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                <strong>Nucleus transformed Medable from a fragmented product ecosystem into a unified, scalable healthcare platform.</strong> The system didn't just solve immediate consistency problems—it established a foundation for sustainable growth, regulatory compliance, and exceptional user experiences that continue to benefit patients and healthcare professionals worldwide.
+              </p>
+            </div>
           </div>
-          
-          <ul class="results-list space-y-4">
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Healthcare design systems require specialized patterns</strong> for clinical workflows and regulatory compliance</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Token-based systems provide unmatched scalability</strong> across multiple product lines and platforms</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-gray-700 leading-relaxed"><strong>Developer collaboration from day one ensures adoption success</strong> and prevents design-dev disconnects</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Comprehensive documentation is crucial</strong> for system longevity and team onboarding</span>
-            </li>
-          </ul>
         </div>
       </div>
     `,
