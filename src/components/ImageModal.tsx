@@ -239,11 +239,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
                   )}
                   
                   {/* Image container - Fixed height container */}
-                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0 px-8">
+                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0 px-6">
                     <img
                       src={images[currentIndex]}
                       alt={`Design: ${currentDesignInfo.title}`}
-                      className="w-auto h-auto max-w-full max-h-[calc(100vh-200px)] object-contain border border-gray-300 rounded-lg"
+                      className="max-w-full max-h-[60vh] object-contain border border-gray-300 rounded-lg"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
                       }}
