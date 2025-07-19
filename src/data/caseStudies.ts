@@ -2087,6 +2087,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/medable-translation-tool/select-push-notifications.jpg',
       '/images/case-studies/medable-translation-tool/select-study-strings.jpg',
       '/images/case-studies/medable-translation-tool/select-non-assessment-study-strings.jpg',
+      '/images/case-studies/medable-translation-tool/select-assessments-button.jpg',
       '/images/case-studies/medable-translation-tool/select-assessments-modal.jpg',
       '/images/case-studies/medable-translation-tool/select-assessments-modal-selected-states.jpg',
       '/images/case-studies/medable-translation-tool/final-translation-package-request.jpg',
