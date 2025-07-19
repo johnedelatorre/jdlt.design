@@ -2108,7 +2108,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2022',
     tools: ['Figma', 'Storybook', 'Zeroheight'],
     tags: ['Design Systems', 'Component Library', 'Healthcare'],
-    headerImage: '/images/case-studies/medable-design-system/header.jpg',
+    headerImage: '/images/case-studies/medable-design-system/medable-design-system-header.jpg',
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
