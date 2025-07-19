@@ -2,16 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPaintBrush, 
-  faChartLine,
-  faMobile,
-  faComments,
-  faGlobe,
-  faCode,
-  faUser,
-  faBrain,
-  faCamera,
-  faCoffee,
-  faRocket,
+  faCode, 
+  faChartLine, 
   faBuilding,
   faChevronDown,
   faChevronUp,
@@ -101,16 +93,21 @@ const careerData = [
   }
 ];
 
-const CareerItem: React.FC<{ career: typeof careerData[0], isLast: boolean }> = ({ career, isLast }) => {
+// Define a type for careerData items
+type CareerType = typeof careerData[0];
+
+// CareerItem component for expandable career entries
+const CareerItem: React.FC<{ career: CareerType }> = ({ career }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="relative flex items-start">
+      <div className="absolute left-8 top-20 bottom-0 w-0.5 bg-gray-200"></div>
+      
       <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
         <FontAwesomeIcon icon={career.icon} className="text-white text-2xl" />
       </div>
       <div className="ml-8 flex-1 bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
-        {/* Header - Always visible */}
         <div 
           className="p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200"
           onClick={() => setIsExpanded(!isExpanded)}
@@ -132,12 +129,8 @@ const CareerItem: React.FC<{ career: typeof careerData[0], isLast: boolean }> = 
             </div>
           </div>
         </div>
-
-        {/* Expandable content */}
         <div 
-          className={`transition-all duration-500 ease-in-out ${
-            isExpanded ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
           style={{ overflow: 'hidden' }}
         >
           <div className="px-6 pb-8 pt-0 border-t border-gray-100">
@@ -222,18 +215,18 @@ const AboutPage: React.FC = () => {
                 </p>
 
                 <p>
-                  <FontAwesomeIcon icon={faMobile} className="text-purple-600 mr-3" />
+                  <FontAwesomeIcon icon={faPaintBrush} className="text-purple-600 mr-3" />
                   <strong>Media Value Center (MVC):</strong> a flagship analytics tool I transformed through a full redesign focused on clarity, speed, and user engagement.
                 </p>
               </div>
 
               <p className="flex items-start gap-3">
-                <FontAwesomeIcon icon={faComments} className="text-orange-600 mt-1 flex-shrink-0" />
+                <FontAwesomeIcon icon={faBuilding} className="text-orange-600 mt-1 flex-shrink-0" />
                 I bring ideas to life with empathy, precision, and an iterative toolkit that includes Figma, UX Pilot, v0.dev, Cursor, ChatGPT, and Vercel.
               </p>
 
               <p className="flex items-center gap-3 text-lg font-medium">
-                <FontAwesomeIcon icon={faGlobe} className="text-blue-500" />
+                🇺🇸 🇵🇪
                 <FontAwesomeIcon icon={faCode} className="text-gray-600" />
                 I speak 3 languages: English, Spanish, and HTML.
               </p>
@@ -465,7 +458,6 @@ const AboutPage: React.FC = () => {
                 <CareerItem 
                   key={career.id} 
                   career={career} 
-                  isLast={index === careerData.length - 1}
                 />
               ))}
             </div>
