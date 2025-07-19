@@ -222,39 +222,36 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </button>
 
             {/* Modal content */}
-            <div className="bg-white p-6 flex flex-col max-h-[85vh]">
-              <div className="flex flex-col">
-                  
-                  {/* Title */}
-                  <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-3 flex-shrink-0">
-                    {currentDesignInfo.title}
-                  </DialogTitle>
-                  
-                  {/* Subtitle */}
-                  {currentDesignInfo.subtitle && (
-                    <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-shrink-0">
-                      {currentDesignInfo.subtitle}
-                    </p>
-                  )}
-                  
-                  {/* Image container - Properly constrained */}
-                  <div className="flex items-center justify-center mb-4 overflow-hidden">
-                    <img
-                      src={images[currentIndex]}
-                      alt={`Design: ${currentDesignInfo.title}`}
-                      className="max-w-full max-h-[50vh] w-auto h-auto object-contain border border-gray-300 rounded-lg"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-                      }}
-                    />
-                  </div>
-
-                  {/* Footer with counter */}
-                  <div className="bg-gray-50 -mx-6 -mb-6 px-6 py-3 flex-shrink-0 text-center border-t border-gray-200 mt-4">
-                    <div className="text-sm text-gray-500 font-medium">
-                      {currentIndex + 1} of {images.length}
-                    </div>
-                  </div>
+            <div className="bg-white p-4 flex flex-col h-full max-h-[85vh]">
+              {/* Title */}
+              <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900 mb-2 flex-shrink-0">
+                {currentDesignInfo.title}
+              </DialogTitle>
+              
+              {/* Subtitle */}
+              {currentDesignInfo.subtitle && (
+                <p className="text-gray-600 mb-3 text-sm leading-relaxed flex-shrink-0">
+                  {currentDesignInfo.subtitle}
+                </p>
+              )}
+              
+              {/* Image container - Much more conservative sizing */}
+              <div className="flex-1 flex items-center justify-center mb-3 min-h-0 overflow-hidden px-4">
+                <img
+                  src={images[currentIndex]}
+                  alt={`Design: ${currentDesignInfo.title}`}
+                  className="max-w-full max-h-full w-auto h-auto object-contain border border-gray-300 rounded-lg"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzc0MTUxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+                  }}
+                />
+              </div>
+              
+              {/* Footer with counter */}
+              <div className="bg-gray-50 -mx-4 -mb-4 px-4 py-2 flex-shrink-0 text-center border-t border-gray-200">
+                <div className="text-xs text-gray-500 font-medium">
+                  {currentIndex + 1} of {images.length}
+                </div>
               </div>
             </div>
           </DialogPanel>
