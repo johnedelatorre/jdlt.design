@@ -1,149 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faUsers, faClipboardCheck, faEye as faObserve, faQuestion, faUser, faRoute, faChartLine, faLightbulb, faSitemap, faProjectDiagram, faCode } from '@fortawesome/free-solid-svg-icons';
+import type { ResearchArtifact } from '../types';
 
 interface ResearchArtifactsViewerProps {
   onArtifactClick: (artifactId: string) => void;
+  // Add researchArtifacts prop to receive data from parent
+  researchArtifacts?: ResearchArtifact[];
 }
 
-const ResearchArtifactsViewer: React.FC<ResearchArtifactsViewerProps> = ({ onArtifactClick }) => {
-  const artifacts = [
-    {
-      id: 'user-interview-questions-ctm',
-      name: 'User Interview Questions - Clinical Trials Manager',
-      description: 'Structured interview guide for CTMs covering workflow pain points and efficiency challenges',
-      image: '/images/case-studies/medable-translation-tool/1-user-interview-questions-clinical-trials-manager.png',
-      alt: 'User Interview Questions for Clinical Trials Managers - structured questions about translation workflows',
-      icon: faUsers,
-      iconColor: 'text-blue-600'
-    },
-    {
-      id: 'user-interview-questions-cs',
-      name: 'User Interview Questions - Customer Success Teams',
-      description: 'Interview framework for CS teams focusing on support challenges and process gaps',
-      image: '/images/case-studies/medable-translation-tool/2-user-interview-questions-customer-success-teams.png',
-      alt: 'User Interview Questions for Customer Success Teams - questions about support processes',
-      icon: faClipboardCheck,
-      iconColor: 'text-green-600'
-    },
-    {
-      id: 'observational-studies',
-      name: 'Observational Studies',
-      description: 'Documentation of live workflow observations and behavioral pattern analysis',
-      image: '/images/case-studies/medable-translation-tool/3-observational-studies.png',
-      alt: 'Observational Studies - documentation of workflow observations and behavioral patterns',
-      icon: faObserve,
-      iconColor: 'text-purple-600'
-    },
-    {
-      id: 'assumptions-challenges',
-      name: 'User Interview Assumptions and Challenges',
-      description: 'Analysis of initial assumptions vs. discovered challenges from user interviews',
-      image: '/images/case-studies/medable-translation-tool/4-user-interview-assumptions-and-challenges.png',
-      alt: 'User Interview Assumptions and Challenges - comparison of initial assumptions with discoveries',
-      icon: faQuestion,
-      iconColor: 'text-orange-600'
-    },
-    {
-      id: 'persona-ctm',
-      name: 'Persona - Clinical Trials Manager',
-      description: 'Detailed persona profile for CTM user type with goals, frustrations, and behaviors',
-      image: '/images/case-studies/medable-translation-tool/5-persona-clinical-trials-manager.png',
-      alt: 'Clinical Trials Manager Persona - detailed user profile with goals and frustrations',
-      icon: faUser,
-      iconColor: 'text-indigo-600'
-    },
-    {
-      id: 'persona-cs',
-      name: 'Persona - Customer Success Teams',
-      description: 'Customer Success team persona highlighting support challenges and workflow needs',
-      image: '/images/case-studies/medable-translation-tool/6-persona-customer-success-teams.png',
-      alt: 'Customer Success Teams Persona - profile focusing on support challenges and needs',
-      icon: faUser,
-      iconColor: 'text-teal-600'
-    },
-    {
-      id: 'journey-map-ctm',
-      name: 'User Journey Map - Clinical Trials Manager',
-      description: 'End-to-end journey mapping for CTM translation workflow including pain points',
-      image: '/images/case-studies/medable-translation-tool/7-user-journey-map-clinical-trials-manager.png',
-      alt: 'User Journey Map for Clinical Trials Manager - translation workflow with pain points',
-      icon: faRoute,
-      iconColor: 'text-pink-600'
-    },
-    {
-      id: 'journey-map-cs',
-      name: 'User Journey Map - Customer Success Teams',
-      description: 'Journey mapping for CS support processes and intervention touchpoints',
-      image: '/images/case-studies/medable-translation-tool/8-user-journey-map-customer-success-teams.png',
-      alt: 'User Journey Map for Customer Success Teams - support processes and touchpoints',
-      icon: faRoute,
-      iconColor: 'text-amber-600'
-    },
-    {
-      id: 'research-synthesis',
-      name: 'Research Synthesis',
-      description: 'Comprehensive synthesis of all research findings and key insights',
-      image: '/images/case-studies/medable-translation-tool/9-research-synthesis.png',
-      alt: 'Research Synthesis - comprehensive analysis of all research findings',
-      icon: faChartLine,
-      iconColor: 'text-red-600'
-    },
-    {
-      id: 'key-insights',
-      name: 'Key Insights',
-      description: 'Critical insights distilled from research that informed design decisions',
-      image: '/images/case-studies/medable-translation-tool/10-key-insights.png',
-      alt: 'Key Insights - critical findings that informed design decisions',
-      icon: faLightbulb,
-      iconColor: 'text-yellow-600'
-    },
-    {
-      id: 'design-pillars',
-      name: 'Experience Design Pillars',
-      description: 'Five core UX principles that guided all design and product decisions',
-      image: '/images/case-studies/medable-translation-tool/11-experience-design-pillars.png',
-      alt: 'Experience Design Pillars - core UX principles guiding design decisions',
-      icon: faProjectDiagram,
-      iconColor: 'text-emerald-600'
-    },
-    {
-      id: 'solution-mapping',
-      name: 'Solution Mapping',
-      description: 'Strategic mapping of research insights to potential solution approaches',
-      image: '/images/case-studies/medable-translation-tool/12-solution-mapping.png',
-      alt: 'Solution Mapping - connecting research insights to solution approaches',
-      icon: faSitemap,
-      iconColor: 'text-violet-600'
-    },
-    {
-      id: 'information-architecture',
-      name: 'Information Architecture',
-      description: 'Structured information architecture and system design foundation',
-      image: '/images/case-studies/medable-translation-tool/13-information-architecture.png',
-      alt: 'Information Architecture - structured system design and organization',
-      icon: faCode,
-      iconColor: 'text-slate-600'
-    },
-    {
-      id: 'low-fidelity-prototype-data-table',
-      name: 'Low-Fidelity Prototype - Data Table',
-      description: 'Initial wireframe design for the translation data table interface showing layout and functionality',
-      image: '/images/case-studies/medable-translation-tool/14-low-fidelity-prototype-data-table.png',
-      alt: 'Low-fidelity prototype wireframe of the translation data table interface',
-      icon: faEye,
-      iconColor: 'text-blue-600'
-    },
-    {
-      id: 'low-fidelity-prototype-export-form',
-      name: 'Low-Fidelity Prototype - Export Form',
-      description: 'Early wireframe design for the translation export form showing user workflow and form fields',
-      image: '/images/case-studies/medable-translation-tool/15-low-fidelity-prototype-export-form.png',
-      alt: 'Low-fidelity prototype wireframe of the translation export form interface',
-      icon: faEye,
-      iconColor: 'text-green-600'
-    }
-  ];
+const ResearchArtifactsViewer: React.FC<ResearchArtifactsViewerProps> = ({ onArtifactClick, researchArtifacts = [] }) => {
+  // Use provided artifacts or fallback to empty array
+  const artifacts = researchArtifacts.length > 0 ? researchArtifacts.map((artifact, index) => ({
+    ...artifact,
+    icon: [faUsers, faClipboardCheck, faObserve, faQuestion, faUser, faUser, faRoute, faRoute, faChartLine, faLightbulb, faLightbulb, faSitemap, faProjectDiagram, faCode, faCode][index] || faEye,
+    iconColor: ['text-blue-600', 'text-green-600', 'text-purple-600', 'text-orange-600', 'text-red-600', 'text-indigo-600', 'text-cyan-600', 'text-teal-600', 'text-amber-600', 'text-emerald-600', 'text-pink-600', 'text-violet-600', 'text-lime-600', 'text-sky-600', 'text-rose-600'][index] || 'text-gray-600'
+  })) : [];
 
   console.log('ResearchArtifactsViewer rendering with', artifacts.length, 'artifacts');
 

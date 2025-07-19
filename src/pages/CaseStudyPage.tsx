@@ -173,119 +173,15 @@ const CaseStudyPage: React.FC = () => {
     setCurrentScreenshotIndex((prev) => (prev < legacyScreenshots.length - 1 ? prev + 1 : 0));
   };
 
-  // Research artifacts data for Medable Translation Tool case study
-  const researchArtifacts = [
-    {
-      id: 'user-interview-questions-ctm',
-      name: 'User Interview Questions - Clinical Trials Manager',
-      description: 'Structured interview guide for CTMs covering workflow pain points and efficiency challenges',
-      image: '/images/case-studies/medable-translation-tool/1-user-interview-questions-clinical-trials-manager.png',
-      alt: 'User Interview Questions for Clinical Trials Managers - structured questions about translation workflows'
-    },
-    {
-      id: 'user-interview-questions-cs',
-      name: 'User Interview Questions - Customer Success Teams',
-      description: 'Interview framework for CS teams focusing on support challenges and process gaps',
-      image: '/images/case-studies/medable-translation-tool/2-user-interview-questions-customer-success-teams.png',
-      alt: 'User Interview Questions for Customer Success Teams - questions about support processes'
-    },
-    {
-      id: 'observational-studies',
-      name: 'Observational Studies',
-      description: 'Documentation of live workflow observations and behavioral pattern analysis',
-      image: '/images/case-studies/medable-translation-tool/3-observational-studies.png',
-      alt: 'Observational Studies - documentation of workflow observations and behavioral patterns'
-    },
-    {
-      id: 'assumptions-challenges',
-      name: 'User Interview Assumptions and Challenges',
-      description: 'Analysis of initial assumptions vs. discovered challenges from user interviews',
-      image: '/images/case-studies/medable-translation-tool/4-user-interview-assumptions-and-challenges.png',
-      alt: 'User Interview Assumptions and Challenges - comparison of initial assumptions with discoveries'
-    },
-    {
-      id: 'persona-ctm',
-      name: 'Persona - Clinical Trials Manager',
-      description: 'Detailed persona profile for CTM user type with goals, frustrations, and behaviors',
-      image: '/images/case-studies/medable-translation-tool/5-persona-clinical-trials-manager.png',
-      alt: 'Clinical Trials Manager Persona - detailed user profile with goals and frustrations'
-    },
-    {
-      id: 'persona-cs',
-      name: 'Persona - Customer Success Teams',
-      description: 'Customer Success team persona highlighting support challenges and workflow needs',
-      image: '/images/case-studies/medable-translation-tool/6-persona-customer-success-teams.png',
-      alt: 'Customer Success Teams Persona - profile focusing on support challenges and needs'
-    },
-    {
-      id: 'journey-map-ctm',
-      name: 'User Journey Map - Clinical Trials Manager',
-      description: 'End-to-end journey mapping for CTM translation workflow including pain points',
-      image: '/images/case-studies/medable-translation-tool/7-user-journey-map-clinical-trials-manager.png',
-      alt: 'User Journey Map for Clinical Trials Manager - translation workflow with pain points'
-    },
-    {
-      id: 'journey-map-cs',
-      name: 'User Journey Map - Customer Success Teams',
-      description: 'Journey mapping for CS support processes and intervention touchpoints',
-      image: '/images/case-studies/medable-translation-tool/8-user-journey-map-customer-success-teams.png',
-      alt: 'User Journey Map for Customer Success Teams - support processes and touchpoints'
-    },
-    {
-      id: 'research-synthesis',
-      name: 'Research Synthesis',
-      description: 'Comprehensive synthesis of all research findings and key insights',
-      image: '/images/case-studies/medable-translation-tool/9-research-synthesis.png',
-      alt: 'Research Synthesis - comprehensive analysis of all research findings'
-    },
-    {
-      id: 'key-insights',
-      name: 'Key Insights',
-      description: 'Critical insights distilled from research that informed design decisions',
-      image: '/images/case-studies/medable-translation-tool/10-key-insights.png',
-      alt: 'Key Insights - critical findings that informed design decisions'
-    },
-    {
-      id: 'design-pillars',
-      name: 'Experience Design Pillars',
-      description: 'Five core UX principles that guided all design and product decisions',
-      image: '/images/case-studies/medable-translation-tool/11-experience-design-pillars.png',
-      alt: 'Experience Design Pillars - core UX principles guiding design decisions'
-    },
-    {
-      id: 'solution-mapping',
-      name: 'Solution Mapping',
-      description: 'Strategic mapping of research insights to potential solution approaches',
-      image: '/images/case-studies/medable-translation-tool/12-solution-mapping.png',
-      alt: 'Solution Mapping - connecting research insights to solution approaches'
-    },
-    {
-      id: 'information-architecture',
-      name: 'Information Architecture',
-      description: 'Structured information architecture and system design foundation',
-      image: '/images/case-studies/medable-translation-tool/13-information-architecture.png',
-      alt: 'Information Architecture - structured system design and organization'
-    },
-    {
-      id: 'low-fidelity-prototype-data-table',
-      name: 'Low-Fidelity Prototype - Data Table',
-      description: 'Initial wireframe design for the translation data table interface showing layout and functionality',
-      image: '/images/case-studies/medable-translation-tool/14-low-fidelity-prototype-data-table.png',
-      alt: 'Low-fidelity prototype wireframe of the translation data table interface'
-    },
-    {
-      id: 'low-fidelity-prototype-export-form',
-      name: 'Low-Fidelity Prototype - Export Form',
-      description: 'Early wireframe design for the translation export form showing user workflow and form fields',
-      image: '/images/case-studies/medable-translation-tool/15-low-fidelity-prototype-export-form.png',
-      alt: 'Low-fidelity prototype wireframe of the translation export form interface'
-    }
-  ];
+  // Generate research artifacts from case study data for Medable Translation Tool
+  const researchArtifacts = caseStudy?.id === 'medable-translation-tool' && caseStudy.researchArtifacts 
+    ? caseStudy.researchArtifacts 
+    : [];
 
   // Research artifacts modal handlers
   const openResearchArtifactsModal = (artifactId: string) => {
     console.log('openResearchArtifactsModal called with:', artifactId);
-    const index = researchArtifacts.findIndex(a => a.id === artifactId);
+    const index = researchArtifacts.findIndex((a: any) => a.id === artifactId);
     console.log('Found artifact index:', index);
     if (index !== -1) {
       setCurrentArtifactIndex(index);
@@ -480,7 +376,10 @@ const CaseStudyPage: React.FC = () => {
                     return (
                       <div className="text-lg text-gray-700 leading-relaxed">
                         <div dangerouslySetInnerHTML={{ __html: beforeArtifacts }} />
-                        <ResearchArtifactsViewer onArtifactClick={openResearchArtifactsModal} />
+                        <ResearchArtifactsViewer 
+                          onArtifactClick={openResearchArtifactsModal} 
+                          researchArtifacts={researchArtifacts}
+                        />
                         <div dangerouslySetInnerHTML={{ __html: afterArtifacts }} />
                       </div>
                     );

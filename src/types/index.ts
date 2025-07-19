@@ -1,3 +1,11 @@
+export interface ResearchArtifact {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  alt: string;
+}
+
 export interface CaseStudy {
   id: string;
   title: string;
@@ -16,6 +24,7 @@ export interface CaseStudy {
   images: string[];
   figmaLink?: string;
   isRecent?: boolean;
+  researchArtifacts?: ResearchArtifact[];
 }
 
 export interface NavigationItem {
