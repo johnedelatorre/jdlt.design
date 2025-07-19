@@ -2113,74 +2113,109 @@ export const caseStudies: CaseStudy[] = [
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            The Medable Design System Overhaul established a comprehensive, scalable design foundation across all Medable healthcare products. This systematic approach unified visual language, streamlined design-to-development workflows, and created a token-based system that accelerated product development while ensuring consistency across the entire product ecosystem.
+            Medable is a clinical trial platform trusted by global pharmaceutical companies to manage remote, decentralized studies. But behind the scenes, its product experience was fractured—each product team had built in isolation, leading to a chaotic patchwork of visual styles, inconsistent UX patterns, and bloated front-end codebases. This fragmentation not only created confusion for users, but made it nearly impossible to scale improvements, meet accessibility standards, or move quickly in a high-stakes, highly regulated domain.
           </p>
           
           <p class="brief-description mb-6">
-            As Medable's product suite had grown rapidly, inconsistent design patterns, duplicated components, and inefficient handoffs were slowing development and creating fragmented user experiences. This overhaul would establish the design infrastructure needed to support the company's continued growth and expansion into new healthcare markets.
+            As <strong>Product Design Lead</strong>, I spearheaded the creation of <strong>Nucleus</strong>—Medable's first comprehensive design system. The goal was not just visual alignment, but systemic transformation: to establish a universal design foundation that harmonized UX across the platform, empowered developers through scalable components, and reduced design-developer ambiguity.
+          </p>
+          
+          <p class="brief-description mb-6">
+            This meant tackling complexity at every layer: from governance and architecture to color tokens and accessibility standards. It also meant getting buy-in across leadership, engineering, clinical science, and compliance—where any change to UI workflows could trigger risk reviews.
           </p>
           
           <p class="brief-description">
-            The project represented a fundamental shift from ad-hoc design decisions to systematic, token-based design thinking that would scale across teams, products, and future acquisitions.
+            The result was a modern, component-driven system grounded in Tailwind CSS and built for speed, clarity, and compliance—accelerating our ability to ship consistent, accessible, and user-centered clinical trial experiences at scale.
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-layer-group text-blue-600"></i>
-            Systematic Design Approach
+            <i class="fas fa-atom text-blue-600"></i>
+            The Nucleus Design System
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The overhaul addressed critical organizational needs:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">Creating a unified foundation addressed critical challenges:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-sync-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Establish <strong>visual consistency</strong> across all healthcare products and touchpoints</span>
+              <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Visual chaos across products</strong> - Each team had built in isolation, creating inconsistent user experiences</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-rocket text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Accelerate <strong>development velocity</strong> through reusable components and clear specifications</span>
+              <i class="fas fa-code text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Bloated codebases</strong> - Duplicated components and styles were slowing development velocity</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-code text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Improve <strong>design-to-development handoffs</strong> with systematic documentation and standards</span>
+              <i class="fas fa-universal-access text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Accessibility gaps</strong> - No unified standards for meeting healthcare compliance requirements</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-handshake text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Design-developer friction</strong> - Ambiguous handoffs were causing rework and missed deadlines</span>
             </li>
           </ul>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-puzzle-piece text-indigo-600"></i>
-            Token-Based System Architecture
+            <i class="fas fa-shield-alt text-indigo-600"></i>
+            High-Stakes, Regulated Environment
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The new system would be built on:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">Working within clinical trials meant navigating unique constraints:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-palette text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Design tokens</strong> for colors, typography, spacing, and elevation</span>
+              <i class="fas fa-clipboard-check text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Risk reviews for UI changes</strong> - Any workflow modification could trigger compliance assessments</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-cubes text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Component library</strong> with clear usage guidelines and interaction states</span>
+              <i class="fas fa-users-cog text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Cross-functional alignment</strong> - Leadership, engineering, clinical science, and compliance all needed buy-in</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-book text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Documentation system</strong> in Storybook and Zeroheight for developer accessibility</span>
+              <i class="fas fa-heartbeat text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Patient safety considerations</strong> - Design decisions directly impacted clinical trial participants</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-heartbeat text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Healthcare-specific patterns</strong> for clinical workflows and patient data</span>
+              <i class="fas fa-rocket text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Speed vs. compliance</strong> - Balancing rapid iteration with regulatory requirements</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="brief-section mb-12">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
+            <i class="fas fa-cogs text-amber-600"></i>
+            Systematic Transformation Strategy
+          </h3>
+          <p class="brief-subtitle mb-8 text-gray-600">The approach required tackling complexity at multiple levels:</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-sitemap text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Governance & Architecture</strong> - Establishing processes for system evolution and adoption</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-palette text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Design Tokens & Standards</strong> - Color systems, typography, spacing, and component specifications</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-universal-access text-violet-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Accessibility Framework</strong> - Healthcare-compliant patterns for all user interactions</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-wind text-blue-500 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Tailwind CSS Foundation</strong> - Modern, utility-first approach for development efficiency</span>
             </li>
           </ul>
         </div>
         
         <div class="brief-section mt-10">
           <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+            <div class="impact-note text-gray-600 italic border-l-4 border-amber-300 pl-6 py-4 bg-amber-50 rounded-r">
               <div class="flex items-start gap-3">
-                <i class="fas fa-hospital text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This system would become the foundation for all future Medable products, supporting the company's mission to improve clinical trial efficiency and patient outcomes through better design.</span>
+                <i class="fas fa-lightbulb text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Nucleus wasn't just about visual consistency—it was about systemic transformation.</strong> By establishing a universal design foundation, we empowered teams to ship consistent, accessible, user-centered clinical trial experiences at scale, ultimately improving outcomes for both healthcare professionals and patients worldwide.</span>
               </div>
             </div>
           </div>
