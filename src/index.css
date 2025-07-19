@@ -547,3 +547,10 @@
     transform: translateY(-8px);
   }
 }
+
+/* Custom object-contain override for modal images */
+.object-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+    border: .5px solid lightgrey;
+}
