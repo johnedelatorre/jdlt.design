@@ -235,8 +235,8 @@ const ImageModal: React.FC<ImageModalProps> = ({
                 </p>
               )}
               
-              {/* Image container - Properly constrained with specific height */}
-              <div className="flex items-center justify-center mb-3 overflow-hidden" style={{ height: 'calc(80vh - 200px)' }}>
+              {/* Image container - With 40px spacing around image */}
+              <div className="flex items-center justify-center mb-3 overflow-hidden p-10" style={{ height: 'calc(80vh - 280px)' }}>
                 <img
                   src={images[currentIndex]}
                   alt={`Design: ${currentDesignInfo.title}`}
