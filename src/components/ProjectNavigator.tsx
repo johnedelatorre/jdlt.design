@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTh, faTimes, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
+import { personalInfo } from '../data/personalInfo';
 
 const ProjectNavigator: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const ProjectNavigator: React.FC = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/uesuxguy/', '_blank');
+    window.open(personalInfo.contact.linkedin, '_blank');
   };
 
   // ESC key to close

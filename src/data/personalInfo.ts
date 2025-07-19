@@ -6,11 +6,12 @@ export const personalInfo: PersonalInfo = {
   bio: '15+ years turning complex problems into delightful experiences—where User Research meets Interaction Design, Visual Design meets Front-End Development, and AI meets human intuition. Currently Product Design Lead at Relo Metrics, where I\'m revolutionizing sports analytics through game-changing platforms.',
   profileImage: '/images/profile/john-delatorre.jpg',
   contact: {
-    email: 'john@jdlt.design',
-    phone: '+1 (555) 123-4567',
-    location: 'San Francisco, CA',
-    linkedin: 'https://linkedin.com/in/johndelatorre',
-    github: 'https://github.com/johndelatorre'
+    email: 'john.edelatorre@gmail.com',
+    phone: '+1 (703) 303-0684',
+    location: 'New York, NY',
+    linkedin: 'https://www.linkedin.com/in/uesuxguy/',
+    github: 'https://github.com/johnedelatorre',
+    instagram: 'https://www.instagram.com/johneric72'
   },
   skills: [
     'User Research',

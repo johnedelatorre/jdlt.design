@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { personalInfo } from '../data/personalInfo';
 
 const Footer: React.FC = () => {
@@ -19,6 +19,14 @@ const Footer: React.FC = () => {
       label: 'LinkedIn'
     }
   ];
+
+  if (personalInfo.contact.instagram) {
+    socialLinks.push({
+      icon: faInstagram,
+      href: personalInfo.contact.instagram,
+      label: 'Instagram'
+    });
+  }
 
   if (personalInfo.contact.github) {
     socialLinks.push({
