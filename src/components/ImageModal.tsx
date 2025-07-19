@@ -238,7 +238,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
                   )}
                   
                   {/* Image container - Fixed height container like legacy modal */}
-                  <div className="flex-1 flex items-center justify-center mb-6 min-h-0">
+                  <div className="flex-1 flex items-center justify-center min-h-0">
                     <img
                       src={images[currentIndex]}
                       alt={`Design: ${currentDesignInfo.title}`}
@@ -251,13 +251,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
 
                 </div>
               </div>
-              
-              {/* Footer with counter */}
-              <div className="bg-gray-50 -mx-4 -mb-4 px-4 py-3 flex-shrink-0 text-center border-t border-gray-200">
-                <div className="text-sm text-gray-500 font-medium">
-                  {currentIndex + 1} of {images.length}
-                </div>
-              </div>
+
+            {/* Counter overlay - Bottom center */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+              {currentIndex + 1} of {images.length}
+            </div>
             </div>
           </DialogPanel>
       </div>
