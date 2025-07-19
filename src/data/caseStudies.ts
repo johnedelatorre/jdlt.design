@@ -2588,18 +2588,104 @@ export const caseStudies: CaseStudy[] = [
       </div>
     `,
     images: [
-      '/images/case-studies/medable-design-system/design1.jpg',
-      '/images/case-studies/medable-design-system/design2.jpg',
-      '/images/case-studies/medable-design-system/design3.jpg',
-      '/images/case-studies/medable-design-system/design4.jpg',
-      '/images/case-studies/medable-design-system/design5.jpg',
-      '/images/case-studies/medable-design-system/design6.jpg',
-      '/images/case-studies/medable-design-system/design7.jpg',
-      '/images/case-studies/medable-design-system/design8.jpg',
-      '/images/case-studies/medable-design-system/design9.jpg',
-      '/images/case-studies/medable-design-system/design10.jpg',
-      '/images/case-studies/medable-design-system/design11.jpg',
-      '/images/case-studies/medable-design-system/design12.jpg',
+      '/images/case-studies/medable-design-system/login-page.jpg',
+      '/images/case-studies/medable-design-system/templates-page-collapsed.jpg',
+      '/images/case-studies/medable-design-system/templates-page-expanded.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-form.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-form-roles.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig-upload.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig-toast.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig-edit.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig-slide-drawer.jpg',
+      '/images/case-studies/medable-design-system/create-new-template-wysig-slide-drawer-save.jpg',
+      '/images/case-studies/medable-design-system/new-created-template.jpg',
+    ],
+    researchArtifacts: [
+      {
+        id: '1',
+        name: 'Medable eConsent login screen',
+        description: 'Login interface for the Medable eConsent platform with clean, accessible form design',
+        image: '/images/case-studies/medable-design-system/login-page.jpg',
+        alt: 'Medable eConsent login screen interface'
+      },
+      {
+        id: '2',
+        name: 'Templates listing page',
+        description: 'Templates management interface showing standardized consent documents with filtering options',
+        image: '/images/case-studies/medable-design-system/templates-page-collapsed.jpg',
+        alt: 'Templates listing page interface'
+      },
+      {
+        id: '3',
+        name: 'Templates dashboard with navigation',
+        description: 'Comprehensive templates dashboard with pagination and document management controls',
+        image: '/images/case-studies/medable-design-system/templates-page-expanded.jpg',
+        alt: 'Templates dashboard with navigation interface'
+      },
+      {
+        id: '4',
+        name: 'Template configuration form',
+        description: 'Detailed template configuration interface with metadata fields and document settings',
+        image: '/images/case-studies/medable-design-system/create-new-template-form.jpg',
+        alt: 'Template configuration form interface'
+      },
+      {
+        id: '5',
+        name: 'New template creation screen',
+        description: 'Template creation workflow with role assignment and document configuration options',
+        image: '/images/case-studies/medable-design-system/create-new-template-form-roles.jpg',
+        alt: 'New template creation screen interface'
+      },
+      {
+        id: '6',
+        name: 'Template designer with document upload dialog',
+        description: 'Rich text editor with document import functionality for streamlined content creation',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig.jpg',
+        alt: 'Template designer with document upload dialog'
+      },
+      {
+        id: '7',
+        name: 'File browser dialog',
+        description: 'File system navigation interface for document selection and management',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig-upload.jpg',
+        alt: 'File browser dialog interface'
+      },
+      {
+        id: '8',
+        name: 'Template editor with sample content',
+        description: 'Document editor showing table formatting and content structure with confirmation notification',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig-toast.jpg',
+        alt: 'Template editor with sample content'
+      },
+      {
+        id: '9',
+        name: 'Template editor with formatting tools',
+        description: 'Advanced document editor with rich text formatting and structured content elements',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig-edit.jpg',
+        alt: 'Template editor with formatting tools'
+      },
+      {
+        id: '10',
+        name: 'Signature configuration panel',
+        description: 'Signature and initials configuration interface with role-based settings',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig-slide-drawer.jpg',
+        alt: 'Signature configuration panel interface'
+      },
+      {
+        id: '11',
+        name: 'Signature configuration panel save changes',
+        description: 'Save changes to the signature configuration panel',
+        image: '/images/case-studies/medable-design-system/create-new-template-wysig-slide-drawer-save.jpg',
+        alt: 'Signature configuration panel save changes'
+      },
+      {
+        id: '12',
+        name: 'New Created Template',
+        description: 'New template for approval documents',
+        image: '/images/case-studies/medable-design-system/new-created-template.jpg',
+        alt: 'New created template interface'
+      }
     ],
     // figmaLink: '' // No prototype available
   },
