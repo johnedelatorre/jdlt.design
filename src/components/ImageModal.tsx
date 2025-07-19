@@ -340,13 +340,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
             {/* Counter overlay - Bottom center */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
               {currentIndex + 1} of {images.length}
-              
-              {/* Preload indicator for next images */}
-              {images.length > 1 && (
-                <span className="ml-2 text-xs opacity-75">
-                  {currentIndex < images.length - 1 && imageLoadStates[images[currentIndex + 1]] === 'loaded' && '• Next ready'}
-                </span>
-              )}
             </div>
             </div>
           </DialogPanel>
