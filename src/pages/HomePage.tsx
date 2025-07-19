@@ -181,8 +181,8 @@ const HomePage: React.FC = () => {
               Featured Case Studies
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore my work turning complex problems into delightful experiences across sports analytics, 
-              healthcare technology, and AI-powered platforms. Each project showcases how User Research meets 
+              Explore my work turning complex problems into delightful experiences across different tech sectors, 
+              and AI-powered platforms. Each project showcases how UX Research meets 
               Interaction Design, Visual Design meets Front-End Development, and AI meets human intuition.
             </p>
           </div>
