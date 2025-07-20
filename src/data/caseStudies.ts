@@ -2703,64 +2703,41 @@ export const caseStudies: CaseStudy[] = [
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            The AI Analytics Dashboard transforms complex artificial intelligence insights into accessible, actionable business intelligence for non-technical users. This flagship product leverages advanced machine learning algorithms to provide intelligent recommendations and data visualizations that accelerate decision-making processes and drive meaningful business outcomes across diverse industries.
+            <strong>Elysium Analytics</strong> is a high-scale security data lake platform built for real-time threat detection, investigation, and observability across hybrid cloud environments. Designed for enterprise security analysts and SOC teams, the product integrates with <strong>Snowflake, Looker, Salesforce</strong>, and OpenSearch—supporting petabyte-scale data processing and contextual analytics.
           </p>
           
           <p class="brief-description mb-6">
-            As businesses increasingly rely on data-driven strategies, the challenge of making AI insights comprehensible to business leaders without technical backgrounds had become a critical barrier to adoption. Elysium recognized that powerful AI capabilities were useless if decision-makers couldn't understand or act on the insights generated.
+            Originally built as a lean MVP, the platform's UX was fragmented across <strong>React, Angular, and .NET stacks</strong>, with no design system or visual cohesion. This created inconsistency across workflows, interfaces, and embedded tools—slowing development and limiting usability.
           </p>
           
-          <p class="brief-description">
-            This dashboard represents a breakthrough in AI accessibility, serving as a bridge between sophisticated machine learning capabilities and practical business application, enabling organizations to harness the full potential of their data assets.
+          <p class="brief-description mb-6">
+            As <strong>Lead Product Designer</strong>, my goal was to architect a modular, scalable design system that could support:
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-brain text-blue-600"></i>
-            Intelligent Business Analytics
+            <i class="fas fa-shield-alt text-blue-600"></i>
+            Design System Goals
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The platform was designed to democratize AI insights across organizations:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">Key objectives for the unified design system:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-magic text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Transform <strong>complex AI outputs</strong> into intuitive, actionable business recommendations</span>
+              <i class="fas fa-layer-group text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Unified UX across tech stacks and embedded analytics tools</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-users-cog text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Enable <strong>non-technical stakeholders</strong> to leverage advanced analytics and machine learning insights</span>
+              <i class="fas fa-adjust text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Full support for <strong>light and dark themes</strong> across high-density data UIs</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-bolt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Accelerate <strong>decision-making velocity</strong> through intelligent automation and predictive recommendations</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-robot text-indigo-600"></i>
-            Advanced AI-Powered Features
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The dashboard includes sophisticated AI capabilities:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-chart-line text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Predictive analytics</strong> with confidence intervals and scenario modeling</span>
+              <i class="fas fa-puzzle-piece text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Seamless integration with <strong>Looker dashboards</strong>, <strong>OpenSearch visualizations</strong>, and <strong>Salesforce components</strong></span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-lightbulb text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Automated insight generation</strong> with natural language explanations and recommendations</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-search text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Anomaly detection</strong> with intelligent alerting and root cause analysis</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-cogs text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Adaptive learning</strong> that improves recommendations based on user interactions and outcomes</span>
+              <i class="fas fa-search text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">An iterative, research-backed approach to interaction design rooted in <strong>real analyst workflows</strong></span>
             </li>
           </ul>
         </div>
@@ -2769,8 +2746,8 @@ export const caseStudies: CaseStudy[] = [
           <div class="strategic-impact">
             <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
               <div class="flex items-start gap-3">
-                <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This flagship product would establish Elysium as a leader in accessible AI solutions, proving that sophisticated machine learning could be both powerful and user-friendly.</span>
+                <i class="fas fa-clock text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed">This was a <strong>6-month end-to-end initiative</strong>—from research and systems thinking to coded prototyping, stakeholder demos, and production delivery.</span>
               </div>
             </div>
           </div>
