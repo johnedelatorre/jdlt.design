@@ -266,94 +266,87 @@ export const caseStudies: CaseStudy[] = [
     action: `
       <div class="action-content">
         <div class="action-intro mb-8">
-          <p class="action-description text-lg text-gray-700 leading-relaxed">
-            Conducted extensive user research with brands and agencies, mapped complex data relationships, designed intuitive visualization systems, and created scalable design patterns. Worked closely with data scientists to ensure the platform could handle massive datasets while maintaining usability.
+          <p class="action-description text-lg text-gray-700 leading-relaxed mb-6">
+            Transformed Relo from a requirements-driven workflow to a user-centered design culture, establishing the first formal UX practice while shipping Census MVP in under 90 days with just two engineers.
           </p>
         </div>
 
-        <div class="consolidated-actions mb-12">
-          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
-            
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Evangelizing UX as a Strategic Discipline</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Embedded directly with engineering from day one, modeling how design can remove ambiguity and improve outcomes</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Introduced a new working model centered around design specs, interactive prototypes, and system thinking—moving away from hand-drawn sketches and Jira-only workflows</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Set up async design rituals including Slack demos, Loom walkthroughs, and Notion-based documentation to keep design tightly looped into a fast-moving dev process</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-8">
+          <h3 class="action-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-lightbulb text-blue-600"></i>
+            Evangelizing UX as Strategic Discipline
+          </h3>
+          <ul class="action-points space-y-6">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-handshake text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Embedded with engineering from day one</strong>—modeling how design removes ambiguity and improves outcomes through specs, prototypes, and systematic thinking</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-sync-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Introduced modern design operations</strong>—async rituals via Slack demos, Loom walkthroughs, and Notion documentation replacing fragmented hand-drawn workflows</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. Research-Driven Persona Foundation</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Partnered with Customer Success and Marketing to scope and conduct qualitative interviews with internal users and select clients</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Synthesized insights into three primary personas—Stakeholder, Brands, and Agencies—each tied to specific data needs, decision flows, and success metrics</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Used these personas to inform architecture, filtering logic, and the default view-building experience across the platform</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Ran alignment workshops to socialize personas and integrate them into product planning and UI decision-making</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-8">
+          <h3 class="action-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-users text-emerald-600"></i>
+            Research-Driven Foundation
+          </h3>
+          <ul class="action-points space-y-6">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-comments text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Conducted qualitative interviews</strong> with Customer Success, Marketing, and select clients to build three primary personas—Stakeholder, Brands, and Agencies</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-sitemap text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Grounded all design decisions in user behavior</strong>—personas drove architecture, filtering logic, and default view-building experiences</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Implementing a Scalable, Modern Design System</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Chose and implemented the Ant Design System to provide a strong UI foundation that aligned with our scalability and visual goals</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed a modular component set using Ant Design primitives and Ant Charts for dynamic data visualization, along with Font Awesome icons for clarity and accessibility</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Built out cards, filters, views, nav structures, tooltips, and layouts as reusable, systematized UI blocks—mapped to both persona needs and technical constraints</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Documented all components with usage patterns, interaction states, and spacing logic in Figma to support seamless engineering implementation</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-8">
+          <h3 class="action-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-cubes text-indigo-600"></i>
+            Scalable Design System Implementation
+          </h3>
+          <ul class="action-points space-y-6">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-layer-group text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Architected modular component system</strong> using Ant Design primitives and Ant Charts—enabling reusable UI blocks mapped to both user needs and technical constraints</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-file-code text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Delivered developer-ready specs</strong> via comprehensive Figma documentation covering usage patterns, interaction states, and spacing logic</span>
+            </li>
+          </ul>
+        </div>
 
-            <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. Prototype-Led Development and MVP Velocity</h4>
-              <ul class="action-points space-y-3">
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Used Vercel v0.dev and Cursor to generate high-fidelity, fully interactive prototypes early in the process—allowing stakeholders to test flows and engineers to preview logic before tickets were written</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created low-friction feedback loops with engineers to test feasibility, validate assumptions, and reduce rework</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Shipped an MVP in under 90 days with just one frontend and one backend engineer, while designing for long-term platform extensibility (Release 2, 3+)</span>
-                </li>
-              </ul>
-            </div>
+        <div class="action-section mb-8">
+          <h3 class="action-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-rocket text-amber-600"></i>
+            Prototype-Led Development
+          </h3>
+          <ul class="action-points space-y-6">
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-desktop text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Accelerated decision-making with interactive prototypes</strong>—using v0.dev and Cursor to enable stakeholder testing and engineering preview before development</span>
+            </li>
+            <li class="action-point flex items-start gap-4">
+              <i class="fas fa-shipping-fast text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Delivered MVP in under 90 days</strong> with minimal resources—proving that thoughtful design systems enable both speed and long-term scalability</span>
+            </li>
+          </ul>
+        </div>
 
+        <div class="action-conclusion mt-10">
+          <div class="strategic-impact">
+            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>The true victory wasn't just shipping Census</strong>—it was transforming how Relo approaches product development, establishing design as a strategic function that drives better outcomes through user empathy and systematic thinking.</span>
+              </div>
+            </div>
           </div>
         </div>
 
