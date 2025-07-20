@@ -2703,41 +2703,41 @@ export const caseStudies: CaseStudy[] = [
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            <strong>Elysium Analytics</strong> is a high-scale security data lake platform built for real-time threat detection, investigation, and observability across hybrid cloud environments. Designed for enterprise security analysts and SOC teams, the product integrates with <strong>Snowflake, Looker, Salesforce</strong>, and OpenSearch—supporting petabyte-scale data processing and contextual analytics.
+            <strong>Elysium Analytics</strong> is a turn-key security data lake platform that supports real-time monitoring, deep threat investigations, and observability across hybrid cloud and SaaS environments. As the product matured from startup MVP to enterprise-scale, the UX was holding it back—fragmented, visually inconsistent, and difficult to extend across tech stacks or embedded platforms.
           </p>
           
-          <p class="brief-description mb-6">
-            Originally built as a lean MVP, the platform's UX was fragmented across <strong>React, Angular, and .NET stacks</strong>, with no design system or visual cohesion. This created inconsistency across workflows, interfaces, and embedded tools—slowing development and limiting usability.
-          </p>
-          
-          <p class="brief-description mb-6">
-            As <strong>Lead Product Designer</strong>, my goal was to architect a modular, scalable design system that could support:
+          <p class="brief-description">
+            My mandate as <strong>Lead Product Designer</strong> was to lead the transformation of Elysium's UI/UX into a scalable, research-backed platform—capable of supporting:
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-shield-alt text-blue-600"></i>
-            Design System Goals
+            <i class="fas fa-rocket text-blue-600"></i>
+            Platform Transformation Goals
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">Key objectives for the unified design system:</p>
+          <p class="brief-subtitle mb-8 text-gray-600">Key capabilities for the enterprise-ready design system:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-layer-group text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Unified UX across tech stacks and embedded analytics tools</span>
+              <i class="fas fa-adjust text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A <strong>multi-themed design system</strong> (light + dark) optimized for dense, data-heavy interfaces</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-adjust text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Full support for <strong>light and dark themes</strong> across high-density data UIs</span>
+              <i class="fas fa-puzzle-piece text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Seamless integration of third-party ecosystems like <strong>Looker, OpenSearch, Salesforce</strong>, and <strong>Snowflake</strong></span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-puzzle-piece text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Seamless integration with <strong>Looker dashboards</strong>, <strong>OpenSearch visualizations</strong>, and <strong>Salesforce components</strong></span>
+              <i class="fas fa-layer-group text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Unified component architecture across <strong>React, Angular, and .NET</strong></span>
             </li>
             <li class="flex items-start gap-4">
               <i class="fas fa-search text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">An iterative, research-backed approach to interaction design rooted in <strong>real analyst workflows</strong></span>
+              <span class="text-gray-700 leading-relaxed">A repeatable process for <strong>user research, design QA, and rapid prototyping</strong></span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-balance-scale text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A flexible system that balanced <strong>enterprise usability, dev velocity, and technical scalability</strong></span>
             </li>
           </ul>
         </div>
@@ -2747,7 +2747,7 @@ export const caseStudies: CaseStudy[] = [
             <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
               <div class="flex items-start gap-3">
                 <i class="fas fa-clock text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This was a <strong>6-month end-to-end initiative</strong>—from research and systems thinking to coded prototyping, stakeholder demos, and production delivery.</span>
+                <span class="text-gray-700 leading-relaxed">This project was executed over a <strong>6-month sprint</strong>—from foundational research to launch—with deep collaboration across product, engineering, and clients.</span>
               </div>
             </div>
           </div>
