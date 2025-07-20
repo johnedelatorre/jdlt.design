@@ -252,184 +252,121 @@ const AboutPage: React.FC = () => {
               Skills & Expertise
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              A comprehensive toolkit developed over years of designing for various industries and challenges.
+              A comprehensive toolkit developed over years of designing across various industries.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Research & Design Card */}
-            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-2">
-                  Research & Design
+          <div className="grid lg:grid-cols-3 gap-6">
+            {/* Design Systems & Prototyping Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">🧩</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  Design Systems & Prototyping
                 </h3>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Discovery</h4>
-                    <p className="text-gray-600 text-sm">Usability Testing, Personas, Journey Maps</p>
-                  </div>
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">Figma • FigJam • UX Pilot • v0.dev • Cursor • Miro • Webflow • Framer</p>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Research</h4>
-                    <p className="text-gray-600 text-sm">Heuristic Analysis, Product Analytics</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">UX Design</h4>
-                    <p className="text-gray-600 text-sm">Interaction Design, Clickable Prototypes</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Visual Design</h4>
-                    <p className="text-gray-600 text-sm">Theming, Design Systems, Page Layouts</p>
-                  </div>
+                <div>
+                  <p className="text-gray-700">Atomic Design • Tokens & Theming • Storybook • Responsive / Native UI</p>
                 </div>
               </div>
             </div>
 
-            {/* Tools & Technology Card */}
-            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-2">
-                  Tools & Technology
+            {/* UX Research & Testing Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">🔍</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  UX Research & Testing
                 </h3>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Design</h4>
-                    <p className="text-gray-600 text-sm">Figma, FigJam, Miro, Creative Cloud</p>
-                  </div>
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">Pendo • LookBack • UserTesting.com • Mentimeter</p>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Analytics</h4>
-                    <p className="text-gray-600 text-sm">LookBack, Pendo Analytics, Mentimeter</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Documentation</h4>
-                    <p className="text-gray-600 text-sm">Microsoft Office, Google Docs, Jira</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Technologies</h4>
-                    <p className="text-gray-600 text-sm">HTML5, CSS, SASS, JS, StoryBook</p>
-                  </div>
+                <div>
+                  <p className="text-gray-700">Journey Mapping • Continuous Discovery • Design Thinking Workshops</p>
                 </div>
               </div>
             </div>
 
-            {/* AI Design & Rapid Prototyping Card */}
-            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-2">
-                  AI Design & Rapid Prototyping
+            {/* Product Design & Validation Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">🛠️</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  Product Design & Validation
                 </h3>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">AI Design Tools</h4>
-                    <p className="text-gray-600 text-sm">v0.dev, UXPilot.ai, ChatGPT, Cursor</p>
-                  </div>
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">Hi-Fidelity Prototypes • Visual Design Systems • QA Collaboration</p>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Development</h4>
-                    <p className="text-gray-600 text-sm">HTML/CSS, TypeScript, React</p>
-                  </div>
+                <div>
+                  <p className="text-gray-700">LookBack.com • UserTesting.com • Design QA • UX Acceptance Testing</p>
                 </div>
+              </div>
+            </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Command Line</h4>
-                    <p className="text-gray-600 text-sm">Git, npm, CLI Tools, Terminal</p>
-                  </div>
+            {/* AI-Led UX Strategy Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">🤖</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  AI-Led UX Strategy
+                </h3>
+              </div>
+
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">Prompt Engineering • Model Behavior Mapping • Insight-Driven UX/UI</p>
                 </div>
+                <div>
+                  <p className="text-gray-700">ChatGPT • Claude • Generative Pattern Design • Feedback Loop Optimization</p>
+                </div>
+              </div>
+            </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-900 font-medium mb-1">Version Control</h4>
-                    <p className="text-gray-600 text-sm">GitHub, Git Workflows, Collaboration</p>
-                  </div>
+            {/* Documentation & Product Ops Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">📚</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  Documentation & Product Ops
+                </h3>
+              </div>
+
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">Jira • Notion • Confluence • Slack • Async Design Reviews</p>
+                </div>
+                <div>
+                  <p className="text-gray-700">Design Systems Docs • Process Mapping • Remote Team Workflows</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Design-to-Code Tech Stack Card */}
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+              <div className="text-center mb-6">
+                <div className="text-3xl mb-2">🧱</div>
+                <h3 className="text-lg font-serif font-semibold text-gray-900">
+                  Design-to-Code Tech Stack
+                </h3>
+              </div>
+
+              <div className="space-y-4 flex-1 text-sm">
+                <div>
+                  <p className="text-gray-700">HTML5 • CSS3 • Tailwind CSS • Ant Design • Material UI • Storybook</p>
+                </div>
+                <div>
+                  <p className="text-gray-700">Dev Handoff Documentation • UX Engineering Alignment • Scalable Component Libraries</p>
                 </div>
               </div>
             </div>
