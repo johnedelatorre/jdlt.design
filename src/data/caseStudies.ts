@@ -2101,12 +2101,12 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: 'medable-design-system',
-    title: 'Design System Overhaul',
-    subtitle: 'Building scalable design foundations',
+    title: 'Medable Design System',
+    subtitle: 'AI-Led Clinical Trials Design System',
     client: 'Medable',
     role: 'Senior Product Designer',
-    year: '2022',
-    tools: ['Figma', 'Storybook', 'Zeroheight'],
+    year: '2020 - 2022',
+    tools: ['Figma', 'Storybook', 'Tokens Studio'],
     tags: ['Design Systems', 'Component Library', 'Healthcare'],
     headerImage: '/images/case-studies/medable-design-system/medable-design-system-header.jpg',
     projectBrief: `
