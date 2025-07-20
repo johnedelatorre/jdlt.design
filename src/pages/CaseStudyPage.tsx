@@ -220,27 +220,27 @@ const CaseStudyPage: React.FC = () => {
         
         {/* Centered Project Details Card */}
         <div className="absolute inset-0 flex items-center justify-center p-8">
-          <div className="bg-black bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 lg:p-12 shadow-2xl border border-white border-opacity-20 max-w-2xl w-full text-center">
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">
+          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 lg:p-12 shadow-2xl border border-white border-opacity-30 max-w-2xl w-full text-center">
+            <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white mb-4">
               {caseStudy.title}
             </h1>
             <p className="text-white text-lg lg:text-xl mb-8 opacity-90">{caseStudy.subtitle}</p>
             
-            <div className="grid grid-cols-2 gap-6 text-white mb-8">
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Client</span>
+            <div className="grid grid-cols-2 gap-6 text-white mb-8 text-center">
+              <div className="text-center">
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Client</span>
                 <p className="text-white text-lg font-semibold">{caseStudy.client}</p>
               </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Role</span>
+              <div className="text-center">
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Role</span>
                 <p className="text-white text-lg font-semibold">{caseStudy.role}</p>
               </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Year</span>
+              <div className="text-center">
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Year</span>
                 <p className="text-white text-lg font-semibold">{caseStudy.year}</p>
               </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Tools</span>
+              <div className="text-center">
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Tools</span>
                 <p className="text-white text-lg font-semibold">{caseStudy.tools.join(', ')}</p>
               </div>
             </div>
@@ -268,7 +268,7 @@ const CaseStudyPage: React.FC = () => {
         </div>
 
         {/* Scroll to Project Brief Button */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => {
               const projectBriefSection = document.getElementById('project-brief');
