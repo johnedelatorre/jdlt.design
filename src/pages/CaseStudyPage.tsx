@@ -496,8 +496,20 @@ const CaseStudyPage: React.FC = () => {
             />
           )}
 
-          {/* Image Gallery Grid */}
-          <div className={`grid md:grid-cols-2 ${caseStudy.id === 'medable-translation-tool' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
+          {/* Main Gallery Section */}
+          <div className="mb-8">
+            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+              <h3 className="font-serif text-2xl font-bold text-black mb-6 flex items-center gap-3">
+                <FontAwesomeIcon icon={faEye} className="text-indigo-600" />
+                Final Interface Designs
+              </h3>
+              
+              <p className="text-gray-600 text-center mb-8 text-lg">
+                Complete design system implementation across all platform interfaces and user flows
+              </p>
+
+              {/* Image Gallery Grid */}
+              <div className={`grid md:grid-cols-2 ${caseStudy.id === 'medable-translation-tool' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
             {caseStudy.images.map((image, index) => (
               <div
                 key={index}
@@ -519,6 +531,8 @@ const CaseStudyPage: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+            </div>
           </div>
 
           {/* Secondary Prototype Link */}
