@@ -2121,70 +2121,68 @@ export const caseStudies: CaseStudy[] = [
           </p>
         </div>
 
-        <div class="consolidated-challenges mb-12">
-          <div class="challenges-container bg-gray-50 border border-gray-200 rounded-lg p-8">
-            <h3 class="section-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <i class="fas fa-target text-red-600"></i>
-              Core Challenges & Constraints
-            </h3>
-            
-            <div class="challenges-grid grid md:grid-cols-2 gap-8">
-              <div class="challenge-group">
-                <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">System Fragmentation</h4>
-                <ul class="challenge-list space-y-3">
-                  <li class="challenge-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Visual chaos across isolated product teams</span>
-                  </li>
-                  <li class="challenge-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Bloated codebases with duplicated components</span>
-                  </li>
-                  <li class="challenge-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Accessibility gaps and compliance risks</span>
-                  </li>
-                </ul>
-              </div>
+        <div class="brief-section mb-8">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-target text-red-600"></i>
+            Core Challenges & Constraints
+          </h3>
+          
+          <div class="challenges-grid grid md:grid-cols-2 gap-8">
+            <div class="challenge-group">
+              <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">System Fragmentation</h4>
+              <ul class="challenge-list space-y-4">
+                <li class="challenge-item flex items-start gap-4">
+                  <i class="fas fa-exclamation-triangle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Visual chaos across isolated product teams</span>
+                </li>
+                <li class="challenge-item flex items-start gap-4">
+                  <i class="fas fa-code text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Bloated codebases with duplicated components</span>
+                </li>
+                <li class="challenge-item flex items-start gap-4">
+                  <i class="fas fa-universal-access text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Accessibility gaps and compliance risks</span>
+                </li>
+              </ul>
+            </div>
 
-              <div class="challenge-group">
-                <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">Regulatory Environment</h4>
-                <ul class="constraint-list space-y-3">
-                  <li class="constraint-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Risk reviews for any UI workflow changes</span>
-                  </li>
-                  <li class="constraint-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Cross-functional buy-in across compliance teams</span>
-                  </li>
-                  <li class="constraint-item flex items-start gap-3">
-                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
-                    <span class="text-gray-700">Patient safety impact considerations</span>
-                  </li>
-                </ul>
-              </div>
+            <div class="challenge-group">
+              <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">Regulatory Environment</h4>
+              <ul class="constraint-list space-y-4">
+                <li class="constraint-item flex items-start gap-4">
+                  <i class="fas fa-shield-alt text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Risk reviews for any UI workflow changes</span>
+                </li>
+                <li class="constraint-item flex items-start gap-4">
+                  <i class="fas fa-users-cog text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Cross-functional buy-in across compliance teams</span>
+                </li>
+                <li class="constraint-item flex items-start gap-4">
+                  <i class="fas fa-heartbeat text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Patient safety impact considerations</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="solution-approach mb-12">
-          <h3 class="section-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+        <div class="brief-section mb-8">
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
             <i class="fas fa-atom text-blue-600"></i>
             The Nucleus Solution
           </h3>
-          <p class="approach-description text-lg text-gray-700 leading-relaxed mb-6">
+          <p class="brief-description text-lg text-gray-700 leading-relaxed">
             Built a modern, component-driven system grounded in <strong>Tailwind CSS</strong> with comprehensive governance, design tokens, accessibility frameworks, and developer enablement—creating a foundation for consistent, compliant, and scalable clinical trial experiences.
           </p>
         </div>
 
-        <div class="brief-conclusion">
-          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
-            <div class="flex items-start gap-3">
-              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <p class="conclusion-text text-gray-700 leading-relaxed">
-                <strong>Nucleus transformed Medable's entire product development approach</strong>—establishing a universal design foundation that empowered teams to ship consistent, accessible clinical trial experiences at scale, ultimately improving outcomes for healthcare professionals and patients worldwide.
-              </p>
+        <div class="brief-section mt-10">
+          <div class="strategic-impact">
+            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Nucleus transformed Medable's entire product development approach</strong>—establishing a universal design foundation that empowered teams to ship consistent, accessible clinical trial experiences at scale, ultimately improving outcomes for healthcare professionals and patients worldwide.</span>
+              </div>
             </div>
           </div>
         </div>
