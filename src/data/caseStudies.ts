@@ -2113,110 +2113,78 @@ export const caseStudies: CaseStudy[] = [
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            Medable is a clinical trial platform trusted by global pharmaceutical companies to manage remote, decentralized studies. But behind the scenes, its product experience was fractured—each product team had built in isolation, leading to a chaotic patchwork of visual styles, inconsistent UX patterns, and bloated front-end codebases. This fragmentation not only created confusion for users, but made it nearly impossible to scale improvements, meet accessibility standards, or move quickly in a high-stakes, highly regulated domain.
+            Medable is a clinical trial platform trusted by global pharmaceutical companies to manage remote, decentralized studies. Behind the scenes, its product experience was fractured—each team had built in isolation, creating a chaotic patchwork of visual styles, inconsistent UX patterns, and bloated codebases that made scaling improvements nearly impossible in this highly regulated domain.
           </p>
           
           <p class="brief-description mb-6">
-            As <strong>Product Design Lead</strong>, I spearheaded the creation of <strong>Nucleus</strong>—Medable's first comprehensive design system. The goal was not just visual alignment, but systemic transformation: to establish a universal design foundation that harmonized UX across the platform, empowered developers through scalable components, and reduced design-developer ambiguity.
-          </p>
-          
-          <p class="brief-description mb-6">
-            This meant tackling complexity at every layer: from governance and architecture to color tokens and accessibility standards. It also meant getting buy-in across leadership, engineering, clinical science, and compliance—where any change to UI workflows could trigger risk reviews.
-          </p>
-          
-          <p class="brief-description">
-            The result was a modern, component-driven system grounded in Tailwind CSS and built for speed, clarity, and compliance—accelerating our ability to ship consistent, accessible, and user-centered clinical trial experiences at scale.
+            As <strong>Product Design Lead</strong>, I spearheaded <strong>Nucleus</strong>—Medable's first comprehensive design system. The goal: systemic transformation through a universal design foundation that would harmonize UX, empower developers with scalable components, and reduce design-developer friction while navigating complex compliance requirements.
           </p>
         </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-atom text-blue-600"></i>
-            The Nucleus Design System
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">Creating a unified foundation addressed critical challenges:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-puzzle-piece text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Visual chaos across products</strong> - Each team had built in isolation, creating inconsistent user experiences</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-code text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Bloated codebases</strong> - Duplicated components and styles were slowing development velocity</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-universal-access text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Accessibility gaps</strong> - No unified standards for meeting healthcare compliance requirements</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-handshake text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Design-developer friction</strong> - Ambiguous handoffs were causing rework and missed deadlines</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-shield-alt text-indigo-600"></i>
-            High-Stakes, Regulated Environment
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">Working within clinical trials meant navigating unique constraints:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-clipboard-check text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Risk reviews for UI changes</strong> - Any workflow modification could trigger compliance assessments</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-users-cog text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Cross-functional alignment</strong> - Leadership, engineering, clinical science, and compliance all needed buy-in</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-heartbeat text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Patient safety considerations</strong> - Design decisions directly impacted clinical trial participants</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-rocket text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Speed vs. compliance</strong> - Balancing rapid iteration with regulatory requirements</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-cogs text-amber-600"></i>
-            Systematic Transformation Strategy
-          </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">The approach required tackling complexity at multiple levels:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-sitemap text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Governance & Architecture</strong> - Establishing processes for system evolution and adoption</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-palette text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Design Tokens & Standards</strong> - Color systems, typography, spacing, and component specifications</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-universal-access text-violet-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Accessibility Framework</strong> - Healthcare-compliant patterns for all user interactions</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-wind text-blue-500 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Tailwind CSS Foundation</strong> - Modern, utility-first approach for development efficiency</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mt-10">
-          <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-amber-300 pl-6 py-4 bg-amber-50 rounded-r">
-              <div class="flex items-start gap-3">
-                <i class="fas fa-lightbulb text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed"><strong>Nucleus wasn't just about visual consistency—it was about systemic transformation.</strong> By establishing a universal design foundation, we empowered teams to ship consistent, accessible, user-centered clinical trial experiences at scale, ultimately improving outcomes for both healthcare professionals and patients worldwide.</span>
+
+        <div class="consolidated-challenges mb-12">
+          <div class="challenges-container bg-gray-50 border border-gray-200 rounded-lg p-8">
+            <h3 class="section-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <i class="fas fa-target text-red-600"></i>
+              Core Challenges & Constraints
+            </h3>
+            
+            <div class="challenges-grid grid md:grid-cols-2 gap-8">
+              <div class="challenge-group">
+                <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">System Fragmentation</h4>
+                <ul class="challenge-list space-y-3">
+                  <li class="challenge-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Visual chaos across isolated product teams</span>
+                  </li>
+                  <li class="challenge-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Bloated codebases with duplicated components</span>
+                  </li>
+                  <li class="challenge-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-red-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Accessibility gaps and compliance risks</span>
+                  </li>
+                </ul>
               </div>
+
+              <div class="challenge-group">
+                <h4 class="challenge-category text-lg font-semibold text-gray-900 mb-4">Regulatory Environment</h4>
+                <ul class="constraint-list space-y-3">
+                  <li class="constraint-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Risk reviews for any UI workflow changes</span>
+                  </li>
+                  <li class="constraint-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Cross-functional buy-in across compliance teams</span>
+                  </li>
+                  <li class="constraint-item flex items-start gap-3">
+                    <div class="w-1.5 h-1.5 bg-emerald-600 rounded-full flex-shrink-0 mt-2"></div>
+                    <span class="text-gray-700">Patient safety impact considerations</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-approach mb-12">
+          <h3 class="section-title text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-atom text-blue-600"></i>
+            The Nucleus Solution
+          </h3>
+          <p class="approach-description text-lg text-gray-700 leading-relaxed mb-6">
+            Built a modern, component-driven system grounded in <strong>Tailwind CSS</strong> with comprehensive governance, design tokens, accessibility frameworks, and developer enablement—creating a foundation for consistent, compliant, and scalable clinical trial experiences.
+          </p>
+        </div>
+
+        <div class="brief-conclusion">
+          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="conclusion-text text-gray-700 leading-relaxed">
+                <strong>Nucleus transformed Medable's entire product development approach</strong>—establishing a universal design foundation that empowered teams to ship consistent, accessible clinical trial experiences at scale, ultimately improving outcomes for healthcare professionals and patients worldwide.
+              </p>
             </div>
           </div>
         </div>
