@@ -2855,82 +2855,76 @@ export const caseStudies: CaseStudy[] = [
       <div class="task-content">
         <div class="task-intro mb-8">
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
-            Design an intuitive AI analytics dashboard that would revolutionize how non-technical business users interact with artificial intelligence. The system needed to transform complex machine learning outputs into clear, actionable insights while maintaining the sophistication and accuracy that technical users required for advanced analysis.
+            Transform Elysium's fragmented UI into a unified, enterprise-ready platform through a comprehensive design system initiative. The challenge was architecting a scalable foundation that could unify disconnected tech stacks while supporting enterprise security workflows without disrupting ongoing development.
           </p>
         </div>
 
-        <div class="task-focus mb-10">
-          <div class="task-header mb-6">
-            <div class="task-number flex items-center gap-3">
-              <i class="fas fa-brain text-blue-600"></i>
-              <span class="task-label font-semibold text-blue-600">AI ACCESSIBILITY OBJECTIVES</span>
-            </div>
-            <h4 class="task-title text-xl font-bold text-gray-900 mb-4">Bridge the AI-Business Intelligence Gap</h4>
-          </div>
-          
-          <p class="task-overview text-lg text-gray-700 leading-relaxed mb-6">
-            The dashboard required a <strong>dual-layer approach</strong> that could serve both business executives seeking quick insights and data analysts requiring deeper functionality. The challenge was creating an interface that was both accessible to non-technical users and powerful enough for sophisticated analysis.
-          </p>
-          
-          <div class="task-requirements mb-8">
-            <ul class="task-list space-y-4">
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-language text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Create natural language explanations for complex AI-generated insights and recommendations</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-eye text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Design progressive disclosure patterns that reveal complexity only when needed</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-chart-bar text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Develop intuitive data visualization systems that communicate confidence levels and uncertainty</span>
-              </li>
-              <li class="task-list-item flex items-start gap-4">
-                <i class="fas fa-robot text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">Implement intelligent recommendation systems with clear reasoning and action pathways</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="task-users mb-8">
-          <div class="users-header mb-6">
-            <h4 class="users-title flex items-center gap-3 text-lg font-bold text-gray-900">
-              <i class="fas fa-users text-indigo-600"></i>
-              Dual-Audience Design Requirements
+        <div class="task-requirements mb-8">
+          <div class="requirements-header mb-6">
+            <h4 class="requirements-title flex items-center gap-3 text-xl font-bold text-gray-900">
+              <i class="fas fa-tasks text-blue-600"></i>
+              Core Design System Tasks
             </h4>
           </div>
           
-          <div class="users-list space-y-4">
-            <div class="user-item flex items-start gap-4">
-              <i class="fas fa-user-tie text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Business Executives:</strong> High-level insights, trend summaries, and strategic recommendations with minimal technical complexity</span>
-            </div>
-            
-            <div class="user-item flex items-start gap-4">
-              <i class="fas fa-chart-line text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Business Analysts:</strong> Detailed insights with drill-down capabilities and interactive exploration tools</span>
-            </div>
-            
-            <div class="user-item flex items-start gap-4">
-              <i class="fas fa-cogs text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Data Scientists:</strong> Access to model details, confidence metrics, and advanced analytical capabilities</span>
-            </div>
-            
-            <div class="user-item flex items-start gap-4">
-              <i class="fas fa-building text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Operations Teams:</strong> Real-time monitoring, alerts, and actionable operational insights</span>
-            </div>
-          </div>
+          <ul class="task-list space-y-6">
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-blue-600 text-white rounded-full font-bold text-sm flex-shrink-0">1</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Architect a unified design system in Storybook</strong> that spanned React, Angular, and .NET—serving as a shared source of truth for all UI components, interactions, and states.</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-purple-600 text-white rounded-full font-bold text-sm flex-shrink-0">2</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Develop and deliver full light and dark themes</strong> that could scale across data-dense dashboards, reduce analyst fatigue, and meet accessibility requirements.</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-green-600 text-white rounded-full font-bold text-sm flex-shrink-0">3</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Design reusable UI wrappers and styling logic</strong> that could normalize embedded dashboards and data components from <strong>Looker, OpenSearch, and Salesforce</strong> into the native platform experience.</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-orange-600 text-white rounded-full font-bold text-sm flex-shrink-0">4</div>
+              <div class="text-gray-700 leading-relaxed">
+                <strong>Define a scalable UX model for core workflows</strong>:
+                <ul class="mt-3 ml-4 space-y-2">
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-search text-blue-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.125rem;"></i>
+                    <span>Global search with KQL filtering</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-bell text-red-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.125rem;"></i>
+                    <span>Alert triage and resolution flows</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-chart-line text-green-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.125rem;"></i>
+                    <span>Dashboard visualizations for trend analysis and drill-downs</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-clock text-purple-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.125rem;"></i>
+                    <span>Timeline views for forensic investigations</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full font-bold text-sm flex-shrink-0">5</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Conduct user research and internal stakeholder interviews</strong> to ground design decisions in analyst workflows, cognitive load patterns, and enterprise readiness signals.</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-cyan-600 text-white rounded-full font-bold text-sm flex-shrink-0">6</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Validate design hypotheses with internal teams and client champions</strong>, iterating on prototypes and system structure based on usability feedback.</span>
+            </li>
+            <li class="task-list-item flex items-start gap-4">
+              <div class="task-number flex items-center justify-center w-8 h-8 bg-amber-600 text-white rounded-full font-bold text-sm flex-shrink-0">7</div>
+              <span class="text-gray-700 leading-relaxed"><strong>Ensure engineering implementation readiness</strong> by delivering design QA, tokens, interaction logic, and coded prototypes in sync with active sprints—staying at least 2 sprints ahead of dev delivery.</span>
+            </li>
+          </ul>
         </div>
 
         <div class="task-conclusion mt-10">
-          <div class="conclusion-card bg-purple-50 border-l-4 border-purple-300 p-6 rounded-r-lg">
+          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
-              <i class="fas fa-rocket text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <i class="fas fa-tools text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                Success would be measured by user adoption rates, decision-making speed improvements, and the democratization of AI insights across organizational hierarchies.
+                Success would be measured by system adoption across teams, reduction in design-dev handoff friction, and the platform's ability to onboard enterprise clients with a cohesive, professional user experience.
               </p>
             </div>
           </div>
