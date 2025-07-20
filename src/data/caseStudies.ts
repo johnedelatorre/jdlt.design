@@ -2687,7 +2687,7 @@ export const caseStudies: CaseStudy[] = [
         alt: 'New created template interface'
       }
     ],
-    // figmaLink: '' // No prototype available
+    figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3560%3A87363&node-id=3561-87455&viewport=555%2C620%2C0.09&t=gSoRjMkmiSkR5mjK-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3561%3A87455'
   },
   {
     id: 'elysium-ai-dashboard',
