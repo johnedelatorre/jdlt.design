@@ -220,7 +220,7 @@ const CaseStudyPage: React.FC = () => {
         
         {/* Centered Project Details Card */}
         <div className="absolute inset-0 flex items-center justify-center p-8">
-          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 lg:p-12 shadow-2xl border border-white border-opacity-30 max-w-2xl w-full text-center">
+          <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg border border-white/10 shadow-xl max-w-3xl w-full text-center">
             <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white mb-4">
               {caseStudy.title}
             </h1>
