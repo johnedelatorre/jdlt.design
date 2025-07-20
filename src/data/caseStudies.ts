@@ -2940,7 +2940,6 @@ export const caseStudies: CaseStudy[] = [
         </div>
 
         <div class="consolidated-actions mb-12">
-          <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
             
             <div class="action-section mb-8">
               <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
@@ -3116,7 +3115,6 @@ export const caseStudies: CaseStudy[] = [
               </ul>
             </div>
 
-          </div>
         </div>
       </div>
     `,
