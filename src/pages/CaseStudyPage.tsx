@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
@@ -251,7 +251,7 @@ const CaseStudyPage: React.FC = () => {
                 href={caseStudy.figmaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group border border-white border-opacity-30"
+                className="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
               >
                 <FontAwesomeIcon 
                   icon={faFigma} 
@@ -282,15 +282,13 @@ const CaseStudyPage: React.FC = () => {
             }}
             aria-label="Scroll to project details"
           >
-            <span className="text-sm font-medium mb-2 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-sm font-medium mb-3 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
               Scroll to Project Details
             </span>
-            <div className="w-8 h-8 border border-white border-opacity-60 rounded-full flex items-center justify-center group-hover:border-opacity-100 transition-all duration-300">
-              <FontAwesomeIcon 
-                icon={faArrowDown} 
-                className="text-sm" 
-              />
-            </div>
+            <FontAwesomeIcon 
+              icon={faChevronDown} 
+              className="text-xl" 
+            />
           </button>
         </div>
       </section>

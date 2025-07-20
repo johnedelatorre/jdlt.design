@@ -88,14 +88,11 @@
 
   /* Gentle bounce animation for scroll buttons */
   @keyframes gentleBounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%, 100% {
       transform: translateY(0);
     }
-    40% {
-      transform: translateY(-8px);
-    }
-    60% {
-      transform: translateY(-4px);
+    50% {
+      transform: translateY(-6px);
     }
   }
 
