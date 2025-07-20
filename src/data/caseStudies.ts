@@ -2192,98 +2192,75 @@ export const caseStudies: CaseStudy[] = [
       <div class="situation-content">
         <div class="situation-intro mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            Medable's platform supported decentralized clinical trials across a wide range of users—from patients to clinicians, coordinators, and CROs. But over time, its product experience had become deeply fragmented. Each product team had developed independently, resulting in a tangled ecosystem of inconsistent UI patterns, redundant code, and design drift.
-          </p>
-        </div>
-
-        <div class="situation-root-causes mb-8">
-          <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
-            <i class="fas fa-search text-red-600"></i>
-            Root Causes of System Fragmentation
-          </h3>
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            This inconsistency was rooted in years of divergent design frameworks, mismatched software architectures, and legacy technical decisions. As a result:
+            Despite supporting critical clinical trials for global pharmaceutical companies, Medable's product experience had devolved into a fractured ecosystem. Years of independent team development created a chaotic patchwork of <strong>inconsistent UI patterns, redundant codebases, and design drift</strong>—making it nearly impossible to scale improvements in this highly regulated environment.
           </p>
           
-          <ul class="problem-list space-y-6">
-            <li class="problem-item flex items-start gap-4">
-              <i class="fas fa-eye-slash text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Product visuals and behavior felt outdated and disjointed</strong> across the platform ecosystem</span>
-            </li>
-            <li class="problem-item flex items-start gap-4">
-              <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Design improvements were difficult to scale</strong> across platforms and product lines</span>
-            </li>
-            <li class="problem-item flex items-start gap-4">
-              <i class="fas fa-fire text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Developers spent time firefighting</strong> instead of building innovative features</span>
-            </li>
-            <li class="problem-item flex items-start gap-4">
-              <i class="fas fa-bug text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>UX bugs compounded due to lack of systemic foundations</strong> and design inconsistencies</span>
-            </li>
-            <li class="problem-item flex items-start gap-4">
-              <i class="fas fa-question-circle text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>There was no single source of truth</strong> for design decisions or governance processes</span>
-            </li>
-          </ul>
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            The fragmentation wasn't just visual—it was systemic. Product teams operated in silos, developers firefighted constantly, and there was no single source of truth for design decisions. In healthcare technology, where user trust and workflow reliability are paramount, this inconsistency posed serious <strong>reputational and operational risks</strong>.
+          </p>
         </div>
 
-        <div class="situation-business-impact mb-8">
+        <div class="situation-problems mb-8">
+          <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-exclamation-circle text-red-600"></i>
+            The Perfect Storm of System Breakdown
+          </h3>
+          
+          <div class="problems-grid grid md:grid-cols-2 gap-8">
+            <div class="problem-group">
+              <h4 class="problem-category text-lg font-semibold text-gray-900 mb-4">Technical Debt Crisis</h4>
+              <ul class="problem-list space-y-4">
+                <li class="problem-item flex items-start gap-4">
+                  <i class="fas fa-code text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Bloated codebases with duplicated components</span>
+                </li>
+                <li class="problem-item flex items-start gap-4">
+                  <i class="fas fa-bug text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">UX bugs compounding without systemic fixes</span>
+                </li>
+                <li class="problem-item flex items-start gap-4">
+                  <i class="fas fa-expand-arrows-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Impossible to scale design improvements</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="problem-group">
+              <h4 class="problem-category text-lg font-semibold text-gray-900 mb-4">Organizational Barriers</h4>
+              <ul class="blocker-list space-y-4">
+                <li class="blocker-item flex items-start gap-4">
+                  <i class="fas fa-shield-alt text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Regulatory hesitation around UI changes</span>
+                </li>
+                <li class="blocker-item flex items-start gap-4">
+                  <i class="fas fa-heartbeat text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">Fear of disrupting live patient workflows</span>
+                </li>
+                <li class="blocker-item flex items-start gap-4">
+                  <i class="fas fa-calculator text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed">ROI skepticism for large-scale rework</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="situation-impact mb-8">
           <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
             <i class="fas fa-chart-line text-amber-600"></i>
-            Business Risk and Operational Impact
+            Business & User Impact
           </h3>
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            From a business standpoint, the inconsistency posed a <strong>reputational and operational risk</strong>—eroding user trust and slowing delivery in a high-compliance, high-sensitivity environment.
+            The dysfunction created a cascading effect: <strong>designers solved identical problems differently</strong>, <strong>developers reinvented components constantly</strong>, and <strong>leadership lacked visibility into systematic improvement</strong>. Most critically, healthcare professionals experienced inconsistent, frustrating workflows that eroded trust in the platform supporting their critical work.
           </p>
         </div>
 
-        <div class="situation-blockers mb-8">
-          <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
-            <i class="fas fa-roadblock text-purple-600"></i>
-            Organizational Blockers to UX Improvement
-          </h3>
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            Efforts to improve UX were often blocked by:
-          </p>
-          
-          <ul class="blocker-list space-y-6">
-            <li class="blocker-item flex items-start gap-4">
-              <i class="fas fa-hand-paper text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Hesitation to disrupt live clinical workflows</strong> that were actively supporting patient trials</span>
-            </li>
-            <li class="blocker-item flex items-start gap-4">
-              <i class="fas fa-shield-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Regulatory constraints around interface changes</strong> in clinical trial environments</span>
-            </li>
-            <li class="blocker-item flex items-start gap-4">
-              <i class="fas fa-tools text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>No existing design ops practice</strong> to enforce standards or systematic improvements</span>
-            </li>
-            <li class="blocker-item flex items-start gap-4">
-              <i class="fas fa-calculator text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Skepticism toward large-scale rework</strong> without proven ROI and clear business value</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="situation-dysfunction mb-8">
-          <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
-            <i class="fas fa-users-slash text-indigo-600"></i>
-            Cross-Team Dysfunction
-          </h3>
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Designers</strong> were solving the same problems differently, <strong>developers</strong> were reinventing the wheel, and <strong>leadership</strong> lacked a clear view of how to drive consistency at scale.
-          </p>
-        </div>
-
-        <div class="situation-conclusion">
+        <div class="situation-conclusion mt-10">
           <div class="conclusion-card bg-red-50 border-l-4 border-red-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
               <i class="fas fa-exclamation-triangle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                <strong>The fragmented design ecosystem was creating a vicious cycle:</strong> poor user experiences led to decreased confidence in design decisions, which led to even more fragmented approaches as teams worked around perceived design limitations.
+                <strong>This created a vicious cycle:</strong> poor user experiences decreased confidence in design decisions, leading to even more fragmented approaches as teams worked around perceived limitations—ultimately putting patient safety and clinical trial integrity at risk.
               </p>
             </div>
           </div>
