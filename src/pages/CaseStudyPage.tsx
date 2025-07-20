@@ -182,8 +182,8 @@ const CaseStudyPage: React.FC = () => {
     ? caseStudy.researchArtifacts 
     : [];
 
-  // Generate visual DNA artifacts from case study data for Elysium AI Dashboard
-  const visualDnaArtifacts = caseStudy?.id === 'elysium-ai-dashboard' && caseStudy.visualDnaArtifacts 
+  // Generate visual DNA artifacts from case study data for Elysium AI Dashboard and Medable Design System
+  const visualDnaArtifacts = (caseStudy?.id === 'elysium-ai-dashboard' || caseStudy?.id === 'medable-design-system') && caseStudy.visualDnaArtifacts 
     ? caseStudy.visualDnaArtifacts 
     : [];
 
@@ -488,8 +488,8 @@ const CaseStudyPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Visual DNA Section - Only for Elysium AI Dashboard */}
-          {caseStudy.id === 'elysium-ai-dashboard' && visualDnaArtifacts.length > 0 && (
+          {/* Visual DNA Section - For Elysium AI Dashboard and Medable Design System */}
+          {(caseStudy.id === 'elysium-ai-dashboard' || caseStudy.id === 'medable-design-system') && visualDnaArtifacts.length > 0 && (
             <VisualDnaViewer 
               onArtifactClick={openVisualDnaModal} 
               visualDnaArtifacts={visualDnaArtifacts}
@@ -654,7 +654,7 @@ const CaseStudyPage: React.FC = () => {
       )}
 
       {/* Visual DNA Modal */}
-      {caseStudy.id === 'elysium-ai-dashboard' && (
+      {(caseStudy.id === 'elysium-ai-dashboard' || caseStudy.id === 'medable-design-system') && (
         <VisualDnaModal
           isOpen={isVisualDnaModalOpen}
           onClose={closeVisualDnaModal}
