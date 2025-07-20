@@ -11,6 +11,8 @@ import LegacyScreenshotsModal from '../components/LegacyScreenshotsModal';
 import LegacyScreenshotsViewer from '../components/LegacyScreenshotsViewer';
 import ResearchArtifactsModal from '../components/ResearchArtifactsModal';
 import ResearchArtifactsViewer from '../components/ResearchArtifactsViewer';
+import VisualDnaModal from '../components/VisualDnaModal';
+import VisualDnaViewer from '../components/VisualDnaViewer';
 
 
 const CaseStudyPage: React.FC = () => {
@@ -23,6 +25,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
   const [isResearchArtifactsModalOpen, setIsResearchArtifactsModalOpen] = useState(false);
   const [currentArtifactIndex, setCurrentArtifactIndex] = useState(0);
+  const [isVisualDnaModalOpen, setIsVisualDnaModalOpen] = useState(false);
+  const [currentVisualDnaIndex, setCurrentVisualDnaIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -178,6 +182,11 @@ const CaseStudyPage: React.FC = () => {
     ? caseStudy.researchArtifacts 
     : [];
 
+  // Generate visual DNA artifacts from case study data for Elysium AI Dashboard
+  const visualDnaArtifacts = caseStudy?.id === 'elysium-ai-dashboard' && caseStudy.visualDnaArtifacts 
+    ? caseStudy.visualDnaArtifacts 
+    : [];
+
   // Research artifacts modal handlers
   const openResearchArtifactsModal = (artifactId: string) => {
     console.log('openResearchArtifactsModal called with:', artifactId);
@@ -200,6 +209,30 @@ const CaseStudyPage: React.FC = () => {
 
   const nextResearchArtifact = () => {
     setCurrentArtifactIndex((prev) => (prev < researchArtifacts.length - 1 ? prev + 1 : 0));
+  };
+
+  // Visual DNA modal handlers
+  const openVisualDnaModal = (artifactId: string) => {
+    console.log('openVisualDnaModal called with:', artifactId);
+    const index = visualDnaArtifacts.findIndex((a) => a.id === artifactId);
+    console.log('Found Visual DNA artifact index:', index);
+    if (index !== -1) {
+      setCurrentVisualDnaIndex(index);
+      setIsVisualDnaModalOpen(true);
+      console.log('Visual DNA modal should be opening');
+    }
+  };
+
+  const closeVisualDnaModal = () => {
+    setIsVisualDnaModalOpen(false);
+  };
+
+  const previousVisualDnaArtifact = () => {
+    setCurrentVisualDnaIndex((prev) => (prev > 0 ? prev - 1 : visualDnaArtifacts.length - 1));
+  };
+
+  const nextVisualDnaArtifact = () => {
+    setCurrentVisualDnaIndex((prev) => (prev < visualDnaArtifacts.length - 1 ? prev + 1 : 0));
   };
 
   return (
@@ -455,6 +488,14 @@ const CaseStudyPage: React.FC = () => {
             </p>
           </div>
 
+          {/* Visual DNA Section - Only for Elysium AI Dashboard */}
+          {caseStudy.id === 'elysium-ai-dashboard' && visualDnaArtifacts.length > 0 && (
+            <VisualDnaViewer 
+              onArtifactClick={openVisualDnaModal} 
+              visualDnaArtifacts={visualDnaArtifacts}
+            />
+          )}
+
           {/* Image Gallery Grid */}
           <div className={`grid md:grid-cols-2 ${caseStudy.id === 'medable-translation-tool' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
             {caseStudy.images.map((image, index) => (
@@ -595,6 +636,18 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentArtifactIndex}
           onPrevious={previousResearchArtifact}
           onNext={nextResearchArtifact}
+        />
+      )}
+
+      {/* Visual DNA Modal */}
+      {caseStudy.id === 'elysium-ai-dashboard' && (
+        <VisualDnaModal
+          isOpen={isVisualDnaModalOpen}
+          onClose={closeVisualDnaModal}
+          artifacts={visualDnaArtifacts}
+          currentIndex={currentVisualDnaIndex}
+          onPrevious={previousVisualDnaArtifact}
+          onNext={nextVisualDnaArtifact}
         />
       )}
     </div>

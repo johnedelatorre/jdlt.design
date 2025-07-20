@@ -25,6 +25,7 @@ export interface CaseStudy {
   figmaLink?: string;
   isRecent?: boolean;
   researchArtifacts?: ResearchArtifact[];
+  visualDnaArtifacts?: ResearchArtifact[];
 }
 
 export interface NavigationItem {

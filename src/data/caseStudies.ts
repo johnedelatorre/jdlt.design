@@ -3111,6 +3111,36 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
+    visualDnaArtifacts: [
+      {
+        id: 'branding-colors',
+        name: 'Branding & Component Variations',
+        description: 'Logo design variations, multi-theme side navigation, button states, and steps wizard components',
+        image: '/images/case-studies/elysium-ai/elysium-branding-colors.jpg',
+        alt: 'Logo design variations, multi-theme side navigation, button states, and steps wizard components'
+      },
+      {
+        id: 'colors-typography',
+        name: 'Color System & Typography',
+        description: 'Color theme selection system and typography guidelines for effective data communication',
+        image: '/images/case-studies/elysium-ai/elysium-colors-typography.jpg',
+        alt: 'Color theme selection system and typography guidelines for effective data communication'
+      },
+      {
+        id: 'data-tables-visualization',
+        name: 'Data Tables & Visualization',
+        description: 'Dynamic real-time tables and data grids with robust content management for data-intensive applications',
+        image: '/images/case-studies/elysium-ai/elysium-data-tables-visualization.jpg',
+        alt: 'Dynamic real-time tables and data grids with robust content management for data-intensive applications'
+      },
+      {
+        id: 'layouts-themes',
+        name: 'Layouts & Theme System',
+        description: 'Multiple themed design system demonstrating light and dark theme implementations',
+        image: '/images/case-studies/elysium-ai/elysium-layouts-themes.jpg',
+        alt: 'Multiple themed design system demonstrating light and dark theme implementations'
+      }
+    ],
     images: [
       '/images/case-studies/elysium-ai/create-account.jpg',
       '/images/case-studies/elysium-ai/security-section-overview-lite.jpg',
