@@ -2203,46 +2203,35 @@ export const caseStudies: CaseStudy[] = [
         <div class="situation-problems mb-8">
           <h3 class="situation-subtitle flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
             <i class="fas fa-exclamation-circle text-red-600"></i>
-            The Perfect Storm of System Breakdown
+            Core System Breakdown
           </h3>
           
-          <div class="problems-grid grid md:grid-cols-2 gap-8">
-            <div class="problem-group">
-              <h4 class="problem-category text-lg font-semibold text-gray-900 mb-4">Technical Debt Crisis</h4>
-              <ul class="problem-list space-y-4">
-                <li class="problem-item flex items-start gap-4">
-                  <i class="fas fa-code text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">Bloated codebases with duplicated components</span>
-                </li>
-                <li class="problem-item flex items-start gap-4">
-                  <i class="fas fa-bug text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">UX bugs compounding without systemic fixes</span>
-                </li>
-                <li class="problem-item flex items-start gap-4">
-                  <i class="fas fa-expand-arrows-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">Impossible to scale design improvements</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="problem-group">
-              <h4 class="problem-category text-lg font-semibold text-gray-900 mb-4">Organizational Barriers</h4>
-              <ul class="blocker-list space-y-4">
-                <li class="blocker-item flex items-start gap-4">
-                  <i class="fas fa-shield-alt text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">Regulatory hesitation around UI changes</span>
-                </li>
-                <li class="blocker-item flex items-start gap-4">
-                  <i class="fas fa-heartbeat text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">Fear of disrupting live patient workflows</span>
-                </li>
-                <li class="blocker-item flex items-start gap-4">
-                  <i class="fas fa-calculator text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed">ROI skepticism for large-scale rework</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="problem-list space-y-6">
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-code text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Bloated codebases with duplicated components</strong> slowing development velocity</span>
+            </li>
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-bug text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>UX bugs compounding without systemic fixes</strong> affecting user workflows</span>
+            </li>
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-expand-arrows-alt text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Impossible to scale design improvements</strong> across products and teams</span>
+            </li>
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-shield-alt text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Regulatory hesitation around UI changes</strong> in clinical environments</span>
+            </li>
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-heartbeat text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Fear of disrupting live patient workflows</strong> during active trials</span>
+            </li>
+            <li class="problem-item flex items-start gap-4">
+              <i class="fas fa-calculator text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>ROI skepticism for large-scale rework</strong> without clear business value</span>
+            </li>
+          </ul>
         </div>
 
         <div class="situation-impact mb-8">
