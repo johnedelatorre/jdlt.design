@@ -16,86 +16,55 @@ export const caseStudies: CaseStudy[] = [
       <div class="project-brief-content">
         <div class="brief-section mb-8">
           <p class="brief-description mb-6">
-            Relo Census is a modular, persona-driven sponsorship analytics platform built from the ground up to replace the company's legacy Media Value Center (MVC). Designed to help users evaluate brand performance, benchmark competitors, and generate insights across leagues and channels, Census aimed to be scalable, intuitive, and future-ready.
+            <strong>Relo Census emerged from a simple but urgent challenge:</strong> replace a bloated legacy platform with a modern, persona-driven analytics experience that could scale across sports verticals. As the first product designer at Relo Metrics, I led the complete transformation from requirements-driven workflows to user-centered design thinking.
           </p>
           
           <p class="brief-description mb-6">
-            When I joined Relo Metrics, the company needed to modernize its legacy analytics platform while building a next-generation solution. I was hired as the first product designer to lead the full end-to-end creation of Census: from defining the strategy and conducting research to designing the systems and final interface.
-          </p>
-          
-          <p class="brief-description">
-            My role wasn't just to deliver screens—it was to establish UX as a strategic function, bring design thinking into the org for the first time, and transform raw requirements into a platform that could scale across teams, personas, and verticals.
+            My mandate wasn't just UI design—it was establishing <strong>UX as a strategic discipline</strong> and proving that thoughtful design could accelerate development, improve user outcomes, and create lasting organizational change in just 90 days.
           </p>
         </div>
         
         <div class="brief-section mb-12">
           <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-rocket text-blue-600"></i>
-            The Complete Design Transformation
+            <i class="fas fa-bullseye text-blue-600"></i>
+            The Challenge & Opportunity
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">To do that, I led a complete shift in how the company thought about product design:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">I pushed for a <strong>persona-driven experience</strong>, partnering with Customer Success and Marketing to conduct internal and external interviews that shaped our understanding of real user needs.</span>
+              <i class="fas fa-wrench text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Legacy bottleneck:</strong> Media Value Center (MVC) was functionally obsolete—hand-drawn sketches, Jira tickets, and no systematic approach to user needs</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-cogs text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">I introduced structured design processes—including daily design rituals, interactive prototypes, and modular component systems that engineers could build from.</span>
+              <i class="fas fa-rocket text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Strategic vision:</strong> Build a modular platform serving Stakeholders, Brands, and Agencies across MLB, NFL, NBA, and F1 verticals</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-shipping-fast text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">I collaborated deeply with a small dev team (only 1 frontend and 1 backend engineer) to ship the MVP in under 90 days—while still delivering a future-ready foundation for growth.</span>
+              <i class="fas fa-users text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Resource constraints:</strong> Minimal team (1 frontend, 1 backend engineer) with high executive visibility and aggressive timelines</span>
             </li>
           </ul>
         </div>
         
         <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-cubes text-indigo-600"></i>
-            Platform Architecture
+          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-compass text-indigo-600"></i>
+            Strategic Approach
           </h3>
-          <p class="brief-subtitle mb-8 text-gray-600">Census was built to be:</p>
+          <p class="brief-subtitle mb-6 text-gray-600">Transformed chaos into clarity through systematic design thinking:</p>
           
           <ul class="brief-list space-y-6">
             <li class="flex items-start gap-4">
-              <i class="fas fa-puzzle-piece text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>UX-first, modular, and componentized</strong>—focused on performance, scale, and reuse</span>
+              <i class="fas fa-search text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Research-driven foundation:</strong> Conducted stakeholder interviews to build three validated personas driving architecture and filtering logic</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-expand-arrows-alt text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Scalable across verticals</strong> like MLB, NFL, NBA, F1, and global brands</span>
+              <i class="fas fa-layer-group text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Scalable design system:</strong> Implemented Ant Design with custom components, documentation, and developer-ready handoff processes</span>
             </li>
             <li class="flex items-start gap-4">
-              <i class="fas fa-eye text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Powered by Relo's proprietary Computer Vision engine</strong> for accurate asset tracking</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-link text-teal-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Separate but complementary to MVC</strong>, designed to evolve into the long-term replacement</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-12">
-            <i class="fas fa-star text-amber-600"></i>
-            Key Features
-          </h3>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-chart-bar text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">A Sponsorship Evaluation Dashboard with <strong>persona-based views</strong> tailored to each user type</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-filter text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">A flexible View Builder with <strong>advanced filtering</strong> by placement, content type, league, platform</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-lightbulb text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Insight cards, benchmarking charts, and visual storytelling tools to drive decision-making</span>
+              <i class="fas fa-zap text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Prototype-led development:</strong> Used v0.dev and Cursor for rapid validation, enabling stakeholder testing before development</span>
             </li>
           </ul>
         </div>
@@ -104,8 +73,8 @@ export const caseStudies: CaseStudy[] = [
           <div class="strategic-impact">
             <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
               <div class="flex items-start gap-3">
-                <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">This case study tells the story of how I helped define, design, and deliver Relo Census—transforming raw business goals and Jira requirements into a scalable, user-centered product experience.</span>
+                <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                <span class="text-gray-700 leading-relaxed"><strong>Result:</strong> Delivered Census MVP in under 90 days while establishing UX as a permanent strategic function—proving that design-led development creates better products, faster cycles, and stronger organizational buy-in.</span>
               </div>
             </div>
           </div>
