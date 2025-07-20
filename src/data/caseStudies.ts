@@ -2935,7 +2935,7 @@ export const caseStudies: CaseStudy[] = [
       <div class="action-content">
         <div class="action-intro mb-8">
           <p class="action-description text-lg text-gray-700 leading-relaxed">
-            Led comprehensive user research across business stakeholders and technical teams to understand AI accessibility challenges. Designed progressive disclosure systems that could serve multiple user types simultaneously. Created intelligent interface patterns that made complex machine learning insights intuitive for non-technical users while preserving analytical depth for technical professionals.
+            Led a comprehensive design system transformation that unified Elysium's fragmented UI across multiple tech stacks. Partnered closely with engineering teams to architect scalable foundations while conducting enterprise user research to ground design decisions in real analyst workflows and security operations.
           </p>
         </div>
 
@@ -2943,73 +2943,175 @@ export const caseStudies: CaseStudy[] = [
           <div class="actions-container bg-gray-50 border border-gray-200 rounded-lg p-8">
             
             <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">1. Multi-Stakeholder Research and AI Accessibility Analysis</h4>
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-search text-blue-600"></i>
+                1. Discovery, Research & Design Framing
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted extensive interviews with C-level executives, business analysts, and data scientists across multiple industries</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Conducted interviews with enterprise security analysts (SOC teams) to understand how they searched, triaged, and correlated threats using Looker and OpenSearch.</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Analyzed existing AI tools to identify common usability barriers and accessibility gaps</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Mapped workflows into layered information zones and prioritized clarity over density—creating principles for contrast, spacing, statefulness, and cross-tool transitions.</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Mapped decision-making workflows to understand where AI insights could provide maximum business value</span>
+                  <span class="text-lg text-gray-700 leading-relaxed">Identified four primary analyst personas and their tool usage tendencies (triage-first, dashboard-first, query-first, and hybrid users).</span>
                 </li>
               </ul>
             </div>
 
             <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">2. Progressive Disclosure Architecture and Natural Language Interface</h4>
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-handshake text-purple-600"></i>
+                2. Partnering with Engineering + Product
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed layered information architecture that revealed complexity progressively based on user expertise and needs</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Joined architecture and sprint planning sessions to translate tech constraints into <strong>design guardrails</strong> for each frontend stack.</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created natural language explanation systems that translated AI outputs into clear business recommendations</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Worked closely with backend engineers to understand how search filters, metadata, and time-based queries flowed into OpenSearch dashboards and Looker tiles.</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Developed confidence indicators and uncertainty visualization to help users understand AI recommendation reliability</span>
+                  <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Created a component delivery roadmap aligned with engineering sprint velocity—mapping out core UI foundations first (buttons, inputs, tables, modals) before extending into triage panels, search flows, and data charts.</span>
                 </li>
               </ul>
             </div>
 
             <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">3. Intelligent Data Visualization and Interaction Patterns</h4>
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-layer-group text-green-600"></i>
+                3. Design System Creation in Storybook
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Created adaptive data visualization systems that automatically selected optimal chart types based on data characteristics and user goals</span>
+                  <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <div class="text-lg text-gray-700 leading-relaxed">
+                    Built a multi-theme design system in Storybook with:
+                    <ul class="mt-3 ml-4 space-y-2">
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-green-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Shared <strong>tokens</strong> (typography, spacing, color, shadows)</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-green-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Fully styled <strong>light and dark themes</strong> tuned for accessibility and long-session usability</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-green-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Reusable <strong>atomic and compound components</strong> with interaction states and theming logic</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-green-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Visual parity across Angular, React, and .NET—ensuring consistency regardless of stack</span>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed interactive prototypes that allowed users to explore AI predictions and scenarios through intuitive manipulation</span>
-                </li>
-                <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Implemented smart highlighting and annotation systems that drew attention to the most important insights and anomalies</span>
+                  <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Developed coded component documentation for each element—outlining behavior, states, props, theming logic, and intended use.</span>
                 </li>
               </ul>
             </div>
 
             <div class="action-section mb-8">
-              <h4 class="action-title text-lg font-semibold text-gray-900 mb-4">4. AI Recommendation Engine and User Testing</h4>
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-cogs text-orange-600"></i>
+                4. Prototyping High-Stakes Workflows
+              </h4>
               <ul class="action-points space-y-3">
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Designed intelligent recommendation interfaces that provided actionable next steps with clear reasoning and expected outcomes</span>
+                  <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <div class="text-lg text-gray-700 leading-relaxed">
+                    Created high-fidelity, <strong>coded prototypes in v0.dev</strong> for:
+                    <ul class="mt-3 ml-4 space-y-2">
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-search text-blue-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.2rem;"></i>
+                        <span>Global KQL search with filters, recents, and smart query assist</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-bell text-red-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.2rem;"></i>
+                        <span>Alert triage cards with escalation logic and response timers</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-chart-bar text-green-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.2rem;"></i>
+                        <span>OpenSearch visualizations styled to match platform themes</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-table text-purple-600 self-start flex-shrink-0 text-sm" style="margin-top: 0.2rem;"></i>
+                        <span>Looker dashboards with unified filter bars and consistent grid layouts</span>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Conducted extensive user testing across different experience levels to validate AI insight comprehension and usability</span>
+                  <div class="w-1.5 h-1.5 bg-orange-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Used these prototypes to drive alignment with engineering, unblock development, and validate task flows with internal teams and external champions.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="action-section mb-8">
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-sync-alt text-indigo-600"></i>
+                5. Continuous Feedback Loops & QA
+              </h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Conducted design walkthroughs with customer-facing teams and early-adopter clients—capturing reactions to theming, hierarchy, and workflow clarity.</span>
                 </li>
                 <li class="action-point flex items-start gap-3">
-                  <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-                  <span class="text-lg text-gray-700 leading-relaxed">Iteratively refined interface patterns based on user feedback and real-world decision-making outcomes</span>
+                  <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Logged findings in Confluence by component/flow, tagging observations to Jira tickets for each sprint.</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Maintained a <strong>rolling QA checklist</strong> to validate dark mode compliance, component edge cases, and interaction feedback.</span>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed">Enabled visual regression testing via component documentation—ensuring Storybook parity between design intent and coded output.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="action-section mb-8">
+              <h4 class="action-title flex items-center gap-3 text-lg font-semibold text-gray-900 mb-4">
+                <i class="fas fa-compass text-cyan-600"></i>
+                6. Platform Integration: OpenSearch, Looker, Salesforce
+              </h4>
+              <ul class="action-points space-y-3">
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-cyan-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <div class="text-lg text-gray-700 leading-relaxed">
+                    Defined design principles for embedded visual components:
+                    <ul class="mt-3 ml-4 space-y-2">
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Tooltips, filters, grid systems, and drill-down logic standardized across third-party and native views</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>Salesforce data cards embedded into analyst dashboards using a shared UI shell, reducing context-switching fatigue</span>
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <i class="fas fa-circle text-xs text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.3rem;"></i>
+                        <span>OpenSearch charts wrapped with platform-native controls and annotations for better user affordance</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="action-point flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 bg-cyan-600 rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-lg text-gray-700 leading-relaxed"><strong>Result:</strong> Users no longer felt like they were switching between systems—just navigating different views within a cohesive environment.</span>
                 </li>
               </ul>
             </div>
