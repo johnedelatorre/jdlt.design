@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTh, faTimes, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -9,9 +9,18 @@ import { personalInfo } from '../data/personalInfo';
 const ProjectNavigator: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleProjectClick = (caseStudyId: string) => {
-    navigate(`/case-study/${caseStudyId}`);
+    const currentCaseStudyId = location.pathname.split('/case-study/')[1];
+    
+    if (currentCaseStudyId === caseStudyId) {
+      // If clicking on the same case study, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Navigate to different case study
+      navigate(`/case-study/${caseStudyId}`);
+    }
     setIsOpen(false);
   };
 

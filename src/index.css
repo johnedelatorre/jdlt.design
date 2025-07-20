@@ -72,18 +72,16 @@
 
   /* Page transition animations */
   .page-transition {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    will-change: opacity, transform;
+    transition: opacity 0.4s ease-in-out;
+    will-change: opacity;
   }
   
   .page-hidden {
     opacity: 0;
-    transform: translateY(10px);
   }
   
   .page-visible {
     opacity: 1;
-    transform: translateY(0);
   }
 
   /* Gentle bounce animation for scroll buttons */
