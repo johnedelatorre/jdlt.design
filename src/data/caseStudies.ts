@@ -3223,7 +3223,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/elysium-ai/home-section-section-welcome-page-lite.jpg',
       '/images/case-studies/elysium-ai/home-section-section-welcome-page-dark.jpg',
     ],
-    // figmaLink: '' // No prototype available
+    figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3927%3A94028&node-id=3936-62086&viewport=223%2C438%2C0.02&t=RzP9oISu24YPXdry-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3936%3A62086'
   },
   {
     id: 'relo-sponsorpulse-integration',
