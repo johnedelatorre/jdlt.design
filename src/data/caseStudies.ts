@@ -2698,7 +2698,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2021',
     tools: ['Figma', 'After Effects', 'Framer'],
     tags: ['AI/ML', 'Dashboard Design', 'Data Analytics'],
-    headerImage: '/images/case-studies/elysium-ai/header.jpg',
+    headerImage: '/images/case-studies/elysium-ai/elysium-ai-header.jpg',
     projectBrief: `
       <div class="project-brief-content">
         <div class="brief-section mb-8">
