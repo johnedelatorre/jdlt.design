@@ -4,7 +4,7 @@ A modern, minimalist portfolio website showcasing product design work and case s
 
 ## 🌐 Live Site
 
-Visit the live portfolio at: [www.jdlt.design](https://www.jdlt.design)
+Visit the live portfolio at: [www.johndelatorre.com](https://www.johndelatorre.com)
 
 ## ✨ Features
 
@@ -148,7 +148,7 @@ git checkout main
 ```
 
 ### Live Sites
-- **Production**: [www.jdlt.design](https://www.jdlt.design) (from `production` branch)
+- **Production**: [www.johndelatorre.com](https://www.johndelatorre.com) (from `production` branch)
 - **Development**: Continue working on `main` branch
 
 See `DEPLOYMENT.md` for detailed workflow instructions.
@@ -230,8 +230,8 @@ src/
 
 - **Email**: john@jdlt.design
 - **LinkedIn**: [linkedin.com/in/johndelatorre](https://linkedin.com/in/johndelatorre)
-- **Website**: [www.jdlt.design](https://www.jdlt.design)
+- **Website**: [www.johndelatorre.com](https://www.johndelatorre.com)
 
 ---
 
-Built with ❤️ by [John Delatorre](https://www.jdlt.design)
+Built with ❤️ by [John Delatorre](https://www.johndelatorre.com)
