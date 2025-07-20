@@ -1,8 +1,9 @@
 export const scrollToCaseStudies = () => {
   const caseStudiesSection = document.getElementById('case-studies');
   if (caseStudiesSection) {
-    const yOffset = -150; // Increased offset to provide proper spacing and fit all cards
-    const y = caseStudiesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    // Position so the title appears right below the fixed header (80px header height)
+    const headerHeight = 80;
+    const y = caseStudiesSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
     
     window.scrollTo({
       top: y,
