@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faUser, faCog, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import CaseStudyCard from '../components/CaseStudyCard';
+import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
 
@@ -187,11 +187,159 @@ const HomePage: React.FC = () => {
             </p>
           </div>
 
-          {/* Case Studies Grid */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {caseStudies.map((caseStudy) => (
-              <CaseStudyCard key={caseStudy.id} caseStudy={caseStudy} />
-            ))}
+          {/* Featured Recent Projects */}
+          <div className="mb-20">
+            <div className="grid lg:grid-cols-3 gap-8">
+              {caseStudies
+                .filter(caseStudy => caseStudy.isRecent)
+                .map((caseStudy) => (
+                  <div key={caseStudy.id} className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+                    {/* Project Image */}
+                    <div className="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+                      <img
+                        src={caseStudy.headerImage}
+                        alt={caseStudy.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIFBsYWNlaG9sZGVyPC90ZXh0Pjwvc3ZnPg==';
+                        }}
+                      />
+                      
+                      {/* Recent Project Badge */}
+                      <div className="absolute top-4 right-4 z-10">
+                        <div className="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1.5 rounded-full border border-emerald-200 shadow-sm">
+                          Recent Project
+                        </div>
+                      </div>
+                      
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </div>
+
+                    {/* Card Content */}
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="mb-4">
+                        <h3 className="font-serif text-xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
+                          {caseStudy.title}
+                        </h3>
+                        <p className="text-gray-600 text-base leading-relaxed line-clamp-2">
+                          {caseStudy.subtitle}
+                        </p>
+                      </div>
+                      
+                      {/* Meta Info */}
+                      <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                        <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
+                        <span>•</span>
+                        <span>{caseStudy.year}</span>
+                      </div>
+                      
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {caseStudy.tags.slice(0, 3).map((tag, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* View Case Study Button */}
+                      <div className="mt-auto">
+                        <Link
+                          to={`/case-study/${caseStudy.id}`}
+                          className="group/button inline-flex items-center justify-center w-full bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        >
+                          <span>View Case Study</span>
+                          <svg 
+                            className="ml-2 w-4 h-4 group-hover/button:translate-x-1 transition-transform duration-300" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          {/* Additional Projects - Equal Width Cards */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {caseStudies
+              .filter(caseStudy => !caseStudy.isRecent)
+              .map((caseStudy) => (
+                <div key={caseStudy.id} className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+                  {/* Project Image */}
+                  <div className="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+                    <img
+                      src={caseStudy.headerImage}
+                      alt={caseStudy.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIFBsYWNlaG9sZGVyPC90ZXh0Pjwvc3ZnPg==';
+                      }}
+                    />
+                    
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="p-6 flex flex-col flex-1">
+                    <div className="mb-4">
+                      <h3 className="font-serif text-xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
+                        {caseStudy.title}
+                      </h3>
+                      <p className="text-gray-600 text-base leading-relaxed line-clamp-2">
+                        {caseStudy.subtitle}
+                      </p>
+                    </div>
+                    
+                    {/* Meta Info */}
+                    <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                      <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
+                      <span>•</span>
+                      <span>{caseStudy.year}</span>
+                    </div>
+                    
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {caseStudy.tags.slice(0, 3).map((tag, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* View Case Study Button */}
+                    <div className="mt-auto">
+                      <Link
+                        to={`/case-study/${caseStudy.id}`}
+                        className="group/button inline-flex items-center justify-center w-full bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      >
+                        <span>View Case Study</span>
+                        <svg 
+                          className="ml-2 w-4 h-4 group-hover/button:translate-x-1 transition-transform duration-300" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </section>
