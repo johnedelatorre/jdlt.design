@@ -4,20 +4,9 @@ import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faUser
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
+import { scrollToCaseStudies } from '../utils/scrollUtils';
 
 const HomePage: React.FC = () => {
-  const scrollToCaseStudies = () => {
-    const caseStudiesSection = document.getElementById('case-studies');
-    if (caseStudiesSection) {
-      const yOffset = -80; // Offset to provide spacing above the title
-      const y = caseStudiesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      
-      window.scrollTo({
-        top: y,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   return (
     <div>

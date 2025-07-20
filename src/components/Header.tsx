@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { navigationItems } from '../data/navigation';
+import { scrollToCaseStudies } from '../utils/scrollUtils';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,11 +34,8 @@ const Header: React.FC = () => {
     }
 
     if (href === '/' && location.pathname === '/') {
-      // Scroll to case studies section on homepage
-      const element = document.getElementById('case-studies');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      // Scroll to case studies section on homepage with perfect positioning
+      scrollToCaseStudies();
     }
     setIsMenuOpen(false);
   };
