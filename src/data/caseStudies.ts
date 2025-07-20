@@ -2097,7 +2097,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/medable-translation-tool/final-exported-json-files-architecture.png',
       '/images/case-studies/medable-translation-tool/final-exported-json-files-structure.png',
     ],
-    // figmaLink: '' // No prototype available
+    figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3518%3A65953&node-id=3518-70590&viewport=251%2C449%2C0.29&t=zJ4GrMO1HdbxsB0y-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3518%3A70590'
   },
   {
     id: 'medable-design-system',
