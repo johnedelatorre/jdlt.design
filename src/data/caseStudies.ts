@@ -326,133 +326,64 @@ export const caseStudies: CaseStudy[] = [
     `,
     result: `
       <div class="results-content">
-        <div class="results-intro mb-8">
-          <p class="results-description text-lg text-gray-700 leading-relaxed">
-            In just 90 days, Census transformed from scattered requirements into a scalable analytics platform that proved design-led development doesn't slow teams down—it accelerates them.
-          </p>
-        </div>
-
         <div class="results-section mb-12">
           <h3 class="results-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
-            <i class="fas fa-rocket text-blue-600"></i>
-            Measurable Impact
+            <i class="fas fa-chart-line text-blue-600"></i>
+            Impact
           </h3>
           
-          <div class="impact-grid grid md:grid-cols-2 gap-8">
-            <div class="impact-group">
-              <h4 class="impact-category text-lg font-semibold text-gray-900 mb-4">Platform Performance</h4>
-              <ul class="impact-list space-y-4">
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-chart-line text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>45% increase in internal adoption</strong> across teams—Census became the new standard</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-tachometer-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>30% faster load times</strong> with streamlined interactions</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-heart text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>92% satisfaction score</strong> with cross-functional praise</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="impact-group">
-              <h4 class="impact-category text-lg font-semibold text-gray-900 mb-4">Organizational Transformation</h4>
-              <ul class="impact-list space-y-4">
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-graduation-cap text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Established UX as strategic discipline</strong> at Relo for the first time</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-cogs text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Scalable design system</strong> enabling 2x faster feature development</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-users text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Research-driven approach</strong> now embedded in product planning</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="results-list space-y-6">
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>45% increase in internal adoption</strong> across Customer Success, Sales, and Product teams—Census became the new go-to platform</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-tachometer-alt text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>30% faster load times</strong> and reduced UI clutter by streamlining views, filters, and interactions</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-heart text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>92% satisfaction score</strong> during stakeholder rollout, with cross-functional praise for clarity and usability</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-graduation-cap text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Established the first formal UX practice at Relo</strong>—introducing systems thinking and persona-driven development</span>
+            </li>
+            <li class="result-item flex items-start gap-4">
+              <i class="fas fa-shipping-fast text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Delivered MVP in under 90 days</strong> with only 2 engineers while building scalable, extensible foundation</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="results-section mb-12">
-          <h3 class="results-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
-            <i class="fas fa-trophy text-amber-600"></i>
-            The Strategic Victory
-          </h3>
-          <p class="strategic-summary text-lg text-gray-700 leading-relaxed mb-6">
-            Census proved that thoughtful design doesn't slow development—it unlocks velocity. By establishing personas, systematic thinking, and modular architecture, we transformed a chaotic ticket-driven process into a repeatable design-led approach that scales across verticals.
-          </p>
-          
-          <blockquote class="success-quote bg-gradient-to-r from-amber-50 to-yellow-50 border-l-8 border-amber-400 pl-8 py-6 rounded-r-xl shadow-lg relative">
-            <div class="absolute -left-4 top-4 w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
-              <i class="fas fa-quote-left text-white text-sm"></i>
-            </div>
-            <p class="quote-text text-xl font-bold text-amber-900 italic mb-3 leading-relaxed">
-              "Census didn't just replace MVC—it proved that user-centered design could accelerate engineering, delight stakeholders, and create a foundation for lasting organizational change."
-            </p>
-            <p class="quote-description text-gray-700 leading-relaxed font-medium">
-              The real victory was transforming how Relo approaches product development forever.
-            </p>
-          </blockquote>
-        </div>
-
-        <div class="results-section mb-12">
+        <div class="results-section">
           <h3 class="results-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
             <i class="fas fa-lightbulb text-green-600"></i>
             What I Learned
           </h3>
           
-          <div class="learnings-grid grid md:grid-cols-2 gap-8">
-            <div class="learning-group">
-              <ul class="learning-list space-y-4">
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-handshake text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Embedding design thinking</strong> in an org without UX precedent requires patience, proof, and persistent collaboration</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-users text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Personas aren't just research artifacts</strong>—they become blueprints for architecture, logic, and interaction models</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>MVP velocity and long-term scalability</strong> aren't opposing forces when you make smart system decisions early</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="learning-group">
-              <ul class="learning-list space-y-4">
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-layer-group text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Design systems deliver strategic leverage</strong>—enabling scalability, velocity, and cross-team understanding beyond aesthetics</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <i class="fas fa-heart text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Great design isn't just what's delivered</strong>—it's the culture, trust, and shared language it creates between teams</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="results-conclusion">
-          <div class="conclusion-card bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-400 p-8 rounded-r-lg">
-            <div class="flex items-start gap-4">
-              <i class="fas fa-flag-checkered text-blue-600 self-start flex-shrink-0 text-2xl" style="margin-top: 0.125rem;"></i>
-              <div>
-                <h4 class="conclusion-title text-xl font-bold text-blue-900 mb-4">From Chaos to Clarity in 90 Days</h4>
-                <p class="conclusion-text text-gray-700 leading-relaxed mb-4">
-                  What began as urgent requirements and Jira tickets became a scalable, persona-driven platform that serves stakeholders, brands, and agencies across major sports leagues. Census demonstrated that when design thinking meets systematic execution, the result isn't just better software—it's organizational transformation.
-                </p>
-                <p class="conclusion-text text-gray-700 leading-relaxed font-semibold">
-                  <strong>The future of product design at Relo started here.</strong>
-                </p>
-              </div>
-            </div>
-          </div>
+          <ul class="learnings-list space-y-6">
+            <li class="learning-item flex items-start gap-4">
+              <i class="fas fa-handshake text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Embedding design thinking</strong> in an org without UX precedent requires patience, proof, and persistent collaboration</span>
+            </li>
+            <li class="learning-item flex items-start gap-4">
+              <i class="fas fa-users text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Personas aren't just research artifacts</strong>—they become blueprints for architecture, logic, and interaction models</span>
+            </li>
+            <li class="learning-item flex items-start gap-4">
+              <i class="fas fa-layer-group text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Design systems deliver strategic leverage</strong>—enabling scalability, velocity, and cross-team understanding beyond aesthetics</span>
+            </li>
+            <li class="learning-item flex items-start gap-4">
+              <i class="fas fa-rocket text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>MVP velocity and long-term scalability</strong> aren't opposing forces when you make smart system decisions early</span>
+            </li>
+            <li class="learning-item flex items-start gap-4">
+              <i class="fas fa-heart text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Great design isn't just what's delivered</strong>—it's the culture, trust, and shared language it creates between teams</span>
+            </li>
+          </ul>
         </div>
       </div>
     `,
