@@ -176,19 +176,17 @@ const HomePage: React.FC = () => {
       {/* Case Studies Section */}
       <section id="case-studies" className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4">
               Featured Case Studies
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore my work turning complex problems into delightful experiences across different tech sectors, 
-              and AI-powered platforms. Each project showcases how UX Research meets 
-              Interaction Design, Visual Design meets Front-End Development, and AI meets human intuition.
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Explore my work turning complex problems into delightful experiences across healthcare, sports analytics, and AI-powered platforms.
             </p>
           </div>
 
           {/* Featured Recent Projects */}
-          <div className="mb-20">
+          <div className="mb-12">
             <div className="grid lg:grid-cols-3 gap-8">
               {caseStudies
                 .filter(caseStudy => caseStudy.isRecent)
