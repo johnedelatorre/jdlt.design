@@ -174,26 +174,26 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section id="case-studies" className="py-16 lg:py-24 bg-gray-50">
+      <section id="case-studies" className="py-8 lg:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4">
+          <div className="text-center mb-8">
+            <h2 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-3">
               Featured Case Studies
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">
               Explore my work which showcases how UX Research meets Interaction Design, Visual Design meets Front-End Development, and AI meets human intuition.
             </p>
           </div>
 
           {/* Featured Recent Projects */}
-          <div className="mb-12">
-            <div className="grid lg:grid-cols-3 gap-8">
+          <div className="mb-8">
+            <div className="grid lg:grid-cols-3 gap-6">
               {caseStudies
                 .filter(caseStudy => caseStudy.isRecent)
                 .map((caseStudy) => (
                   <div key={caseStudy.id} className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
                     {/* Project Image */}
-                    <div className="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+                    <div className="relative aspect-[16/9] bg-gray-200 overflow-hidden">
                       <img
                         src={caseStudy.headerImage}
                         alt={caseStudy.title}
@@ -215,29 +215,29 @@ const HomePage: React.FC = () => {
                     </div>
 
                     {/* Card Content */}
-                    <div className="p-6 flex flex-col flex-1">
-                      <div className="mb-4">
-                        <h3 className="font-serif text-xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
+                    <div className="p-4 flex flex-col flex-1">
+                      <div className="mb-3">
+                        <h3 className="font-serif text-lg font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
                           {caseStudy.title}
                         </h3>
-                        <p className="text-gray-600 text-base leading-relaxed line-clamp-2">
+                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
                           {caseStudy.subtitle}
                         </p>
                       </div>
                       
                       {/* Meta Info */}
-                      <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                      <div className="flex items-center gap-4 mb-3 text-xs text-gray-500">
                         <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
                         <span>•</span>
                         <span>{caseStudy.year}</span>
                       </div>
                       
                       {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-6">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {caseStudy.tags.slice(0, 3).map((tag, index) => (
                           <span
                             key={index}
-                            className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                            className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
                           >
                             {tag}
                           </span>
@@ -248,7 +248,7 @@ const HomePage: React.FC = () => {
                       <div className="mt-auto">
                         <Link
                           to={`/case-study/${caseStudy.id}`}
-                          className="group/button inline-flex items-center justify-center w-full bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                          className="group/button inline-flex items-center justify-center w-full bg-black text-white px-4 py-2.5 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
                         >
                           <span>View Case Study</span>
                           <svg 
@@ -268,7 +268,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Additional Projects - Equal Width Cards */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {caseStudies
               .filter(caseStudy => !caseStudy.isRecent)
               .map((caseStudy) => (
@@ -289,29 +289,29 @@ const HomePage: React.FC = () => {
                   </div>
 
                   {/* Card Content */}
-                  <div className="p-6 flex flex-col flex-1">
-                    <div className="mb-4">
-                      <h3 className="font-serif text-xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
+                  <div className="p-4 flex flex-col flex-1">
+                    <div className="mb-3">
+                      <h3 className="font-serif text-lg font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
                         {caseStudy.title}
                       </h3>
-                      <p className="text-gray-600 text-base leading-relaxed line-clamp-2">
+                      <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
                         {caseStudy.subtitle}
                       </p>
                     </div>
                     
                     {/* Meta Info */}
-                    <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                    <div className="flex items-center gap-4 mb-3 text-xs text-gray-500">
                       <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
                       <span>•</span>
                       <span>{caseStudy.year}</span>
                     </div>
                     
                     {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {caseStudy.tags.slice(0, 3).map((tag, index) => (
                         <span
                           key={index}
-                          className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                          className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
                         >
                           {tag}
                         </span>
@@ -322,7 +322,7 @@ const HomePage: React.FC = () => {
                     <div className="mt-auto">
                       <Link
                         to={`/case-study/${caseStudy.id}`}
-                        className="group/button inline-flex items-center justify-center w-full bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        className="group/button inline-flex items-center justify-center w-full bg-black text-white px-4 py-2.5 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
                       >
                         <span>View Case Study</span>
                         <svg 
