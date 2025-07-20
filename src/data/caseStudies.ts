@@ -3123,31 +3123,27 @@ export const caseStudies: CaseStudy[] = [
         <div class="results-section mb-12">
           <div class="section-header mb-8">
             <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-chart-bar text-blue-600"></i>
-              Product Success and User Adoption
+              <i class="fas fa-rocket text-blue-600"></i>
+              Business Impact
             </h3>
           </div>
           
           <ul class="results-list space-y-4">
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>90% user adoption rate</strong> across diverse business user types within first six months</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>+45% increase in client subscription rates</strong>, post-launch—attributed to improved clarity, themeability, and seamless multi-stack workflows.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>70% improvement in decision-making speed</strong> among business executives using AI insights</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>82% feature adoption</strong> rate across new triage, search, and dashboard features within 60 days of rollout.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>85% reduction in time-to-insight</strong> for non-technical business users accessing AI recommendations</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Reduced onboarding time</strong> by ~40% for new users, thanks to simplified dashboard logic and component consistency.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>95% user satisfaction score</strong> for AI insight comprehension and actionability</span>
-            </li>
-            <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Successfully became Elysium's flagship product</strong> with the highest customer retention rates</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Design system fully adopted</strong> by engineering teams across all stacks, eliminating duplicated UI efforts and misaligned styling.</span>
             </li>
           </ul>
         </div>
@@ -3155,27 +3151,27 @@ export const caseStudies: CaseStudy[] = [
         <div class="results-section mb-12">
           <div class="section-header mb-8">
             <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-trophy text-amber-600"></i>
-              Industry Recognition and Business Impact
+              <i class="fas fa-box text-purple-600"></i>
+              Platform Outcomes
             </h3>
           </div>
           
           <ul class="results-list space-y-4">
             <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Won multiple industry awards for AI innovation</strong> including Best Business Intelligence Platform</span>
+              <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Light and dark themes</strong> now deployed across petabyte-scale platforms in Snowflake, Databricks, and hybrid environments.</span>
             </li>
             <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Established Elysium as a market leader</strong> in accessible AI solutions for business intelligence</span>
+              <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>OpenSearch and Looker dashboards</strong> visually integrated into the platform UI—eliminating context-switching pain.</span>
             </li>
             <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Generated 300% increase in customer acquisition</strong> through improved AI accessibility and usability</span>
+              <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Salesforce data surfaced contextually</strong> within analyst dashboards without user disruption.</span>
             </li>
             <li class="result-item flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-amber-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Achieved 95% customer retention rate</strong> with clients consistently renewing and expanding usage</span>
+              <div class="w-1.5 h-1.5 bg-purple-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Component velocity improved</strong>—engineers shipped new features 2x faster using Storybook components and coded prototypes.</span>
             </li>
           </ul>
         </div>
@@ -3183,27 +3179,31 @@ export const caseStudies: CaseStudy[] = [
         <div class="results-section">
           <div class="section-header mb-8">
             <h3 class="results-title flex items-center gap-3 mb-4">
-              <i class="fas fa-lightbulb text-green-600"></i>
-              AI Accessibility Design Insights
+              <i class="fas fa-brain text-green-600"></i>
+              What I Learned
             </h3>
           </div>
           
           <ul class="results-list space-y-4">
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Progressive disclosure is essential for AI interfaces</strong>—users need different levels of detail based on expertise and context</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>You can't retrofit coherence</strong> into a fast-growing product—design systems must be built alongside engineering, not after.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Natural language explanations dramatically improve AI adoption</strong> among non-technical business users</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Design QA isn't an event—it's a rhythm.</strong> Being embedded in sprints, paired with codified Storybook docs, ensured we stayed ahead of edge cases and regressions.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Confidence visualization is crucial for AI trust</strong>—users need to understand uncertainty and reliability</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Light + dark theme UX is not just visual—it's physiological.</strong> Analysts reported less fatigue and faster scan times when using dark mode over long sessions.</span>
             </li>
             <li class="result-item flex items-start gap-3">
               <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
-              <span class="text-lg text-gray-700 leading-relaxed"><strong>Actionable recommendations with clear reasoning increase decision-making confidence</strong> and business value realization</span>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Prototyping with real logic</strong> (vs static mocks) made stakeholder reviews more productive, as we could discuss flows and system logic—not guess at intention.</span>
+            </li>
+            <li class="result-item flex items-start gap-3">
+              <div class="w-1.5 h-1.5 bg-green-600 rounded-full flex-shrink-0 mt-2"></div>
+              <span class="text-lg text-gray-700 leading-relaxed"><strong>Client feedback loops turn assumptions into proof.</strong> Early buy-in from real customers gave product confidence to ship boldly and engineer faster.</span>
             </li>
           </ul>
         </div>
