@@ -9,9 +9,12 @@ const HomePage: React.FC = () => {
   const scrollToCaseStudies = () => {
     const caseStudiesSection = document.getElementById('case-studies');
     if (caseStudiesSection) {
-      caseStudiesSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      const yOffset = -80; // Offset to provide spacing above the title
+      const y = caseStudiesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
       });
     }
   };
@@ -174,7 +177,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section id="case-studies" className="py-6 lg:py-8 bg-gray-50">
+      <section id="case-studies" className="pt-16 pb-6 lg:pt-20 lg:pb-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-3">
