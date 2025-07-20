@@ -399,6 +399,45 @@ export const caseStudies: CaseStudy[] = [
           </blockquote>
         </div>
 
+        <div class="results-section mb-12">
+          <h3 class="results-title flex items-center gap-3 mb-6 text-xl font-bold text-gray-900">
+            <i class="fas fa-lightbulb text-green-600"></i>
+            What I Learned
+          </h3>
+          
+          <div class="learnings-grid grid md:grid-cols-2 gap-8">
+            <div class="learning-group">
+              <ul class="learning-list space-y-4">
+                <li class="flex items-start gap-4">
+                  <i class="fas fa-handshake text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Embedding design thinking</strong> in an org without UX precedent requires patience, proof, and persistent collaboration</span>
+                </li>
+                <li class="flex items-start gap-4">
+                  <i class="fas fa-users text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Personas aren't just research artifacts</strong>—they become blueprints for architecture, logic, and interaction models</span>
+                </li>
+                <li class="flex items-start gap-4">
+                  <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>MVP velocity and long-term scalability</strong> aren't opposing forces when you make smart system decisions early</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="learning-group">
+              <ul class="learning-list space-y-4">
+                <li class="flex items-start gap-4">
+                  <i class="fas fa-layer-group text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Design systems deliver strategic leverage</strong>—enabling scalability, velocity, and cross-team understanding beyond aesthetics</span>
+                </li>
+                <li class="flex items-start gap-4">
+                  <i class="fas fa-heart text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Great design isn't just what's delivered</strong>—it's the culture, trust, and shared language it creates between teams</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="results-conclusion">
           <div class="conclusion-card bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-400 p-8 rounded-r-lg">
             <div class="flex items-start gap-4">
