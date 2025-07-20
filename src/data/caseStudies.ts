@@ -2758,62 +2758,70 @@ export const caseStudies: CaseStudy[] = [
       <div class="situation-content">
         <div class="situation-intro mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            Elysium faced a critical challenge in the rapidly evolving business intelligence landscape: while AI and machine learning technologies were becoming increasingly sophisticated, the gap between technical capabilities and business accessibility was widening. Organizations were investing heavily in AI solutions but struggling to translate complex algorithmic outputs into actionable business strategies.
+            When I joined the project, <strong>Elysium was transitioning from MVP to enterprise-ready platform</strong>—but the user experience was still stuck in startup mode.
           </p>
         </div>
 
-        <div class="situation-market mb-8">
+        <div class="situation-problems mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            The market demand for AI-powered analytics was exploding, but existing solutions required significant technical expertise to interpret and act upon. Business leaders were drowning in data but starving for insights they could understand and implement. This created a massive opportunity gap for AI companies that could bridge the technical-business divide.
+            The frontend was a fragmented patchwork:
           </p>
-        </div>
-
-        <div class="situation-challenges mb-8">
-          <p class="situation-subtitle text-gray-600 mb-6">The AI accessibility crisis was manifesting in several critical issues:</p>
           
           <ul class="challenge-list space-y-6">
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-exclamation-triangle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Business executives couldn't understand complex AI outputs, limiting adoption and ROI realization</span>
+              <i class="fas fa-laptop-code text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Legacy tools in <strong>.NET</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-clock text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Decision-making was delayed by the need for technical translation of AI insights</span>
+              <i class="fas fa-chart-line text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Standalone dashboards in <strong>Angular</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-disconnect text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Significant disconnect between AI capabilities and practical business application</span>
+              <i class="fas fa-bell text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Newer alerting and triage views in <strong>React</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-money-bill-wave text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Organizations were under-utilizing expensive AI investments due to accessibility barriers</span>
+              <i class="fas fa-chart-bar text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Embedded dashboards and analytics powered by <strong>Looker</strong> and <strong>OpenSearch</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-users text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Heavy dependence on data scientists for insight interpretation created bottlenecks and scaling limitations</span>
+              <i class="fas fa-database text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">CRM data surfaced from <strong>Salesforce</strong></span>
             </li>
           </ul>
         </div>
 
-        <div class="situation-opportunity mb-8">
-          <div class="opportunity-header mb-6">
-            <h3 class="opportunity-title flex items-center gap-3 mb-4 text-xl font-semibold text-gray-900">
-              <i class="fas fa-lightbulb text-amber-600"></i>
-              The Strategic Opportunity
-            </h3>
-          </div>
-          
-          <p class="opportunity-description text-gray-700 leading-relaxed mb-6">
-            This challenge represented a massive market opportunity for Elysium. The company that could successfully democratize AI insights—making sophisticated machine learning accessible to business professionals without technical backgrounds—would capture significant market share in the rapidly growing business intelligence sector.
+        <div class="situation-technical mb-8">
+          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
+            There was <strong>no shared component library</strong>, no design system, and no consistent theming—making it difficult for users to navigate the platform, and impossible for engineering teams to scale UI development efficiently.
           </p>
+        </div>
+
+        <div class="situation-challenges mb-8">
+          <p class="situation-subtitle text-gray-600 mb-6">To complicate matters:</p>
+          
+          <ul class="challenge-list space-y-6">
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">The core users—enterprise security analysts—relied on <strong>dense data visualizations and fast context switching</strong></span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-palette text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Each tool (Looker, OpenSearch, Salesforce) had its own visual language, creating friction</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-adjust text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">The platform needed to support both <strong>light and dark modes</strong> for usability across extended analyst sessions</span>
+            </li>
+          </ul>
         </div>
 
         <div class="situation-conclusion">
           <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
-              <i class="fas fa-brain text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                Elysium needed to create an AI dashboard that would revolutionize how businesses interact with artificial intelligence—transforming complex algorithms into intuitive, actionable business tools.
+                Internally, the company had ambitious goals for enterprise growth. We needed to evolve the product from disconnected interfaces into a <strong>cohesive, brand-consistent, enterprise-grade experience</strong> without disrupting in-flight dev work.
               </p>
             </div>
           </div>
