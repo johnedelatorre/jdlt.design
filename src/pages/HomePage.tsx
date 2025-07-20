@@ -275,8 +275,8 @@ const HomePage: React.FC = () => {
               .filter(caseStudy => !caseStudy.isRecent)
               .map((caseStudy) => (
                 <div key={caseStudy.id} className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
-                  {/* Project Image */}
-                  <div className="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+                  {/* Project Image - Shorter aspect ratio for better viewport fit */}
+                  <div className="relative aspect-[16/9] bg-gray-200 overflow-hidden">
                     <img
                       src={caseStudy.headerImage}
                       alt={caseStudy.title}
