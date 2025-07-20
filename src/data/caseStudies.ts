@@ -2691,12 +2691,12 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: 'elysium-ai-dashboard',
-    title: 'AI Analytics Dashboard',
-    subtitle: 'Intelligent insights for business intelligence',
-    client: 'Elysium',
-    role: 'Lead Product Designer',
-    year: '2021',
-    tools: ['Figma', 'After Effects', 'Framer'],
+    title: 'Elysium Analytics',
+    subtitle: 'Design System in Storybook for a Multi-Technology Platform',
+    client: 'Elysium Analytics',
+    role: 'Product Design Lead',
+    year: '2023',
+    tools: ['Figma', 'Storybook', 'Tokens Studio'],
     tags: ['AI/ML', 'Dashboard Design', 'Data Analytics'],
     headerImage: '/images/case-studies/elysium-ai/elysium-ai-header.jpg',
     projectBrief: `
