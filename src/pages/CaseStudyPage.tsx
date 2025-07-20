@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
@@ -204,8 +204,8 @@ const CaseStudyPage: React.FC = () => {
 
   return (
     <div>
-      {/* Header Image with Project Details Overlay */}
-      <section className="relative h-[60vh] lg:h-[70vh] overflow-hidden">
+      {/* Full Viewport Header with Centered Project Details */}
+      <section className="relative h-screen overflow-hidden">
         <img
           src={caseStudy.headerImage}
           alt={caseStudy.title}
@@ -215,59 +215,88 @@ const CaseStudyPage: React.FC = () => {
           }}
         />
         
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
         
-        {/* Project Details Card */}
-        <div className="absolute bottom-8 left-8 right-8 lg:left-16 lg:right-auto lg:max-w-md bg-white bg-opacity-70 backdrop-blur-md rounded-lg p-6 shadow-xl border border-white border-opacity-20">
-          <h1 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-2">
-            {caseStudy.title}
-          </h1>
-          <p className="text-gray-600 mb-4">{caseStudy.subtitle}</p>
-          
-          <div className="grid grid-cols-2 gap-4 text-sm mb-6">
-            <div>
-              <span className="font-medium text-gray-500">Client:</span>
-              <p className="text-black">{caseStudy.client}</p>
+        {/* Centered Project Details Card */}
+        <div className="absolute inset-0 flex items-center justify-center p-8">
+          <div className="bg-black bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 lg:p-12 shadow-2xl border border-white border-opacity-20 max-w-2xl w-full text-center">
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">
+              {caseStudy.title}
+            </h1>
+            <p className="text-white text-lg lg:text-xl mb-8 opacity-90">{caseStudy.subtitle}</p>
+            
+            <div className="grid grid-cols-2 gap-6 text-white mb-8">
+              <div>
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Client</span>
+                <p className="text-white text-lg font-semibold">{caseStudy.client}</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Role</span>
+                <p className="text-white text-lg font-semibold">{caseStudy.role}</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Year</span>
+                <p className="text-white text-lg font-semibold">{caseStudy.year}</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider">Tools</span>
+                <p className="text-white text-lg font-semibold">{caseStudy.tools.join(', ')}</p>
+              </div>
             </div>
-            <div>
-              <span className="font-medium text-gray-500">Role:</span>
-              <p className="text-black">{caseStudy.role}</p>
-            </div>
-            <div>
-              <span className="font-medium text-gray-500">Year:</span>
-              <p className="text-black">{caseStudy.year}</p>
-            </div>
-            <div>
-              <span className="font-medium text-gray-500">Tools:</span>
-              <p className="text-black">{caseStudy.tools.join(', ')}</p>
-            </div>
-          </div>
 
-          {/* Interactive Prototype Button */}
-          {caseStudy.figmaLink && (
-            <a
-              href={caseStudy.figmaLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-3 rounded-lg font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
-            >
+            {/* Interactive Prototype Button */}
+            {caseStudy.figmaLink && (
+              <a
+                href={caseStudy.figmaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group border border-white border-opacity-30"
+              >
+                <FontAwesomeIcon 
+                  icon={faFigma} 
+                  className="text-lg group-hover:scale-110 transition-transform duration-300" 
+                />
+                <span>View Interactive Prototype</span>
+                <FontAwesomeIcon 
+                  icon={faExternalLinkAlt} 
+                  className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+                />
+              </a>
+            )}
+          </div>
+        </div>
+
+        {/* Scroll to Project Brief Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <button
+            onClick={() => {
+              const projectBriefSection = document.getElementById('project-brief');
+              if (projectBriefSection) {
+                projectBriefSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
+            className="group flex flex-col items-center text-white hover:text-gray-200 transition-colors duration-300"
+            style={{
+              animation: 'gentleBounce 2s ease-in-out infinite'
+            }}
+            aria-label="Scroll to project details"
+          >
+            <span className="text-sm font-medium mb-2 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+              Scroll to Project Details
+            </span>
+            <div className="w-8 h-8 border border-white border-opacity-60 rounded-full flex items-center justify-center group-hover:border-opacity-100 transition-all duration-300">
               <FontAwesomeIcon 
-                icon={faFigma} 
-                className="text-lg group-hover:scale-110 transition-transform duration-300" 
+                icon={faArrowDown} 
+                className="text-sm" 
               />
-              <span>View Interactive Prototype</span>
-              <FontAwesomeIcon 
-                icon={faExternalLinkAlt} 
-                className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
-              />
-            </a>
-          )}
+            </div>
+          </button>
         </div>
       </section>
 
-      {/* STAR Method Content Sections */}
-      <section className="py-16 lg:py-24">
+      {/* Project Content */}
+      <section id="project-brief" className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Project Brief */}
           <div className="mb-16">
