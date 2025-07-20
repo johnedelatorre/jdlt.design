@@ -2758,60 +2758,83 @@ export const caseStudies: CaseStudy[] = [
       <div class="situation-content">
         <div class="situation-intro mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            When I joined the project, <strong>Elysium was transitioning from MVP to enterprise-ready platform</strong>—but the user experience was still stuck in startup mode.
+            When I joined the Elysium Analytics team, the platform was gaining traction as a security-first data lake—especially among Snowflake-based enterprises. But the <strong>user experience was falling apart under technical sprawl</strong>.
           </p>
         </div>
 
         <div class="situation-problems mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            The frontend was a fragmented patchwork:
+            The UI was a fragmented patchwork:
           </p>
           
           <ul class="challenge-list space-y-6">
             <li class="challenge-item flex items-start gap-4">
               <i class="fas fa-laptop-code text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Legacy tools in <strong>.NET</strong></span>
+              <span class="text-gray-700 leading-relaxed">Legacy admin tooling in <strong>.NET</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-chart-line text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Standalone dashboards in <strong>Angular</strong></span>
+              <i class="fas fa-bell text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Alert and triage workflows in <strong>React</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-bell text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Newer alerting and triage views in <strong>React</strong></span>
+              <i class="fas fa-chart-line text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Investigative dashboards in <strong>Angular</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
               <i class="fas fa-chart-bar text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Embedded dashboards and analytics powered by <strong>Looker</strong> and <strong>OpenSearch</strong></span>
+              <span class="text-gray-700 leading-relaxed">Analytics and search powered by <strong>Looker</strong> and <strong>OpenSearch</strong></span>
             </li>
             <li class="challenge-item flex items-start gap-4">
               <i class="fas fa-database text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">CRM data surfaced from <strong>Salesforce</strong></span>
+              <span class="text-gray-700 leading-relaxed">CRM integrations pulling contextual data from <strong>Salesforce</strong></span>
             </li>
           </ul>
         </div>
 
         <div class="situation-technical mb-8">
           <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            There was <strong>no shared component library</strong>, no design system, and no consistent theming—making it difficult for users to navigate the platform, and impossible for engineering teams to scale UI development efficiently.
+            Each part of the platform operated independently—with its own interaction patterns, visual logic, and inconsistent design language. There was <strong>no design system</strong>, no reusable component base, and no shared visual themes. Even basic elements like tables, modals, and buttons had three different implementations.
           </p>
         </div>
 
         <div class="situation-challenges mb-8">
-          <p class="situation-subtitle text-gray-600 mb-6">To complicate matters:</p>
+          <p class="situation-subtitle text-gray-600 mb-6">This led to:</p>
           
           <ul class="challenge-list space-y-6">
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-users text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">The core users—enterprise security analysts—relied on <strong>dense data visualizations and fast context switching</strong></span>
+              <i class="fas fa-exclamation-triangle text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A brittle UX with <strong>context-switching friction</strong> for security analysts</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-palette text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Each tool (Looker, OpenSearch, Salesforce) had its own visual language, creating friction</span>
+              <i class="fas fa-sync text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Redundant design and dev effort across teams</span>
             </li>
             <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-adjust text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">The platform needed to support both <strong>light and dark modes</strong> for usability across extended analyst sessions</span>
+              <i class="fas fa-shield-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">A visual system that failed to communicate trust, maturity, or usability to enterprise buyers</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-chart-line text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Feature growth outpacing design coherence, creating risk for customer onboarding and retention</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="situation-goals mb-8">
+          <p class="situation-subtitle text-gray-600 mb-6">At the same time, the platform's goals were evolving:</p>
+          
+          <ul class="challenge-list space-y-6">
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-snowflake text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Move upstream into <strong>Snowflake-native and Databricks-native</strong> use cases</span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-search text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Support <strong>petabyte-scale, cross-environment search and triage</strong></span>
+            </li>
+            <li class="challenge-item flex items-start gap-4">
+              <i class="fas fa-trophy text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed">Compete with mature observability players through UX clarity and system extensibility</span>
             </li>
           </ul>
         </div>
@@ -2819,9 +2842,9 @@ export const caseStudies: CaseStudy[] = [
         <div class="situation-conclusion">
           <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
             <div class="flex items-start gap-3">
-              <i class="fas fa-rocket text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <i class="fas fa-tools text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="conclusion-text text-gray-700 leading-relaxed">
-                Internally, the company had ambitious goals for enterprise growth. We needed to evolve the product from disconnected interfaces into a <strong>cohesive, brand-consistent, enterprise-grade experience</strong> without disrupting in-flight dev work.
+                It was clear that we needed to <strong>rebuild the design foundation</strong>—but in a way that wouldn't slow development or disrupt in-flight feature delivery.
               </p>
             </div>
           </div>
