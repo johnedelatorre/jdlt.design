@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTh, faTimes, faExternalLinkAlt, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faTh, faTimes, faExternalLinkAlt, faFolderOpen, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
@@ -116,6 +116,12 @@ const ProjectNavigator: React.FC = () => {
 
           {/* Projects Grid with Custom Scrollbar */}
           <div className="flex-1 overflow-y-auto p-6 custom-scrollbar">
+            {/* Section Title */}
+            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-200">
+              <FontAwesomeIcon icon={faLayerGroup} className="text-purple-600 text-sm" />
+              <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide whitespace-nowrap">Case Studies</h4>
+            </div>
+            
             <div className="grid grid-cols-1 gap-4">
               {caseStudies.map((project) => (
                 <button
