@@ -118,8 +118,8 @@ const ProjectNavigator: React.FC = () => {
           <div className="flex-1 overflow-y-auto p-6 custom-scrollbar">
             {/* Section Title */}
             <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-200">
-              <FontAwesomeIcon icon={faLayerGroup} className="text-purple-600 text-sm" />
-              <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide whitespace-nowrap">Case Studies</h4>
+              <FontAwesomeIcon icon={faLayerGroup} className="text-purple-600 text-base" />
+              <h4 className="text-base font-semibold text-gray-700 uppercase tracking-wide whitespace-nowrap">Case Studies</h4>
             </div>
             
             <div className="grid grid-cols-1 gap-4">
