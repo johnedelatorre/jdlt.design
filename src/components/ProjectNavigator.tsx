@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTh, faTimes, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTh, faTimes, faExternalLinkAlt, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
@@ -105,8 +105,13 @@ const ProjectNavigator: React.FC = () => {
           </button>
 
           {/* Header */}
-          <div className="p-6 pb-4 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-purple-50">
-            <h3 className="text-xl font-bold text-gray-900 pr-12">My Projects</h3>
+          <div className="px-6 py-5 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-purple-50">
+            <div className="flex items-center gap-3 pr-12">
+              <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg shadow-sm">
+                <FontAwesomeIcon icon={faFolderOpen} className="text-white text-sm" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 whitespace-nowrap">Portfolio Navigator</h3>
+            </div>
           </div>
 
           {/* Projects Grid with Custom Scrollbar */}
