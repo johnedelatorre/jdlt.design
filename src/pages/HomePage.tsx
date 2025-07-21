@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
       {/* Hero/About Me Section */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Text Content */}
             <div>
               <h1 className="font-serif text-4xl lg:text-5xl font-bold text-black mb-6">
@@ -109,8 +109,8 @@ const HomePage: React.FC = () => {
               </div>
             </div>
 
-            {/* Profile Photo */}
-            <div className="flex flex-col items-center lg:items-center gap-8">
+            {/* Profile Photo - Hidden on mobile since avatar is in header */}
+            <div className="hidden md:flex flex-col items-center lg:items-center gap-8">
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img
@@ -125,12 +125,12 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               
-              {/* Scroll to Case Studies Button - Closer spacing on mobile */}
-              <div className="flex justify-center mt-12 md:mt-40">
+              {/* Scroll to Case Studies Button - Desktop: below photo */}
+              <div className="hidden md:flex justify-center mt-40">
                 <div className="relative">
                   <button
                     onClick={scrollToCaseStudies}
-                    className="group relative w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                    className="group relative w-32 h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
                     style={{
                       animation: 'subtleBounce 2s ease-in-out infinite'
                     }}
@@ -160,6 +160,42 @@ const HomePage: React.FC = () => {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* Mobile Scroll Button - After content, centered */}
+          <div className="md:hidden flex justify-center mt-12">
+            <div className="relative">
+              <button
+                onClick={scrollToCaseStudies}
+                className="group relative w-24 h-24 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                style={{
+                  animation: 'subtleBounce 2s ease-in-out infinite'
+                }}
+                aria-label="Scroll to case studies"
+              >
+                {/* Circular Text */}
+                <div className="absolute inset-0">
+                  <svg className="w-full h-full" viewBox="0 0 120 120">
+                    <defs>
+                      <path id="circle" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+                    </defs>
+                    <text fontSize="8" fill="#6B7280" className="uppercase tracking-widest font-medium">
+                      <textPath href="#circle" startOffset="0%">
+                        scroll to case studies • scroll to case studies •
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+                
+                {/* Center Arrow */}
+                <div className="relative z-10 flex items-center justify-center">
+                  <FontAwesomeIcon 
+                    icon={faArrowDown} 
+                    className="text-gray-600 text-lg group-hover:text-gray-800 transition-colors duration-300" 
+                  />
+                </div>
+              </button>
             </div>
           </div>
         </div>

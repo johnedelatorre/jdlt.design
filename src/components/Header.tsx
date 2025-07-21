@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { navigationItems } from '../data/navigation';
 import { scrollToCaseStudies } from '../utils/scrollUtils';
+import { personalInfo } from '../data/personalInfo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,8 +60,8 @@ const Header: React.FC = () => {
               {/* Mobile Avatar */}
               <div className="md:hidden w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 shadow-sm">
                 <img
-                  src="/images/profile/homepage-profile.png"
-                  alt="John Delatorre"
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5ZWEzYTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5KRDwvdGV4dD48L3N2Zz4=';
