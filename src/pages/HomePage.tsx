@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       {/* Hero/About Me Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-8 md:py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Text Content */}
@@ -22,7 +22,8 @@ const HomePage: React.FC = () => {
               
               {/* New headline section with icons */}
               <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                <div className="flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed">
+                {/* Desktop version - horizontal with separators */}
+                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed">
                   <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faRocket} className="text-blue-600" />
                     <span className="font-semibold text-gray-900">Full-Stack Product Design Lead @ Relo Metrics</span>
@@ -58,6 +59,47 @@ const HomePage: React.FC = () => {
                     <span>Human-Centric</span>
                   </div>
                   <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faCog} className="text-indigo-600" />
+                    <span>Scalable UX Systems • Design Thinking</span>
+                  </div>
+                </div>
+
+                {/* Mobile version - vertical stack without separators */}
+                <div className="md:hidden space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <FontAwesomeIcon icon={faRocket} className="text-blue-600 mt-1" />
+                    <div className="flex flex-col">
+                      <span className="font-bold text-gray-900 text-lg leading-tight">Full-Stack Product Design Lead</span>
+                      <span className="font-bold text-gray-900 text-lg leading-tight">@ Relo Metrics</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faSearch} className="text-green-600" />
+                    <span>Research & Design Strategy</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
+                    <span>AI-Led UX • Claude • Uizard</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-pink-600" />
+                    <span>Figma • UX Pilot • v0.dev • Cursor</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faMap} className="text-orange-600" />
+                    <span>Journey Mapping</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faUser} className="text-red-600" />
+                    <span>Human-Centric</span>
+                  </div>
                   
                   <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faCog} className="text-indigo-600" />
@@ -130,31 +172,31 @@ const HomePage: React.FC = () => {
                 <div className="relative">
                   <button
                     onClick={scrollToCaseStudies}
-                    className="group relative w-32 h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                    className="group relative w-60 h-44 transition-all duration-300 flex items-center justify-center hover:animate-none"
                     style={{
                       animation: 'subtleBounce 2s ease-in-out infinite'
                     }}
                     aria-label="Scroll to case studies"
                   >
-                    {/* Circular Text */}
+                    {/* Curved Text */}
                     <div className="absolute inset-0">
-                      <svg className="w-full h-full" viewBox="0 0 120 120">
+                      <svg className="w-full h-full" viewBox="0 0 240 176">
                         <defs>
-                          <path id="circle" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+                          <path id="semicircle-desktop" d="M 30, 140 A 90, 90 0 0, 1 210, 140" />
                         </defs>
-                        <text fontSize="10" fill="#6B7280" className="uppercase tracking-widest font-medium">
-                          <textPath href="#circle" startOffset="0%">
-                            scroll to case studies • scroll to case studies •
+                        <text fontSize="14" fill="#374151" className="uppercase tracking-wide font-semibold">
+                          <textPath href="#semicircle-desktop" startOffset="50%" textAnchor="middle">
+                            • scroll down to case studies •
                           </textPath>
                         </text>
                       </svg>
                     </div>
                     
                     {/* Center Arrow */}
-                    <div className="relative z-10 flex items-center justify-center">
+                    <div className="relative z-10 flex items-center justify-center mt-8">
                       <FontAwesomeIcon 
                         icon={faArrowDown} 
-                        className="text-gray-600 text-xl group-hover:text-gray-800 transition-colors duration-300" 
+                        className="text-gray-700 text-2xl group-hover:text-gray-900 transition-colors duration-300" 
                       />
                     </div>
                   </button>
@@ -163,36 +205,36 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           
-          {/* Mobile Scroll Button - After content, centered */}
-          <div className="md:hidden flex justify-center mt-12">
+                    {/* Mobile Scroll Button - After content, centered */}
+          <div className="md:hidden flex justify-center mt-6">
             <div className="relative">
               <button
                 onClick={scrollToCaseStudies}
-                className="group relative w-24 h-24 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                className="group relative w-60 h-44 transition-all duration-300 flex items-center justify-center hover:animate-none"
                 style={{
                   animation: 'subtleBounce 2s ease-in-out infinite'
                 }}
                 aria-label="Scroll to case studies"
               >
-                {/* Circular Text */}
+                {/* Curved Text */}
                 <div className="absolute inset-0">
-                  <svg className="w-full h-full" viewBox="0 0 120 120">
+                  <svg className="w-full h-full" viewBox="0 0 240 176">
                     <defs>
-                      <path id="circle" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+                      <path id="semicircle-mobile" d="M 30, 140 A 90, 90 0 0, 1 210, 140" />
                     </defs>
-                    <text fontSize="8" fill="#6B7280" className="uppercase tracking-widest font-medium">
-                      <textPath href="#circle" startOffset="0%">
-                        scroll to case studies • scroll to case studies •
+                    <text fontSize="14" fill="#374151" className="uppercase tracking-wide font-semibold">
+                      <textPath href="#semicircle-mobile" startOffset="50%" textAnchor="middle">
+                        • scroll down to case studies •
                       </textPath>
                     </text>
                   </svg>
                 </div>
                 
                 {/* Center Arrow */}
-                <div className="relative z-10 flex items-center justify-center">
+                <div className="relative z-10 flex items-center justify-center mt-8">
                   <FontAwesomeIcon 
                     icon={faArrowDown} 
-                    className="text-gray-600 text-lg group-hover:text-gray-800 transition-colors duration-300" 
+                    className="text-gray-700 text-2xl group-hover:text-gray-900 transition-colors duration-300" 
                   />
                 </div>
               </button>
