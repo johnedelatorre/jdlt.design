@@ -51,12 +51,23 @@ const Header: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo/Name */}
+            {/* Logo/Name with Avatar on Mobile */}
             <Link 
               to="/" 
-              className="font-serif text-xl lg:text-2xl font-semibold text-black hover:text-gray-700 transition-colors duration-200"
+              className="flex items-center gap-3 font-serif text-xl lg:text-2xl font-semibold text-black hover:text-gray-700 transition-colors duration-200"
             >
-              John Delatorre
+              {/* Mobile Avatar */}
+              <div className="md:hidden w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 shadow-sm">
+                <img
+                  src="/images/profile/homepage-profile.png"
+                  alt="John Delatorre"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5ZWEzYTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5KRDwvdGV4dD48L3N2Zz4=';
+                  }}
+                />
+              </div>
+              <span>John Delatorre</span>
             </Link>
 
             {/* Desktop Navigation */}

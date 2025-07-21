@@ -112,7 +112,7 @@ const HomePage: React.FC = () => {
             {/* Profile Photo */}
             <div className="flex flex-col items-center lg:items-center gap-8">
               <div className="relative">
-                <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-lg">
+                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img
                     src={personalInfo.profileImage}
                     alt={personalInfo.name}
@@ -125,12 +125,12 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               
-              {/* Scroll to Case Studies Button - Below photo, aligned with Relo Census top */}
-              <div className="flex justify-center mt-40">
+              {/* Scroll to Case Studies Button - Closer spacing on mobile */}
+              <div className="flex justify-center mt-12 md:mt-40">
                 <div className="relative">
                   <button
                     onClick={scrollToCaseStudies}
-                    className="group relative w-32 h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
+                    className="group relative w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white hover:bg-gray-50 transition-all duration-300 flex items-center justify-center hover:animate-none"
                     style={{
                       animation: 'subtleBounce 2s ease-in-out infinite'
                     }}
