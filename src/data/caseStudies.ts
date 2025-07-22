@@ -1263,151 +1263,110 @@ export const caseStudies: CaseStudy[] = [
             Clinical Trials Translation & Certification Tool
           </h3>
           <p class="brief-description text-xl mb-8 font-medium text-gray-800">
-            <strong>A centralized platform that transformed clinical-trial localization—cutting translation prep from 3–5 days per language to under 24 hours while ensuring global regulatory compliance.</strong>
+            <strong>A centralized platform that transformed clinical-trial localization—cutting translation time from 48 hours to under 12 hours per language while ensuring regulatory compliance.</strong>
           </p>
-          
-          <div class="story-flow space-y-8">
-            <div class="challenge-section">
-              <h4 class="challenge-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
-                <i class="fas fa-exclamation-triangle text-red-600"></i>
-                The Challenge
-              </h4>
-              
-              <div class="challenge-points space-y-4">
-                <div class="challenge-stat bg-red-50 border-l-4 border-red-300 p-4 rounded-r">
-                  <p class="font-semibold text-gray-800">
-                    <strong>60-72 hours per project</strong> wasted on manual CSV cleanup
-                  </p>
-                </div>
-                
-                <ul class="challenge-list space-y-3">
-                  <li class="flex items-start gap-3">
-                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
-                    <span><strong>Clinical Trials Managers:</strong> Export CSVs → Clean data → Split by language → Re-clean vendor returns</span>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
-                    <span><strong>Customer Success teams:</strong> No visibility → Duplicate work → Late escalations</span>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
-                    <span><strong>Business impact:</strong> Missed FDA deadlines → Regulatory friction → Patient safety risk</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="solution-section">
-              <h4 class="solution-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
-                <i class="fas fa-lightbulb text-blue-600"></i>
-                The Solution
-              </h4>
-              
-              <div class="solution-summary bg-blue-50 border-l-4 border-blue-300 p-4 rounded-r mb-6">
-                <p class="font-semibold text-gray-800">
-                  <strong>Translation Management Tool</strong> — Unified platform for CTMs (AstraZeneca), CS teams, and regulatory reviewers
-                </p>
-                <p class="text-gray-700 mt-2">
-                  <strong>Result:</strong> 80% workflow automation + audit-ready compliance
-                </p>
-              </div>
-              
-              <ul class="solution-features grid md:grid-cols-2 gap-4">
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Structured JSON exports</strong><br/>Replace chaotic CSV workflows</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Multi-stage approval flows</strong><br/>Clinical + regulatory review</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Real-time status tracking</strong><br/>Automated stakeholder updates</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Built-in audit logs</strong><br/>FDA/EMA compliance ready</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
         
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-user-tie text-indigo-600"></i>
-            My Role
-          </h3>
-          
-          <div class="role-summary bg-indigo-50 border-l-4 border-indigo-300 p-4 rounded-r mb-6">
-            <p class="font-semibold text-gray-800">
-              <strong>Lead Product Designer</strong> — Research to delivery transformation
-            </p>
-          </div>
-          
-          <div class="role-highlights grid md:grid-cols-2 gap-6">
-            <div class="role-group">
-              <h5 class="role-category flex items-center gap-2 text-base font-semibold text-gray-900 mb-3">
-                <i class="fas fa-search text-blue-600"></i>
-                Research & Strategy
-              </h5>
-              <ul class="role-list space-y-2">
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-arrow-right text-blue-600 text-sm mt-1 flex-shrink-0"></i>
-                  <span class="text-gray-700"><strong>Primary research:</strong> CTMs + CS teams</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-arrow-right text-blue-600 text-sm mt-1 flex-shrink-0"></i>
-                  <span class="text-gray-700"><strong>Continuous discovery:</strong> Theresa Torres framework</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="role-group">
-              <h5 class="role-category flex items-center gap-2 text-base font-semibold text-gray-900 mb-3">
-                <i class="fas fa-drafting-compass text-purple-600"></i>
-                Design & Implementation
-              </h5>
-              <ul class="role-list space-y-2">
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                  <span class="text-gray-700"><strong>High-fidelity prototypes:</strong> Nucleus Design System</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                  <span class="text-gray-700"><strong>JSON schema:</strong> Co-defined with Engineering</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="brief-section mt-10">
-          <div class="strategic-impact">
-            <h4 class="impact-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
-              <i class="fas fa-trophy text-yellow-600"></i>
-              Strategic Impact
+        <div class="story-flow space-y-8">
+          <div class="challenge-section">
+            <h4 class="challenge-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-exclamation-triangle text-red-600"></i>
+              The Challenge
             </h4>
             
-            <div class="impact-summary bg-green-50 border-l-4 border-green-300 p-4 rounded-r">
-              <p class="font-semibold text-gray-800 mb-2">
-                <strong>Compliance liability → Competitive advantage</strong>
+            <div class="challenge-content space-y-4">
+              <p class="challenge-description">
+                The Clinical Trials Manager at Medable was responsible for translating a vast library of patient-facing content—tasks, assessments, emails, push notifications—used in a Bluetooth-enabled Patient App for trial participants. Every new translation, across multiple languages, was slow, fragmented, and manual.
               </p>
-              <ul class="impact-outcomes space-y-2">
+              
+              <div class="challenge-stat bg-red-50 border-l-4 border-red-300 p-4 rounded-r">
+                <p class="font-semibold text-gray-800">
+                  <strong>Each language version took 30–48 hours to complete</strong>, stalling workflows, frustrating internal teams, and delaying Institutional Review Board (IRB) submissions.
+                </p>
+              </div>
+              
+              <p class="challenge-impact font-medium text-gray-700">
+                The process wasn't just inefficient—<strong>it risked compliance timelines and stakeholder confidence.</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="opportunity-section">
+            <h4 class="opportunity-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-bullseye text-blue-600"></i>
+              The Opportunity
+            </h4>
+            
+            <div class="opportunity-summary bg-blue-50 border-l-4 border-blue-300 p-4 rounded-r">
+              <p class="font-semibold text-gray-800">
+                Streamline the entire clinical content translation lifecycle—from intake and certification to delivery—without sacrificing accuracy, traceability, or regulatory readiness.
+              </p>
+            </div>
+          </div>
+
+          <div class="role-section">
+            <h4 class="role-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-tools text-indigo-600"></i>
+              My Role
+            </h4>
+            
+            <div class="role-content space-y-4">
+              <div class="role-summary bg-indigo-50 border-l-4 border-indigo-300 p-4 rounded-r">
+                <p class="font-semibold text-gray-800">
+                  <strong>Product Designer and embedded UX Researcher</strong>, partnered closely with the Product Manager and Tech Lead from day one.
+                </p>
+              </div>
+              
+              <p class="role-description">
+                We met daily to iterate through requirements, flow optimizations, and engineering constraints—building a unified product vision grounded in user feedback and clinical compliance needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h4 class="impact-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-lightbulb text-green-600"></i>
+              Key Impact
+            </h4>
+            
+            <div class="impact-content space-y-4">
+              <ul class="impact-list space-y-3">
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
-                  <span class="text-gray-700"><strong>Eliminated manual re-clean cycles</strong></span>
+                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
+                  <span><strong>Transformed a clunky translation handoff system</strong> into a dynamic, structured Translation Manager Tool</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
-                  <span class="text-gray-700"><strong>Created audit-ready workflows</strong></span>
+                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
+                  <span><strong>Reduced turnaround time from 48 hours to under 12 hours</strong> per language</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
-                  <span class="text-gray-700"><strong>Enabled confident international expansion</strong></span>
+                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
+                  <span><strong>Improved alignment across CS, PMs, and IRB review teams</strong> through better transparency and status visibility</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
+                  <span><strong>Designed a scalable content workflow</strong> ready to support 30+ languages across global trial deployments</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div class="why-matters-section">
+            <h4 class="why-matters-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-search text-purple-600"></i>
+              Why It Matters
+            </h4>
+            
+            <div class="why-matters-content space-y-4">
+              <p class="why-matters-description">
+                In clinical trials, delays aren't just inconvenient—<strong>they can derail entire studies.</strong>
+              </p>
+              
+              <div class="why-matters-summary bg-green-50 border-l-4 border-green-300 p-4 rounded-r">
+                <p class="font-semibold text-gray-800">
+                  Our solution helped Medable accelerate how quickly patient guidance, consent forms, and app instructions could be deployed around the world—<strong>with speed, clarity, and compassion.</strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
