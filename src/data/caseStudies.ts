@@ -2779,6 +2779,154 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
+    
+    designProcess: `
+      <div class="design-process-content">
+        <div class="process-header mb-10">
+          <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">Design Process</h3>
+            <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+          </div>
+          <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
+            Elysium required a systematic multi-platform approach that unified fragmented tech stacks while serving enterprise security analysts. This 6-month transformation focused on building scalable foundations across React, Angular, and .NET while integrating third-party ecosystems.
+          </p>
+        </div>
+
+        <div class="process-steps grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          
+          <!-- Enterprise Research -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-users text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Enterprise Research</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>SOC Team Interviews</p>
+              <p>Security Analyst Personas</p>
+              <p>Cross-Platform Analysis</p>
+            </div>
+          </div>
+
+          <!-- System Architecture -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-layer-group text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Multi-Platform Architecture</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>React + Angular + .NET</p>
+              <p>Storybook Foundation</p>
+              <p>Light/Dark Theme System</p>
+            </div>
+          </div>
+
+          <!-- Integration Design -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-puzzle-piece text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Integration Design</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Looker + OpenSearch + Salesforce</p>
+              <p>v0.dev Prototyping</p>
+              <p>KQL Search Flows</p>
+            </div>
+          </div>
+
+          <!-- Enterprise Validation -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-check-circle text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Enterprise Validation</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Client Champion Testing</p>
+              <p>Cross-Stack Implementation</p>
+              <p>Design QA & Regression</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Process Details -->
+        <div class="process-details bg-gray-50 rounded-xl p-8">
+          <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-route text-blue-600"></i>
+            The 6-Month Multi-Platform Transformation Strategy
+          </h4>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-lightbulb text-blue-600 text-sm"></i>
+                Research & Architecture (Month 1-2)
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Interviewed enterprise security analysts and SOC teams across 4 personas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Embedded with engineering teams to understand React, Angular, .NET constraints</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Mapped cross-platform workflows and third-party integration points</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Architected Storybook foundation with shared tokens and themes</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-shipping-fast text-emerald-600 text-sm"></i>
+                Integration + Validation (Month 3-6)
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Built comprehensive light/dark themes tuned for analyst fatigue reduction</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Created v0.dev prototypes for KQL search, alert triage, and dashboard flows</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Standardized embedded Looker, OpenSearch, and Salesforce components</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Validated with client champions and maintained rolling QA checklist</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-blue-50 border-l-4 border-blue-300 rounded-r">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-shield-alt text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>The enterprise breakthrough:</strong> Success wasn't just about visual consistency across tech stacks—it was proving that unified design systems could eliminate context-switching fatigue for security analysts while accelerating enterprise client onboarding and retention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+    
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">
