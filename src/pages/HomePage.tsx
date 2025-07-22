@@ -181,7 +181,7 @@ const HomePage: React.FC = () => {
                   <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
                     <FontAwesomeIcon 
                       icon={faArrowDown} 
-                      className="text-gray-700 text-xl transform rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
+                      className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
                     />
                   </div>
                   
@@ -208,7 +208,7 @@ const HomePage: React.FC = () => {
               <div className="relative w-14 h-14 border-2 border-gray-700 rounded-full flex items-center justify-center">
                 <FontAwesomeIcon 
                   icon={faArrowDown} 
-                  className="text-gray-700 text-lg transform rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
+                  className="text-gray-700 text-lg transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
                 />
               </div>
               
