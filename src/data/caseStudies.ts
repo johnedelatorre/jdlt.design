@@ -1272,12 +1272,29 @@ export const caseStudies: CaseStudy[] = [
                 <i class="fas fa-exclamation-triangle text-red-600"></i>
                 The Challenge
               </h4>
-              <p class="brief-description mb-4">
-                As Medable expanded globally, a critical bottleneck emerged: <strong>Clinical Trials Managers were spending 60–72 hours per project</strong> manually cleaning CSV exports, splitting content by language, and re-formatting vendor returns. Meanwhile, Customer Success teams operated blindly, duplicating work and escalating issues too late.
-              </p>
-              <p class="brief-description">
-                The result? <strong>Missed FDA deadlines, regulatory friction, and growing operational debt</strong> threatening patient safety in international markets.
-              </p>
+              
+              <div class="challenge-points space-y-4">
+                <div class="challenge-stat bg-red-50 border-l-4 border-red-300 p-4 rounded-r">
+                  <p class="font-semibold text-gray-800">
+                    <strong>60-72 hours per project</strong> wasted on manual CSV cleanup
+                  </p>
+                </div>
+                
+                <ul class="challenge-list space-y-3">
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
+                    <span><strong>Clinical Trials Managers:</strong> Export CSVs → Clean data → Split by language → Re-clean vendor returns</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
+                    <span><strong>Customer Success teams:</strong> No visibility → Duplicate work → Late escalations</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fas fa-times-circle text-red-600 flex-shrink-0 mt-1"></i>
+                    <span><strong>Business impact:</strong> Missed FDA deadlines → Regulatory friction → Patient safety risk</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="solution-section">
@@ -1285,26 +1302,32 @@ export const caseStudies: CaseStudy[] = [
                 <i class="fas fa-lightbulb text-blue-600"></i>
                 The Solution
               </h4>
-              <p class="brief-description mb-6">
-                We designed the <strong>Translation Management Tool</strong>—a unified, audit-ready platform serving CTMs at companies like AstraZeneca, internal CS teams, and regulatory reviewers. The tool automated 80% of manual workflows through:
-              </p>
+              
+              <div class="solution-summary bg-blue-50 border-l-4 border-blue-300 p-4 rounded-r mb-6">
+                <p class="font-semibold text-gray-800">
+                  <strong>Translation Management Tool</strong> — Unified platform for CTMs (AstraZeneca), CS teams, and regulatory reviewers
+                </p>
+                <p class="text-gray-700 mt-2">
+                  <strong>Result:</strong> 80% workflow automation + audit-ready compliance
+                </p>
+              </div>
               
               <ul class="solution-features grid md:grid-cols-2 gap-4">
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Structured JSON exports</strong> replacing chaotic CSV workflows</span>
+                  <span><strong>Structured JSON exports</strong><br/>Replace chaotic CSV workflows</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Multi-stage approval flows</strong> for clinical and regulatory review</span>
+                  <span><strong>Multi-stage approval flows</strong><br/>Clinical + regulatory review</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Real-time status tracking</strong> with automated stakeholder updates</span>
+                  <span><strong>Real-time status tracking</strong><br/>Automated stakeholder updates</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-green-600 flex-shrink-0 mt-1"></i>
-                  <span><strong>Built-in audit logs</strong> for FDA/EMA compliance documentation</span>
+                  <span><strong>Built-in audit logs</strong><br/>FDA/EMA compliance ready</span>
                 </li>
               </ul>
             </div>
@@ -1316,35 +1339,44 @@ export const caseStudies: CaseStudy[] = [
             <i class="fas fa-user-tie text-indigo-600"></i>
             My Role
           </h3>
-          <p class="brief-subtitle mb-6 text-gray-600">
-            As <strong>Lead Product Designer</strong>, I drove the transformation from research through delivery:
-          </p>
+          
+          <div class="role-summary bg-indigo-50 border-l-4 border-indigo-300 p-4 rounded-r mb-6">
+            <p class="font-semibold text-gray-800">
+              <strong>Lead Product Designer</strong> — Research to delivery transformation
+            </p>
+          </div>
           
           <div class="role-highlights grid md:grid-cols-2 gap-6">
             <div class="role-group">
-              <h5 class="role-category text-base font-semibold text-gray-900 mb-3">Research & Strategy</h5>
+              <h5 class="role-category flex items-center gap-2 text-base font-semibold text-gray-900 mb-3">
+                <i class="fas fa-search text-blue-600"></i>
+                Research & Strategy
+              </h5>
               <ul class="role-list space-y-2">
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700">Led primary research with CTMs and CS teams</span>
+                  <i class="fas fa-arrow-right text-blue-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span class="text-gray-700"><strong>Primary research:</strong> CTMs + CS teams</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700">Established continuous discovery framework (Theresa Torres method)</span>
+                  <i class="fas fa-arrow-right text-blue-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span class="text-gray-700"><strong>Continuous discovery:</strong> Theresa Torres framework</span>
                 </li>
               </ul>
             </div>
             
             <div class="role-group">
-              <h5 class="role-category text-base font-semibold text-gray-900 mb-3">Design & Implementation</h5>
+              <h5 class="role-category flex items-center gap-2 text-base font-semibold text-gray-900 mb-3">
+                <i class="fas fa-drafting-compass text-purple-600"></i>
+                Design & Implementation
+              </h5>
               <ul class="role-list space-y-2">
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700">Built high-fidelity prototypes in Nucleus Design System</span>
+                  <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span class="text-gray-700"><strong>High-fidelity prototypes:</strong> Nucleus Design System</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700">Co-defined JSON schema with Engineering for regulatory compliance</span>
+                  <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span class="text-gray-700"><strong>JSON schema:</strong> Co-defined with Engineering</span>
                 </li>
               </ul>
             </div>
@@ -1353,13 +1385,29 @@ export const caseStudies: CaseStudy[] = [
 
         <div class="brief-section mt-10">
           <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-green-300 pl-6 py-4 bg-green-50 rounded-r">
-              <div class="flex items-start gap-3">
-                <i class="fas fa-flask text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed">
-                  <strong>The breakthrough:</strong> By eliminating manual re-clean cycles and creating an audit-ready workflow, we transformed a compliance liability into a competitive advantage—enabling Medable to confidently expand into new international markets while reducing operational risk.
-                </span>
-              </div>
+            <h4 class="impact-title flex items-center gap-3 mb-4 text-lg font-semibold text-gray-900">
+              <i class="fas fa-trophy text-yellow-600"></i>
+              Strategic Impact
+            </h4>
+            
+            <div class="impact-summary bg-green-50 border-l-4 border-green-300 p-4 rounded-r">
+              <p class="font-semibold text-gray-800 mb-2">
+                <strong>Compliance liability → Competitive advantage</strong>
+              </p>
+              <ul class="impact-outcomes space-y-2">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
+                  <span class="text-gray-700"><strong>Eliminated manual re-clean cycles</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
+                  <span class="text-gray-700"><strong>Created audit-ready workflows</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check text-green-600 flex-shrink-0 mt-1"></i>
+                  <span class="text-gray-700"><strong>Enabled confident international expansion</strong></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
