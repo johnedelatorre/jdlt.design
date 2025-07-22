@@ -1376,6 +1376,169 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
+    
+    designProcess: `
+      <div class="design-process-content">
+        <div class="process-header mb-10">
+          <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">Design Process</h3>
+            <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+          </div>
+          <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
+            The Translation Management Tool required a research-intensive approach with continuous discovery practices, inspired by Theresa Torres' framework. This complex clinical trial domain demanded deep user understanding and systematic validation at every step.
+          </p>
+        </div>
+
+        <div class="process-steps grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+          
+          <!-- Deep Research -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-microscope text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Deep Research</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>User Interviews</p>
+              <p>Observational Studies</p>
+              <p>Personas & Journey Maps</p>
+            </div>
+          </div>
+
+          <!-- Synthesis & Strategy -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-lightbulb text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Synthesis & Strategy</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Research Synthesis</p>
+              <p>5 UX Pillars</p>
+              <p>Solution Mapping</p>
+            </div>
+          </div>
+
+          <!-- Continuous Discovery -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-sync-alt text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Continuous Discovery</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Biweekly Insight Loops</p>
+              <p>Weekly Feedback Cadence</p>
+              <p>Research Repository</p>
+            </div>
+          </div>
+
+          <!-- Design & Prototyping -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-drafting-compass text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Design & Prototyping</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Information Architecture</p>
+              <p>Nucleus Design System</p>
+              <p>High-Fidelity Prototypes</p>
+            </div>
+          </div>
+
+          <!-- Validation & Testing -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-check-circle text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Validation & Testing</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Usability Testing (Maze)</p>
+              <p>A/B Testing</p>
+              <p>Phased Rollout</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Process Details -->
+        <div class="process-details bg-gray-50 rounded-xl p-8">
+          <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-route text-blue-600"></i>
+            Clinical Translation Research-to-Design Pipeline
+          </h4>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-search text-blue-600 text-sm"></i>
+                Research Foundation
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Interviewed 12 CTMs and 6 CS team members with structured question sets</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Conducted observational studies of live translation workflows</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Created detailed personas and journey maps for CTMs and CS teams</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Synthesized findings into 5 UX pillars: Efficiency, Simplicity, Empowerment, Communication, User-Centricity</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-cogs text-emerald-600 text-sm"></i>
+                Systematic Design & Validation
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Implemented Theresa Torres-inspired continuous discovery with biweekly loops</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Partnered with Tech Lead to co-define JSON schema and information architecture</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Built high-fidelity prototypes in Nucleus Design System with JSON validation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Validated through Maze testing and A/B comparisons with legacy CSV process</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-blue-50 border-l-4 border-blue-300 rounded-r">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-flask text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>The research methodology breakthrough:</strong> By maintaining continuous discovery loops and linking every insight back to design artifacts, we created an audit-ready research pipeline that met clinical trial compliance standards while driving rapid design iteration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+    
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">
