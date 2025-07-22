@@ -17,6 +17,7 @@ export interface CaseStudy {
   tags: string[];
   headerImage: string;
   projectBrief: string;
+  designProcess?: string;
   situation: string;
   task: string;
   action: string;

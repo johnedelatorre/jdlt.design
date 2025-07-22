@@ -81,6 +81,152 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
+    
+    designProcess: `
+      <div class="design-process-content">
+        <div class="process-header mb-10">
+          <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">Design Process</h3>
+            <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+          </div>
+          <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
+            My approach for Census followed the double diamond methodology, balancing discovery and validation with rapid execution under tight deadlines.
+          </p>
+        </div>
+
+        <div class="process-steps grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+          
+          <!-- Empathize -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-heart text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Empathize</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Stakeholder Interviews</p>
+              <p>User Research</p>
+              <p>Legacy System Analysis</p>
+            </div>
+          </div>
+
+          <!-- Define -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-lightbulb text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Define</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Persona Development</p>
+              <p>Problem Framing</p>
+              <p>Success Metrics</p>
+            </div>
+          </div>
+
+          <!-- Ideate -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-green-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-sitemap text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Ideate</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Information Architecture</p>
+              <p>User Flows</p>
+              <p>Component Strategy</p>
+            </div>
+          </div>
+
+          <!-- Design -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-drafting-compass text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Design</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Design System Creation</p>
+              <p>High-Fidelity Prototypes</p>
+              <p>Developer Handoff</p>
+            </div>
+          </div>
+
+          <!-- Test -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-user-check text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Test</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Usability Testing</p>
+              <p>Stakeholder Validation</p>
+              <p>Iterative Refinement</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Process Details -->
+        <div class="process-details bg-gray-50 rounded-xl p-8">
+          <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-route text-blue-600"></i>
+            Census-Specific Process Highlights
+          </h4>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-clock text-blue-600 text-sm"></i>
+                Sprint 0: Foundation (Week 1-2)
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Conducted 8 stakeholder interviews across CS, Sales, and Product</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Audited legacy MVC system and documented pain points</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Established three primary personas: Stakeholder, Brand, Agency</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-rocket text-purple-600 text-sm"></i>
+                Rapid Prototyping (Week 3-6)
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Built Ant Design system with custom Tailwind components</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Created interactive prototypes using v0.dev and Cursor</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Enabled stakeholder testing before development sprints</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+    
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">

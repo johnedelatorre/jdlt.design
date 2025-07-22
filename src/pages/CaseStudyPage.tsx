@@ -343,6 +343,18 @@ const CaseStudyPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Design Process */}
+          {caseStudy.designProcess && (
+            <div className="mb-16">
+              <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+                <div 
+                  className="text-lg text-gray-700 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: caseStudy.designProcess }}
+                />
+              </div>
+            </div>
+          )}
+
           {/* Situation */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
