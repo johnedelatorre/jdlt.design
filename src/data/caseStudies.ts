@@ -90,7 +90,7 @@ export const caseStudies: CaseStudy[] = [
             <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
           </div>
           <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
-            Census required a custom approach focused on establishing UX as a strategic discipline while shipping under aggressive timelines. This wasn't traditional user-centered design—it was organizational transformation through design thinking.
+            Census required a custom approach focused on establishing UX as a strategic discipline while shipping across 6 months with 4 realistic releases. Starting with the end vision and working backwards, we ensured sustainable delivery without fatiguing our 2-person engineering team.
           </p>
         </div>
 
@@ -148,11 +148,11 @@ export const caseStudies: CaseStudy[] = [
                 <i class="fas fa-rocket text-white text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Rapid Prototyping</h4>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Release Planning</h4>
             <div class="step-description space-y-2 text-sm text-gray-600">
               <p>v0.dev + Cursor Tools</p>
-              <p>Stakeholder Testing</p>
-              <p>90-Day MVP Delivery</p>
+              <p>4 Strategic Releases</p>
+              <p>6-Month Delivery</p>
             </div>
           </div>
 
@@ -169,16 +169,16 @@ export const caseStudies: CaseStudy[] = [
             <div class="detail-group">
               <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                 <i class="fas fa-lightbulb text-blue-600 text-sm"></i>
-                Cultural Foundation (Week 1-3)
+                Vision-First Foundation (Month 1-2)
               </h5>
               <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start gap-2">
                   <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Embedded with 2-person engineering team from day one</span>
+                  <span>Started with complete end-state vision, then worked backwards to 4 releases</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Replaced hand-drawn workflows with Slack demos and Loom walkthroughs</span>
+                  <span>Embedded with 2-person engineering team to assess realistic capacity</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
@@ -194,24 +194,24 @@ export const caseStudies: CaseStudy[] = [
             <div class="detail-group">
               <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                 <i class="fas fa-shipping-fast text-emerald-600 text-sm"></i>
-                Systems + Speed (Week 4-12)
+                Strategic Release Delivery (Month 3-6)
               </h5>
               <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Delivered 4 strategic releases without engineer burnout or quality compromise</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Used v0.dev and Cursor for interactive prototype validation each release</span>
+                </li>
                 <li class="flex items-start gap-2">
                   <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
                   <span>Architected modular component system with Ant Design primitives</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Used v0.dev and Cursor for interactive prototype validation</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
                   <span>Personas drove architecture, filtering logic, and default experiences</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Delivered MVP while establishing UX as permanent strategic function</span>
                 </li>
               </ul>
             </div>
@@ -221,7 +221,7 @@ export const caseStudies: CaseStudy[] = [
             <div class="flex items-start gap-3">
               <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="text-gray-700 leading-relaxed">
-                <strong>The key insight:</strong> Census wasn't just a product redesign—it was proving that thoughtful design systems enable both speed and organizational transformation, turning chaos into clarity through systematic thinking.
+                <strong>The key insight:</strong> By starting with the end vision and working backwards to 4 realistic releases over 6 months, we proved that sustainable delivery protects engineering teams while still achieving ambitious product transformation. The backward-planning approach prevented scope creep and engineer fatigue.
               </p>
             </div>
           </div>
