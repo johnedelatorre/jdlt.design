@@ -621,6 +621,139 @@ export const caseStudies: CaseStudy[] = [
         </div>
       </div>
     `,
+    
+    designProcess: `
+      <div class="design-process-content">
+        <div class="process-header mb-10">
+          <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">Design Process</h3>
+            <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+          </div>
+          <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
+            Relo Edge required a comprehensive platform transformation approach, grounded in the core philosophy: "How can we surprise and delight our users just a little more?" This guided every design decision from discovery through delivery.
+          </p>
+        </div>
+
+        <div class="process-steps grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          
+          <!-- Discovery & User-Centered Design -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-users text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Discovery & Research</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Deep Stakeholder Listening</p>
+              <p>"Surprise & Delight" Philosophy</p>
+              <p>Real Workflow Validation</p>
+            </div>
+          </div>
+
+          <!-- UX Architecture -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-drafting-compass text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">UX Architecture</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Information Architecture Rebuild</p>
+              <p>Smart Interactions Design</p>
+              <p>Visual Hierarchy Enhancement</p>
+            </div>
+          </div>
+
+          <!-- Design System Implementation -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-6">
+              <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-cubes text-white text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">System Building</h4>
+            <div class="step-description space-y-2 text-sm text-gray-600">
+              <p>Ant Design Component Library</p>
+              <p>v0.dev Prototyping</p>
+              <p>Developer-Ready Handoff</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Process Details -->
+        <div class="process-details bg-gray-50 rounded-xl p-8">
+          <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <i class="fas fa-route text-blue-600"></i>
+            The "Surprise & Delight" Transformation Strategy
+          </h4>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-lightbulb text-blue-600 text-sm"></i>
+                Philosophy-Driven Discovery
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Conducted interviews across CS, Sales, Product, Marketing, and Engineering</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Established "Can we surprise and delight?" as core design principle</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Validated persona-based entry points through 1:1 testing sessions</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Identified friction points in legacy MVC workflows</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <i class="fas fa-magic text-emerald-600 text-sm"></i>
+                Smart System Implementation
+              </h5>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Rebuilt information architecture with persistent navigation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Introduced sticky filters, hover previews, and saved queries</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Created role-adaptive dashboards for CS, Sales, and Marketing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Built with Ant Design foundation and v0.dev prototypes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-amber-50 border-l-4 border-amber-300 rounded-r">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-sparkles text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>The breakthrough insight:</strong> "Every design review ended with one final question: have we done enough to surprise and delight our users?" This mindset transformed the platform from functional but frustrating to elegant and delightful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+    
     situation: `
       <div class="situation-content">
         <div class="situation-intro mb-8">
