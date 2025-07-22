@@ -169,76 +169,54 @@ const HomePage: React.FC = () => {
               
               {/* Scroll to Case Studies Button - Desktop: below photo */}
               <div className="hidden md:flex justify-center mt-40">
-                <div className="relative">
-                  <button
-                    onClick={scrollToCaseStudies}
-                    className="group relative w-60 h-44 transition-all duration-300 flex items-center justify-center hover:animate-none"
-                    style={{
-                      animation: 'subtleBounce 2s ease-in-out infinite'
-                    }}
-                    aria-label="Scroll to case studies"
-                  >
-                    {/* Curved Text */}
-                    <div className="absolute inset-0">
-                      <svg className="w-full h-full" viewBox="0 0 240 176">
-                        <defs>
-                          <path id="semicircle-desktop" d="M 30, 140 A 90, 90 0 0, 1 210, 140" />
-                        </defs>
-                        <text fontSize="14" fill="#374151" className="uppercase tracking-wide font-semibold">
-                          <textPath href="#semicircle-desktop" startOffset="50%" textAnchor="middle">
-                            • scroll down to case studies •
-                          </textPath>
-                        </text>
-                      </svg>
-                    </div>
-                    
-                    {/* Center Arrow */}
-                    <div className="relative z-10 flex items-center justify-center mt-8">
-                      <FontAwesomeIcon 
-                        icon={faArrowDown} 
-                        className="text-gray-700 text-2xl group-hover:text-gray-900 transition-colors duration-300" 
-                      />
-                    </div>
-                  </button>
-                </div>
+                <button
+                  onClick={scrollToCaseStudies}
+                  className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
+                  style={{
+                    animation: 'subtleBounce 2s ease-in-out infinite'
+                  }}
+                  aria-label="Scroll to case studies"
+                >
+                  {/* Circle with Arrow */}
+                  <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
+                    <FontAwesomeIcon 
+                      icon={faArrowDown} 
+                      className="text-gray-700 text-xl transform rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
+                    />
+                  </div>
+                  
+                  {/* Text */}
+                  <span className="text-gray-500 text-lg font-medium uppercase tracking-wide group-hover:scale-105 transition-transform duration-500 ease-out">
+                    View Case Studies
+                  </span>
+                </button>
               </div>
             </div>
           </div>
           
                     {/* Mobile Scroll Button - After content, centered */}
           <div className="md:hidden flex justify-center mt-6">
-            <div className="relative">
-              <button
-                onClick={scrollToCaseStudies}
-                className="group relative w-60 h-44 transition-all duration-300 flex items-center justify-center hover:animate-none"
-                style={{
-                  animation: 'subtleBounce 2s ease-in-out infinite'
-                }}
-                aria-label="Scroll to case studies"
-              >
-                {/* Curved Text */}
-                <div className="absolute inset-0">
-                  <svg className="w-full h-full" viewBox="0 0 240 176">
-                    <defs>
-                      <path id="semicircle-mobile" d="M 30, 140 A 90, 90 0 0, 1 210, 140" />
-                    </defs>
-                    <text fontSize="14" fill="#374151" className="uppercase tracking-wide font-semibold">
-                      <textPath href="#semicircle-mobile" startOffset="50%" textAnchor="middle">
-                        • scroll down to case studies •
-                      </textPath>
-                    </text>
-                  </svg>
-                </div>
-                
-                {/* Center Arrow */}
-                <div className="relative z-10 flex items-center justify-center mt-8">
-                  <FontAwesomeIcon 
-                    icon={faArrowDown} 
-                    className="text-gray-700 text-2xl group-hover:text-gray-900 transition-colors duration-300" 
-                  />
-                </div>
-              </button>
-            </div>
+            <button
+              onClick={scrollToCaseStudies}
+              className="group flex items-center gap-3 transition-all duration-500 ease-out hover:animate-none"
+              style={{
+                animation: 'subtleBounce 2s ease-in-out infinite'
+              }}
+              aria-label="Scroll to case studies"
+            >
+              {/* Circle with Arrow */}
+              <div className="relative w-14 h-14 border-2 border-gray-700 rounded-full flex items-center justify-center">
+                <FontAwesomeIcon 
+                  icon={faArrowDown} 
+                  className="text-gray-700 text-lg transform rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
+                />
+              </div>
+              
+              {/* Text */}
+              <span className="text-gray-500 text-base font-medium uppercase tracking-wide group-hover:scale-105 transition-transform duration-500 ease-out">
+                View Case Studies
+              </span>
+            </button>
           </div>
         </div>
       </section>
