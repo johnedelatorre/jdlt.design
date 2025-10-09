@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, 
   faBuilding,
   faChevronDown,
   faChevronUp,
@@ -186,211 +185,181 @@ const AboutPage: React.FC = () => {
 
       {/* Bio Section */}
       <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <div className="text-gray-700 space-y-8 md:space-y-10 leading-relaxed">
-              <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl leading-relaxed">
-                <strong>I'm John DeLaTorre</strong>—a Full-Stack Product Designer from <strong>New York</strong> 🇺🇸 with <strong>Peruvian roots</strong> 🇵🇪 and a proud dad of two amazing daughters.
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-gray-700 space-y-12 md:space-y-16 leading-relaxed">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed text-center">
+              <strong>I'm John DeLaTorre</strong>—a Full-Stack Product Designer from <strong>New York</strong> 🇺🇸 with <strong>Peruvian roots</strong> 🇵🇪 and a proud dad of two amazing daughters.
+            </p>
+
+            {/* Mission • Legacy • Service */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900 flex items-center">
+                🎯 Mission • Legacy • Service
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                I help <strong>build and scale mission-driven startups</strong>.
               </p>
-
-              {/* Mission • Legacy • Service */}
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 md:p-8 border border-blue-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clipRule="evenodd" />
+              <div className="grid md:grid-cols-3 gap-8 text-lg sm:text-xl md:text-xl leading-relaxed">
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Mission • Legacy • Service
-                </h3>
-                <div className="space-y-4 text-lg sm:text-xl md:text-xl leading-relaxed">
-                  <p>I help <strong>build and scale mission-driven startups</strong>.</p>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Mission:</strong> outcomes over outputs.
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Legacy:</strong> a trust-first system and operating cadence teams <em>choose</em> to use.
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Service:</strong> grow people and unblock delivery so the right things ship—efficiently.
-                      </div>
-                    </div>
+                  <div>
+                    <strong>Mission:</strong> outcomes over outputs.
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Legacy:</strong> a trust-first system and operating cadence teams <em>choose</em> to use.
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Service:</strong> grow people and unblock delivery so the right things ship—efficiently.
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Leadership Mode */}
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 md:p-8 border border-green-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-                  Leadership Mode — IC → Player-Coach → Org-Builder
-                </h3>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                  I'm comfortable starting as a <strong>founding IC</strong> where risk is highest. Then I evolve into a <strong>player-coach</strong>—mentoring designers, partnering closely with PM/Eng, and standardizing how we ship. As PMF and revenue mature, I <strong>scale a small, senior, outcomes-driven team</strong> and step into <strong>org-builder</strong>—without losing the ability to roll up my sleeves.
-                </p>
-              </div>
+            {/* Leadership Mode */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                🧭 Leadership Mode — IC → Player-Coach → Org-Builder
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                I'm comfortable starting as a <strong>founding IC</strong> where risk is highest. Then I evolve into a <strong>player-coach</strong>—mentoring designers, partnering closely with PM/Eng, and standardizing how we ship. As PMF and revenue mature, I <strong>scale a small, senior, outcomes-driven team</strong> and step into <strong>org-builder</strong>—without losing the ability to roll up my sleeves.
+              </p>
+            </div>
 
-              {/* Origin */}
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 md:p-8 border border-purple-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                  Origin — Design + Code
-                </h3>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                  I began in graphic design (print, branding, packaging, motion), then moved into <strong>frontend</strong> and <strong>design systems</strong> before they were standard—building responsive interfaces with HTML/CSS/JS. That fluency lets me align <strong>vision, logic, and execution</strong> across design and engineering.
-                </p>
-              </div>
+            {/* Origin */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                🎨 Origin — Design + Code
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                I began in graphic design (print, branding, packaging, motion), then moved into <strong>frontend</strong> and <strong>design systems</strong> before they were standard—building responsive interfaces with HTML/CSS/JS. That fluency lets me align <strong>vision, logic, and execution</strong> across design and engineering.
+              </p>
+            </div>
 
-              {/* Approach & Stack */}
-              <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-6 md:p-8 border border-orange-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+            {/* Approach & Stack */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                ⚙️ Approach & Stack
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8 text-lg sm:text-xl md:text-xl leading-relaxed">
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Approach & Stack
-                </h3>
-                <div className="space-y-4 text-lg sm:text-xl md:text-xl leading-relaxed">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Discovery → Decisions:</strong> Pendo, interviews, and stakeholder input distilled into <strong>one-page briefs</strong> with KPIs/KRs.
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Systems → Speed:</strong> Tokens + components (Figma/Storybook) and <strong>Trust-UX</strong> patterns (confidence, provenance, audit/appeals).
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Proto → Ship:</strong> <strong>Figma MCP → Cursor / Claude</strong> for <strong>code-accurate</strong> prototypes; clean design-to-code handoff.
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 mr-2 mt-1 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <strong>Ops → Cadence:</strong> Lightweight Jira/Notion rituals to keep teams aligned and shipping.
-                      </div>
-                    </div>
+                  <div>
+                    <strong>Discovery → Decisions:</strong> Pendo, interviews, and stakeholder input distilled into <strong>one-page briefs</strong> with KPIs/KRs.
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Systems → Speed:</strong> Tokens + components (Figma/Storybook) and <strong>Trust-UX</strong> patterns (confidence, provenance, audit/appeals).
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Proto → Ship:</strong> <strong>Figma MCP → Cursor / Claude</strong> for <strong>code-accurate</strong> prototypes; clean design-to-code handoff.
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Ops → Cadence:</strong> Lightweight Jira/Notion rituals to keep teams aligned and shipping.
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Team Building & Leadership */}
-              <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-6 md:p-8 border border-teal-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                  </svg>
-                  Team Building & Leadership
-                </h3>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed mb-4">
-                  I <strong>hire product designers with research muscle</strong>, coach them to tie every artifact to <strong>business goals, KPIs, and KRs</strong>, and install an <strong>operating system</strong> (tokens, components, decision reviews, coded prototypes).
-                </p>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                  At <strong>JPMorgan Chase</strong> (VP Design Lead), I <strong>scaled from 1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in ~12 months—sequencing hires to business needs and lifting throughput, adoption, and quality. Earlier, I also <strong>scaled frontend engineering teams</strong>, so my systems and handoffs reduce rework and increase velocity.
-                </p>
-              </div>
+            {/* Team Building & Leadership */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                👥 Team Building & Leadership
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                I <strong>hire product designers with research muscle</strong>, coach them to tie every artifact to <strong>business goals, KPIs, and KRs</strong>, and install an <strong>operating system</strong> (tokens, components, decision reviews, coded prototypes).
+              </p>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                At <strong>JPMorgan Chase</strong> (VP Design Lead), I <strong>scaled from 1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in ~12 months—sequencing hires to business needs and lifting throughput, adoption, and quality. Earlier, I also <strong>scaled frontend engineering teams</strong>, so my systems and handoffs reduce rework and increase velocity.
+              </p>
+            </div>
 
-              {/* Work I'm proud of */}
-              <div className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6 md:p-8 border border-indigo-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+            {/* Work I'm proud of */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                🚀 Work I'm proud of
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Work I'm proud of
-                </h3>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <svg className="w-5 h-5 mr-3 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                      <strong>Relo Census</strong> — Sponsorship intelligence platform I helped build <strong>from the ground up</strong>. Clear, scalable UX so brands/agencies evaluate performance and decide faster.<br />
-                      <em className="text-gray-600">Result: smarter decisions, stronger revenue impact, happier users.</em>
-                    </div>
+                  <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
+                    <strong>Relo Census</strong> — Sponsorship intelligence platform I helped build <strong>from the ground up</strong>. Clear, scalable UX so brands/agencies evaluate performance and decide faster.<br />
+                    <em className="text-gray-600">Result: smarter decisions, stronger revenue impact, happier users.</em>
                   </div>
-                  <div className="flex items-start">
-                    <svg className="w-5 h-5 mr-3 mt-1 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                      <strong>Relo Edge (a.k.a. Media Value Center)</strong> — Full redesign of the flagship analytics tool focused on <strong>clarity, speed, and engagement</strong>.<br />
-                      <em className="text-gray-600">Result: higher adoption, better satisfaction, more engagement.</em>
-                    </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
+                    <strong>Relo Edge (a.k.a. Media Value Center)</strong> — Full redesign of the flagship analytics tool focused on <strong>clarity, speed, and engagement</strong>.<br />
+                    <em className="text-gray-600">Result: higher adoption, better satisfaction, more engagement.</em>
                   </div>
-                  <div className="flex items-start">
-                    <svg className="w-5 h-5 mr-3 mt-1 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                      <strong>Medable — Nucleus Design System</strong> — System for global clinical-trial products; cut inconsistency and rework while improving shipping cadence.
-                    </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-4 h-4 mr-3 mt-2 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-lg sm:text-xl md:text-xl leading-relaxed">
+                    <strong>Medable — Nucleus Design System</strong> — System for global clinical-trial products; cut inconsistency and rework while improving shipping cadence.
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Principles */}
-              <div className="bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl p-6 md:p-8 border border-gray-200">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-                  Principles
-                </h3>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                  <strong>Evidence before elegance</strong> (discovery → brief → prototype → scale/kill) • <strong>Systems thinker</strong> • <strong>Small, senior, outcomes-driven</strong> (every deliverable maps to a metric)
-                </p>
-              </div>
+            {/* Principles */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                🧠 Principles
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                <strong>Evidence before elegance</strong> (discovery → brief → prototype → scale/kill) • <strong>Systems thinker</strong> • <strong>Small, senior, outcomes-driven</strong> (every deliverable maps to a metric)
+              </p>
+            </div>
 
-              {/* Tools */}
-              <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl p-6 md:p-8 border border-yellow-100">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center">
-                  <svg className="w-6 h-6 mr-3 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-                  </svg>
-                  Tools I reach for
-                </h3>
-                <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
-                  Figma • Tokens/Storybook • <strong>MCP Server → Cursor</strong> • Claude • v0.dev • UX Pilot • Jira • Notion • Vercel
-                </p>
-              </div>
+            {/* Tools */}
+            <div className="space-y-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                🧰 Tools I reach for
+              </h3>
+              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                Figma • Tokens/Storybook • <strong>MCP Server → Cursor</strong> • Claude • v0.dev • UX Pilot • Jira • Notion • Vercel
+              </p>
+            </div>
 
-              {/* Languages */}
-              <p className="text-lg sm:text-xl md:text-xl lg:text-2xl flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 font-medium leading-relaxed">
-                <span className="flex items-center gap-2">
-                  🇺🇸 🇵🇪 💻
-                  <FontAwesomeIcon icon={faCode} className="text-gray-600 text-xl sm:text-2xl" />
-                </span>
-                <span className="text-left"><strong>Languages:</strong> English, Spanish, and—of course—<strong>HTML</strong>.</span>
+            {/* Languages */}
+            <div className="text-center">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed">
+                🇺🇸 🇵🇪 💻 <strong>Languages:</strong> English, Spanish, and—of course—<strong>HTML</strong>.
               </p>
             </div>
           </div>
