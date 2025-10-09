@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faArrowDown, faCompass, faBullseye, faBrain, faCode, faSearch, faRocket, faPaintBrush, faMap, faUsers, faCog, faBuilding, faFlask } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
@@ -20,92 +20,93 @@ const HomePage: React.FC = () => {
                 Product Design & Usability Leader
               </h1>
               
-              {/* New headline section with emoji icons */}
+              {/* Clean headline section with SVG icons */}
               <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                {/* Desktop version - flowing text with emoji icons */}
-                <div className="hidden md:block text-base text-gray-700 leading-relaxed">
+                {/* Desktop version - clean flowing text with SVG icons */}
+                <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-1">
                   <p className="mb-0">
-                    <span className="mr-1">🧭</span>
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 w-4 h-4 mr-2" />
                     <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🎯</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 w-4 h-4 mr-2" />
                     <span>Mission-Driven</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧠</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 w-4 h-4 mr-2" />
                     <span>Systems Thinker</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧑‍💻</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600 w-4 h-4 mr-2" />
                     <span>Hands-On IC → Team Builder</span>
                   </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🔎</span>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 w-4 h-4 mr-2" />
                     <span>Discovery & Research-Led</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🤖</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600 w-4 h-4 mr-2" />
                     <span>AI UX — Claude</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧩</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 w-4 h-4 mr-2" />
                     <span>Figma • MCP Server • Cursor</span>
                   </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🗺️</span>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600 w-4 h-4 mr-2" />
                     <span>Journey Mapping</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">👥</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 w-4 h-4 mr-2" />
                     <span>Human-Centric</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧱</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600 w-4 h-4 mr-2" />
                     <span>Scalable UX Systems</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🏛</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 w-4 h-4 mr-2" />
                     <span>Legacy</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧪</span>
+                    <span className="text-gray-400 mx-3">│</span>
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 w-4 h-4 mr-2" />
                     <span>Design Thinking</span>
                   </p>
                 </div>
 
-                {/* Mobile version - more compact with flowing text */}
-                <div className="md:hidden text-sm text-gray-700 leading-relaxed">
+                {/* Mobile version - clean compact layout */}
+                <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-2">
                   <p className="mb-0">
-                    <span className="mr-1">🧭</span>
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 w-4 h-4 mr-2" />
                     <span className="font-bold text-gray-900">Founding Product Design Lead</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🎯</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 w-4 h-4 mr-2" />
                     <span>Mission-Driven</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧠</span>
+                  </p>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 w-4 h-4 mr-2" />
                     <span>Systems Thinker</span>
-                  </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🧑‍💻</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600 w-4 h-4 mr-2" />
                     <span>Hands-On IC → Team Builder</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🔎</span>
-                    <span>Discovery & Research-Led</span>
                   </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🤖</span>
-                    <span>AI UX — Claude</span>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 w-4 h-4 mr-2" />
+                    <span>Discovery & Research-Led</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧩</span>
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600 w-4 h-4 mr-2" />
+                    <span>AI UX — Claude</span>
+                  </p>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 w-4 h-4 mr-2" />
                     <span>Figma • MCP Server • Cursor</span>
                   </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🗺️</span>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600 w-4 h-4 mr-2" />
                     <span>Journey Mapping</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">👥</span>
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 w-4 h-4 mr-2" />
                     <span>Human-Centric</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧱</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600 w-4 h-4 mr-2" />
                     <span>Scalable UX Systems</span>
                   </p>
-                  <p className="mb-0 mt-2">
-                    <span className="mr-1">🏛</span>
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 w-4 h-4 mr-2" />
                     <span>Legacy</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <span className="mr-1">🧪</span>
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 w-4 h-4 mr-2" />
                     <span>Design Thinking</span>
                   </p>
                 </div>
