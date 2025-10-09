@@ -22,145 +22,92 @@ const HomePage: React.FC = () => {
               
               {/* New headline section with icons */}
               <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                {/* Desktop version - horizontal with separators */}
-                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed">
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCompass} className="text-blue-600" />
+                {/* Desktop version - flowing text with inline icons */}
+                <div className="hidden md:block text-base text-gray-700 leading-relaxed">
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 mr-1" />
                     <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBullseye} className="text-green-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 mr-1" />
                     <span>Mission-Driven</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 mr-1" />
                     <span>Systems Thinker</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCode} className="text-pink-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600 mr-1" />
                     <span>Hands-On IC → Team Builder</span>
-                  </div>
-                </div>
-                
-                {/* Second row for desktop */}
-                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed mt-3">
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faSearch} className="text-orange-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 mr-1" />
                     <span>Discovery & Research-Led</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faRocket} className="text-red-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600 mr-1" />
                     <span>AI UX — Claude</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 mr-1" />
                     <span>Figma • MCP Server • Cursor</span>
-                  </div>
-                </div>
-                
-                {/* Third row for desktop */}
-                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed mt-3">
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faMap} className="text-teal-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600 mr-1" />
                     <span>Journey Mapping</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 mr-1" />
                     <span>Human-Centric</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCog} className="text-slate-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600 mr-1" />
                     <span>Scalable UX Systems</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 mr-1" />
                     <span>Legacy</span>
-                  </div>
-                  <span className="text-gray-400">|</span>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faFlask} className="text-violet-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 mr-1" />
                     <span>Design Thinking</span>
-                  </div>
+                  </p>
                 </div>
 
-                {/* Mobile version - vertical stack without separators */}
-                <div className="md:hidden space-y-3 text-sm">
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCompass} className="text-blue-600" />
+                {/* Mobile version - more compact with flowing text */}
+                <div className="md:hidden text-sm text-gray-700 leading-relaxed">
+                  <p className="mb-0">
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 mr-1" />
                     <span className="font-bold text-gray-900">Founding Product Design Lead</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBullseye} className="text-green-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 mr-1" />
                     <span>Mission-Driven</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 mr-1" />
                     <span>Systems Thinker</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCode} className="text-pink-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600 mr-1" />
                     <span>Hands-On IC → Team Builder</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faSearch} className="text-orange-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 mr-1" />
                     <span>Discovery & Research-Led</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faRocket} className="text-red-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600 mr-1" />
                     <span>AI UX — Claude</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 mr-1" />
                     <span>Figma • MCP Server • Cursor</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faMap} className="text-teal-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600 mr-1" />
                     <span>Journey Mapping</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 mr-1" />
                     <span>Human-Centric</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCog} className="text-slate-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600 mr-1" />
                     <span>Scalable UX Systems</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600" />
+                  </p>
+                  <p className="mb-0 mt-2">
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 mr-1" />
                     <span>Legacy</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faFlask} className="text-violet-600" />
+                    <span className="text-gray-400 mx-2">│</span>
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 mr-1" />
                     <span>Design Thinking</span>
-                  </div>
+                  </p>
                 </div>
               </div>
               
