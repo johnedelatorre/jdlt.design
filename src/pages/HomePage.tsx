@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Currently <strong>Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
+                Currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
               </p>
 
               {/* Relo Census */}
