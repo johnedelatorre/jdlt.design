@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faCog, faArrowDown, faCompass, faBullseye, faCode, faUsers, faBuilding, faFlask } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
@@ -20,47 +20,47 @@ const HomePage: React.FC = () => {
                 Product Design & Usability Leader
               </h1>
               
-              {/* New headline section with icons */}
+              {/* New headline section with emoji icons */}
               <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                {/* Desktop version - flowing text with inline icons */}
+                {/* Desktop version - flowing text with emoji icons */}
                 <div className="hidden md:block text-base text-gray-700 leading-relaxed">
                   <p className="mb-0">
-                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 mr-1" />
+                    <span className="mr-1">🧭</span>
                     <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 mr-1" />
+                    <span className="mr-1">🎯</span>
                     <span>Mission-Driven</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 mr-1" />
+                    <span className="mr-1">🧠</span>
                     <span>Systems Thinker</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faCode} className="text-pink-600 mr-1" />
+                    <span className="mr-1">🧑‍💻</span>
                     <span>Hands-On IC → Team Builder</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 mr-1" />
+                    <span className="mr-1">🔎</span>
                     <span>Discovery & Research-Led</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faRocket} className="text-red-600 mr-1" />
+                    <span className="mr-1">🤖</span>
                     <span>AI UX — Claude</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 mr-1" />
+                    <span className="mr-1">🧩</span>
                     <span>Figma • MCP Server • Cursor</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faMap} className="text-teal-600 mr-1" />
+                    <span className="mr-1">🗺️</span>
                     <span>Journey Mapping</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 mr-1" />
+                    <span className="mr-1">👥</span>
                     <span>Human-Centric</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faCog} className="text-slate-600 mr-1" />
+                    <span className="mr-1">🧱</span>
                     <span>Scalable UX Systems</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 mr-1" />
+                    <span className="mr-1">🏛</span>
                     <span>Legacy</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 mr-1" />
+                    <span className="mr-1">🧪</span>
                     <span>Design Thinking</span>
                   </p>
                 </div>
@@ -68,44 +68,44 @@ const HomePage: React.FC = () => {
                 {/* Mobile version - more compact with flowing text */}
                 <div className="md:hidden text-sm text-gray-700 leading-relaxed">
                   <p className="mb-0">
-                    <FontAwesomeIcon icon={faCompass} className="text-blue-600 mr-1" />
+                    <span className="mr-1">🧭</span>
                     <span className="font-bold text-gray-900">Founding Product Design Lead</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faBullseye} className="text-green-600 mr-1" />
+                    <span className="mr-1">🎯</span>
                     <span>Mission-Driven</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faBrain} className="text-purple-600 mr-1" />
+                    <span className="mr-1">🧠</span>
                     <span>Systems Thinker</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faCode} className="text-pink-600 mr-1" />
+                    <span className="mr-1">🧑‍💻</span>
                     <span>Hands-On IC → Team Builder</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faSearch} className="text-orange-600 mr-1" />
+                    <span className="mr-1">🔎</span>
                     <span>Discovery & Research-Led</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faRocket} className="text-red-600 mr-1" />
+                    <span className="mr-1">🤖</span>
                     <span>AI UX — Claude</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600 mr-1" />
+                    <span className="mr-1">🧩</span>
                     <span>Figma • MCP Server • Cursor</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faMap} className="text-teal-600 mr-1" />
+                    <span className="mr-1">🗺️</span>
                     <span>Journey Mapping</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600 mr-1" />
+                    <span className="mr-1">👥</span>
                     <span>Human-Centric</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faCog} className="text-slate-600 mr-1" />
+                    <span className="mr-1">🧱</span>
                     <span>Scalable UX Systems</span>
                   </p>
                   <p className="mb-0 mt-2">
-                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600 mr-1" />
+                    <span className="mr-1">🏛</span>
                     <span>Legacy</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    <FontAwesomeIcon icon={faFlask} className="text-violet-600 mr-1" />
+                    <span className="mr-1">🧪</span>
                     <span>Design Thinking</span>
                   </p>
                 </div>
