@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faUser, faCog, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faRocket, faSearch, faBrain, faPaintBrush, faMap, faCog, faArrowDown, faCompass, faBullseye, faCode, faUsers, faBuilding, faFlask } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 import { personalInfo } from '../data/personalInfo';
@@ -25,85 +25,141 @@ const HomePage: React.FC = () => {
                 {/* Desktop version - horizontal with separators */}
                 <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed">
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faRocket} className="text-blue-600" />
-                    <span className="font-semibold text-gray-900">Full-Stack Product Design Lead @ Relo Metrics</span>
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600" />
+                    <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faSearch} className="text-green-600" />
-                    <span>Research & Design Strategy</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600" />
+                    <span>Mission-Driven</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
-                    <span>AI-Led UX • Claude • Uizard</span>
+                    <span>Systems Thinker</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-pink-600" />
-                    <span>Figma • UX Pilot • v0.dev • Cursor</span>
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600" />
+                    <span>Hands-On IC → Team Builder</span>
+                  </div>
+                </div>
+                
+                {/* Second row for desktop */}
+                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed mt-3">
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600" />
+                    <span>Discovery & Research-Led</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faMap} className="text-orange-600" />
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600" />
+                    <span>AI UX — Claude</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600" />
+                    <span>Figma • MCP Server • Cursor</span>
+                  </div>
+                </div>
+                
+                {/* Third row for desktop */}
+                <div className="hidden md:flex flex-wrap items-center gap-3 text-base text-gray-700 leading-relaxed mt-3">
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600" />
                     <span>Journey Mapping</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faUser} className="text-red-600" />
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600" />
                     <span>Human-Centric</span>
                   </div>
                   <span className="text-gray-400">|</span>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCog} className="text-indigo-600" />
-                    <span>Scalable UX Systems • Design Thinking</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600" />
+                    <span>Scalable UX Systems</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600" />
+                    <span>Legacy</span>
+                  </div>
+                  <span className="text-gray-400">|</span>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600" />
+                    <span>Design Thinking</span>
                   </div>
                 </div>
 
                 {/* Mobile version - vertical stack without separators */}
                 <div className="md:hidden space-y-3 text-sm">
-                  <div className="flex items-start gap-2">
-                    <FontAwesomeIcon icon={faRocket} className="text-blue-600 mt-1" />
-                    <div className="flex flex-col">
-                      <span className="font-bold text-gray-900 text-lg leading-tight">Full-Stack Product Design Lead</span>
-                      <span className="font-bold text-gray-900 text-lg leading-tight">@ Relo Metrics</span>
-                    </div>
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faCompass} className="text-blue-600" />
+                    <span className="font-bold text-gray-900">Founding Product Design Lead</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faSearch} className="text-green-600" />
-                    <span>Research & Design Strategy</span>
+                    <FontAwesomeIcon icon={faBullseye} className="text-green-600" />
+                    <span>Mission-Driven</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faBrain} className="text-purple-600" />
-                    <span>AI-Led UX • Claude • Uizard</span>
+                    <span>Systems Thinker</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faPaintBrush} className="text-pink-600" />
-                    <span>Figma • UX Pilot • v0.dev • Cursor</span>
+                    <FontAwesomeIcon icon={faCode} className="text-pink-600" />
+                    <span>Hands-On IC → Team Builder</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faMap} className="text-orange-600" />
+                    <FontAwesomeIcon icon={faSearch} className="text-orange-600" />
+                    <span>Discovery & Research-Led</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faRocket} className="text-red-600" />
+                    <span>AI UX — Claude</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faPaintBrush} className="text-indigo-600" />
+                    <span>Figma • MCP Server • Cursor</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faMap} className="text-teal-600" />
                     <span>Journey Mapping</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faUser} className="text-red-600" />
+                    <FontAwesomeIcon icon={faUsers} className="text-emerald-600" />
                     <span>Human-Centric</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCog} className="text-indigo-600" />
-                    <span>Scalable UX Systems • Design Thinking</span>
+                    <FontAwesomeIcon icon={faCog} className="text-slate-600" />
+                    <span>Scalable UX Systems</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faBuilding} className="text-amber-600" />
+                    <span>Legacy</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faFlask} className="text-violet-600" />
+                    <span>Design Thinking</span>
                   </div>
                 </div>
               </div>
