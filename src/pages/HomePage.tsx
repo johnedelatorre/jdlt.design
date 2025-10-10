@@ -21,95 +21,97 @@ const HomePage: React.FC = () => {
               </h1>
               
               {/* Strategic headline section with organized categories */}
-              <div className="mb-8 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 max-w-none">
-                {/* Desktop version - organized categories with proper spacing */}
-                <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-4">
-                  <p className="mb-0">
-                    🧭 <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span>Mission • Legacy • Service</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    <span>Systems Thinker</span>
-                  </p>
-                  <p className="mb-0">
-                    🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> <span>Products & Teams Builder</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
-                  </p>
-                  <p className="mb-0">
-                    🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🗺️ <span>Journey Mapping</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    👤 <span>Personas</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    📋 <span>UX Strategy</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    👥 <span>Human-Centric</span>
-                  </p>
-                  <p className="mb-0">
-                    🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> <span>Scalable UX Systems</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🤖 <span>AI UX — Claude</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧩 <span>Figma • MCP Server • Cursor</span>
-                  </p>
-                </div>
-
-                {/* Mobile version - organized categories */}
-                <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-3">
-                  <div>
-                    <p className="mb-1">
-                      🧭 <span className="font-bold text-gray-900">WHO I AM:</span>
-                    </p>
-                    <p className="mb-0 ml-6">
-                      <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
+              <div className="mb-8 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+                <div className="max-w-7xl mx-auto">
+                  {/* Desktop version - organized categories with proper spacing */}
+                  <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-4">
+                    <p className="mb-0">
+                      🧭 <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
                       <span className="text-gray-400 mx-2">│</span>
                       <span>Mission • Legacy • Service</span>
                       <span className="text-gray-400 mx-2">│</span>
                       <span>Systems Thinker</span>
                     </p>
-                  </div>
-                  
-                  <div>
-                    <p className="mb-1">
-                      🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span>
+                    <p className="mb-0">
+                      🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> <span>Products & Teams Builder</span>
+                      <span className="text-gray-400 mx-2">│</span>
+                      <span>IC → Player-Coach → Org-Builder</span>
                     </p>
-                    <p className="mb-0 ml-6">
-                      <span>Products & Teams Builder</span>
+                    <p className="mb-0">
+                      🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
                       <span className="text-gray-400 mx-2">│</span>
-                      🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
+                      <span>Journey Mapping</span>
+                      <span className="text-gray-400 mx-2">│</span>
+                      <span>Personas</span>
+                      <span className="text-gray-400 mx-2">│</span>
+                      <span>UX Strategy</span>
+                      <span className="text-gray-400 mx-2">│</span>
+                      <span>Human-Centric</span>
                     </p>
-                  </div>
-                  
-                  <div>
-                    <p className="mb-1">
-                      🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span>
-                    </p>
-                    <p className="mb-0 ml-6">
-                      <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
+                    <p className="mb-0">
+                      🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> <span>Scalable UX Systems</span>
                       <span className="text-gray-400 mx-2">│</span>
-                      🗺️ <span>Journey Mapping</span>
+                      <span>AI UX — Claude</span>
                       <span className="text-gray-400 mx-2">│</span>
-                      👤 <span>Personas</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      📋 <span>UX Strategy</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      👥 <span>Human-Centric</span>
+                      <span>Figma • MCP Server • Cursor</span>
                     </p>
                   </div>
-                  
-                  <div>
-                    <p className="mb-1">
-                      🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span>
-                    </p>
-                    <p className="mb-0 ml-6">
-                      <span>Scalable UX Systems</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      🤖 <span>AI UX — Claude</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      🧩 <span>Figma • MCP Server • Cursor</span>
-                    </p>
+
+                  {/* Mobile version - organized categories */}
+                  <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-3">
+                    <div>
+                      <p className="mb-1">
+                        🧭 <span className="font-bold text-gray-900">WHO I AM:</span>
+                      </p>
+                      <p className="mb-0 ml-8">
+                        <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Mission • Legacy • Service</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Systems Thinker</span>
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="mb-1">
+                        🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span>
+                      </p>
+                      <p className="mb-0 ml-8">
+                        <span>Products & Teams Builder</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>IC → Player-Coach → Org-Builder</span>
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="mb-1">
+                        🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span>
+                      </p>
+                      <p className="mb-0 ml-8">
+                        <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Journey Mapping</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Personas</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>UX Strategy</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Human-Centric</span>
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="mb-1">
+                        🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span>
+                      </p>
+                      <p className="mb-0 ml-8">
+                        <span>Scalable UX Systems</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>AI UX — Claude</span>
+                        <span className="text-gray-400 mx-2">│</span>
+                        <span>Figma • MCP Server • Cursor</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
