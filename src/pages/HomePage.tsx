@@ -88,8 +88,12 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
+              </p>
+              
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales. I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
+                I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
