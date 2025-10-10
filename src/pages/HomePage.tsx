@@ -43,6 +43,10 @@ const HomePage: React.FC = () => {
                   <p className="mb-0">
                     🗺️ <span>Journey Mapping</span>
                     <span className="text-gray-400 mx-2">│</span>
+                    👤 <span>Personas</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    📋 <span>UX Strategy</span>
+                    <span className="text-gray-400 mx-2">│</span>
                     👥 <span>Human-Centric</span>
                     <span className="text-gray-400 mx-2">│</span>
                     🧱 <span>Scalable UX Systems</span>
@@ -74,11 +78,15 @@ const HomePage: React.FC = () => {
                   <p className="mb-0">
                     🗺️ <span>Journey Mapping</span>
                     <span className="text-gray-400 mx-2">│</span>
+                    👤 <span>Personas</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    📋 <span>UX Strategy</span>
+                  </p>
+                  <p className="mb-0">
                     👥 <span>Human-Centric</span>
                     <span className="text-gray-400 mx-2">│</span>
                     🧱 <span>Scalable UX Systems</span>
-                  </p>
-                  <p className="mb-0">
+                    <span className="text-gray-400 mx-2">│</span>
                     🧩 <span>Figma • MCP Server • Cursor</span>
                   </p>
                 </div>
