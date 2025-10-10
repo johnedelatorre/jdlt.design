@@ -25,20 +25,20 @@ const HomePage: React.FC = () => {
                 {/* Desktop version - flowing text with emoji glyphs */}
                 <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-2.5">
                   <p className="mb-0">
-                    🧭 <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
+                    🧭 <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    🎯 <span>Mission-Driven</span>
+                    🎯 <span>Mission • </span>🏛 <span>Legacy • </span>🤝 <span>Service</span>
                     <span className="text-gray-400 mx-2">│</span>
                     🧠 <span>Systems Thinker</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧑‍💻 <span>Hands-On IC → Team Builder</span>
                   </p>
                   <p className="mb-0">
-                    🔎 <span>Discovery & Research-Led</span>
+                    🛠️ <span>Products & Teams Builder</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
                     <span className="text-gray-400 mx-2">│</span>
                     🤖 <span>AI UX — Claude</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧩 <span>Figma • MCP Server • Cursor</span>
                   </p>
                   <p className="mb-0">
                     🗺️ <span>Journey Mapping</span>
@@ -47,31 +47,29 @@ const HomePage: React.FC = () => {
                     <span className="text-gray-400 mx-2">│</span>
                     🧱 <span>Scalable UX Systems</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    🏛 <span>Legacy</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧪 <span>Design Thinking</span>
+                    🧩 <span>Figma • MCP Server • Cursor</span>
                   </p>
                 </div>
 
                 {/* Mobile version - compact with emoji glyphs */}
                 <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-2">
                   <p className="mb-0">
-                    🧭 <span className="font-bold text-gray-900">Founding Product Design Lead</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🎯 <span>Mission-Driven</span>
+                    🧭 <span className="font-bold text-gray-900">Founding Product Design Leader</span>
                   </p>
                   <p className="mb-0">
+                    🎯 <span>Mission • </span>🏛 <span>Legacy • </span>🤝 <span>Service</span>
+                    <span className="text-gray-400 mx-2">│</span>
                     🧠 <span>Systems Thinker</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧑‍💻 <span>Hands-On IC → Team Builder</span>
                   </p>
                   <p className="mb-0">
-                    🔎 <span>Discovery & Research-Led</span>
+                    🛠️ <span>Products & Teams Builder</span>
+                    <span className="text-gray-400 mx-2">│</span>
+                    🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
+                  </p>
+                  <p className="mb-0">
+                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
                     <span className="text-gray-400 mx-2">│</span>
                     🤖 <span>AI UX — Claude</span>
-                  </p>
-                  <p className="mb-0">
-                    🧩 <span>Figma • MCP Server • Cursor</span>
                   </p>
                   <p className="mb-0">
                     🗺️ <span>Journey Mapping</span>
@@ -81,9 +79,7 @@ const HomePage: React.FC = () => {
                     🧱 <span>Scalable UX Systems</span>
                   </p>
                   <p className="mb-0">
-                    🏛 <span>Legacy</span>
-                    <span className="text-gray-400 mx-2">│</span>
-                    🧪 <span>Design Thinking</span>
+                    🧩 <span>Figma • MCP Server • Cursor</span>
                   </p>
                 </div>
               </div>
