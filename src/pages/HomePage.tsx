@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
                     <p className="mb-0">
                       🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> <span>Scalable UX Systems</span>
                       <span className="text-gray-400 mx-2">│</span>
-                      <span>AI UX — Claude</span>
+                      <span>AI Led UX — Claude</span>
                       <span className="text-gray-400 mx-2">│</span>
                       <span>Figma • MCP Server • Cursor</span>
                     </p>
@@ -107,7 +107,7 @@ const HomePage: React.FC = () => {
                       <p className="mb-0 ml-8">
                         <span>Scalable UX Systems</span>
                         <span className="text-gray-400 mx-2">│</span>
-                        <span>AI UX — Claude</span>
+                        <span>AI Led UX — Claude</span>
                         <span className="text-gray-400 mx-2">│</span>
                         <span>Figma • MCP Server • Cursor</span>
                       </p>
