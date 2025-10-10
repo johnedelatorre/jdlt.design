@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
                     <span className="text-gray-400 mx-2">│</span>
                     🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
                     <span className="text-gray-400 mx-2">│</span>
-                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
+                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • User Interviews)</em>
                     <span className="text-gray-400 mx-2">│</span>
                     🤖 <span>AI UX — Claude</span>
                   </p>
@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
                     🧑‍💻 <span>IC → Player-Coach → Org-Builder</span>
                   </p>
                   <p className="mb-0">
-                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
+                    🔎 <span>Discovery & Research-Led </span><em>(Pendo • User Interviews)</em>
                     <span className="text-gray-400 mx-2">│</span>
                     🤖 <span>AI UX — Claude</span>
                   </p>
