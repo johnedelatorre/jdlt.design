@@ -23,8 +23,8 @@ const HomePage: React.FC = () => {
               {/* Clean headline section with emoji glyphs */}
               <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
                 {/* Desktop version - flowing text with emoji glyphs */}
-                <div className="hidden md:block text-base text-gray-700 leading-relaxed">
-                  <p className="mb-1">
+                <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-2.5">
+                  <p className="mb-0">
                     🧭 <span className="font-semibold text-gray-900">Founding Product Design Lead</span>
                     <span className="text-gray-400 mx-2">│</span>
                     🎯 <span>Mission-Driven</span>
@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
                     <span className="text-gray-400 mx-2">│</span>
                     🧑‍💻 <span>Hands-On IC → Team Builder</span>
                   </p>
-                  <p className="mb-1">
+                  <p className="mb-0">
                     🔎 <span>Discovery & Research-Led</span>
                     <span className="text-gray-400 mx-2">│</span>
                     🤖 <span>AI UX — Claude</span>
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
                 </div>
 
                 {/* Mobile version - compact with emoji glyphs */}
-                <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-1">
+                <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-2">
                   <p className="mb-0">
                     🧭 <span className="font-bold text-gray-900">Founding Product Design Lead</span>
                     <span className="text-gray-400 mx-2">│</span>
