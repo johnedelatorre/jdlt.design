@@ -4,9 +4,11 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 'relo-census-dashboard',
     title: 'Relo Census',
-    subtitle: 'Sports Analytics Dashboard Builder',
+    subtitle: 'Building a New Sports Sponsorship Analytics Platform (0→1)',
     client: 'Relo Metrics',
-    role: 'Product Design Lead',
+    role: 'Founding Product Design Lead (IC → Player-Coach → Coach → Org-Builder)',
+    scope: 'Create a new recurring-revenue stream by productizing sponsorship insights into a self-serve experience.',
+    outcome: 'Established the first UX practice; shipped MVP in ~60 days',
     year: '2023 - 2024',
     tools: ['Figma', 'UXPilot', 'Vercel'],
     tags: ['Sports Analytics', 'Data Platform', 'Sponsorship'],

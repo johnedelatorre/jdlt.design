@@ -259,24 +259,47 @@ const CaseStudyPage: React.FC = () => {
             </h1>
             <p className="text-white text-lg lg:text-xl mb-8 opacity-90">{caseStudy.subtitle}</p>
             
-            <div className="grid grid-cols-2 gap-6 text-white mb-8">
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Client</span>
-                <p className="text-white text-lg font-semibold">{caseStudy.client}</p>
+            {/* Check if this case study has the new format (scope and outcome fields) */}
+            {caseStudy.scope && caseStudy.outcome ? (
+              <div className="space-y-6 text-white mb-8">
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Role</span>
+                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.role}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Scope</span>
+                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.scope}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Outcome</span>
+                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.outcome}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Year</span>
+                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.year}</p>
+                </div>
               </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Role</span>
-                <p className="text-white text-lg font-semibold">{caseStudy.role}</p>
+            ) : (
+              /* Fallback to original 2x2 grid layout for other case studies */
+              <div className="grid grid-cols-2 gap-6 text-white mb-8">
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Client</span>
+                  <p className="text-white text-lg font-semibold">{caseStudy.client}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Role</span>
+                  <p className="text-white text-lg font-semibold">{caseStudy.role}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Year</span>
+                  <p className="text-white text-lg font-semibold">{caseStudy.year}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Tools</span>
+                  <p className="text-white text-lg font-semibold">{caseStudy.tools.join(', ')}</p>
+                </div>
               </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Year</span>
-                <p className="text-white text-lg font-semibold">{caseStudy.year}</p>
-              </div>
-              <div>
-                <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-1">Tools</span>
-                <p className="text-white text-lg font-semibold">{caseStudy.tools.join(', ')}</p>
-              </div>
-            </div>
+            )}
 
             {/* Interactive Prototype Button */}
             {caseStudy.figmaLink && (

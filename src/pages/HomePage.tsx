@@ -287,9 +287,19 @@ const HomePage: React.FC = () => {
                       
                       {/* Meta Info */}
                       <div className="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
-                        <span>•</span>
-                        <span>{caseStudy.year}</span>
+                        {caseStudy.scope && caseStudy.outcome ? (
+                          <>
+                            <span><span className="font-medium">Role:</span> {caseStudy.role.split(' (')[0]}</span>
+                            <span>•</span>
+                            <span>{caseStudy.year}</span>
+                          </>
+                        ) : (
+                          <>
+                            <span><span className="font-medium">Client:</span> {caseStudy.client}</span>
+                            <span>•</span>
+                            <span>{caseStudy.year}</span>
+                          </>
+                        )}
                       </div>
                       
                       {/* Tags */}

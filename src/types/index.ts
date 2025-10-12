@@ -12,6 +12,8 @@ export interface CaseStudy {
   subtitle: string;
   client: string;
   role: string;
+  scope?: string;
+  outcome?: string;
   year: string;
   tools: string[];
   tags: string[];

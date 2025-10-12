@@ -36,10 +36,20 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
             <h3 className="font-serif text-xl font-semibold mb-2">{caseStudy.title}</h3>
             <p className="text-sm mb-3">{caseStudy.subtitle}</p>
             <div className="text-xs space-y-1">
-              <p><span className="font-medium">Client:</span> {caseStudy.client}</p>
-              <p><span className="font-medium">Role:</span> {caseStudy.role}</p>
-              <p><span className="font-medium">Year:</span> {caseStudy.year}</p>
-              <p><span className="font-medium">Tools:</span> {caseStudy.tools.join(', ')}</p>
+              {caseStudy.scope && caseStudy.outcome ? (
+                <>
+                  <p><span className="font-medium">Role:</span> {caseStudy.role}</p>
+                  <p><span className="font-medium">Scope:</span> {caseStudy.scope}</p>
+                  <p><span className="font-medium">Outcome:</span> {caseStudy.outcome}</p>
+                </>
+              ) : (
+                <>
+                  <p><span className="font-medium">Client:</span> {caseStudy.client}</p>
+                  <p><span className="font-medium">Role:</span> {caseStudy.role}</p>
+                  <p><span className="font-medium">Year:</span> {caseStudy.year}</p>
+                  <p><span className="font-medium">Tools:</span> {caseStudy.tools.join(', ')}</p>
+                </>
+              )}
             </div>
           </div>
         </div>
