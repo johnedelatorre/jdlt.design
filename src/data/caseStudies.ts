@@ -745,9 +745,9 @@ export const caseStudies: CaseStudy[] = [
               <thead>
                 <tr>
                   <th class="bg-teal-600 text-white text-left p-4 text-xl font-bold border-r border-white w-1/5">Release</th>
-                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold border-r border-white">How Might We...?</th>
-                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold border-r border-white">Solution</th>
-                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold">Component</th>
+                  <th class="bg-gray-300 text-gray-900 text-left p-4 text-xl font-bold border-r border-gray-400">How Might We...?</th>
+                  <th class="bg-gray-300 text-gray-900 text-left p-4 text-xl font-bold border-r border-gray-400">Solution</th>
+                  <th class="bg-gray-300 text-gray-900 text-left p-4 text-xl font-bold">Component</th>
                 </tr>
               </thead>
               <tbody>
@@ -758,35 +758,44 @@ export const caseStudies: CaseStudy[] = [
                     <div class="text-lg mb-1">Foundation (Now)</div>
                     <div class="text-sm italic">MVP shipped in 60 days</div>
                   </td>
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Reduce friction with persona-driven entry points</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-user-friends text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Reduce friction with persona-driven entry points</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">3 persona tabs (Rights Holders / Brands / Placements)</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Tab navigation with role-specific data views</p>
                   </td>
                 </tr>
                 <tr class="border-b border-gray-200">
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Make sponsorship data instantly explorable</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-search text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Make sponsorship data instantly explorable</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Real-time fast filters for key dimensions</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Sticky top filter bar</p>
                   </td>
                 </tr>
                 <tr class="border-b border-gray-300">
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Lower training burden for CS and users</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-graduation-cap text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Lower training burden for CS and users</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Navigation that matches user mental models</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Deep-dive drawer for focused detail without losing context</p>
                   </td>
                 </tr>
@@ -797,24 +806,30 @@ export const caseStudies: CaseStudy[] = [
                     <div class="font-bold text-xl mb-2">Release 2 —</div>
                     <div class="text-lg">Intelligence (Next)</div>
                   </td>
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Let users save & reuse workflows</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-save text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Let users save & reuse workflows</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Build-a-View with saved queries and persistent views</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Query views builder with instant data views + Saved Views list</p>
                   </td>
                 </tr>
                 <tr class="border-b border-gray-300">
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Enable meaningful comparisons across assets/partners/placements</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-balance-scale text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Enable meaningful comparisons across assets/partners/placements</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Standardized placement taxonomy for consistent comparisons</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Deeper filter parameters in Build-a-View</p>
                   </td>
                 </tr>
@@ -825,35 +840,41 @@ export const caseStudies: CaseStudy[] = [
                     <div class="font-bold text-xl mb-2">Release 3 —</div>
                     <div class="text-lg">Platform (Later)</div>
                   </td>
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Give each client type a clear, customized ROI view</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-chart-pie text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Give each client type a clear, customized ROI view</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Build dashboards from Saved Views</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Drag-and-drop dashboard builder</p>
                   </td>
                 </tr>
                 <tr class="border-b border-gray-200">
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Show KPIs immediately for recurring storytelling/reviews</p>
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
+                    <div class="flex items-start gap-2">
+                      <i class="fas fa-chart-line text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                      <p class="text-gray-700 text-lg">Show KPIs immediately for recurring storytelling/reviews</p>
+                    </div>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Pre-built view library to jump-start narratives</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Shareable dashboards for teams</p>
                   </td>
                 </tr>
                 <tr>
-                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">&nbsp;</p>
                   </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                  <td class="p-4 bg-gray-100 border-r border-gray-200 align-top">
                     <p class="text-gray-700 text-lg">Ability to share saved dashboards with team</p>
                   </td>
-                  <td class="p-4 bg-gray-50 align-top">
+                  <td class="p-4 bg-gray-100 align-top">
                     <p class="text-gray-700 text-lg">Auto data updates for recurrent views</p>
                   </td>
                 </tr>
