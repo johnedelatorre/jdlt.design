@@ -344,9 +344,9 @@ export const caseStudies: CaseStudy[] = [
               </div>
             </div>
             
-            <div class="text-sm text-gray-700 italic border-l-4 border-blue-300 pl-4 py-3 bg-blue-50 rounded-r">
-              <strong>Resulting focus</strong> Make the first credible answer fast and defensible; enable reuse (Saved Views); keep metrics explainable.
-            </div>
+                <div class="text-lg text-gray-800 font-semibold border-l-4 border-blue-500 pl-6 py-4 bg-blue-100 rounded-r shadow-sm">
+                  <strong>Resulting focus:</strong> Make the first credible answer fast and defensible; enable reuse (Saved Views); keep metrics explainable.
+                </div>
           </div>
         </div>
         
