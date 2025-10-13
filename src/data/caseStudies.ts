@@ -741,7 +741,7 @@ export const caseStudies: CaseStudy[] = [
           <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Discovery to Product Roadmap</h3>
           
           <div class="overflow-x-auto">
-            <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+            <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm border border-gray-300">
               <thead>
                 <tr>
                   <th class="bg-teal-600 text-white text-left p-4 text-xl font-bold border-r border-white w-1/5">Release</th>
@@ -836,7 +836,7 @@ export const caseStudies: CaseStudy[] = [
                 
                 <!-- Release 3: Platform (Later) -->
                 <tr class="border-b border-gray-200">
-                  <td class="bg-teal-500 text-white p-4 align-top border-r border-white" rowspan="3">
+                  <td class="bg-teal-500 text-white p-4 align-top border-r border-white" rowspan="2">
                     <div class="font-bold text-xl mb-2">Release 3 —</div>
                     <div class="text-lg">Platform (Later)</div>
                   </td>
@@ -853,7 +853,7 @@ export const caseStudies: CaseStudy[] = [
                     <p class="text-gray-700 text-lg">Drag-and-drop dashboard builder</p>
                   </td>
                 </tr>
-                <tr class="border-b border-gray-200">
+                <tr>
                   <td class="p-4 bg-white border-r border-gray-200 align-top">
                     <div class="flex items-start gap-2">
                       <i class="fas fa-chart-line text-teal-600 text-sm mt-1 flex-shrink-0"></i>
@@ -865,17 +865,6 @@ export const caseStudies: CaseStudy[] = [
                   </td>
                   <td class="p-4 bg-white align-top">
                     <p class="text-gray-700 text-lg">Shareable dashboards for teams</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">&nbsp;</p>
-                  </td>
-                  <td class="p-4 bg-white border-r border-gray-200 align-top">
-                    <p class="text-gray-700 text-lg">Ability to share saved dashboards with team</p>
-                  </td>
-                  <td class="p-4 bg-white align-top">
-                    <p class="text-gray-700 text-lg">Auto data updates for recurrent views</p>
                   </td>
                 </tr>
               </tbody>
