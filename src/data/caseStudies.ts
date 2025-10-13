@@ -129,6 +129,85 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
 
+        <div class="process-steps flex items-center justify-center gap-4 mb-12">
+          
+          <!-- IC -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-4">
+              <div class="w-16 h-16 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-user text-white text-lg"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-sm font-bold text-gray-900 mb-2">IC</h4>
+            <div class="step-description space-y-1 text-xs text-gray-600">
+              <p>Discovery & Research</p>
+              <p>Persona Development</p>
+              <p>Problem Framing</p>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex items-center">
+            <i class="fas fa-arrow-right text-gray-400 text-lg"></i>
+          </div>
+
+          <!-- Player-Coach -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-4">
+              <div class="w-16 h-16 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-users text-white text-lg"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-sm font-bold text-gray-900 mb-2">Player</h4>
+            <div class="step-description space-y-1 text-xs text-gray-600">
+              <p>Strategic Alignment</p>
+              <p>Product KRs</p>
+              <p>Roadmap Sequencing</p>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex items-center">
+            <i class="fas fa-arrow-right text-gray-400 text-lg"></i>
+          </div>
+
+          <!-- Coach -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-4">
+              <div class="w-16 h-16 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-clipboard-list text-white text-lg"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-sm font-bold text-gray-900 mb-2">Coach</h4>
+            <div class="step-description space-y-1 text-xs text-gray-600">
+              <p>Decision Principles</p>
+              <p>Quality Standards</p>
+              <p>Team Alignment</p>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex items-center">
+            <i class="fas fa-arrow-right text-gray-400 text-lg"></i>
+          </div>
+
+          <!-- Org-Builder -->
+          <div class="process-step text-center">
+            <div class="step-icon-container mb-4">
+              <div class="w-16 h-16 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-building text-white text-lg"></i>
+              </div>
+            </div>
+            <h4 class="step-title text-sm font-bold text-gray-900 mb-2">Org-Builder</h4>
+            <div class="step-description space-y-1 text-xs text-gray-600">
+              <p>Design System</p>
+              <p>Product Scorecard</p>
+              <p>Working Rules</p>
+            </div>
+          </div>
+
+        </div>
+
         <!-- Leadership Arc Details -->
         <div class="process-details bg-gray-50 rounded-xl p-8">
           <div class="space-y-8">
@@ -219,15 +298,6 @@ export const caseStudies: CaseStudy[] = [
                   <span>Working rules & handoff: single naming convention, reuse-first, clear add-pattern criteria, brief spec checklist + weekly design–eng sync</span>
                 </li>
               </ul>
-            </div>
-          </div>
-          
-          <div class="mt-8 p-6 bg-blue-50 border-l-4 border-blue-300 rounded-r">
-            <div class="flex items-start gap-3">
-              <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <p class="text-gray-700 leading-relaxed">
-                <strong>Leadership progression:</strong> This arc shows how I evolved from executing research and design work to building the organizational systems that enable sustainable design excellence—proving that great design leaders don't just ship products, they build the capabilities for teams to ship great products consistently.
-              </p>
             </div>
           </div>
         </div>
