@@ -459,6 +459,60 @@ export const caseStudies: CaseStudy[] = [
               <!-- Personas viewer will be rendered as React component -->
             </div>
           
+          <!-- Key Learnings -->
+          <div class="key-learnings-section mt-10">
+            <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6">
+              <i class="fas fa-graduation-cap text-blue-600"></i>
+              Key Learnings
+            </h3>
+            
+            <div class="learnings-grid grid md:grid-cols-2 gap-6">
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">1. Persona-first landing (hypothesis)</h4>
+                <p class="text-gray-300 leading-relaxed">Interviewees asked for three tabs (Brands / Agencies / Placement Types)</p>
+              </div>
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">2. Real-time deep filtering (hypothesis)</h4>
+                <p class="text-gray-300 leading-relaxed">Users asked for a real-time deep filter experience with a clickable deeper dive to go beyond the first answer.</p>
+              </div>
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">3. Users want control</h4>
+                <p class="text-gray-300 leading-relaxed">"Create and save custom views like Pendo" – repeated request from internal stakeholders</p>
+              </div>
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">4. Save Work, Don't Repeat</h4>
+                <p class="text-gray-300 leading-relaxed">Agencies, Brands and Rightsholders wanted saved queries for sponsorship opportunities and KPIs</p>
+              </div>
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">5. Progressive Complexity</h4>
+                <p class="text-gray-300 leading-relaxed">Start with filters → Build views → Create dashboards and share with teams and upper management</p>
+              </div>
+              
+              <div class="learning-card bg-gray-800 text-white rounded-lg p-6 border border-gray-700">
+                <h4 class="font-bold text-lg mb-3">6. Competitive Inspiration</h4>
+                <p class="text-gray-300 leading-relaxed">Pendo's query builder validated as industry standard for giving users autonomy of custom views and dashboards</p>
+              </div>
+              
+            </div>
+            
+            <div class="opportunities-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-lightbulb text-green-600"></i>
+                The Opportunities
+              </h4>
+              <div class="space-y-3 text-gray-700">
+                <p class="leading-relaxed"><strong>Persona-based MVP:</strong> 3 tabs (Brands / Agencies / Placement Types) landing in Data Explorer with a fast, deep filter and click-to-go-deeper.</p>
+                <p class="leading-relaxed"><strong>Views:</strong> Let users create, save, and share views so work persists and circulates.</p>
+                <p class="leading-relaxed"><strong>Dashboards:</strong> Enable custom dashboards built from saved views for recurring stories and reviews.</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     `,
