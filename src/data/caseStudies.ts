@@ -425,15 +425,8 @@ export const caseStudies: CaseStudy[] = [
           </div>
           
           <!-- Personas -->
-          <div class="personas-card bg-purple-50 border border-purple-200 rounded-lg p-6 mt-6">
-            <h4 class="font-semibold text-gray-900 mb-6 flex items-center gap-3">
-              <i class="fas fa-users text-purple-600"></i>
-              Personas
-            </h4>
-            
-            <div class="personas-viewer-placeholder">
-              <!-- Personas viewer will be rendered as React component -->
-            </div>
+          <div class="personas-viewer-placeholder">
+            <!-- Personas viewer will be rendered as React component -->
           </div>
           
           <!-- Key Discovery -->
