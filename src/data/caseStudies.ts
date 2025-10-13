@@ -124,132 +124,172 @@ export const caseStudies: CaseStudy[] = [
       <div class="design-process-content">
         <div class="process-header mb-10">
           <div class="flex items-center gap-4 mb-8">
-            <h3 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">Design Process</h3>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 uppercase tracking-wide">Role & Leadership Arc</h3>
             <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
           </div>
           <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
-            Census required a custom approach focused on establishing UX as a strategic discipline while shipping across 6 months with 4 realistic releases. Starting with the end vision and working backwards, we ensured sustainable delivery without fatiguing our 2-person engineering team.
+            <strong>IC → Player → Coach → Org-Builder</strong>
           </p>
         </div>
 
         <div class="process-steps grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
-          <!-- Evangelize UX -->
+          <!-- Individual Contributor -->
           <div class="process-step text-center">
             <div class="step-icon-container mb-6">
               <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-handshake text-white text-2xl"></i>
+                <i class="fas fa-user text-white text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Evangelize UX</h4>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Individual Contributor (IC)</h4>
             <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Embedded with Engineering</p>
-              <p>Design Operations Setup</p>
-              <p>Cultural Transformation</p>
+              <p>Discovery & Research</p>
+              <p>Persona Development</p>
+              <p>Problem Framing</p>
             </div>
           </div>
 
-          <!-- Research Foundation -->
+          <!-- Player-Coach -->
           <div class="process-step text-center">
             <div class="step-icon-container mb-6">
               <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
                 <i class="fas fa-users text-white text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Research Foundation</h4>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Player-Coach</h4>
             <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Qualitative Interviews</p>
-              <p>Three Primary Personas</p>
-              <p>Behavior-Driven Architecture</p>
+              <p>Strategic Alignment</p>
+              <p>Product KRs</p>
+              <p>Roadmap Sequencing</p>
             </div>
           </div>
 
-          <!-- System Implementation -->
+          <!-- Coach -->
           <div class="process-step text-center">
             <div class="step-icon-container mb-6">
               <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-cubes text-white text-2xl"></i>
+                <i class="fas fa-clipboard-list text-white text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">System Building</h4>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Coach</h4>
             <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Ant Design + Custom Components</p>
-              <p>Developer-Ready Specs</p>
-              <p>Modular Architecture</p>
+              <p>Decision Principles</p>
+              <p>Quality Standards</p>
+              <p>Team Alignment</p>
             </div>
           </div>
 
-          <!-- Prototype-Led Development -->
+          <!-- Org-Builder -->
           <div class="process-step text-center">
             <div class="step-icon-container mb-6">
               <div class="w-20 h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-rocket text-white text-2xl"></i>
+                <i class="fas fa-building text-white text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Release Planning</h4>
+            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Org-Builder</h4>
             <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>v0.dev + Cursor Tools</p>
-              <p>4 Strategic Releases</p>
-              <p>6-Month Delivery</p>
+              <p>Design System</p>
+              <p>Product Scorecard</p>
+              <p>Working Rules</p>
             </div>
           </div>
 
         </div>
 
-        <!-- Process Details -->
+        <!-- Leadership Arc Details -->
         <div class="process-details bg-gray-50 rounded-xl p-8">
-          <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-            <i class="fas fa-route text-blue-600"></i>
-            The Census Transformation Strategy
+          <h4 class="font-serif text-xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+            <i class="fas fa-arrow-up text-blue-600"></i>
+            Leadership Evolution & Impact
           </h4>
           
           <div class="grid md:grid-cols-2 gap-8">
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                <i class="fas fa-lightbulb text-blue-600 text-sm"></i>
-                Vision-First Foundation (Month 1-2)
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-user text-blue-600 text-sm"></i>
+                Individual Contributor (IC)
               </h5>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Started with complete end-state vision, then worked backwards to 4 releases</span>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-search text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Ran discovery (interviews, usage/request audit, competitive scan)</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Embedded with 2-person engineering team to assess realistic capacity</span>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-user-friends text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Synthesized into personas, first decisions, and a clear problem frame</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Conducted interviews with CS, Marketing, and select clients</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Built three validated personas: Stakeholder, Brands, Agencies</span>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-sitemap text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Drafted initial IA and flows to organize the problem space</span>
                 </li>
               </ul>
             </div>
             
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                <i class="fas fa-shipping-fast text-emerald-600 text-sm"></i>
-                Strategic Release Delivery (Month 3-6)
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-users text-emerald-600 text-sm"></i>
+                Player-Coach
               </h5>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Delivered 4 strategic releases without engineer burnout or quality compromise</span>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-lightbulb text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Turned insights into How-Might-We prompts and Jobs-To-Be-Done (by persona)</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Used v0.dev and Cursor for interactive prototype validation each release</span>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-link text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Connected product goals to the subscription revenue strategy</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Architected modular component system with Ant Design primitives</span>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-chart-line text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Set simple product KRs: more starts, faster first answer, deeper use, fewer support tickets</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-circle text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span>Personas drove architecture, filtering logic, and default experiences</span>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-road text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Sequenced a Now → Next → Later roadmap; aligned PM/Eng/CS on acceptance criteria</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mt-8">
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-clipboard-list text-indigo-600 text-sm"></i>
+                Coach
+              </h5>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-balance-scale text-indigo-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Defined decision principles and trade-offs</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-clock text-indigo-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Set review & testing cadence and clear quality bars (performance, states, clarity)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-handshake text-indigo-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Kept teams aligned with short, regular check-ins and written decisions</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-group">
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-sm"></i>
+                Org-Builder
+              </h5>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-cubes text-amber-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Built the design system so engineers ship faster and stay consistent (tokens, components, patterns, spec templates)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-chart-bar text-amber-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Set a simple product scorecard tied to goals (more starts, faster first answer, more save/share) to track adoption and value</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-cogs text-amber-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Working rules & handoff: single naming convention, reuse-first, clear add-pattern criteria, brief spec checklist + weekly design–eng sync</span>
                 </li>
               </ul>
             </div>
@@ -259,7 +299,7 @@ export const caseStudies: CaseStudy[] = [
             <div class="flex items-start gap-3">
               <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
               <p class="text-gray-700 leading-relaxed">
-                <strong>The key insight:</strong> By starting with the end vision and working backwards to 4 realistic releases over 6 months, we proved that sustainable delivery protects engineering teams while still achieving ambitious product transformation. The backward-planning approach prevented scope creep and engineer fatigue.
+                <strong>Leadership progression:</strong> This arc shows how I evolved from executing research and design work to building the organizational systems that enable sustainable design excellence—proving that great design leaders don't just ship products, they build the capabilities for teams to ship great products consistently.
               </p>
             </div>
           </div>
