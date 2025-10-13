@@ -289,11 +289,6 @@ export const caseStudies: CaseStudy[] = [
     situation: `
       <div class="situation-content">
         <div class="brief-section mb-8">
-          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-search text-blue-600"></i>
-            Discovery — Strategy
-          </h3>
-          
           <div class="mb-8">
             <div class="mb-6">
               <p class="text-gray-700 leading-relaxed">Large, credible dataset; insight path was slow and opaque for non-analysts.</p>
