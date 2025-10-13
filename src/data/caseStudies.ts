@@ -424,11 +424,6 @@ export const caseStudies: CaseStudy[] = [
             
           </div>
           
-          <!-- Personas -->
-          <div class="personas-viewer-placeholder">
-            <!-- Personas viewer will be rendered as React component -->
-          </div>
-          
           <!-- Key Discovery -->
           <div class="key-discovery-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
             <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
@@ -457,6 +452,11 @@ export const caseStudies: CaseStudy[] = [
                 <span><strong>Trust requires clarity:</strong> explainable KPI/ROI (from Looker on VideoAmp). (Reduces "what does this metric mean?")</span>
               </li>
             </ul>
+          </div>
+          
+          <!-- Personas -->
+          <div class="personas-viewer-placeholder">
+            <!-- Personas viewer will be rendered as React component -->
           </div>
           
         </div>
