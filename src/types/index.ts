@@ -21,6 +21,7 @@ export interface CaseStudy {
   projectBrief: string;
   designProcess?: string;
   situation: string;
+  defineProblem?: string;
   task: string;
   action: string;
   result: string;

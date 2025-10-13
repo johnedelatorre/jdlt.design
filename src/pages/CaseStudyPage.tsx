@@ -445,6 +445,22 @@ const CaseStudyPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Define The Problem */}
+          {caseStudy.defineProblem && (
+            <div className="mb-16">
+              <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-blue-600" />
+                  Define The Problem
+                </h2>
+                <div 
+                  className="text-lg text-gray-700 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: caseStudy.defineProblem }}
+                />
+              </div>
+            </div>
+          )}
+
           {/* Task */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
