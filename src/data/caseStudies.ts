@@ -960,13 +960,8 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
-                <img 
-                  src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20A.png" 
-                  alt="Option A: Top Filter Bar Wireframe" 
-                  class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                />
-                <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+              <div class="wireframe-preview-placeholder" data-image-index="0">
+                <!-- Wireframe A will be rendered as React component -->
               </div>
             </div>
             
@@ -1034,13 +1029,8 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
-                <img 
-                  src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20B.png" 
-                  alt="Option B: Side Panel Filter Wireframe" 
-                  class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                />
-                <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+              <div class="wireframe-preview-placeholder" data-image-index="1">
+                <!-- Wireframe B will be rendered as React component -->
               </div>
             </div>
             
@@ -1290,6 +1280,8 @@ export const caseStudies: CaseStudy[] = [
       </div>
     `,
     images: [
+      '/images/case-studies/relo-census/Relo Census Test Option A.png',
+      '/images/case-studies/relo-census/Relo Census Test Option B.png',
       '/images/case-studies/relo-census/Relo Census Login Page.png',
       '/images/case-studies/relo-census/Sponsorship Evaluation Dashboard.png',
       '/images/case-studies/relo-census/Evaluation with Filters.png',
