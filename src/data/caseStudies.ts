@@ -124,90 +124,19 @@ export const caseStudies: CaseStudy[] = [
       <div class="design-process-content">
         <div class="process-header mb-10">
           <div class="flex items-center gap-4 mb-8">
-            <h3 class="font-serif text-2xl font-bold text-gray-900 uppercase tracking-wide">Role & Leadership Arc</h3>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 uppercase tracking-wide">Design and Usability Strategy</h3>
             <div class="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
           </div>
-          <p class="text-lg text-gray-600 leading-relaxed max-w-4xl">
-            <strong>IC → Player → Coach → Org-Builder</strong>
-          </p>
-        </div>
-
-        <div class="process-steps grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          
-          <!-- Individual Contributor -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-user text-white text-2xl"></i>
-              </div>
-            </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Individual Contributor (IC)</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Discovery & Research</p>
-              <p>Persona Development</p>
-              <p>Problem Framing</p>
-            </div>
-          </div>
-
-          <!-- Player-Coach -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-users text-white text-2xl"></i>
-              </div>
-            </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Player-Coach</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Strategic Alignment</p>
-              <p>Product KRs</p>
-              <p>Roadmap Sequencing</p>
-            </div>
-          </div>
-
-          <!-- Coach -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-clipboard-list text-white text-2xl"></i>
-              </div>
-            </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Coach</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Decision Principles</p>
-              <p>Quality Standards</p>
-              <p>Team Alignment</p>
-            </div>
-          </div>
-
-          <!-- Org-Builder -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-building text-white text-2xl"></i>
-              </div>
-            </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Org-Builder</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
-              <p>Design System</p>
-              <p>Product Scorecard</p>
-              <p>Working Rules</p>
-            </div>
-          </div>
-
         </div>
 
         <!-- Leadership Arc Details -->
         <div class="process-details bg-gray-50 rounded-xl p-8">
-          <h4 class="font-serif text-xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-            <i class="fas fa-arrow-up text-blue-600"></i>
-            Leadership Evolution & Impact
-          </h4>
-          
-          <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-8">
+            
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-user text-blue-600 text-sm"></i>
-                Individual Contributor (IC)
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-user text-blue-600"></i>
+                IC
               </h5>
               <ul class="space-y-3 text-gray-700">
                 <li class="flex items-start gap-3">
@@ -226,8 +155,8 @@ export const caseStudies: CaseStudy[] = [
             </div>
             
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-users text-emerald-600 text-sm"></i>
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-users text-emerald-600"></i>
                 Player-Coach
               </h5>
               <ul class="space-y-3 text-gray-700">
@@ -249,12 +178,10 @@ export const caseStudies: CaseStudy[] = [
                 </li>
               </ul>
             </div>
-          </div>
 
-          <div class="grid md:grid-cols-2 gap-8 mt-8">
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-clipboard-list text-indigo-600 text-sm"></i>
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-clipboard-list text-indigo-600"></i>
                 Coach
               </h5>
               <ul class="space-y-3 text-gray-700">
@@ -274,8 +201,8 @@ export const caseStudies: CaseStudy[] = [
             </div>
             
             <div class="detail-group">
-              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-building text-amber-600 text-sm"></i>
+              <h5 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-building text-amber-600"></i>
                 Org-Builder
               </h5>
               <ul class="space-y-3 text-gray-700">
