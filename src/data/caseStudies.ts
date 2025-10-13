@@ -960,7 +960,7 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-preview-placeholder" data-image-index="0">
+              <div class="wireframe-a-placeholder">
                 <!-- Wireframe A will be rendered as React component -->
               </div>
             </div>
@@ -1029,7 +1029,7 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-preview-placeholder" data-image-index="1">
+              <div class="wireframe-b-placeholder">
                 <!-- Wireframe B will be rendered as React component -->
               </div>
             </div>

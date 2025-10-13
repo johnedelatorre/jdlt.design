@@ -485,52 +485,55 @@ const CaseStudyPage: React.FC = () => {
               {(() => {
                 if (caseStudy.id === 'relo-census-dashboard') {
                   // Split by wireframe placeholders
-                  const wireframeAPattern = '              <div class="wireframe-preview-placeholder" data-image-index="0">\n                <!-- Wireframe A will be rendered as React component -->\n              </div>';
-                  const wireframeBPattern = '              <div class="wireframe-preview-placeholder" data-image-index="1">\n                <!-- Wireframe B will be rendered as React component -->\n              </div>';
+                  const wireframeAPattern = '              <div class="wireframe-a-placeholder">\n                <!-- Wireframe A will be rendered as React component -->\n              </div>';
+                  const wireframeBPattern = '              <div class="wireframe-b-placeholder">\n                <!-- Wireframe B will be rendered as React component -->\n              </div>';
                   
                   let content = caseStudy.task;
-                  const partsA = content.split(wireframeAPattern);
                   
-                  if (partsA.length === 2) {
-                    const beforeA = partsA[0];
-                    const afterA = partsA[1];
-                    const partsB = afterA.split(wireframeBPattern);
-                    
-                    if (partsB.length === 2) {
-                      const betweenAB = partsB[0];
-                      const afterB = partsB[1];
-                      
-                      return (
-                        <div className="text-lg text-gray-700 leading-relaxed">
-                          <div dangerouslySetInnerHTML={{ __html: beforeA }} />
-                          <div 
-                            className="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity"
-                            onClick={() => openModal(0)}
-                          >
-                            <img 
-                              src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20A.png" 
-                              alt="Option A: Top Filter Bar Wireframe" 
-                              className="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                            />
-                            <p className="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
-                          </div>
-                          <div dangerouslySetInnerHTML={{ __html: betweenAB }} />
-                          <div 
-                            className="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity"
-                            onClick={() => openModal(1)}
-                          >
-                            <img 
-                              src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20B.png" 
-                              alt="Option B: Side Panel Filter Wireframe" 
-                              className="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                            />
-                            <p className="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
-                          </div>
-                          <div dangerouslySetInnerHTML={{ __html: afterB }} />
-                        </div>
-                      );
-                    }
-                  }
+                  // Replace wireframe A
+                  content = content.replace(
+                    wireframeAPattern,
+                    `<div class="cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="a">
+                      <img 
+                        src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20A.png" 
+                        alt="Option A: Top Filter Bar Wireframe" 
+                        class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
+                      />
+                      <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+                    </div>`
+                  );
+                  
+                  // Replace wireframe B
+                  content = content.replace(
+                    wireframeBPattern,
+                    `<div class="cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="b">
+                      <img 
+                        src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20B.png" 
+                        alt="Option B: Side Panel Filter Wireframe" 
+                        class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
+                      />
+                      <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+                    </div>`
+                  );
+                  
+                  return (
+                    <div 
+                      className="text-lg text-gray-700 leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: content }}
+                      onClick={(e) => {
+                        const target = e.target as HTMLElement;
+                        const wireframeDiv = target.closest('[data-wireframe]');
+                        if (wireframeDiv) {
+                          const wireframeType = wireframeDiv.getAttribute('data-wireframe');
+                          if (wireframeType === 'a') {
+                            openModal(0);
+                          } else if (wireframeType === 'b') {
+                            openModal(1);
+                          }
+                        }
+                      }}
+                    />
+                  );
                 }
                 
                 // Fallback for other case studies
