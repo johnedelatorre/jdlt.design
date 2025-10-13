@@ -881,6 +881,174 @@ export const caseStudies: CaseStudy[] = [
     
     task: `
       <div class="task-content">
+        
+        <!-- Early Wireframe Exploration -->
+        <div class="wireframe-exploration mb-12">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">Early Wireframe Exploration</h3>
+          
+          <p class="text-lg text-gray-700 leading-relaxed mb-8">
+            <strong>Early Exploration Method:</strong> Rapidly prototyped and tested three distinct approaches using UXPilot.ai before committing to hi-fi.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Option A: Top Filter Bar -->
+            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+              <h4 class="font-bold text-xl text-gray-900 mb-4">Option 1: Top Filter Bar Approach</h4>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-gray-900 mb-3">Concept: Maximize Data Visualization</p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Filters positioned as sticky bar above content</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Full width for charts and tables</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Familiar pattern from legacy MVC</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-green-700 mb-3 flex items-center gap-2">
+                  <i class="fas fa-check-circle"></i>
+                  Pros:
+                </p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Maximum vertical space for data</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>All data visible at once</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Reduced learning curve</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Clean, uncluttered interface</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Best supported our 3-tab persona strategy</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                  <i class="fas fa-times-circle"></i>
+                  Cons:
+                </p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Limited filter visibility</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Requires drop-down for complex filters</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
+                <img 
+                  src="/images/case-studies/relo-census/Relo Census Test Option A.png" 
+                  alt="Option A: Top Filter Bar Wireframe" 
+                  class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
+                  onclick="window.dispatchEvent(new CustomEvent('openImageModal', { detail: { imageIndex: 0 } }))"
+                />
+                <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+              </div>
+            </div>
+            
+            <!-- Option B: Side Panel Filter -->
+            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+              <h4 class="font-bold text-xl text-gray-900 mb-4">Option 2: Side Panel Filter Approach</h4>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-gray-900 mb-3">Concept: Progressive Filter Disclosure</p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Collapsible filter panel on left</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>More filters visible simultaneously</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-circle text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Expandable/collapsible sections</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-green-700 mb-3 flex items-center gap-2">
+                  <i class="fas fa-check-circle"></i>
+                  Pros:
+                </p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>All filters visible at once</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Natural grouping of filter types</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Progressive disclosure friendly</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mb-6">
+                <p class="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                  <i class="fas fa-times-circle"></i>
+                  Cons:
+                </p>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Reduced data visualization space</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>More complex navigation pattern</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Would have blocked our planned Build-a-View feature location</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
+                <img 
+                  src="/images/case-studies/relo-census/Relo Census Test Option B.png" 
+                  alt="Option B: Side Panel Filter Wireframe" 
+                  class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
+                  onclick="window.dispatchEvent(new CustomEvent('openImageModal', { detail: { imageIndex: 1 } }))"
+                />
+                <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
         <div class="task-intro mb-8">
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
             My primary task was to shift the organization from a "requirements-to-code" mindset to a modern product design culture—one rooted in clarity, usability, and user-centered thinking. At the time, engineers were coding directly from Jira tickets or basic hand-drawn sketches. There were no systems in place to ensure consistency, scalability, or even shared understanding across teams.
