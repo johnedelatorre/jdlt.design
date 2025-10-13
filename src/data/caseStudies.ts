@@ -301,24 +301,47 @@ export const caseStudies: CaseStudy[] = [
             
             <div class="mb-6">
               <h4 class="font-semibold text-gray-900 mb-4">Actions</h4>
-              <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-users text-blue-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Stakeholder interviews:</strong> mapped jobs-to-be-done by persona; defined each persona's first meaningful answer</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-chart-bar text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Usage/request audit:</strong> analyzed access patterns & report asks; extracted common filters/parameters and repeatable cuts worth productizing</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-balance-scale text-purple-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>Comparative benchmarking:</strong> reviewed adjacent tools for discoverability and speed-to-answer expectations</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <i class="fas fa-link text-orange-600 text-xs mt-2 flex-shrink-0"></i>
-                  <span class="text-gray-700 leading-relaxed"><strong>KPI definition & traceability:</strong> clarified metric lineage and how plain-language definitions should surface in-product</span>
-                </li>
-              </ul>
+              <div class="space-y-6">
+                <div class="grid md:grid-cols-3 gap-4 items-start">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-users text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Stakeholder interviews</span>
+                  </div>
+                  <div class="md:col-span-2">
+                    <span class="text-gray-700 leading-relaxed">Met with Customer Success, Marketing, Sales, and Product to map jobs-to-be-done by persona and define the first meaningful answer each needs (activation moment).</span>
+                  </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-4 items-start">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-chart-bar text-emerald-600"></i>
+                    <span class="font-semibold text-gray-900">Usage & Request Audit</span>
+                  </div>
+                  <div class="md:col-span-2">
+                    <span class="text-gray-700 leading-relaxed">Analyzed current data-access patterns and report asks to extract common filters/parameters and the repeatable cuts worth productizing.</span>
+                  </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-4 items-start">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-balance-scale text-purple-600"></i>
+                    <span class="font-semibold text-gray-900">Competitive Benchmarking</span>
+                  </div>
+                  <div class="md:col-span-2">
+                    <span class="text-gray-700 leading-relaxed">Reviewed adjacent analytics tools to benchmark discoverability and speed-to-answer expectations (table → chart → narrative loop).</span>
+                  </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-4 items-start">
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-link text-orange-600"></i>
+                    <span class="font-semibold text-gray-900">KPI Definition & Traceability</span>
+                  </div>
+                  <div class="md:col-span-2">
+                    <span class="text-gray-700 leading-relaxed">Partnered with Data/ML to document metric lineage, how KPI/ROI are modeled (dimensions/measures, calc logic), and how plain-language definitions should surface in the UI.</span>
+                  </div>
+                </div>
+              </div>
             </div>
             
             <div class="text-sm text-gray-700 italic border-l-4 border-blue-300 pl-4 py-3 bg-blue-50 rounded-r">
