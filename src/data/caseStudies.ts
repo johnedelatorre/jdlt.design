@@ -630,6 +630,110 @@ export const caseStudies: CaseStudy[] = [
           </ul>
         </div>
         
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- Jobs To Be Done -->
+        <div class="jobs-section">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Jobs To Be Done</h3>
+          
+          <div class="space-y-6">
+            
+            <!-- Universal Job -->
+            <div class="job-card bg-blue-600 text-white rounded-lg p-6 border-2 border-blue-700">
+              <h4 class="font-bold text-2xl mb-4">Universal job (all personas):</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-xl">When I evaluate sponsorship performance, help me reach a defendable answer fast, reuse it, and explain it to stakeholders.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Brands Job -->
+            <div class="job-card bg-teal-600 text-white rounded-lg p-6 border-2 border-teal-700">
+              <h4 class="font-bold text-2xl mb-4">Brands:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-xl">Allocate budget to what works; defend strategy with an exec-ready, explainable view; track shifts via the same saved view</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Agencies Job -->
+            <div class="job-card bg-cyan-600 text-white rounded-lg p-6 border-2 border-cyan-700">
+              <h4 class="font-bold text-2xl mb-4">Agencies:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-xl">Build scenarios across properties & audiences; benchmark credibly; package evidence via shared views</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Placement Types (Rights Holders) Job -->
+            <div class="job-card bg-slate-500 text-white rounded-lg p-6 border-2 border-slate-600">
+              <h4 class="font-bold text-2xl mb-4">Placement Types (Rights Holders):</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-xl">Prove partner value at asset level; benchmark vs peers/league; create repeatable recap views for renewals</span>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- Job Map -->
+        <div class="job-map-section">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Job map (common steps):</h3>
+          
+          <div class="bg-teal-700 text-white rounded-lg p-6 border-2 border-teal-800">
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-right text-white text-lg mt-1 flex-shrink-0"></i>
+                <span class="text-xl">Define question → Set scope (league/team/brand/asset/channel/timeframe) → Deep filter → Compare/benchmark → Read brief explainer → Save & share → Reuse.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- How We'll Know It's Working -->
+        <div class="signals-section">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">How we'll know it's working (simple signals):</h3>
+          
+          <div class="bg-slate-400 text-white rounded-lg p-6 border-2 border-slate-500">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                <div>
+                  <span class="font-bold text-xl">Activation:</span>
+                  <span class="text-xl"> users reach and save a view in the first session.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                <div>
+                  <span class="font-bold text-xl">Ongoing use:</span>
+                  <span class="text-xl"> saved views are reopened/shared.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-circle text-white text-xs mt-2 flex-shrink-0"></i>
+                <div>
+                  <span class="font-bold text-xl">Fewer tickets:</span>
+                  <span class="text-xl"> fewer "what does this metric mean?" questions.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
       </div>
     `,
     
