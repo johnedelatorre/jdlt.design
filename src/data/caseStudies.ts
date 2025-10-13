@@ -422,27 +422,28 @@ export const caseStudies: CaseStudy[] = [
               </div>
             </div>
             
-          </div>
-          
-          <!-- Define The Problem -->
-          <div class="problem-definition-section mt-10">
-            <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6">
+        </div>
+        
+        <!-- Define The Problem -->
+        <div class="brief-section mb-8">
+          <div class="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+            <h2 class="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
               <i class="fas fa-lightbulb text-blue-600"></i>
               Define The Problem
-            </h3>
+            </h2>
             
-            <div class="problem-cards grid md:grid-cols-2 gap-6">
+            <div class="space-y-8">
               
               <!-- Reframing the Challenge -->
-              <div class="problem-card bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <div class="text-center mb-4">
-                  <div class="w-16 h-16 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-star text-white text-xl"></i>
+              <div class="problem-card">
+                <div class="text-center mb-6">
+                  <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-star text-white text-2xl"></i>
                   </div>
-                  <h4 class="font-bold text-gray-900 text-lg">Reframing the Challenge</h4>
+                  <h3 class="font-bold text-gray-900 text-2xl">Reframing the Challenge</h3>
                 </div>
                 
-                <div class="space-y-4">
+                <div class="space-y-4 text-lg">
                   <div>
                     <p class="font-semibold text-gray-900 mb-2">Original Brief:</p>
                     <p class="text-gray-700 italic">"Build new dashboard according to Jira Requirements that allows for more filtering"</p>
@@ -455,24 +456,27 @@ export const caseStudies: CaseStudy[] = [
                 </div>
               </div>
               
+              <hr class="border-gray-300" />
+              
               <!-- Why It Matters -->
-              <div class="problem-card bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <div class="text-center mb-4">
-                  <div class="w-16 h-16 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-heart text-white text-xl"></i>
+              <div class="problem-card">
+                <div class="text-center mb-6">
+                  <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-heart text-white text-2xl"></i>
                   </div>
-                  <h4 class="font-bold text-gray-900 text-lg">Why It Matters</h4>
+                  <h3 class="font-bold text-gray-900 text-2xl">Why It Matters</h3>
                 </div>
                 
-                <div class="space-y-4">
-                  <p class="text-gray-700">Helps more users start and reach a trustworthy answer quickly, increases ongoing use (views saved/shared), reduces support tickets by making it truly self-serve, and keeps metrics clear.</p>
+                <div class="text-lg">
+                  <p class="text-gray-700 leading-relaxed">Helps more users start and reach a trustworthy answer quickly, increases ongoing use (views saved/shared), reduces support tickets by making it truly self-serve, and keeps metrics clear.</p>
                 </div>
               </div>
               
             </div>
           </div>
-          
-          <!-- Personas -->
+        </div>
+        
+        <!-- Personas -->
             <div class="personas-viewer-placeholder">
               <!-- Personas viewer will be rendered as React component -->
             </div>
