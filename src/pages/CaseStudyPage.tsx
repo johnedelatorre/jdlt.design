@@ -381,19 +381,20 @@ const CaseStudyPage: React.FC = () => {
           {/* Situation */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                {caseStudy.id === 'relo-census-dashboard' ? (
-                  <>
+              {caseStudy.id === 'relo-census-dashboard' ? (
+                <div className="flex items-center gap-4 mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
                     <FontAwesomeIcon icon={faSearch} className="text-blue-600" />
                     Discovery
-                  </>
-                ) : (
-                  <>
-                    <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
-                    Situation
-                  </>
-                )}
-              </h2>
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
+              ) : (
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
+                  Situation
+                </h2>
+              )}
               {/* Split situation content at placeholders for proper positioning */}
               {(() => {
                 if (caseStudy.id === 'relo-census-dashboard') {
@@ -449,10 +450,13 @@ const CaseStudyPage: React.FC = () => {
           {caseStudy.defineProblem && (
             <div className="mb-16">
               <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-blue-600" />
-                  Define The Problem
-                </h2>
+                <div className="flex items-center gap-4 mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faExclamationTriangle} className="text-blue-600" />
+                    Define The Problem
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
                 <div 
                   className="text-lg text-gray-700 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: caseStudy.defineProblem }}
@@ -464,19 +468,20 @@ const CaseStudyPage: React.FC = () => {
           {/* Task / Design */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                {caseStudy.id === 'relo-census-dashboard' ? (
-                  <>
+              {caseStudy.id === 'relo-census-dashboard' ? (
+                <div className="flex items-center gap-4 mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
                     <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
                     Design (Iterate & Test)
-                  </>
-                ) : (
-                  <>
-                    <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
-                    Task
-                  </>
-                )}
-              </h2>
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
+              ) : (
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                  Task
+                </h2>
+              )}
               <div 
                 className="text-lg text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: caseStudy.task }}
@@ -550,10 +555,20 @@ const CaseStudyPage: React.FC = () => {
           {/* Result */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
-                Result
-              </h2>
+              {caseStudy.id === 'relo-census-dashboard' ? (
+                <div className="flex items-center gap-4 mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
+                    Result
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
+              ) : (
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
+                  Result
+                </h2>
+              )}
               <div 
                 className="text-lg text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: caseStudy.result }}
