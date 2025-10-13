@@ -16,70 +16,106 @@ export const caseStudies: CaseStudy[] = [
     isRecent: true,
     projectBrief: `
       <div class="project-brief-content">
-        <div class="brief-section mb-8">
-          <p class="brief-description mb-6">
-            <strong>Relo Census emerged from a simple but urgent challenge:</strong> replace a bloated legacy platform with a modern, persona-driven analytics experience that could scale across sports verticals. As the first product designer at Relo Metrics, I led the complete transformation from requirements-driven workflows to user-centered design thinking.
-          </p>
+        <div class="brief-section mb-12">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-building text-blue-600"></i>
+            Company Need & Key Results
+          </h3>
           
-          <p class="brief-description mb-6">
-            My mandate wasn't just UI design—it was establishing <strong>UX as a strategic discipline</strong> and proving that thoughtful design could accelerate development, improve user outcomes, and create lasting organizational change in just 90 days.
-          </p>
+          <div class="mb-8">
+            <p class="brief-description mb-6">
+              <strong>Business need</strong> Launch a subscription platform that turns a services-heavy workflow into self-serve analytics—enabling deeper, more granular, wider cuts of sponsorship data and opening a new recurring-revenue funnel.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-4">Company KRs (how success is measured)</h4>
+              <ul class="brief-list space-y-3 ml-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-chart-line text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Adoption:</strong> high activation/usage depth across brands, agencies, and rights holders</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-dollar-sign text-emerald-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Revenue:</strong> new logos, seat expansion, and plan upgrades driven by product value</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-clock text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Time-to-value:</strong> faster first answers; less reliance on services</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="text-sm text-gray-600 italic border-l-4 border-gray-300 pl-4 py-2 bg-gray-50 rounded-r">
+              <strong>Data context:</strong> Upstream measurement is modeled in our BI layer and surfaced as stakeholder-facing KPI/ROI views with plain-language definitions.
+            </div>
+          </div>
         </div>
         
         <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-bullseye text-blue-600"></i>
-            The Challenge & Opportunity
+          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-users text-indigo-600"></i>
+            Product Overview & Audience
           </h3>
           
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-wrench text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Legacy bottleneck:</strong> Media Value Center (MVC) was functionally obsolete—hand-drawn sketches, Jira tickets, and no systematic approach to user needs</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-rocket text-green-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Strategic vision:</strong> Build a modular platform serving Stakeholders, Brands, and Agencies across MLB, NFL, NBA, and F1 verticals</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-users text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Resource constraints:</strong> Minimal team (1 frontend, 1 backend engineer) with high executive visibility and aggressive timelines</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="brief-section mb-12">
-          <h3 class="brief-title flex items-center gap-3 mb-6 mt-10">
-            <i class="fas fa-compass text-indigo-600"></i>
-            Strategic Approach
-          </h3>
-          <p class="brief-subtitle mb-6 text-gray-600">Transformed chaos into clarity through systematic design thinking:</p>
-          
-          <ul class="brief-list space-y-6">
-            <li class="flex items-start gap-4">
-              <i class="fas fa-search text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Research-driven foundation:</strong> Conducted stakeholder interviews to build three validated personas driving architecture and filtering logic</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-layer-group text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Scalable design system:</strong> Implemented Ant Design with custom components, documentation, and developer-ready handoff processes</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <i class="fas fa-zap text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed"><strong>Prototype-led development:</strong> Used v0.dev and Cursor for rapid validation, enabling stakeholder testing before development</span>
-            </li>
-          </ul>
+          <div class="mb-8">
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">What Relo Census is</h4>
+              <p class="text-gray-700 leading-relaxed">A self-serve sponsorship analytics platform where non-analysts can explore, filter, compare, save, and share credible answers—and compose dashboards from saved views for recurring stories.</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-4">Who it serves</h4>
+              <ul class="brief-list space-y-3 ml-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-store text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Brands:</strong> pinpoint assets/partners that drive quality exposure; defend investments</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-handshake text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Agencies:</strong> build client scenarios quickly; benchmark credibly; reuse/share views</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-trophy text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Rights Holders (placement types):</strong> prove partner value at asset level; justify pricing/renewals</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="text-sm text-gray-700 italic border-l-4 border-blue-300 pl-4 py-3 bg-blue-50 rounded-r">
+              <strong>Core value</strong> Start in the right place → reach a trustworthy answer fast → save/share the evidence → tell the story repeatedly via dashboards → keep metrics explainable, not a black box.
+            </div>
+          </div>
         </div>
         
         <div class="brief-section mt-10">
-          <div class="strategic-impact">
-            <div class="impact-note text-gray-600 italic border-l-4 border-blue-300 pl-6 py-4 bg-blue-50 rounded-r">
-              <div class="flex items-start gap-3">
-                <i class="fas fa-trophy text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-                <span class="text-gray-700 leading-relaxed"><strong>Result:</strong> Delivered Census MVP in under 90 days while establishing UX as a permanent strategic function—proving that design-led development creates better products, faster cycles, and stronger organizational buy-in.</span>
-              </div>
-            </div>
-          </div>
+          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-arrow-right text-green-600"></i>
+            Challenges → Goals
+          </h3>
+          <p class="brief-subtitle mb-6 text-gray-600">Where we started → What success required</p>
+          
+          <ul class="brief-list space-y-6">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-compass text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>No UX precedent/process →</strong> Set strategy (problem, north star); define the core flow Explore → Filter → Save/Share → Dashboards</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-user-check text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>No validated personas/needs →</strong> Name audiences & first decisions; add JTBD with acceptance</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-sitemap text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Task lists, not a product →</strong> Tie work to company KRs; set IA & conceptual model for deep/granular/horizontal cuts</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-code text-orange-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>Eng not used to design specs/systems →</strong> Agree on what good looks like (clear specs, reusable patterns); set performance & quality bars</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-bullhorn text-cyan-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
+              <span class="text-gray-700 leading-relaxed"><strong>High visibility, no shared direction →</strong> Tell one story (problem → north star → outcomes); keep metrics explainable and align GTM on value</span>
+            </li>
+          </ul>
         </div>
       </div>
     `,
