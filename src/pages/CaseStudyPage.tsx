@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt, faEye, faFileAlt, faExclamationTriangle, faTasks, faCogs, faTrophy, faPalette, faChevronDown, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { caseStudies } from '../data/caseStudies';
 import ImageModal from '../components/ImageModal';
@@ -382,8 +382,17 @@ const CaseStudyPage: React.FC = () => {
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
-                Situation
+                {caseStudy.id === 'relo-census-dashboard' ? (
+                  <>
+                    <FontAwesomeIcon icon={faSearch} className="text-blue-600" />
+                    Discovery — Strategy
+                  </>
+                ) : (
+                  <>
+                    <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
+                    Situation
+                  </>
+                )}
               </h2>
               {/* Split situation content at legacy screenshots placeholder for proper positioning */}
               {(() => {
