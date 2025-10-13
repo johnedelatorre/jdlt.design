@@ -424,35 +424,6 @@ export const caseStudies: CaseStudy[] = [
             
           </div>
           
-          <!-- Key Discovery -->
-          <div class="key-discovery-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
-            <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
-              <i class="fas fa-lightbulb text-green-600"></i>
-              Key Discovery
-            </h4>
-            <ul class="space-y-3 text-gray-700">
-              <li class="flex items-start gap-3">
-                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                <span><strong>MVP idea: 3 persona tabs</strong> — Brands / Agencies / Placement Types — with a real-time deep filter and click-to-go-deeper.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                <span>People want <strong>control & reuse:</strong> Saved Views (create/save/share). (Improves activation and ongoing engagement.)</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                <span><strong>Starting path is unclear:</strong> need an obvious first-answer path. (Shortens time to first answer; fewer support questions.)</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                <span><strong>Persona-relevant starts help:</strong> role-specific entry points. (Increases share/export—an early adoption signal.)</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                <span><strong>Trust requires clarity:</strong> explainable KPI/ROI (from Looker on VideoAmp). (Reduces "what does this metric mean?")</span>
-              </li>
-            </ul>
-          </div>
           
           <!-- Personas -->
             <div class="personas-viewer-placeholder">
