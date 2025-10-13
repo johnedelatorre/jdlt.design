@@ -455,9 +455,9 @@ export const caseStudies: CaseStudy[] = [
           </div>
           
           <!-- Personas -->
-          <div class="personas-viewer-placeholder">
-            <!-- Personas viewer will be rendered as React component -->
-          </div>
+            <div class="personas-viewer-placeholder">
+              <!-- Personas viewer will be rendered as React component -->
+            </div>
           
         </div>
       </div>
