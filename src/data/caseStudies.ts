@@ -431,21 +431,8 @@ export const caseStudies: CaseStudy[] = [
               Personas
             </h4>
             
-            <div class="personas-grid grid md:grid-cols-3 gap-6">
-              <div class="persona-item text-center">
-                <img src="/images/case-studies/relo-census/brands-persona.png" alt="Brands Persona" class="w-full h-auto rounded-lg shadow-sm mb-3" />
-                <h5 class="font-semibold text-gray-900">Brands</h5>
-              </div>
-              
-              <div class="persona-item text-center">
-                <img src="/images/case-studies/relo-census/agencies-persona.png" alt="Agencies Persona" class="w-full h-auto rounded-lg shadow-sm mb-3" />
-                <h5 class="font-semibold text-gray-900">Agencies</h5>
-              </div>
-              
-              <div class="persona-item text-center">
-                <img src="/images/case-studies/relo-census/rightsholder-persona.png" alt="Rightsholder Persona" class="w-full h-auto rounded-lg shadow-sm mb-3" />
-                <h5 class="font-semibold text-gray-900">Rightsholder</h5>
-              </div>
+            <div class="personas-viewer-placeholder">
+              <!-- Personas viewer will be rendered as React component -->
             </div>
           </div>
           

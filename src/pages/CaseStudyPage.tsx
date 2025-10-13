@@ -394,8 +394,27 @@ const CaseStudyPage: React.FC = () => {
                   </>
                 )}
               </h2>
-              {/* Split situation content at legacy screenshots placeholder for proper positioning */}
+              {/* Split situation content at placeholders for proper positioning */}
               {(() => {
+                if (caseStudy.id === 'relo-census-dashboard') {
+                  // Split by the personas placeholder
+                  const personasPlaceholderPattern = '            <div class="personas-viewer-placeholder">\n              <!-- Personas viewer will be rendered as React component -->\n            </div>';
+                  const parts = caseStudy.situation.split(personasPlaceholderPattern);
+                  
+                  if (parts.length === 2) {
+                    const beforePersonas = parts[0];
+                    const afterPersonas = parts[1];
+                    
+                    return (
+                      <div className="text-lg text-gray-700 leading-relaxed">
+                        <div dangerouslySetInnerHTML={{ __html: beforePersonas }} />
+                        <PersonaViewer onPersonaClick={openPersonaModal} />
+                        <div dangerouslySetInnerHTML={{ __html: afterPersonas }} />
+                      </div>
+                    );
+                  }
+                }
+                
                 if (caseStudy.id === 'relo-edge-redesign') {
                   // Split by the complete placeholder block including comment and closing div
                   const placeholderPattern = '          <div class="legacy-screenshots-viewer-placeholder">\n            <!-- Legacy screenshots viewer will be rendered as React component -->\n          </div>';
