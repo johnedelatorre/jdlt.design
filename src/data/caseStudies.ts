@@ -358,66 +358,66 @@ export const caseStudies: CaseStudy[] = [
           
           <div class="findings-grid grid md:grid-cols-2 gap-6">
             
-            <!-- Primary Research -->
-            <div class="finding-card bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
-                <i class="fas fa-comments text-blue-600"></i>
-                Primary Research
-              </h4>
-              
-              <div class="mb-4">
-                <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
-                  <i class="fas fa-circle text-blue-600 text-xs"></i>
-                  Internal Stakeholder Interviews
-                </h5>
-                <ul class="space-y-2 text-sm text-gray-700 ml-4">
-                  <li><strong>2 Customer Success Managers:</strong> <em>"Too much training overhead"</em></li>
-                  <li><strong>2 Sales Directors:</strong> <em>"We're losing deals to competitors"</em></li>
-                  <li><strong>1 Marketing Manager:</strong> <em>"Can't tell our value story"</em></li>
-                </ul>
-              </div>
-              
-              <div class="mb-4">
-                <h5 class="font-semibold text-purple-900 mb-3 flex items-center gap-2">
-                  <i class="fas fa-circle text-purple-600 text-xs"></i>
-                  Client Interviews
-                </h5>
-                <ul class="space-y-2 text-sm text-gray-700 ml-4">
-                  <li><strong>Kansas City Chiefs:</strong> <em>"Need asset-level valuation"</em></li>
-                  <li><strong>Optimum Sports:</strong> <em>"Let me build what I need"</em></li>
-                  <li><strong>Optimum Sports:</strong> <em>"Show me vs. competitors"</em></li>
-                </ul>
-              </div>
-            </div>
+                <!-- Primary Research -->
+                <div class="finding-card bg-blue-50 border border-blue-200 rounded-lg p-6">
+                  <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3 text-lg">
+                    <i class="fas fa-comments text-blue-600"></i>
+                    Primary Research
+                  </h4>
+                  
+                  <div class="mb-4">
+                    <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2 text-base">
+                      <i class="fas fa-circle text-blue-600 text-xs"></i>
+                      Internal Stakeholder Interviews
+                    </h5>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                      <li class="text-base"><strong>2 Customer Success Managers:</strong> <em>"Too much training overhead"</em></li>
+                      <li class="text-base"><strong>2 Sales Directors:</strong> <em>"We're losing deals to competitors"</em></li>
+                      <li class="text-base"><strong>1 Marketing Manager:</strong> <em>"Can't tell our value story"</em></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="mb-4">
+                    <h5 class="font-semibold text-purple-900 mb-3 flex items-center gap-2 text-base">
+                      <i class="fas fa-circle text-purple-600 text-xs"></i>
+                      Client Interviews
+                    </h5>
+                    <ul class="space-y-2 text-gray-700 ml-4">
+                      <li class="text-base"><strong>Kansas City Chiefs:</strong> <em>"Need asset-level valuation"</em></li>
+                      <li class="text-base"><strong>Optimum Sports:</strong> <em>"Let me build what I need"</em></li>
+                      <li class="text-base"><strong>Optimum Sports:</strong> <em>"Show me vs. competitors"</em></li>
+                    </ul>
+                  </div>
+                </div>
             
             <!-- Secondary Research -->
             <div class="finding-card bg-emerald-50 border border-emerald-200 rounded-lg p-6">
-              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3 text-lg">
                 <i class="fas fa-chart-line text-emerald-600"></i>
                 Secondary Research
               </h4>
               
               <div class="mb-4">
-                <h5 class="font-semibold text-orange-900 mb-3 flex items-center gap-2">
+                <h5 class="font-semibold text-orange-900 mb-3 flex items-center gap-2 text-base">
                   <i class="fas fa-circle text-orange-600 text-xs"></i>
                   MVC Analytics (Pendo)
                 </h5>
-                <ul class="space-y-2 text-sm text-gray-700 ml-4">
-                  <li>73% drop-off in onboarding</li>
-                  <li>Users recreating same views daily</li>
-                  <li>Average 6 support tickets per client</li>
+                <ul class="space-y-2 text-gray-700 ml-4">
+                  <li class="text-base">73% drop-off in onboarding</li>
+                  <li class="text-base">Users recreating same views daily</li>
+                  <li class="text-base">Average 6 support tickets per client</li>
                 </ul>
               </div>
               
               <div class="mb-4">
-                <h5 class="font-semibold text-pink-900 mb-3 flex items-center gap-2">
+                <h5 class="font-semibold text-pink-900 mb-3 flex items-center gap-2 text-base">
                   <i class="fas fa-circle text-pink-600 text-xs"></i>
                   Market Analysis
                 </h5>
-                <ul class="space-y-2 text-sm text-gray-700 ml-4">
-                  <li><strong>Zoomph, Trajectory, SponsorUnited:</strong> lacking real-time data</li>
-                  <li>No one offering true benchmarking</li>
-                  <li>Gap in modular solutions</li>
+                <ul class="space-y-2 text-gray-700 ml-4">
+                  <li class="text-base"><strong>Zoomph, Trajectory, SponsorUnited:</strong> lacking real-time data</li>
+                  <li class="text-base">No one offering true benchmarking</li>
+                  <li class="text-base">Gap in modular solutions</li>
                 </ul>
               </div>
             </div>
