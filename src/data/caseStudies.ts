@@ -500,17 +500,20 @@ export const caseStudies: CaseStudy[] = [
               
             </div>
             
-            <div class="opportunities-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
-              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
-                <i class="fas fa-lightbulb text-green-600"></i>
-                The Opportunities
-              </h4>
-              <div class="space-y-3 text-gray-700">
-                <p class="leading-relaxed"><strong>Persona-based MVP:</strong> 3 tabs (Brands / Agencies / Placement Types) landing in Data Explorer with a fast, deep filter and click-to-go-deeper.</p>
-                <p class="leading-relaxed"><strong>Views:</strong> Let users create, save, and share views so work persists and circulates.</p>
-                <p class="leading-relaxed"><strong>Dashboards:</strong> Enable custom dashboards built from saved views for recurring stories and reviews.</p>
-              </div>
-            </div>
+                <div class="opportunities-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+                  <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                    <i class="fas fa-lightbulb text-green-600"></i>
+                    The Opportunities
+                  </h4>
+                  <div class="space-y-3 text-gray-700">
+                    <p class="leading-relaxed"><strong>Persona-based MVP:</strong> Start with three tabs (Brands / Agencies / Placement Types) that land in Data Explorer with a fast, deep filter and a click-to-go-deeper path.</p>
+                    <p class="leading-relaxed"><strong>Clear first-answer path:</strong> Make the starting route obvious so non-analysts reach a credible answer quickly.</p>
+                    <p class="leading-relaxed"><strong>Control & reuse:</strong> Let users create, save, and share views instead of rebuilding work; this drives activation and ongoing use.</p>
+                    <p class="leading-relaxed"><strong>Persona-relevant entry points:</strong> Role-specific starts improve relevance and lift share/export (early adoption signal).</p>
+                    <p class="leading-relaxed"><strong>Explainable metrics:</strong> Keep KPI/ROI plain-language and transparent to build trust and reduce "what does this mean?" questions.</p>
+                    <p class="leading-relaxed"><strong>Dashboards from saved views:</strong> Enable custom dashboards composed from saved views for recurring stories and reviews.</p>
+                  </div>
+                </div>
           </div>
           
         </div>
