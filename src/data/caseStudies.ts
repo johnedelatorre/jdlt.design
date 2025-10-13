@@ -531,6 +531,105 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
         
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- User Outcomes -->
+        <div class="outcomes-section mb-10">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">User Outcomes</h3>
+          
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-map-marker-alt text-blue-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">Start in the right place:</span>
+                <span class="text-gray-700 text-xl"> Land on a persona tab (Brands / Agencies / Placement Types) with a relevant, defendable starting view.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-bolt text-purple-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">Get answers fast:</span>
+                <span class="text-gray-700 text-xl"> Use a real-time, deep/granular/wide filter to reach a first credible answer quickly, with a path to click deeper.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-recycle text-green-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">Make it reusable:</span>
+                <span class="text-gray-700 text-xl"> Save and share a view tailored to the question.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-line text-orange-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">Tell the story:</span>
+                <span class="text-gray-700 text-xl"> Assemble dashboards from saved views for recurring reviews and stakeholder storytelling.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-check-circle text-emerald-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">Trust the numbers:</span>
+                <span class="text-gray-700 text-xl"> Metrics are clear and explainable (no black box).</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- What Success Looks Like -->
+        <div class="success-section mb-10">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">What Success Looks Like</h3>
+          
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-user-check text-blue-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">KR 1 - Activation:</span>
+                <span class="text-gray-700 text-xl"> more new users reach a Saved View in first session</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-tachometer-alt text-purple-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">KR 2 - Speed to first answer:</span>
+                <span class="text-gray-700 text-xl"> fewer minutes from first action to Saved View</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-chart-bar text-green-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">KR 3 - Adoption depth:</span>
+                <span class="text-gray-700 text-xl"> more active users filter, save, share, and reopen saved views</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-headset text-orange-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold text-gray-900 text-xl">KR 4 - Support load:</span>
+                <span class="text-gray-700 text-xl"> fewer support tickets about explore/save/share or metric meaning</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- Customer-visible KPIs -->
+        <div class="kpis-section">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Customer-visible KPIs (what users see)</h3>
+          
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-eye text-blue-600 text-xl mt-1 flex-shrink-0"></i>
+              <div>
+                <span class="text-gray-700 text-xl">Exposure quality, asset/partner impact, ROI-style indicators with plain definitions & calculation notes for defensibility</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
       </div>
     `,
     
