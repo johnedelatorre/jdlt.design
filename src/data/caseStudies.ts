@@ -740,8 +740,8 @@ export const caseStudies: CaseStudy[] = [
         <div class="roadmap-section">
           <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Discovery to Product Roadmap</h3>
           
-          <div class="overflow-x-auto">
-            <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm border border-gray-300">
+          <div class="overflow-x-auto border border-gray-300 rounded-lg">
+            <table class="w-full border-collapse bg-white">
               <thead>
                 <tr>
                   <th class="bg-teal-600 text-white text-left p-4 text-xl font-bold border-r border-white w-1/5">Release</th>
