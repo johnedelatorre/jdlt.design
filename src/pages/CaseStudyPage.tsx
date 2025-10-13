@@ -385,7 +385,7 @@ const CaseStudyPage: React.FC = () => {
                 {caseStudy.id === 'relo-census-dashboard' ? (
                   <>
                     <FontAwesomeIcon icon={faSearch} className="text-blue-600" />
-                    Discovery — Strategy
+                    Discovery
                   </>
                 ) : (
                   <>
@@ -461,12 +461,21 @@ const CaseStudyPage: React.FC = () => {
             </div>
           )}
 
-          {/* Task */}
+          {/* Task / Design */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
-                Task
+                {caseStudy.id === 'relo-census-dashboard' ? (
+                  <>
+                    <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                    Design (Iterate & Test)
+                  </>
+                ) : (
+                  <>
+                    <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                    Task
+                  </>
+                )}
               </h2>
               <div 
                 className="text-lg text-gray-700 leading-relaxed"
@@ -476,15 +485,16 @@ const CaseStudyPage: React.FC = () => {
           </div>
 
           {/* Action */}
-          <div className="mb-16">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faCogs} className="text-green-600" />
-                Action
-              </h2>
-              {/* Split action content at personas placeholder for proper positioning */}
-              {(() => {
-                if (caseStudy.id === 'relo-census-dashboard') {
+          {caseStudy.id !== 'relo-census-dashboard' && (
+            <div className="mb-16">
+              <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faCogs} className="text-green-600" />
+                  Action
+                </h2>
+                {/* Split action content at personas placeholder for proper positioning */}
+                {(() => {
+                  if (caseStudy.id === 'relo-edge-redesign') {
                   // Split by the complete placeholder block including comment and closing div
                   const placeholderPattern = '        <div class="personas-viewer-placeholder">\n          <!-- Persona viewer will be rendered as React component -->\n        </div>';
                   const parts = caseStudy.action.split(placeholderPattern);
@@ -533,8 +543,9 @@ const CaseStudyPage: React.FC = () => {
                   />
                 );
               })()}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Result */}
           <div className="mb-16">
