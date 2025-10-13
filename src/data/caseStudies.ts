@@ -349,6 +349,112 @@ export const caseStudies: CaseStudy[] = [
             </div>
           </div>
         </div>
+        
+        <div class="brief-section mb-8">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-clipboard-list text-indigo-600"></i>
+            Discovery Findings
+          </h3>
+          
+          <div class="findings-grid grid md:grid-cols-2 gap-6">
+            
+            <!-- Primary Research -->
+            <div class="finding-card bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-comments text-blue-600"></i>
+                Primary Research
+              </h4>
+              
+              <div class="mb-4">
+                <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                  <i class="fas fa-circle text-blue-600 text-xs"></i>
+                  Internal Stakeholder Interviews
+                </h5>
+                <ul class="space-y-2 text-sm text-gray-700 ml-4">
+                  <li><strong>2 Customer Success Managers:</strong> <em>"Too much training overhead"</em></li>
+                  <li><strong>2 Sales Directors:</strong> <em>"We're losing deals to competitors"</em></li>
+                  <li><strong>1 Marketing Manager:</strong> <em>"Can't tell our value story"</em></li>
+                </ul>
+              </div>
+              
+              <div class="mb-4">
+                <h5 class="font-semibold text-purple-900 mb-3 flex items-center gap-2">
+                  <i class="fas fa-circle text-purple-600 text-xs"></i>
+                  Client Interviews
+                </h5>
+                <ul class="space-y-2 text-sm text-gray-700 ml-4">
+                  <li><strong>Kansas City Chiefs:</strong> <em>"Need asset-level valuation"</em></li>
+                  <li><strong>Optimum Sports:</strong> <em>"Let me build what I need"</em></li>
+                  <li><strong>Optimum Sports:</strong> <em>"Show me vs. competitors"</em></li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Secondary Research -->
+            <div class="finding-card bg-emerald-50 border border-emerald-200 rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                <i class="fas fa-chart-line text-emerald-600"></i>
+                Secondary Research
+              </h4>
+              
+              <div class="mb-4">
+                <h5 class="font-semibold text-orange-900 mb-3 flex items-center gap-2">
+                  <i class="fas fa-circle text-orange-600 text-xs"></i>
+                  MVC Analytics (Pendo)
+                </h5>
+                <ul class="space-y-2 text-sm text-gray-700 ml-4">
+                  <li>73% drop-off in onboarding</li>
+                  <li>Users recreating same views daily</li>
+                  <li>Average 6 support tickets per client</li>
+                </ul>
+              </div>
+              
+              <div class="mb-4">
+                <h5 class="font-semibold text-pink-900 mb-3 flex items-center gap-2">
+                  <i class="fas fa-circle text-pink-600 text-xs"></i>
+                  Market Analysis
+                </h5>
+                <ul class="space-y-2 text-sm text-gray-700 ml-4">
+                  <li><strong>Zoomph, Trajectory, SponsorUnited:</strong> lacking real-time data</li>
+                  <li>No one offering true benchmarking</li>
+                  <li>Gap in modular solutions</li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Key Discovery -->
+          <div class="key-discovery-card bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+            <h4 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+              <i class="fas fa-lightbulb text-green-600"></i>
+              Key Discovery
+            </h4>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                <span><strong>MVP idea: 3 persona tabs</strong> — Brands / Agencies / Placement Types — with a real-time deep filter and click-to-go-deeper.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                <span>People want <strong>control & reuse:</strong> Saved Views (create/save/share). (Improves activation and ongoing engagement.)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                <span><strong>Starting path is unclear:</strong> need an obvious first-answer path. (Shortens time to first answer; fewer support questions.)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                <span><strong>Persona-relevant starts help:</strong> role-specific entry points. (Increases share/export—an early adoption signal.)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-star text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                <span><strong>Trust requires clarity:</strong> explainable KPI/ROI (from Looker on VideoAmp). (Reduces "what does this metric mean?")</span>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
       </div>
     `,
     task: `
