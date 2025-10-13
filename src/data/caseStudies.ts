@@ -288,58 +288,47 @@ export const caseStudies: CaseStudy[] = [
     
     situation: `
       <div class="situation-content">
-        <div class="situation-intro mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            When I stepped into the Relo Census project, the environment was fragmented, reactive, and lacking even the most basic design infrastructure. Design had never been part of the product development process—engineers were accustomed to receiving Jira tickets or hand-drawn feature ideas from product managers and turning them directly into production code. This approach led to inconsistent workflows, disjointed experiences, and high friction for both internal teams and clients.
-          </p>
-        </div>
-
-        <div class="situation-problems mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            The company's existing internal tool—Media Value Center (MVC)—was still in use but had become bloated, unintuitive, and nearly impossible to scale. It was built without a clear understanding of its users and had become a patchwork of one-off features that served no one particularly well. Despite its flaws, MVC was relied on by Customer Success teams to report on multi-million dollar sponsorship performance, and its limitations were slowing down adoption, renewals, and expansion opportunities.
-          </p>
-        </div>
-
-        <div class="situation-leadership mb-8">
-          <p class="situation-text text-lg text-gray-700 leading-relaxed mb-6">
-            At the same time, the leadership team had ambitious goals for Census: they saw it as the future of Relo's product suite—a modular, extensible platform capable of supporting brands, rights holders, and agency partners across leagues like the NFL, NBA, MLB, and F1. But the vision lacked executional clarity. There were no defined user types. No research. No roadmap grounded in behavior or outcomes. Just a stack of feature asks and a team of two engineers to build it.
-          </p>
-        </div>
-
-        <div class="situation-challenges mb-8">
-          <p class="situation-subtitle text-gray-600 mb-6">In short, I entered a product-critical initiative where:</p>
+        <div class="brief-section mb-8">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-3 mb-6 mt-10">
+            <i class="fas fa-search text-blue-600"></i>
+            Discovery — Strategy
+          </h3>
           
-          <ul class="challenge-list space-y-6">
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-ban text-red-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Design had zero precedent or process</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-question-circle text-purple-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">No personas or validated user needs had been captured</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-list text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Product thinking defaulted to task lists, not systems or outcomes</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-code text-indigo-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">Engineering had no experience building from design specs or systems</span>
-            </li>
-            <li class="challenge-item flex items-start gap-4">
-              <i class="fas fa-eye text-amber-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <span class="text-gray-700 leading-relaxed">There was high visibility from leadership—but no shared understanding of direction</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="situation-conclusion">
-          <div class="conclusion-card bg-blue-50 border-l-4 border-blue-300 p-6 rounded-r-lg">
-            <div class="flex items-start gap-3">
-              <i class="fas fa-lightbulb text-blue-600 self-start flex-shrink-0" style="margin-top: 0.125rem;"></i>
-              <p class="conclusion-text text-gray-700 leading-relaxed">
-                Census wasn't just a dashboard design—it was a chance to rewire how the company approached product, design, and user value from the ground up. But that meant earning trust, creating structure, and turning chaos into clarity—under real deadlines, with minimal resources, and no historical UX baseline to build from.
-              </p>
+          <div class="mb-8">
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Situation</h4>
+              <p class="text-gray-700 leading-relaxed">Large, credible dataset; insight path was slow and opaque for non-analysts.</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Task</h4>
+              <p class="text-gray-700 leading-relaxed">Identify primary users, their first decisions, and core questions; find friction along the research→insight path.</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-4">Actions</h4>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-users text-blue-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Stakeholder interviews:</strong> mapped jobs-to-be-done by persona; defined each persona's first meaningful answer</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-chart-bar text-emerald-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Usage/request audit:</strong> analyzed access patterns & report asks; extracted common filters/parameters and repeatable cuts worth productizing</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-balance-scale text-purple-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>Comparative benchmarking:</strong> reviewed adjacent tools for discoverability and speed-to-answer expectations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-link text-orange-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span class="text-gray-700 leading-relaxed"><strong>KPI definition & traceability:</strong> clarified metric lineage and how plain-language definitions should surface in-product</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="text-sm text-gray-700 italic border-l-4 border-blue-300 pl-4 py-3 bg-blue-50 rounded-r">
+              <strong>Resulting focus</strong> Make the first credible answer fast and defensible; enable reuse (Saved Views); keep metrics explainable.
             </div>
           </div>
         </div>
