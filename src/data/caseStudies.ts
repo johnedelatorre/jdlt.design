@@ -962,10 +962,9 @@ export const caseStudies: CaseStudy[] = [
               
               <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
                 <img 
-                  src="/images/case-studies/relo-census/Relo Census Test Option A.png" 
+                  src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20A.png" 
                   alt="Option A: Top Filter Bar Wireframe" 
                   class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                  onclick="window.dispatchEvent(new CustomEvent('openImageModal', { detail: { imageIndex: 0 } }))"
                 />
                 <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
               </div>
@@ -1037,10 +1036,9 @@ export const caseStudies: CaseStudy[] = [
               
               <div class="wireframe-preview cursor-pointer hover:opacity-80 transition-opacity">
                 <img 
-                  src="/images/case-studies/relo-census/Relo Census Test Option B.png" 
+                  src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20B.png" 
                   alt="Option B: Side Panel Filter Wireframe" 
                   class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
-                  onclick="window.dispatchEvent(new CustomEvent('openImageModal', { detail: { imageIndex: 1 } }))"
                 />
                 <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
               </div>
