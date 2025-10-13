@@ -734,6 +734,138 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
         
+        <hr class="border-gray-400 my-10" />
+        
+        <!-- Discovery to Product Roadmap -->
+        <div class="roadmap-section">
+          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Discovery to Product Roadmap</h3>
+          
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+              <thead>
+                <tr>
+                  <th class="bg-teal-600 text-white text-left p-4 text-xl font-bold border-r border-white w-1/5">Release</th>
+                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold border-r border-white">How Might We...?</th>
+                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold border-r border-white">Solution</th>
+                  <th class="bg-gray-200 text-gray-900 text-left p-4 text-xl font-bold">Component</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Release 1: Foundation (Now) -->
+                <tr class="border-b border-gray-200">
+                  <td class="bg-teal-500 text-white p-4 align-top border-r border-white" rowspan="3">
+                    <div class="font-bold text-xl mb-2">Release 1:</div>
+                    <div class="text-lg mb-1">Foundation (Now)</div>
+                    <div class="text-sm italic">MVP shipped in 60 days</div>
+                  </td>
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Reduce friction with persona-driven entry points</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">3 persona tabs (Rights Holders / Brands / Placements)</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Tab navigation with role-specific data views</p>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Make sponsorship data instantly explorable</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Real-time fast filters for key dimensions</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Sticky top filter bar</p>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Lower training burden for CS and users</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Navigation that matches user mental models</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Deep-dive drawer for focused detail without losing context</p>
+                  </td>
+                </tr>
+                
+                <!-- Release 2: Intelligence (Next) -->
+                <tr class="border-b border-gray-200">
+                  <td class="bg-teal-500 text-white p-4 align-top border-r border-white" rowspan="2">
+                    <div class="font-bold text-xl mb-2">Release 2 —</div>
+                    <div class="text-lg">Intelligence (Next)</div>
+                  </td>
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Let users save & reuse workflows</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Build-a-View with saved queries and persistent views</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Query views builder with instant data views + Saved Views list</p>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Enable meaningful comparisons across assets/partners/placements</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Standardized placement taxonomy for consistent comparisons</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Deeper filter parameters in Build-a-View</p>
+                  </td>
+                </tr>
+                
+                <!-- Release 3: Platform (Later) -->
+                <tr class="border-b border-gray-200">
+                  <td class="bg-teal-500 text-white p-4 align-top border-r border-white" rowspan="3">
+                    <div class="font-bold text-xl mb-2">Release 3 —</div>
+                    <div class="text-lg">Platform (Later)</div>
+                  </td>
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Give each client type a clear, customized ROI view</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Build dashboards from Saved Views</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Drag-and-drop dashboard builder</p>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Show KPIs immediately for recurring storytelling/reviews</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Pre-built view library to jump-start narratives</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Shareable dashboards for teams</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 bg-gray-50 border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">&nbsp;</p>
+                  </td>
+                  <td class="p-4 bg-white border-r border-gray-200 align-top">
+                    <p class="text-gray-700 text-lg">Ability to share saved dashboards with team</p>
+                  </td>
+                  <td class="p-4 bg-gray-50 align-top">
+                    <p class="text-gray-700 text-lg">Auto data updates for recurrent views</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <p class="text-gray-600 text-base italic">Session Included: 1 Product Manager • 3 Engineers • 1 CS Manager</p>
+          </div>
+        </div>
+        
       </div>
     `,
     
