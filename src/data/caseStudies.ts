@@ -1250,73 +1250,67 @@ export const caseStudies: CaseStudy[] = [
           
           <!-- A/B: Two Ways to Build a View -->
           <div class="ab-section mb-10">
-            <h4 class="font-bold text-xl text-gray-900 mb-6 flex items-center gap-2">
+            <h4 class="font-bold text-xl text-gray-900 mb-4 flex items-center gap-2">
               <i class="fas fa-code-branch text-orange-600"></i>
               A/B — Two Ways to Build a View
             </h4>
             
-            <div class="grid md:grid-cols-2 gap-6 mb-8">
-              
-              <!-- Option B: Pre-Built Library (Rejected) -->
-              <div class="ab-option bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
-                <h5 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
-                  <i class="fas fa-times-circle text-red-600"></i>
-                  Option B: Pre-Built View Library (Rejected)
-                </h5>
-                <ul class="space-y-2 text-gray-700 ml-6 mb-6">
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Based on legacy saved queries; quick start but generic</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Felt mismatched to real workflows (even with previews)</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Users preferred flexible creation over templates</span>
-                  </li>
-                </ul>
-                
-                <div class="testing-image-placeholder" data-test-image="option-b">
-                  <!-- Option B image -->
-                </div>
+            <!-- Option B: Rejected -->
+            <div class="mb-6">
+              <p class="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                <i class="fas fa-times-circle"></i>
+                Option B: Pre-Built View Library (Rejected)
+              </p>
+              <ul class="space-y-2 text-gray-700 text-lg ml-6">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Based on legacy saved queries; quick start but generic</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Felt mismatched to real workflows (even with previews)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Users preferred flexible creation over templates</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Option A: Selected -->
+            <div class="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-6 mb-6">
+              <p class="text-lg text-gray-900 mb-3"><strong>Option A: Custom Query Builder (Selected)</strong></p>
+              <ul class="space-y-2 text-gray-700 ml-6">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Side-by-side: filters on right, output on left</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Real-time updates after applying filters</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Create and save views (queries); view as table or chart</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Build in any direction with a deep filter set</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                  <span>Future-ready for templated views, org sharing, onboarding packs</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="testing-image-placeholder" data-test-image="option-b">
+                <!-- Option B image -->
               </div>
-              
-              <!-- Option A: Custom Query Builder (Selected) -->
-              <div class="ab-option bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
-                <h5 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
-                  <i class="fas fa-check-circle text-green-600"></i>
-                  Option A: Custom Query Builder (Selected)
-                </h5>
-                <ul class="space-y-2 text-gray-700 ml-6 mb-6">
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Side-by-side: filters on right, output on left</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Real-time updates after applying filters</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Create and save views (queries); view as table or chart</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Build in any direction with a deep filter set</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
-                    <span>Future-ready for templated views, org sharing, onboarding packs</span>
-                  </li>
-                </ul>
-                
-                <div class="testing-image-placeholder" data-test-image="option-a">
-                  <!-- Option A image -->
-                </div>
+              <div class="testing-image-placeholder" data-test-image="option-a">
+                <!-- Option A image -->
               </div>
-              
             </div>
           </div>
           
