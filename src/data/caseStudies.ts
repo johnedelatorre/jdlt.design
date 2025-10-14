@@ -1248,37 +1248,6 @@ export const caseStudies: CaseStudy[] = [
             </div>
           </div>
           
-          <!-- Decision 2: MVP Deep-Dive (Slide Drawer) -->
-          <div class="decision-section mb-10">
-            <h4 class="font-bold text-xl text-gray-900 mb-4 flex items-center gap-2">
-              <i class="fas fa-layer-group text-purple-600"></i>
-              Decision 2 — MVP Deep-Dive (Slide Drawer)
-            </h4>
-            
-            <ul class="space-y-3 text-gray-700 text-lg ml-6 mb-6">
-              <li class="flex items-start gap-3">
-                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                <span>Slide-over drawer for detailed inspection without losing context</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                <span>Quick access to row-level analytics; export directly from detail</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                <span>Advanced filtering at a granular level</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
-                <span>Background view stays visible to maintain context</span>
-              </li>
-            </ul>
-            
-            <div class="testing-image-placeholder" data-test-image="slide-drawer">
-              <!-- Slide drawer image -->
-            </div>
-          </div>
-          
           <!-- A/B: Two Ways to Build a View -->
           <div class="ab-section mb-10">
             <h4 class="font-bold text-xl text-gray-900 mb-6 flex items-center gap-2">
@@ -1289,12 +1258,12 @@ export const caseStudies: CaseStudy[] = [
             <div class="grid md:grid-cols-2 gap-6 mb-8">
               
               <!-- Option B: Pre-Built Library (Rejected) -->
-              <div class="ab-option bg-red-50 border border-red-200 rounded-lg p-6">
-                <h5 class="font-bold text-lg text-red-900 mb-4 flex items-center gap-2">
+              <div class="ab-option bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+                <h5 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
                   <i class="fas fa-times-circle text-red-600"></i>
                   Option B: Pre-Built View Library (Rejected)
                 </h5>
-                <ul class="space-y-2 text-gray-700 ml-6">
+                <ul class="space-y-2 text-gray-700 ml-6 mb-6">
                   <li class="flex items-start gap-2">
                     <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
                     <span>Based on legacy saved queries; quick start but generic</span>
@@ -1309,18 +1278,18 @@ export const caseStudies: CaseStudy[] = [
                   </li>
                 </ul>
                 
-                <div class="testing-image-placeholder mt-6" data-test-image="option-b">
+                <div class="testing-image-placeholder" data-test-image="option-b">
                   <!-- Option B image -->
                 </div>
               </div>
               
               <!-- Option A: Custom Query Builder (Selected) -->
-              <div class="ab-option bg-green-50 border border-green-200 rounded-lg p-6">
-                <h5 class="font-bold text-lg text-green-900 mb-4 flex items-center gap-2">
+              <div class="ab-option bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+                <h5 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
                   <i class="fas fa-check-circle text-green-600"></i>
                   Option A: Custom Query Builder (Selected)
                 </h5>
-                <ul class="space-y-2 text-gray-700 ml-6">
+                <ul class="space-y-2 text-gray-700 ml-6 mb-6">
                   <li class="flex items-start gap-2">
                     <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
                     <span>Side-by-side: filters on right, output on left</span>
@@ -1343,7 +1312,7 @@ export const caseStudies: CaseStudy[] = [
                   </li>
                 </ul>
                 
-                <div class="testing-image-placeholder mt-6" data-test-image="option-a">
+                <div class="testing-image-placeholder" data-test-image="option-a">
                   <!-- Option A image -->
                 </div>
               </div>
@@ -1647,9 +1616,8 @@ export const caseStudies: CaseStudy[] = [
     testingImages: [
       '/images/case-studies/relo-census/sponsorship_evaluation_top_filter.png',
       '/images/case-studies/relo-census/sponsorship_evaluation_side_filter.png',
-      '/images/case-studies/relo-census/slide_drawer.png',
-      '/images/case-studies/relo-census/option_a_custom_query_builder.png',
       '/images/case-studies/relo-census/option_b_pre_built_library.png',
+      '/images/case-studies/relo-census/option_a_custom_query_builder.png',
     ],
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3659%3A58037&node-id=3659-136303&viewport=350%2C587%2C0.02&t=AuMD8R0hy2zSuSnl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3659%3A136303'
   },

@@ -609,9 +609,8 @@ const CaseStudyPage: React.FC = () => {
                   const testingPlaceholders = [
                     { pattern: '              <div class="testing-image-placeholder" data-test-image="top-filter">\n                <!-- Top filter image -->\n              </div>', index: 0, name: 'Top Filter' },
                     { pattern: '              <div class="testing-image-placeholder" data-test-image="side-filter">\n                <!-- Side filter image -->\n              </div>', index: 1, name: 'Side Filter' },
-                    { pattern: '            <div class="testing-image-placeholder" data-test-image="slide-drawer">\n              <!-- Slide drawer image -->\n            </div>', index: 2, name: 'Slide Drawer' },
-                    { pattern: '                <div class="testing-image-placeholder mt-6" data-test-image="option-a">\n                  <!-- Option A image -->\n                </div>', index: 3, name: 'Custom Query Builder' },
-                    { pattern: '                <div class="testing-image-placeholder mt-6" data-test-image="option-b">\n                  <!-- Option B image -->\n                </div>', index: 4, name: 'Pre-Built Library' },
+                    { pattern: '                <div class="testing-image-placeholder" data-test-image="option-b">\n                  <!-- Option B image -->\n                </div>', index: 2, name: 'Pre-Built Library' },
+                    { pattern: '                <div class="testing-image-placeholder" data-test-image="option-a">\n                  <!-- Option A image -->\n                </div>', index: 3, name: 'Custom Query Builder' },
                   ];
                   
                   testingPlaceholders.forEach(({ pattern, index, name }) => {
