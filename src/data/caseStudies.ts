@@ -1138,6 +1138,9 @@ export const caseStudies: CaseStudy[] = [
             <div class="component-placeholder" data-component="view-builders">
               <!-- Component image will be rendered -->
             </div>
+            <div class="component-placeholder" data-component="dashboard-builder">
+              <!-- Component image will be rendered -->
+            </div>
           </div>
           
           <!-- Why It Matters -->
@@ -1437,6 +1440,7 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-census/component_charts.png',
       '/images/case-studies/relo-census/component_data_tables.png',
       '/images/case-studies/relo-census/component_view_builders.png',
+      '/images/case-studies/relo-census/component_dashboard_builder.png',
     ],
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3659%3A58037&node-id=3659-136303&viewport=350%2C587%2C0.02&t=AuMD8R0hy2zSuSnl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3659%3A136303'
   },

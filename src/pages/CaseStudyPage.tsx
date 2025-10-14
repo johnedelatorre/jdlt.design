@@ -567,6 +567,7 @@ const CaseStudyPage: React.FC = () => {
                     { pattern: '            <div class="component-placeholder" data-component="charts">\n              <!-- Component image will be rendered -->\n            </div>', index: 4, name: 'Charts' },
                     { pattern: '            <div class="component-placeholder" data-component="data-tables">\n              <!-- Component image will be rendered -->\n            </div>', index: 5, name: 'Data Tables' },
                     { pattern: '            <div class="component-placeholder" data-component="view-builders">\n              <!-- Component image will be rendered -->\n            </div>', index: 6, name: 'View Builders' },
+                    { pattern: '            <div class="component-placeholder" data-component="dashboard-builder">\n              <!-- Component image will be rendered -->\n            </div>', index: 7, name: 'Dashboard Builder' },
                   ];
                   
                   componentPlaceholders.forEach(({ pattern, index, name }) => {
