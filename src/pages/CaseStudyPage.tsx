@@ -421,10 +421,20 @@ const CaseStudyPage: React.FC = () => {
           {/* Project Brief */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
-                Project Brief
-              </h2>
+              {caseStudy.id === 'relo-census-dashboard' ? (
+                <div className="flex items-center gap-4 mb-8">
+                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
+                    Project Brief
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
+              ) : (
+                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
+                  Project Brief
+                </h2>
+              )}
               <div 
                 className="text-lg text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: caseStudy.projectBrief }}
