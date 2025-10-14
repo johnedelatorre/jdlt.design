@@ -1280,8 +1280,6 @@ export const caseStudies: CaseStudy[] = [
       </div>
     `,
     images: [
-      '/images/case-studies/relo-census/Relo Census Test Option A.png',
-      '/images/case-studies/relo-census/Relo Census Test Option B.png',
       '/images/case-studies/relo-census/Relo Census Login Page.png',
       '/images/case-studies/relo-census/Sponsorship Evaluation Dashboard.png',
       '/images/case-studies/relo-census/Evaluation with Filters.png',
@@ -1294,6 +1292,10 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-census/Advanced View Builder Interface.png',
       '/images/case-studies/relo-census/View Builder - Chart Visualization.png',
       '/images/case-studies/relo-census/Dashboard Builder View.png',
+    ],
+    wireframeImages: [
+      '/images/case-studies/relo-census/Relo Census Test Option A.png',
+      '/images/case-studies/relo-census/Relo Census Test Option B.png',
     ],
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3659%3A58037&node-id=3659-136303&viewport=350%2C587%2C0.02&t=AuMD8R0hy2zSuSnl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3659%3A136303'
   },

@@ -26,6 +26,7 @@ export interface CaseStudy {
   action: string;
   result: string;
   images: string[];
+  wireframeImages?: string[];
   figmaLink?: string;
   isRecent?: boolean;
   researchArtifacts?: ResearchArtifact[];

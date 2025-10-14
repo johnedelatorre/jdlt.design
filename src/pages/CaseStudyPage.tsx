@@ -27,6 +27,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentArtifactIndex, setCurrentArtifactIndex] = useState(0);
   const [isVisualDnaModalOpen, setIsVisualDnaModalOpen] = useState(false);
   const [currentVisualDnaIndex, setCurrentVisualDnaIndex] = useState(0);
+  const [isWireframeModalOpen, setIsWireframeModalOpen] = useState(false);
+  const [currentWireframeIndex, setCurrentWireframeIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -233,6 +235,26 @@ const CaseStudyPage: React.FC = () => {
 
   const nextVisualDnaArtifact = () => {
     setCurrentVisualDnaIndex((prev) => (prev < visualDnaArtifacts.length - 1 ? prev + 1 : 0));
+  };
+
+  // Wireframe modal handlers
+  const openWireframeModal = (index: number) => {
+    setCurrentWireframeIndex(index);
+    setIsWireframeModalOpen(true);
+  };
+
+  const closeWireframeModal = () => {
+    setIsWireframeModalOpen(false);
+  };
+
+  const previousWireframe = () => {
+    const wireframes = caseStudy?.wireframeImages || [];
+    setCurrentWireframeIndex((prev) => (prev > 0 ? prev - 1 : wireframes.length - 1));
+  };
+
+  const nextWireframe = () => {
+    const wireframes = caseStudy?.wireframeImages || [];
+    setCurrentWireframeIndex((prev) => (prev < wireframes.length - 1 ? prev + 1 : 0));
   };
 
   return (
@@ -483,19 +505,19 @@ const CaseStudyPage: React.FC = () => {
                 </h2>
               )}
               {(() => {
-                if (caseStudy.id === 'relo-census-dashboard') {
+                if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages) {
                   // Split by wireframe placeholders
-                  const wireframeAPattern = '              <div class="wireframe-a-placeholder">\n                <!-- Wireframe A will be rendered as React component -->\n              </div>';
-                  const wireframeBPattern = '              <div class="wireframe-b-placeholder">\n                <!-- Wireframe B will be rendered as React component -->\n              </div>';
+                  const wireframeAPattern = '              <div class="wireframe-a-placeholder mt-auto">\n                <!-- Wireframe A will be rendered as React component -->\n              </div>';
+                  const wireframeBPattern = '              <div class="wireframe-b-placeholder mt-auto">\n                <!-- Wireframe B will be rendered as React component -->\n              </div>';
                   
                   let content = caseStudy.task;
                   
                   // Replace wireframe A
                   content = content.replace(
                     wireframeAPattern,
-                    `<div class="cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="a">
+                    `<div class="mt-auto cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="a">
                       <img 
-                        src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20A.png" 
+                        src="${caseStudy.wireframeImages[0]}" 
                         alt="Option A: Top Filter Bar Wireframe" 
                         class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
                       />
@@ -506,9 +528,9 @@ const CaseStudyPage: React.FC = () => {
                   // Replace wireframe B
                   content = content.replace(
                     wireframeBPattern,
-                    `<div class="cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="b">
+                    `<div class="mt-auto cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="b">
                       <img 
-                        src="/images/case-studies/relo-census/Relo%20Census%20Test%20Option%20B.png" 
+                        src="${caseStudy.wireframeImages[1]}" 
                         alt="Option B: Side Panel Filter Wireframe" 
                         class="w-full h-auto rounded-lg border border-gray-300 shadow-md"
                       />
@@ -526,9 +548,9 @@ const CaseStudyPage: React.FC = () => {
                         if (wireframeDiv) {
                           const wireframeType = wireframeDiv.getAttribute('data-wireframe');
                           if (wireframeType === 'a') {
-                            openModal(0);
+                            openWireframeModal(0);
                           } else if (wireframeType === 'b') {
-                            openModal(1);
+                            openWireframeModal(1);
                           }
                         }
                       }}
@@ -825,6 +847,19 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentVisualDnaIndex}
           onPrevious={previousVisualDnaArtifact}
           onNext={nextVisualDnaArtifact}
+        />
+      )}
+
+      {/* Wireframe Modal */}
+      {caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages && (
+        <ImageModal
+          isOpen={isWireframeModalOpen}
+          onClose={closeWireframeModal}
+          images={caseStudy.wireframeImages}
+          currentIndex={currentWireframeIndex}
+          onPrevious={previousWireframe}
+          onNext={nextWireframe}
+          caseStudyId={caseStudy.id}
         />
       )}
     </div>
