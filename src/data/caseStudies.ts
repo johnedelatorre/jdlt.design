@@ -1172,6 +1172,208 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
         
+        <!-- Testing Validation Strategy & Decisions -->
+        <div class="testing-section mb-12">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">Testing — Validation Strategy & Decisions</h3>
+          
+          <!-- Approach -->
+          <div class="approach-section mb-8">
+            <h4 class="font-bold text-xl text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-flask text-blue-600"></i>
+              Approach
+            </h4>
+            <ul class="space-y-3 text-gray-700 text-lg ml-6">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-users text-blue-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Early-access sessions with Brands / Agencies / Placement Types</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-project-diagram text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Prototyped flow: land → filter → read chart/table → save/share</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-chart-line text-green-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Tracked task completion, clicks/time to first answer, comprehension, preference</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-sync text-orange-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Rapidly iterated three approaches before high-fidelity</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Decision 1: Top Filters vs Side Panel -->
+          <div class="decision-section mb-10">
+            <h4 class="font-bold text-xl text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              Decision 1 — Top Filters vs Side Panel
+            </h4>
+            
+            <div class="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-6 mb-6">
+              <p class="text-lg text-gray-900 mb-2"><strong>Decision:</strong> Sticky top filter bar (keep side panel free)</p>
+            </div>
+            
+            <div class="mb-6">
+              <p class="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                <i class="fas fa-times-circle"></i>
+                Why not side panel (rejected):
+              </p>
+              <ul class="space-y-2 text-gray-700 text-lg ml-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-minus text-red-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span>Consumed valuable horizontal space; reduced viz area ~25%</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-minus text-red-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span>Conflicted with the Build-a-View placement (future feature)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-minus text-red-600 text-sm mt-1 flex-shrink-0"></i>
+                  <span>Users preferred maximizing screen real estate for analytics</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
+              <p class="text-lg text-gray-700"><strong>Result:</strong> Shorter path to answer; more chart/table space; roadmap-friendly.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="testing-image-placeholder" data-test-image="top-filter">
+                <!-- Top filter image -->
+              </div>
+              <div class="testing-image-placeholder" data-test-image="side-filter">
+                <!-- Side filter image -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- Decision 2: MVP Deep-Dive (Slide Drawer) -->
+          <div class="decision-section mb-10">
+            <h4 class="font-bold text-xl text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-layer-group text-purple-600"></i>
+              Decision 2 — MVP Deep-Dive (Slide Drawer)
+            </h4>
+            
+            <ul class="space-y-3 text-gray-700 text-lg ml-6 mb-6">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Slide-over drawer for detailed inspection without losing context</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Quick access to row-level analytics; export directly from detail</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Advanced filtering at a granular level</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-right text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Background view stays visible to maintain context</span>
+              </li>
+            </ul>
+            
+            <div class="testing-image-placeholder" data-test-image="slide-drawer">
+              <!-- Slide drawer image -->
+            </div>
+          </div>
+          
+          <!-- A/B: Two Ways to Build a View -->
+          <div class="ab-section mb-10">
+            <h4 class="font-bold text-xl text-gray-900 mb-6 flex items-center gap-2">
+              <i class="fas fa-code-branch text-orange-600"></i>
+              A/B — Two Ways to Build a View
+            </h4>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+              
+              <!-- Option B: Pre-Built Library (Rejected) -->
+              <div class="ab-option bg-red-50 border border-red-200 rounded-lg p-6">
+                <h5 class="font-bold text-lg text-red-900 mb-4 flex items-center gap-2">
+                  <i class="fas fa-times-circle text-red-600"></i>
+                  Option B: Pre-Built View Library (Rejected)
+                </h5>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Based on legacy saved queries; quick start but generic</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Felt mismatched to real workflows (even with previews)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-minus text-red-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Users preferred flexible creation over templates</span>
+                  </li>
+                </ul>
+                
+                <div class="testing-image-placeholder mt-6" data-test-image="option-b">
+                  <!-- Option B image -->
+                </div>
+              </div>
+              
+              <!-- Option A: Custom Query Builder (Selected) -->
+              <div class="ab-option bg-green-50 border border-green-200 rounded-lg p-6">
+                <h5 class="font-bold text-lg text-green-900 mb-4 flex items-center gap-2">
+                  <i class="fas fa-check-circle text-green-600"></i>
+                  Option A: Custom Query Builder (Selected)
+                </h5>
+                <ul class="space-y-2 text-gray-700 ml-6">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Side-by-side: filters on right, output on left</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Real-time updates after applying filters</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Create and save views (queries); view as table or chart</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Build in any direction with a deep filter set</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plus text-green-600 text-xs mt-2 flex-shrink-0"></i>
+                    <span>Future-ready for templated views, org sharing, onboarding packs</span>
+                  </li>
+                </ul>
+                
+                <div class="testing-image-placeholder mt-6" data-test-image="option-a">
+                  <!-- Option A image -->
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- Outcomes -->
+          <div class="outcomes-section bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6">
+            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-trophy text-blue-600"></i>
+              Outcomes
+            </h4>
+            <ul class="space-y-3 text-gray-700 text-lg">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-arrow-up text-green-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Task completion ↑, clicks/time to first answer ↓</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-thumbs-up text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Strong preference for create & save over static templates</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-comment-dots text-orange-600 text-sm mt-1 flex-shrink-0"></i>
+                <span>Metric explainers reduced "what does this mean?" questions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
         <div class="task-intro mb-8">
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
             My primary task was to shift the organization from a "requirements-to-code" mindset to a modern product design culture—one rooted in clarity, usability, and user-centered thinking. At the time, engineers were coding directly from Jira tickets or basic hand-drawn sketches. There were no systems in place to ensure consistency, scalability, or even shared understanding across teams.
@@ -1441,6 +1643,13 @@ export const caseStudies: CaseStudy[] = [
       '/images/case-studies/relo-census/component_data_tables.png',
       '/images/case-studies/relo-census/component_view_builders.png',
       '/images/case-studies/relo-census/component_dashboard_builder.png',
+    ],
+    testingImages: [
+      '/images/case-studies/relo-census/sponsorship_evaluation_top_filter.png',
+      '/images/case-studies/relo-census/sponsorship_evaluation_side_filter.png',
+      '/images/case-studies/relo-census/slide_drawer.png',
+      '/images/case-studies/relo-census/option_a_custom_query_builder.png',
+      '/images/case-studies/relo-census/option_b_pre_built_library.png',
     ],
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3659%3A58037&node-id=3659-136303&viewport=350%2C587%2C0.02&t=AuMD8R0hy2zSuSnl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3659%3A136303'
   },

@@ -31,6 +31,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentWireframeIndex, setCurrentWireframeIndex] = useState(0);
   const [isComponentModalOpen, setIsComponentModalOpen] = useState(false);
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
+  const [isTestingModalOpen, setIsTestingModalOpen] = useState(false);
+  const [currentTestingIndex, setCurrentTestingIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -277,6 +279,26 @@ const CaseStudyPage: React.FC = () => {
   const nextComponent = () => {
     const components = caseStudy?.componentImages || [];
     setCurrentComponentIndex((prev) => (prev < components.length - 1 ? prev + 1 : 0));
+  };
+
+  // Testing modal handlers
+  const openTestingModal = (index: number) => {
+    setCurrentTestingIndex(index);
+    setIsTestingModalOpen(true);
+  };
+
+  const closeTestingModal = () => {
+    setIsTestingModalOpen(false);
+  };
+
+  const previousTesting = () => {
+    const testing = caseStudy?.testingImages || [];
+    setCurrentTestingIndex((prev) => (prev > 0 ? prev - 1 : testing.length - 1));
+  };
+
+  const nextTesting = () => {
+    const testing = caseStudy?.testingImages || [];
+    setCurrentTestingIndex((prev) => (prev < testing.length - 1 ? prev + 1 : 0));
   };
 
   return (
@@ -527,7 +549,7 @@ const CaseStudyPage: React.FC = () => {
                 </h2>
               )}
               {(() => {
-                if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages && caseStudy.componentImages) {
+                if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages && caseStudy.componentImages && caseStudy.testingImages) {
                   let content = caseStudy.task;
                   
                   // Replace wireframe placeholders
@@ -583,6 +605,29 @@ const CaseStudyPage: React.FC = () => {
                     );
                   });
                   
+                  // Replace testing image placeholders
+                  const testingPlaceholders = [
+                    { pattern: '              <div class="testing-image-placeholder" data-test-image="top-filter">\n                <!-- Top filter image -->\n              </div>', index: 0, name: 'Top Filter' },
+                    { pattern: '              <div class="testing-image-placeholder" data-test-image="side-filter">\n                <!-- Side filter image -->\n              </div>', index: 1, name: 'Side Filter' },
+                    { pattern: '            <div class="testing-image-placeholder" data-test-image="slide-drawer">\n              <!-- Slide drawer image -->\n            </div>', index: 2, name: 'Slide Drawer' },
+                    { pattern: '                <div class="testing-image-placeholder mt-6" data-test-image="option-a">\n                  <!-- Option A image -->\n                </div>', index: 3, name: 'Custom Query Builder' },
+                    { pattern: '                <div class="testing-image-placeholder mt-6" data-test-image="option-b">\n                  <!-- Option B image -->\n                </div>', index: 4, name: 'Pre-Built Library' },
+                  ];
+                  
+                  testingPlaceholders.forEach(({ pattern, index, name }) => {
+                    content = content.replace(
+                      pattern,
+                      `<div class="cursor-pointer hover:opacity-90 transition-opacity rounded-lg overflow-hidden border border-gray-300 shadow-md" data-testing="${index}">
+                        <img 
+                          src="${caseStudy.testingImages![index]}" 
+                          alt="${name}" 
+                          class="w-full h-auto"
+                        />
+                        <p class="text-center text-sm text-gray-600 mt-2">Click to enlarge</p>
+                      </div>`
+                    );
+                  });
+                  
                   return (
                     <div 
                       className="text-lg text-gray-700 leading-relaxed"
@@ -608,6 +653,16 @@ const CaseStudyPage: React.FC = () => {
                           const componentIndex = componentDiv.getAttribute('data-component');
                           if (componentIndex !== null) {
                             openComponentModal(parseInt(componentIndex));
+                          }
+                          return;
+                        }
+                        
+                        // Handle testing image clicks
+                        const testingDiv = target.closest('[data-testing]');
+                        if (testingDiv) {
+                          const testingIndex = testingDiv.getAttribute('data-testing');
+                          if (testingIndex !== null) {
+                            openTestingModal(parseInt(testingIndex));
                           }
                         }
                       }}
@@ -929,6 +984,19 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentComponentIndex}
           onPrevious={previousComponent}
           onNext={nextComponent}
+          caseStudyId={caseStudy.id}
+        />
+      )}
+
+      {/* Testing Modal */}
+      {caseStudy.id === 'relo-census-dashboard' && caseStudy.testingImages && (
+        <ImageModal
+          isOpen={isTestingModalOpen}
+          onClose={closeTestingModal}
+          images={caseStudy.testingImages}
+          currentIndex={currentTestingIndex}
+          onPrevious={previousTesting}
+          onNext={nextTesting}
           caseStudyId={caseStudy.id}
         />
       )}
