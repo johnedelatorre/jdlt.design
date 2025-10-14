@@ -29,6 +29,8 @@ const CaseStudyPage: React.FC = () => {
   const [currentVisualDnaIndex, setCurrentVisualDnaIndex] = useState(0);
   const [isWireframeModalOpen, setIsWireframeModalOpen] = useState(false);
   const [currentWireframeIndex, setCurrentWireframeIndex] = useState(0);
+  const [isComponentModalOpen, setIsComponentModalOpen] = useState(false);
+  const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
 
   const caseStudy = caseStudies.find((cs) => cs.id === id);
   const currentIndex = caseStudies.findIndex((cs) => cs.id === id);
@@ -255,6 +257,26 @@ const CaseStudyPage: React.FC = () => {
   const nextWireframe = () => {
     const wireframes = caseStudy?.wireframeImages || [];
     setCurrentWireframeIndex((prev) => (prev < wireframes.length - 1 ? prev + 1 : 0));
+  };
+
+  // Component modal handlers
+  const openComponentModal = (index: number) => {
+    setCurrentComponentIndex(index);
+    setIsComponentModalOpen(true);
+  };
+
+  const closeComponentModal = () => {
+    setIsComponentModalOpen(false);
+  };
+
+  const previousComponent = () => {
+    const components = caseStudy?.componentImages || [];
+    setCurrentComponentIndex((prev) => (prev > 0 ? prev - 1 : components.length - 1));
+  };
+
+  const nextComponent = () => {
+    const components = caseStudy?.componentImages || [];
+    setCurrentComponentIndex((prev) => (prev < components.length - 1 ? prev + 1 : 0));
   };
 
   return (
@@ -505,14 +527,13 @@ const CaseStudyPage: React.FC = () => {
                 </h2>
               )}
               {(() => {
-                if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages) {
-                  // Split by wireframe placeholders
+                if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages && caseStudy.componentImages) {
+                  let content = caseStudy.task;
+                  
+                  // Replace wireframe placeholders
                   const wireframeAPattern = '              <div class="wireframe-a-placeholder mt-auto">\n                <!-- Wireframe A will be rendered as React component -->\n              </div>';
                   const wireframeBPattern = '              <div class="wireframe-b-placeholder mt-auto">\n                <!-- Wireframe B will be rendered as React component -->\n              </div>';
                   
-                  let content = caseStudy.task;
-                  
-                  // Replace wireframe A
                   content = content.replace(
                     wireframeAPattern,
                     `<div class="mt-auto cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="a">
@@ -525,7 +546,6 @@ const CaseStudyPage: React.FC = () => {
                     </div>`
                   );
                   
-                  // Replace wireframe B
                   content = content.replace(
                     wireframeBPattern,
                     `<div class="mt-auto cursor-pointer hover:opacity-90 transition-opacity" data-wireframe="b">
@@ -538,12 +558,38 @@ const CaseStudyPage: React.FC = () => {
                     </div>`
                   );
                   
+                  // Replace component placeholders
+                  const componentPlaceholders = [
+                    { pattern: '            <div class="component-placeholder" data-component="brand-colors">\n              <!-- Component image will be rendered -->\n            </div>', index: 0, name: 'Brand Colors' },
+                    { pattern: '            <div class="component-placeholder" data-component="buttons">\n              <!-- Component image will be rendered -->\n            </div>', index: 1, name: 'Buttons' },
+                    { pattern: '            <div class="component-placeholder" data-component="login">\n              <!-- Component image will be rendered -->\n            </div>', index: 2, name: 'Login' },
+                    { pattern: '            <div class="component-placeholder" data-component="side-nav">\n              <!-- Component image will be rendered -->\n            </div>', index: 3, name: 'Side Navigation' },
+                    { pattern: '            <div class="component-placeholder" data-component="charts">\n              <!-- Component image will be rendered -->\n            </div>', index: 4, name: 'Charts' },
+                    { pattern: '            <div class="component-placeholder" data-component="data-tables">\n              <!-- Component image will be rendered -->\n            </div>', index: 5, name: 'Data Tables' },
+                    { pattern: '            <div class="component-placeholder" data-component="view-builders">\n              <!-- Component image will be rendered -->\n            </div>', index: 6, name: 'View Builders' },
+                  ];
+                  
+                  componentPlaceholders.forEach(({ pattern, index, name }) => {
+                    content = content.replace(
+                      pattern,
+                      `<div class="cursor-pointer hover:opacity-90 transition-opacity rounded-lg overflow-hidden border border-gray-200 shadow-sm" data-component="${index}">
+                        <img 
+                          src="${caseStudy.componentImages![index]}" 
+                          alt="${name} Component" 
+                          class="w-full h-auto"
+                        />
+                      </div>`
+                    );
+                  });
+                  
                   return (
                     <div 
                       className="text-lg text-gray-700 leading-relaxed"
                       dangerouslySetInnerHTML={{ __html: content }}
                       onClick={(e) => {
                         const target = e.target as HTMLElement;
+                        
+                        // Handle wireframe clicks
                         const wireframeDiv = target.closest('[data-wireframe]');
                         if (wireframeDiv) {
                           const wireframeType = wireframeDiv.getAttribute('data-wireframe');
@@ -551,6 +597,16 @@ const CaseStudyPage: React.FC = () => {
                             openWireframeModal(0);
                           } else if (wireframeType === 'b') {
                             openWireframeModal(1);
+                          }
+                          return;
+                        }
+                        
+                        // Handle component clicks
+                        const componentDiv = target.closest('[data-component]');
+                        if (componentDiv) {
+                          const componentIndex = componentDiv.getAttribute('data-component');
+                          if (componentIndex !== null) {
+                            openComponentModal(parseInt(componentIndex));
                           }
                         }
                       }}
@@ -859,6 +915,19 @@ const CaseStudyPage: React.FC = () => {
           currentIndex={currentWireframeIndex}
           onPrevious={previousWireframe}
           onNext={nextWireframe}
+          caseStudyId={caseStudy.id}
+        />
+      )}
+
+      {/* Component Modal */}
+      {caseStudy.id === 'relo-census-dashboard' && caseStudy.componentImages && (
+        <ImageModal
+          isOpen={isComponentModalOpen}
+          onClose={closeComponentModal}
+          images={caseStudy.componentImages}
+          currentIndex={currentComponentIndex}
+          onPrevious={previousComponent}
+          onNext={nextComponent}
           caseStudyId={caseStudy.id}
         />
       )}

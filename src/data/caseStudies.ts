@@ -1037,6 +1037,138 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
         
+        <!-- Design System & Architecture -->
+        <div class="design-system-section mb-12">
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">Design — System & Architecture</h3>
+          <p class="text-base text-gray-600 italic mb-8">(built for speed, consistency, and scale)</p>
+          
+          <!-- Product Architecture -->
+          <div class="architecture-overview bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6 mb-8">
+            <h4 class="font-bold text-lg text-gray-900 mb-3 flex items-center gap-2">
+              <i class="fas fa-sitemap text-blue-600"></i>
+              Product architecture (at a glance)
+            </h4>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Persona Tabs → Data Explorer (fast, deep filter) → Saved Views (reopen/share) → Dashboards (compose from views)
+            </p>
+            <p class="text-gray-600 text-base mt-3 italic">
+              <strong>Principle:</strong> explainable metrics (plain names/defs) and repeatable flows.
+            </p>
+          </div>
+          
+          <!-- System Essentials -->
+          <div class="system-essentials mb-8">
+            <h4 class="font-bold text-xl text-gray-900 mb-6 flex items-center gap-2">
+              <i class="fas fa-layer-group text-purple-600"></i>
+              System essentials (what I built and documented)
+            </h4>
+            
+            <ul class="space-y-4 text-gray-700 text-lg">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-palette text-blue-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Brand & chart colors (AA-conscious):</strong> primary brand palette + an accessibility-checked chart set for legible, multi-series visuals.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-mouse-pointer text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Buttons & states:</strong> primary/secondary/tertiary/functional (danger) with focus/hover/disabled patterns to standardize behavior.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-chart-bar text-green-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Data visualization patterns:</strong> column/line defaults with titles, legends, and interaction affordances that align to table drill-in.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-table text-orange-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Data tables:</strong> breakdowns and rankings with sorting, sticky headers, pagination, CSV export, and image tiles where relevant.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-bars text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Navigation foundation:</strong> compact side nav with two-tier depth; collapsible variants for dense, analytics-heavy contexts.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-sign-in-alt text-indigo-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Entry & auth:</strong> clean login with brand treatment and clear form guidance.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-filter text-cyan-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>View Builder (filters grammar):</strong> stepwise filter composition (metric → date → optional filters → group/sort → visualization) with consistent labels, helper text, and multi-select handling.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-save text-emerald-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Reusable "view card":</strong> standard surface for saving, naming, and sharing analyses (spec templates + states).
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Design System Components Grid -->
+          <div class="components-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+            <div class="component-placeholder" data-component="brand-colors">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="buttons">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="login">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="side-nav">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="charts">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="data-tables">
+              <!-- Component image will be rendered -->
+            </div>
+            <div class="component-placeholder" data-component="view-builders">
+              <!-- Component image will be rendered -->
+            </div>
+          </div>
+          
+          <!-- Why It Matters -->
+          <div class="why-matters bg-green-50 border-l-4 border-green-500 rounded-r-lg p-6">
+            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-lightbulb text-green-600"></i>
+              Why it matters
+            </h4>
+            <ul class="space-y-3 text-gray-700 text-lg">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-rocket text-blue-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Faster delivery:</strong> shared tokens/components and documented states cut design/engine rework.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-shield-alt text-purple-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Consistency & trust:</strong> same naming, interactions, and metric language across surfaces.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-forward text-green-600 text-sm mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong>Future-ready:</strong> patterns compose cleanly as we add deeper comparisons and dashboard build.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
         <div class="task-intro mb-8">
           <p class="task-description text-lg text-gray-700 leading-relaxed mb-6">
             My primary task was to shift the organization from a "requirements-to-code" mindset to a modern product design culture—one rooted in clarity, usability, and user-centered thinking. At the time, engineers were coding directly from Jira tickets or basic hand-drawn sketches. There were no systems in place to ensure consistency, scalability, or even shared understanding across teams.
@@ -1296,6 +1428,15 @@ export const caseStudies: CaseStudy[] = [
     wireframeImages: [
       '/images/case-studies/relo-census/Relo Census Test Option A.png',
       '/images/case-studies/relo-census/Relo Census Test Option B.png',
+    ],
+    componentImages: [
+      '/images/case-studies/relo-census/component_brand_colors.png',
+      '/images/case-studies/relo-census/component_buttons.png',
+      '/images/case-studies/relo-census/component_login.png',
+      '/images/case-studies/relo-census/component_side_nav.png',
+      '/images/case-studies/relo-census/component_charts.png',
+      '/images/case-studies/relo-census/component_data_tables.png',
+      '/images/case-studies/relo-census/component_view_builders.png',
     ],
     figmaLink: 'https://www.figma.com/proto/asZK1MnXCqSyi95NlMRNhA/Porfolio-Preso-JohnDeLaTorreUgarte-2025?page-id=3659%3A58037&node-id=3659-136303&viewport=350%2C587%2C0.02&t=AuMD8R0hy2zSuSnl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3659%3A136303'
   },
