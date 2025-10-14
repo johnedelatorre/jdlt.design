@@ -893,7 +893,7 @@ export const caseStudies: CaseStudy[] = [
           <div class="grid md:grid-cols-2 gap-8">
             
             <!-- Option A: Top Filter Bar -->
-            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col">
               <h4 class="font-bold text-xl text-gray-900 mb-4">Option 1: Top Filter Bar Approach</h4>
               
               <div class="mb-6">
@@ -960,13 +960,13 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-a-placeholder">
+              <div class="wireframe-a-placeholder mt-auto">
                 <!-- Wireframe A will be rendered as React component -->
               </div>
             </div>
             
             <!-- Option B: Side Panel Filter -->
-            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm">
+            <div class="option-card bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col">
               <h4 class="font-bold text-xl text-gray-900 mb-4">Option 2: Side Panel Filter Approach</h4>
               
               <div class="mb-6">
@@ -1029,7 +1029,7 @@ export const caseStudies: CaseStudy[] = [
                 </ul>
               </div>
               
-              <div class="wireframe-b-placeholder">
+              <div class="wireframe-b-placeholder mt-auto">
                 <!-- Wireframe B will be rendered as React component -->
               </div>
             </div>
