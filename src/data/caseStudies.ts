@@ -1492,6 +1492,7 @@ export const caseStudies: CaseStudy[] = [
       </div>
     `,
     images: [
+      '/images/case-studies/relo-census/relocensususerflow.png',
       '/images/case-studies/relo-census/Relo Census Login Page.png',
       '/images/case-studies/relo-census/Sponsorship Evaluation Dashboard.png',
       '/images/case-studies/relo-census/Evaluation with Filters.png',

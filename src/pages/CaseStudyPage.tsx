@@ -814,9 +814,37 @@ const CaseStudyPage: React.FC = () => {
                 Complete design system implementation across all platform interfaces and user flows
               </p>
 
+              {/* User Flow Image (Full Width) - Relo Census Only */}
+              {caseStudy.id === 'relo-census-dashboard' && caseStudy.images.length > 0 && (
+                <div className="mb-8">
+                  <div
+                    className="group relative bg-gray-200 rounded-lg overflow-hidden cursor-pointer border border-gray-300 hover:shadow-xl hover:shadow-gray-400/20 transition-all duration-300"
+                    onClick={() => openModal(0)}
+                  >
+                    <img
+                      src={caseStudy.images[0]}
+                      alt="Relo Census User Flow"
+                      className="w-full h-auto"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                      <FontAwesomeIcon
+                        icon={faEye}
+                        className="text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
+                  <p className="text-center text-sm text-gray-600 mt-2">Relo Census Dashboard Experience User Flow - Click to enlarge</p>
+                </div>
+              )}
+
               {/* Image Gallery Grid */}
               <div className={`grid md:grid-cols-2 ${caseStudy.id === 'medable-translation-tool' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
-            {caseStudy.images.map((image, index) => (
+            {caseStudy.images.map((image, index) => {
+              // Skip first image for Relo Census (it's shown above)
+              if (caseStudy.id === 'relo-census-dashboard' && index === 0) return null;
+              
+              return (
               <div
                 key={index}
                 className="group relative aspect-video bg-gray-200 rounded-lg overflow-hidden cursor-pointer border border-gray-300 hover:shadow-xl hover:shadow-gray-400/20 transition-all duration-300"
@@ -836,7 +864,8 @@ const CaseStudyPage: React.FC = () => {
                   <FontAwesomeIcon icon={faEye} className="text-white text-2xl" />
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
             </div>
           </div>
