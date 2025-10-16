@@ -10,225 +10,155 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero/About Me Section */}
-      <section className="py-8 md:py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Text Content */}
-            <div>
-              <h1 className="font-serif text-4xl lg:text-5xl font-bold text-black mb-6">
-                Product Design & Usability Leader
-              </h1>
-              
-              {/* Strategic headline section with organized categories */}
-              <div className="mb-8 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                <div className="max-w-7xl mx-auto">
-                  {/* Desktop version - organized categories with proper spacing */}
-                  <div className="hidden md:block text-base text-gray-700 leading-relaxed space-y-4">
-                    <p className="mb-0">
-                      🧭 <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Mission • Legacy • Service</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Systems Thinker</span>
-                    </p>
-                    <p className="mb-0">
-                      🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> <span>Products & Teams Builder</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>IC → Player-Coach → Org-Builder</span>
-                    </p>
-                    <p className="mb-0">
-                      🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Journey Mapping</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Personas</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>UX Strategy</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Human-Centric</span>
-                    </p>
-                    <p className="mb-0">
-                      🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> <span>Scalable UX Systems</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>AI Led UX — Claude</span>
-                      <span className="text-gray-400 mx-2">│</span>
-                      <span>Figma • MCP Server • Cursor</span>
-                    </p>
+      {/* Hero/About Me Section - Centered */}
+      <section className="py-12 md:py-20 lg:py-28 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            {/* Profile Photo - Centered, Larger */}
+            <div className="mb-10">
+              <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 mx-auto rounded-full overflow-hidden border-4 border-gray-200 shadow-xl">
+                <img
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2IiBmWD0iMjAiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOWVhM2E4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UHJvZmlsZSBQaG90bzwvdGV4dD48L3N2Zz4=';
+                  }}
+                />
+              </div>
+            </div>
+            
+            {/* Title - Wider */}
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 px-4">
+              Product Design &<br className="hidden sm:inline" /> Usability Leader
+            </h1>
+            
+            {/* Key Attributes as Badge Pills - Single Row */}
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+              <span className="px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-medium whitespace-nowrap">
+                Founding Design Leader
+              </span>
+              <span className="px-3 py-1.5 bg-purple-100 text-purple-800 rounded-full text-xs font-medium whitespace-nowrap">
+                IC → Player-Coach → Org-Builder
+              </span>
+              <span className="px-3 py-1.5 bg-green-100 text-green-800 rounded-full text-xs font-medium whitespace-nowrap">
+                Discovery & Research-Led
+              </span>
+              <span className="px-3 py-1.5 bg-orange-100 text-orange-800 rounded-full text-xs font-medium whitespace-nowrap">
+                Systems Thinker
+              </span>
+              <span className="px-3 py-1.5 bg-teal-100 text-teal-800 rounded-full text-xs font-medium whitespace-nowrap">
+                AI-Led Prototyping
+              </span>
+            </div>
+            
+            {/* Full Expertise Section - Clean, Scannable */}
+            <div className="mb-10 text-left max-w-3xl mx-auto">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+                <div className="grid gap-3 text-sm text-gray-700">
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg flex-shrink-0">🧭</span>
+                    <div>
+                      <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
+                    </div>
                   </div>
-
-                  {/* Mobile version - organized categories */}
-                  <div className="md:hidden text-sm text-gray-700 leading-relaxed space-y-3">
+                  
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg flex-shrink-0">🛠️</span>
                     <div>
-                      <p className="mb-1">
-                        🧭 <span className="font-bold text-gray-900">WHO I AM:</span>
-                      </p>
-                      <p className="mb-0 ml-8">
-                        <span className="font-semibold text-gray-900">Founding Product Design Leader</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Mission • Legacy • Service</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Systems Thinker</span>
-                      </p>
+                      <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
                     </div>
-                    
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg flex-shrink-0">🔎</span>
                     <div>
-                      <p className="mb-1">
-                        🛠️ <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span>
-                      </p>
-                      <p className="mb-0 ml-8">
-                        <span>Products & Teams Builder</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>IC → Player-Coach → Org-Builder</span>
-                      </p>
+                      <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
                     </div>
-                    
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg flex-shrink-0">🧱</span>
                     <div>
-                      <p className="mb-1">
-                        🔎 <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span>
-                      </p>
-                      <p className="mb-0 ml-8">
-                        <span>Discovery & Research-Led </span><em>(Pendo • Stakeholder & User Interviews)</em>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Journey Mapping</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Personas</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>UX Strategy</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Human-Centric</span>
-                      </p>
-                    </div>
-                    
-                    <div>
-                      <p className="mb-1">
-                        🧱 <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span>
-                      </p>
-                      <p className="mb-0 ml-8">
-                        <span>Scalable UX Systems</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>AI Led UX — Claude</span>
-                        <span className="text-gray-400 mx-2">│</span>
-                        <span>Figma • MCP Server • Cursor</span>
-                      </p>
+                      <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
                     </div>
                   </div>
                 </div>
               </div>
-              
+            </div>
+            
+            {/* Main Summary - Centered, max-width for readability */}
+            <div className="max-w-3xl mx-auto mb-10">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
               </p>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
               </p>
-
-              {/* Relo Census */}
-              <div className="mb-8 p-6 bg-gray-50 rounded-lg border-l-4 border-black">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    📊
+            </div>
+            
+            {/* Featured Projects - Balanced Cards */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="grid sm:grid-cols-2 gap-6">
+                {/* Relo Census */}
+                <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow text-left flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-2xl">📊</span>
+                    <h3 className="font-serif text-xl font-bold text-black">Relo Census</h3>
                   </div>
-                  <h3 className="font-serif text-xl font-semibold text-black">Relo Census</h3>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  Led usability and design strategy for this next-gen sponsorship data platform. Delivered a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues—driving smarter decisions and stronger revenue impact.
-                </p>
-                <div className="flex items-center gap-2 text-green-700">
-                  <FontAwesomeIcon icon={faCheckCircle} className="text-sm" />
-                  <span className="font-medium">Result: Smarter decisions, stronger revenue impact, happier users</span>
-                </div>
-              </div>
-
-              {/* Relo Edge */}
-              <div className="mb-8 p-6 bg-gray-50 rounded-lg border-l-4 border-black">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    ⚡
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed flex-grow">
+                    Led usability and design strategy for this next-gen sponsorship data platform. Delivered a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues—driving smarter decisions and stronger revenue impact.
+                  </p>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
+                    <span className="font-semibold text-sm">Smarter decisions, stronger revenue, happier users</span>
                   </div>
-                  <h3 className="font-serif text-xl font-semibold text-black">Relo Edge</h3>
                 </div>
-                <p className="text-gray-700 mb-4">
-                  Directed a full UI/UX redesign of Relo's core analytics tool. Modernized the interface with best practices in usability and clarity—improving product adoption, user satisfaction, and engagement across the board.
-                </p>
-                <div className="flex items-center gap-2 text-green-700">
-                  <FontAwesomeIcon icon={faCheckCircle} className="text-sm" />
-                  <span className="font-medium">Result: Higher adoption, better satisfaction, more engagement</span>
+
+                {/* Relo Edge */}
+                <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow text-left flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-2xl">⚡</span>
+                    <h3 className="font-serif text-xl font-bold text-black">Relo Edge</h3>
+                  </div>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed flex-grow">
+                    Directed a full UI/UX redesign of Relo's core analytics tool. Modernized the interface with best practices in usability and clarity—improving product adoption, user satisfaction, and engagement across the board.
+                  </p>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
+                    <span className="font-semibold text-sm">Higher adoption, better satisfaction, more engagement</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            {/* Profile Photo - Hidden on mobile since avatar is in header */}
-            <div className="hidden md:flex flex-col items-center lg:items-center gap-8">
-              <div className="relative">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-lg">
-                  <img
-                    src={personalInfo.profileImage}
-                    alt={personalInfo.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      // Fallback to a placeholder if image fails to load
-                      (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2IiBmWD0iMjAiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOWVhM2E4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UHJvZmlsZSBQaG90bzwvdGV4dD48L3N2Zz4=';
-                    }}
+            
+            {/* CTA Button with Down Arrow */}
+            <div className="flex justify-center">
+              <button
+                onClick={scrollToCaseStudies}
+                className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
+                style={{
+                  animation: 'subtleBounce 2s ease-in-out infinite'
+                }}
+                aria-label="Scroll to case studies"
+              >
+                <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
+                  <FontAwesomeIcon 
+                    icon={faArrowDown} 
+                    className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
                   />
                 </div>
-              </div>
-              
-              {/* Scroll to Case Studies Button - Desktop: below photo */}
-              <div className="hidden md:flex justify-center mt-40">
-                <button
-                  onClick={scrollToCaseStudies}
-                  className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
-                  style={{
-                    animation: 'subtleBounce 2s ease-in-out infinite'
-                  }}
-                  aria-label="Scroll to case studies"
-                >
-                  {/* Circle with Arrow */}
-                  <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
-                    <FontAwesomeIcon 
-                      icon={faArrowDown} 
-                      className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
-                    />
-                  </div>
-                  
-                  {/* Text */}
-                  <span className="text-gray-500 text-lg font-medium uppercase tracking-wide group-hover:scale-105 transition-transform duration-500 ease-out">
-                    View Case Studies
-                  </span>
-                </button>
-              </div>
+                
+                <span className="font-semibold text-gray-700 text-sm uppercase tracking-wider group-hover:text-gray-900 transition-colors duration-300">
+                  View Case Studies
+                </span>
+              </button>
             </div>
-          </div>
-          
-                    {/* Mobile Scroll Button - After content, centered */}
-          <div className="md:hidden flex justify-center mt-6">
-            <button
-              onClick={scrollToCaseStudies}
-              className="group flex items-center gap-3 transition-all duration-500 ease-out hover:animate-none"
-              style={{
-                animation: 'subtleBounce 2s ease-in-out infinite'
-              }}
-              aria-label="Scroll to case studies"
-            >
-              {/* Circle with Arrow */}
-              <div className="relative w-14 h-14 border-2 border-gray-700 rounded-full flex items-center justify-center">
-                <FontAwesomeIcon 
-                  icon={faArrowDown} 
-                  className="text-gray-700 text-lg transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
-                />
-              </div>
-              
-              {/* Text */}
-              <span className="text-gray-500 text-base font-medium uppercase tracking-wide group-hover:scale-105 transition-transform duration-500 ease-out">
-                View Case Studies
-              </span>
-            </button>
           </div>
         </div>
       </section>
@@ -343,7 +273,7 @@ const HomePage: React.FC = () => {
               .filter(caseStudy => !caseStudy.isRecent)
               .map((caseStudy) => (
                 <div key={caseStudy.id} className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
-                  {/* Project Image - Shorter aspect ratio for better viewport fit */}
+                  {/* Project Image */}
                   <div className="relative aspect-[16/9] bg-gray-200 overflow-hidden">
                     <img
                       src={caseStudy.headerImage}
@@ -415,4 +345,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage; 
+export default HomePage;
