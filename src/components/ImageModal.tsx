@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Dialog, DialogBackdrop, DialogTitle } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faChevronLeft, faChevronRight, faSearchPlus, faSearchMinus, faUndo } from '@fortawesome/free-solid-svg-icons';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -238,6 +239,9 @@ const ImageModal: React.FC<ImageModalProps> = ({
 
   const currentImageSrc = images[currentIndex];
   const currentImageState = imageLoadStates[currentImageSrc] || 'loading';
+  
+  // Check if this is the user flow image that needs pan/zoom
+  const isUserFlowImage = caseStudyId === 'relo-census-dashboard' && currentIndex === 0 && images[0].includes('relocensususerflow');
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
@@ -273,21 +277,88 @@ const ImageModal: React.FC<ImageModalProps> = ({
             </div>
           )}
 
-          {/* Main image - Fit to full viewport height */}
-          <img
-            src={currentImageSrc}
-            alt={`Design: ${currentDesignInfo.title}`}
-            className={`max-h-screen max-w-screen object-contain transition-opacity duration-300 ${
-              currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
-            }`}
-            onLoad={() => {
-              setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
-            }}
-            onError={(e) => {
-              setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
-              (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-            }}
-          />
+          {/* Conditional rendering: Pan/Zoom for user flow, regular for others */}
+          {isUserFlowImage ? (
+            <TransformWrapper
+              initialScale={1}
+              minScale={0.5}
+              maxScale={4}
+              centerOnInit={true}
+              wheel={{ step: 0.1 }}
+              doubleClick={{ mode: 'reset' }}
+            >
+              {({ zoomIn, zoomOut, resetTransform }) => (
+                <>
+                  {/* Zoom Controls */}
+                  <div className="absolute top-20 right-6 z-20 flex flex-col gap-2">
+                    <button
+                      onClick={() => zoomIn()}
+                      className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white transition-all duration-200 hover:scale-105 flex items-center justify-center"
+                      title="Zoom In"
+                    >
+                      <FontAwesomeIcon icon={faSearchPlus} className="h-4 w-4" />
+                    </button>
+                    <button
+                      onClick={() => zoomOut()}
+                      className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white transition-all duration-200 hover:scale-105 flex items-center justify-center"
+                      title="Zoom Out"
+                    >
+                      <FontAwesomeIcon icon={faSearchMinus} className="h-4 w-4" />
+                    </button>
+                    <button
+                      onClick={() => resetTransform()}
+                      className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white transition-all duration-200 hover:scale-105 flex items-center justify-center"
+                      title="Reset"
+                    >
+                      <FontAwesomeIcon icon={faUndo} className="h-4 w-4" />
+                    </button>
+                  </div>
+                  
+                  {/* Pan/Zoom hint */}
+                  <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="bg-black/50 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full">
+                      Scroll to zoom • Drag to pan • Double-click to reset
+                    </div>
+                  </div>
+                  
+                  <TransformComponent
+                    wrapperClass="!w-full !h-full"
+                    contentClass="!w-full !h-full flex items-center justify-center"
+                  >
+                    <img
+                      src={currentImageSrc}
+                      alt={`Design: ${currentDesignInfo.title}`}
+                      className={`max-h-screen max-w-full object-contain transition-opacity duration-300 ${
+                        currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
+                      }`}
+                      onLoad={() => {
+                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
+                      }}
+                      onError={(e) => {
+                        setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
+                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+                      }}
+                    />
+                  </TransformComponent>
+                </>
+              )}
+            </TransformWrapper>
+          ) : (
+            <img
+              src={currentImageSrc}
+              alt={`Design: ${currentDesignInfo.title}`}
+              className={`max-h-screen max-w-screen object-contain transition-opacity duration-300 ${
+                currentImageState === 'loaded' ? 'opacity-100' : 'opacity-0'
+              }`}
+              onLoad={() => {
+                setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'loaded' }));
+              }}
+              onError={(e) => {
+                setImageLoadStates(prev => ({ ...prev, [currentImageSrc]: 'error' }));
+                (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzllYTNhOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+              }}
+            />
+          )}
 
           {/* Error state */}
           {currentImageState === 'error' && (
