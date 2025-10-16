@@ -226,6 +226,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
 
   // PERFORMANCE OPTIMIZED: Memoize design info calculation
   const currentDesignInfo = useMemo(() => {
+    // Special handling for Relo Census user flow
+    if (caseStudyId === 'relo-census-dashboard' && currentIndex === 0 && images[0].includes('relocensususerflow')) {
+      return { title: 'Relo Census Experience User Flow', subtitle: '' };
+    }
+    
     return caseStudyId === 'medable-translation-tool' 
       ? getMedableDesignInfo(images[currentIndex])
       : { title: getDesignName(images[currentIndex]), subtitle: '' };
