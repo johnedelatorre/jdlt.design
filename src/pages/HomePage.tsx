@@ -11,11 +11,11 @@ const HomePage: React.FC = () => {
   return (
     <div>
       {/* Hero/About Me Section - Centered, Matches Case Studies Width */}
-      <section className="py-12 md:py-20 lg:py-28 bg-white">
+      <section className="py-8 md:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Profile Photo - Centered, Larger */}
-            <div className="mb-10">
+            <div className="mb-6">
               <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 mx-auto rounded-full overflow-hidden border-4 border-gray-200 shadow-xl">
                 <img
                   src={personalInfo.profileImage}
@@ -29,12 +29,12 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Title - Single Line */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 px-4">
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 px-4">
               Product Design & Usability Leader
             </h1>
             
             {/* Key Attributes as Badge Pills - Scaled Up ~12% */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
               <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium whitespace-nowrap">
                 Founding Design Leader
               </span>
@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Full Expertise Section - Scaled +8%, More Padding */}
-            <div className="mb-10">
+            <div className="mb-6">
               <div className="p-7 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
                 <div className="grid gap-3.5 text-base text-gray-700">
                   <div className="flex items-start gap-3">
@@ -88,8 +88,8 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Main Summary - Same Width as Cards Above/Below */}
-            <div className="mb-10 text-center">
-              <div className="space-y-6">
+            <div className="mb-6 text-center">
+              <div className="space-y-4">
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Founding Product Design & Usability Leader</strong> and <strong>systems thinker</strong> who starts as an IC where risk is highest, then grows into <strong>player-coach</strong> and ultimately <strong>org-builder</strong> as the business scales. My north star is aligning user needs with the company's business goals—balancing <strong>value, velocity, and quality</strong> so the product performs and the experience earns trust.
                 </p>
@@ -105,7 +105,7 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* CTA Button with Down Arrow - Repositioned Above Relo Cards */}
-            <div className="flex justify-center my-12">
+            <div className="flex justify-center my-8">
               <button
                 onClick={scrollToCaseStudies}
                 className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
