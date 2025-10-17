@@ -104,6 +104,29 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             
+            {/* CTA Button with Down Arrow - Repositioned Above Relo Cards */}
+            <div className="flex justify-center my-12">
+              <button
+                onClick={scrollToCaseStudies}
+                className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
+                style={{
+                  animation: 'subtleBounce 2s ease-in-out infinite'
+                }}
+                aria-label="Scroll to case studies"
+              >
+                <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
+                  <FontAwesomeIcon 
+                    icon={faArrowDown} 
+                    className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
+                  />
+                </div>
+                
+                <span className="font-semibold text-gray-700 text-sm uppercase tracking-wider group-hover:text-gray-900 transition-colors duration-300">
+                  View Case Studies
+                </span>
+              </button>
+            </div>
+            
             {/* Featured Projects - Scaled Typography, Constrained Measure */}
             <div className="mb-12">
               <div className="grid sm:grid-cols-2 gap-6">
@@ -141,29 +164,6 @@ const HomePage: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            
-            {/* CTA Button with Down Arrow */}
-            <div className="flex justify-center">
-              <button
-                onClick={scrollToCaseStudies}
-                className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none"
-                style={{
-                  animation: 'subtleBounce 2s ease-in-out infinite'
-                }}
-                aria-label="Scroll to case studies"
-              >
-                <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
-                  <FontAwesomeIcon 
-                    icon={faArrowDown} 
-                    className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out" 
-                  />
-                </div>
-                
-                <span className="font-semibold text-gray-700 text-sm uppercase tracking-wider group-hover:text-gray-900 transition-colors duration-300">
-                  View Case Studies
-                </span>
-              </button>
             </div>
           </div>
         </div>
