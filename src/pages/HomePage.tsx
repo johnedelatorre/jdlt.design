@@ -95,11 +95,11 @@ const HomePage: React.FC = () => {
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
+                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, shaping two platforms: <strong>Relo Census</strong> (0→1, persona-driven analytics and saved views) and <strong>Relo Edge</strong> (UX/UI overhaul that boosts adoption and clarity):
+                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning two platforms: <strong>Relo Census</strong> (0→1 analytics built around saved views) and <strong>Relo Edge</strong> (flagship UX/UI overhaul of the real-time analytics experience).
                 </p>
               </div>
             </div>
@@ -115,12 +115,12 @@ const HomePage: React.FC = () => {
                   </div>
                   <div className="max-w-prose">
                     <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
-                      Led usability and design strategy for this next-gen sponsorship data platform. Delivered a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues—driving smarter decisions and stronger revenue impact.
+                      0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and the view-builder so teams can cut data their way and compose decision-ready dashboards.
                     </p>
                   </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
-                    <span className="font-semibold text-sm">Smarter decisions, stronger revenue, happier users</span>
+                    <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
                   </div>
                 </div>
 
@@ -132,12 +132,12 @@ const HomePage: React.FC = () => {
                   </div>
                   <div className="max-w-prose">
                     <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
-                      Directed a full UI/UX redesign of Relo's core analytics tool. Modernized the interface with best practices in usability and clarity—improving product adoption, user satisfaction, and engagement across the board.
+                      End-to-end UX/UI redesign of Relo's real-time analytics product. Simplified IA, rebuilt components, and clarified workflows to reduce friction across the board.
                     </p>
                   </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
-                    <span className="font-semibold text-sm">Higher adoption, better satisfaction, more engagement</span>
+                    <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
                   </div>
                 </div>
               </div>
