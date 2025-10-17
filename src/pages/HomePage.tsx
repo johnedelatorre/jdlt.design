@@ -91,15 +91,15 @@ const HomePage: React.FC = () => {
             <div className="mb-10 text-center">
               <div className="space-y-6">
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
+                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Founding Product Design & Usability Leader</strong> and <strong>systems thinker</strong> who starts as an IC where risk is highest, then grows into <strong>player-coach</strong> and ultimately <strong>org-builder</strong> as the business scales. My north star is aligning user needs with the company's business goals—balancing <strong>value, velocity, and quality</strong> so the product performs and the experience earns trust.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
+                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  Currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
+                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, shaping two platforms: <strong>Relo Census</strong> (0→1, persona-driven analytics and saved views) and <strong>Relo Edge</strong> (UX/UI overhaul that boosts adoption and clarity):
                 </p>
               </div>
             </div>
