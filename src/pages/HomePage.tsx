@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero/About Me Section - Centered */}
+      {/* Hero/About Me Section - Centered, Matches Case Studies Width */}
       <section className="py-12 md:py-20 lg:py-28 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Profile Photo - Centered, Larger */}
             <div className="mb-10">
@@ -33,52 +33,52 @@ const HomePage: React.FC = () => {
               Product Design &<br className="hidden sm:inline" /> Usability Leader
             </h1>
             
-            {/* Key Attributes as Badge Pills - Single Row */}
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
-              <span className="px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-medium whitespace-nowrap">
+            {/* Key Attributes as Badge Pills - Scaled Up ~12% */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
+              <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium whitespace-nowrap">
                 Founding Design Leader
               </span>
-              <span className="px-3 py-1.5 bg-purple-100 text-purple-800 rounded-full text-xs font-medium whitespace-nowrap">
+              <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium whitespace-nowrap">
                 IC → Player-Coach → Org-Builder
               </span>
-              <span className="px-3 py-1.5 bg-green-100 text-green-800 rounded-full text-xs font-medium whitespace-nowrap">
+              <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">
                 Discovery & Research-Led
               </span>
-              <span className="px-3 py-1.5 bg-orange-100 text-orange-800 rounded-full text-xs font-medium whitespace-nowrap">
+              <span className="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium whitespace-nowrap">
                 Systems Thinker
               </span>
-              <span className="px-3 py-1.5 bg-teal-100 text-teal-800 rounded-full text-xs font-medium whitespace-nowrap">
+              <span className="px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium whitespace-nowrap">
                 AI-Led Prototyping
               </span>
             </div>
             
-            {/* Full Expertise Section - Clean, Scannable */}
-            <div className="mb-10 text-left max-w-3xl mx-auto">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                <div className="grid gap-3 text-sm text-gray-700">
+            {/* Full Expertise Section - Scaled +8%, More Padding */}
+            <div className="mb-10">
+              <div className="p-7 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
+                <div className="grid gap-3.5 text-base text-gray-700">
                   <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🧭</span>
+                    <span className="text-xl flex-shrink-0">🧭</span>
                     <div>
                       <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🛠️</span>
+                    <span className="text-xl flex-shrink-0">🛠️</span>
                     <div>
                       <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🔎</span>
+                    <span className="text-xl flex-shrink-0">🔎</span>
                     <div>
                       <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🧱</span>
+                    <span className="text-xl flex-shrink-0">🧱</span>
                     <div>
                       <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
                     </div>
@@ -87,33 +87,37 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             
-            {/* Main Summary - Centered, max-width for readability */}
-            <div className="max-w-3xl mx-auto mb-10">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
-              </p>
+            {/* Main Summary - Optimal Line Length (65-75ch) */}
+            <div className="mb-10">
+              <div className="max-w-prose mx-auto space-y-6">
+                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
+                </p>
+                
+                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. Previously at <strong>JPMorgan Chase</strong>, I scaled design from <strong>1 → 8</strong> (6–8 designers + 1 researcher) for Commercial Banking in <strong>~12 months</strong>—sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
+                </p>
+                
+                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                  Currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, where I'm revolutionizing <strong>sports analytics</strong> through two game-changing platforms:
+                </p>
+              </div>
             </div>
             
-            {/* Featured Projects - Balanced Cards */}
-            <div className="max-w-4xl mx-auto mb-12">
+            {/* Featured Projects - Scaled Typography, Constrained Measure */}
+            <div className="mb-12">
               <div className="grid sm:grid-cols-2 gap-6">
                 {/* Relo Census */}
                 <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow text-left flex flex-col">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-2xl">📊</span>
-                    <h3 className="font-serif text-xl font-bold text-black">Relo Census</h3>
+                    <h3 className="font-serif text-2xl font-bold text-black">Relo Census</h3>
                   </div>
-                  <p className="text-base text-gray-700 mb-4 leading-relaxed flex-grow">
-                    Led usability and design strategy for this next-gen sponsorship data platform. Delivered a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues—driving smarter decisions and stronger revenue impact.
-                  </p>
+                  <div className="max-w-prose">
+                    <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
+                      Led usability and design strategy for this next-gen sponsorship data platform. Delivered a clean, scalable UX that helps brands and agencies value every team, asset, and brand across major U.S. leagues—driving smarter decisions and stronger revenue impact.
+                    </p>
+                  </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
                     <span className="font-semibold text-sm">Smarter decisions, stronger revenue, happier users</span>
@@ -124,11 +128,13 @@ const HomePage: React.FC = () => {
                 <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow text-left flex flex-col">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-2xl">⚡</span>
-                    <h3 className="font-serif text-xl font-bold text-black">Relo Edge</h3>
+                    <h3 className="font-serif text-2xl font-bold text-black">Relo Edge</h3>
                   </div>
-                  <p className="text-base text-gray-700 mb-4 leading-relaxed flex-grow">
-                    Directed a full UI/UX redesign of Relo's core analytics tool. Modernized the interface with best practices in usability and clarity—improving product adoption, user satisfaction, and engagement across the board.
-                  </p>
+                  <div className="max-w-prose">
+                    <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
+                      Directed a full UI/UX redesign of Relo's core analytics tool. Modernized the interface with best practices in usability and clarity—improving product adoption, user satisfaction, and engagement across the board.
+                    </p>
+                  </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
                     <span className="font-semibold text-sm">Higher adoption, better satisfaction, more engagement</span>
