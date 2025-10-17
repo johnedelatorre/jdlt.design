@@ -28,9 +28,9 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             
-            {/* Title - Wider */}
+            {/* Title - Single Line */}
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 px-4">
-              Product Design &<br className="hidden sm:inline" /> Usability Leader
+              Product Design & Usability Leader
             </h1>
             
             {/* Key Attributes as Badge Pills - Scaled Up ~12% */}
