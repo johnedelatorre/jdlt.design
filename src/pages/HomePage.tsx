@@ -87,9 +87,9 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             
-            {/* Main Summary - Optimal Line Length (65-75ch) */}
-            <div className="mb-10">
-              <div className="max-w-prose mx-auto space-y-6">
+            {/* Main Summary - Same Width as Cards Above/Below */}
+            <div className="mb-10 text-center">
+              <div className="space-y-6">
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems and operating cadences that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Full-Stack Product Design Leader</strong> and <strong>systems thinker</strong> who starts as a founding IC where risk is highest, then evolves into <strong>player-coach and org-builder</strong> as the business scales.
                 </p>
