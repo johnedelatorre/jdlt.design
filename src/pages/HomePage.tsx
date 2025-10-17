@@ -95,7 +95,7 @@ const HomePage: React.FC = () => {
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>throughput, adoption, and quality</strong>.
+                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>adoption, and quality</strong>.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
