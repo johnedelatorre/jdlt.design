@@ -318,31 +318,31 @@ const CaseStudyPage: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         
         {/* Centered Project Details Card */}
-        <div className="absolute inset-0 flex items-center justify-center p-8">
-          <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg border border-white/10 shadow-xl max-w-3xl w-full">
-            <h1 className="font-serif text-4xl lg:text-5xl font-semibold text-white mb-4">
+        <div className="absolute inset-0 flex items-center justify-center p-4 md:p-8">
+          <div className="bg-black/50 backdrop-blur-sm p-4 md:p-8 rounded-lg border border-white/10 shadow-xl max-w-3xl w-full">
+            <h1 className="font-serif text-2xl md:text-4xl lg:text-5xl font-semibold text-white mb-2 md:mb-4">
               {caseStudy.title}
             </h1>
-            <p className="text-white text-lg lg:text-xl mb-8 opacity-90">{caseStudy.subtitle}</p>
+            <p className="text-white text-base md:text-lg lg:text-xl mb-4 md:mb-8 opacity-90">{caseStudy.subtitle}</p>
             
             {/* Check if this case study has the new format (scope and outcome fields) */}
             {caseStudy.scope && caseStudy.outcome ? (
-              <div className="space-y-6 text-white mb-8">
+              <div className="space-y-3 md:space-y-6 text-white mb-4 md:mb-8">
                 <div>
-                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Role</span>
-                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.role}</p>
+                  <span className="font-medium text-gray-300 text-xs md:text-sm uppercase tracking-wider block mb-1 md:mb-2">Role</span>
+                  <p className="text-white text-sm md:text-lg font-semibold leading-relaxed">{caseStudy.role}</p>
                 </div>
                 <div>
-                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Scope</span>
-                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.scope}</p>
+                  <span className="font-medium text-gray-300 text-xs md:text-sm uppercase tracking-wider block mb-1 md:mb-2">Scope</span>
+                  <p className="text-white text-sm md:text-lg font-semibold leading-relaxed">{caseStudy.scope}</p>
                 </div>
                 <div>
-                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Outcome</span>
-                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.outcome}</p>
+                  <span className="font-medium text-gray-300 text-xs md:text-sm uppercase tracking-wider block mb-1 md:mb-2">Outcome</span>
+                  <p className="text-white text-sm md:text-lg font-semibold leading-relaxed">{caseStudy.outcome}</p>
                 </div>
                 <div>
-                  <span className="font-medium text-gray-300 text-sm uppercase tracking-wider block mb-2">Year</span>
-                  <p className="text-white text-lg font-semibold leading-relaxed">{caseStudy.year}</p>
+                  <span className="font-medium text-gray-300 text-xs md:text-sm uppercase tracking-wider block mb-1 md:mb-2">Year</span>
+                  <p className="text-white text-sm md:text-lg font-semibold leading-relaxed">{caseStudy.year}</p>
                 </div>
               </div>
             ) : (
@@ -373,16 +373,16 @@ const CaseStudyPage: React.FC = () => {
                 href={caseStudy.figmaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
+                className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
               >
                 <FontAwesomeIcon 
                   icon={faFigma} 
-                  className="text-lg group-hover:scale-110 transition-transform duration-300" 
+                  className="text-base md:text-lg group-hover:scale-110 transition-transform duration-300" 
                 />
                 <span>View Interactive Prototype</span>
                 <FontAwesomeIcon 
                   icon={faExternalLinkAlt} 
-                  className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+                  className="text-xs md:text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
                 />
               </a>
             )}
@@ -423,15 +423,15 @@ const CaseStudyPage: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               {caseStudy.id === 'relo-census-dashboard' ? (
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
+                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
                     Project Brief
                   </h2>
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
               ) : (
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-600" />
+                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
                   Project Brief
                 </h2>
               )}
@@ -459,15 +459,15 @@ const CaseStudyPage: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               {caseStudy.id === 'relo-census-dashboard' ? (
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faSearch} className="text-blue-600" />
+                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faSearch} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
                     Discovery
                   </h2>
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
               ) : (
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600" />
+                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600 text-lg md:text-xl lg:text-2xl" />
                   Situation
                 </h2>
               )}
@@ -527,8 +527,8 @@ const CaseStudyPage: React.FC = () => {
             <div className="mb-16">
               <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faExclamationTriangle} className="text-blue-600" />
+                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faExclamationTriangle} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
                     Define The Problem
                   </h2>
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
@@ -546,15 +546,15 @@ const CaseStudyPage: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               {caseStudy.id === 'relo-census-dashboard' ? (
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faTasks} className="text-purple-600 text-lg md:text-xl lg:text-2xl" />
                     Design (Iterate & Test)
                   </h2>
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
               ) : (
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faTasks} className="text-purple-600" />
+                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTasks} className="text-purple-600 text-lg md:text-xl lg:text-2xl" />
                   Task
                 </h2>
               )}
@@ -694,8 +694,8 @@ const CaseStudyPage: React.FC = () => {
           {caseStudy.id !== 'relo-census-dashboard' && (
             <div className="mb-16">
               <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faCogs} className="text-green-600" />
+                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faCogs} className="text-green-600 text-lg md:text-xl lg:text-2xl" />
                   Action
                 </h2>
                 {/* Split action content at personas placeholder for proper positioning */}
@@ -758,15 +758,15 @@ const CaseStudyPage: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
               {caseStudy.id === 'relo-census-dashboard' ? (
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
+                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faTrophy} className="text-yellow-600 text-lg md:text-xl lg:text-2xl" />
                     Result
                   </h2>
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
               ) : (
-                <h2 className="font-serif text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faTrophy} className="text-yellow-600" />
+                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTrophy} className="text-yellow-600 text-lg md:text-xl lg:text-2xl" />
                   Result
                 </h2>
               )}
@@ -785,8 +785,8 @@ const CaseStudyPage: React.FC = () => {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-black mb-4 flex items-center justify-center gap-3">
-              <FontAwesomeIcon icon={faPalette} className="text-indigo-600" />
+            <h2 className="font-serif text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black mb-4 flex items-center justify-center gap-3">
+              <FontAwesomeIcon icon={faPalette} className="text-indigo-600 text-lg md:text-xl lg:text-2xl" />
               Final Designs
             </h2>
             <p className="text-lg text-gray-600">

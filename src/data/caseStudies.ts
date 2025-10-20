@@ -81,8 +81,8 @@ export const caseStudies: CaseStudy[] = [
               </ul>
             </div>
             
-            <div class="text-sm text-gray-700 italic border-l-4 border-blue-300 pl-4 py-3 bg-blue-50 rounded-r">
-              <strong>Core value</strong> Start in the right place → reach a trustworthy answer fast → save/share the evidence → tell the story repeatedly via dashboards → keep metrics explainable, not a black box.
+            <div class="text-xs md:text-sm text-gray-700 italic border-l-4 border-blue-300 pl-3 md:pl-4 py-2 md:py-3 bg-blue-50 rounded-r mt-4">
+              <strong>Core value:</strong> Start in the right place → reach a trustworthy answer fast → save/share the evidence → tell the story repeatedly via dashboards → keep metrics explainable, not a black box.
             </div>
           </div>
         </div>
@@ -129,17 +129,17 @@ export const caseStudies: CaseStudy[] = [
           </div>
         </div>
 
-        <div class="process-steps grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="process-steps grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12">
           
           <!-- IC -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-user text-white text-2xl"></i>
+          <div class="process-step text-center bg-white rounded-lg p-4 md:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+            <div class="step-icon-container mb-3 md:mb-6">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-user text-white text-xl md:text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">IC</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
+            <h4 class="step-title text-base md:text-xl font-bold text-gray-900 mb-2 md:mb-4">IC</h4>
+            <div class="step-description space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
               <p>Discovery & Research</p>
               <p>Persona Development</p>
               <p>Problem Framing</p>
@@ -147,14 +147,14 @@ export const caseStudies: CaseStudy[] = [
           </div>
 
           <!-- Player-Coach -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-users text-white text-2xl"></i>
+          <div class="process-step text-center bg-white rounded-lg p-4 md:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+            <div class="step-icon-container mb-3 md:mb-6">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-users text-white text-xl md:text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Player</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
+            <h4 class="step-title text-base md:text-xl font-bold text-gray-900 mb-2 md:mb-4">Player</h4>
+            <div class="step-description space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
               <p>Strategic Alignment</p>
               <p>Product KRs</p>
               <p>Roadmap Sequencing</p>
@@ -162,14 +162,14 @@ export const caseStudies: CaseStudy[] = [
           </div>
 
           <!-- Coach -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-clipboard-list text-white text-2xl"></i>
+          <div class="process-step text-center bg-white rounded-lg p-4 md:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+            <div class="step-icon-container mb-3 md:mb-6">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-clipboard-list text-white text-xl md:text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Coach</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
+            <h4 class="step-title text-base md:text-xl font-bold text-gray-900 mb-2 md:mb-4">Coach</h4>
+            <div class="step-description space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
               <p>Decision Principles</p>
               <p>Quality Standards</p>
               <p>Team Alignment</p>
@@ -177,14 +177,14 @@ export const caseStudies: CaseStudy[] = [
           </div>
 
           <!-- Org-Builder -->
-          <div class="process-step text-center">
-            <div class="step-icon-container mb-6">
-              <div class="w-20 h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-building text-white text-2xl"></i>
+          <div class="process-step text-center bg-white rounded-lg p-4 md:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+            <div class="step-icon-container mb-3 md:mb-6">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto bg-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-building text-white text-xl md:text-2xl"></i>
               </div>
             </div>
-            <h4 class="step-title text-xl font-bold text-gray-900 mb-4">Org-Builder</h4>
-            <div class="step-description space-y-2 text-sm text-gray-600">
+            <h4 class="step-title text-base md:text-xl font-bold text-gray-900 mb-2 md:mb-4">Org-Builder</h4>
+            <div class="step-description space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
               <p>Design System</p>
               <p>Product Scorecard</p>
               <p>Working Rules</p>
