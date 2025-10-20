@@ -4,13 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom utilities for line clamping */
+/* Custom utilities for line clamping and mobile responsive helpers */
 @layer utilities {
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  
+  /* Mobile-first responsive content padding */
+  .case-study-content {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+  
+  /* Mobile-responsive section spacing */
+  .section-spacing {
+    @apply space-y-6 md:space-y-8 lg:space-y-10;
   }
 }
 
@@ -102,48 +112,48 @@
   }
   
   .brief-section {
-    @apply mb-8 last:mb-0;
+    @apply mb-6 md:mb-8 last:mb-0;
   }
   
   .brief-title {
-    @apply text-xl font-bold text-gray-900 mb-4 font-serif;
+    @apply text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4 font-serif;
   }
   
   .brief-subtitle {
-    @apply text-lg font-semibold text-gray-800 mb-3 font-serif;
+    @apply text-base md:text-lg font-semibold text-gray-800 mb-2 md:mb-3 font-serif;
   }
   
   .brief-intro {
-    @apply text-gray-700 mb-4 leading-relaxed;
+    @apply text-base md:text-lg text-gray-700 mb-3 md:mb-4 leading-relaxed;
   }
   
   .brief-list {
-    @apply space-y-3;
+    @apply space-y-2 md:space-y-3;
   }
   
   .brief-list li {
-    @apply flex items-center gap-3 text-gray-700 leading-relaxed;
+    @apply flex items-center gap-2 md:gap-3 text-sm md:text-base text-gray-700 leading-relaxed;
   }
   
   .brief-list li i {
-    @apply text-blue-600 text-sm flex-shrink-0 w-4;
+    @apply text-blue-600 text-xs md:text-sm flex-shrink-0 w-4;
   }
 
   /* Enhanced Case Study Situation Styles */
   .situation-content {
-    @apply space-y-12;
+    @apply space-y-8 md:space-y-12;
   }
   
   .situation-title {
-    @apply text-2xl font-bold text-gray-900 mb-6 font-serif;
+    @apply text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 font-serif;
   }
   
   .situation-text {
-    @apply text-gray-700 leading-relaxed text-lg;
+    @apply text-base md:text-lg text-gray-700 leading-relaxed;
   }
   
   .situation-subtitle {
-    @apply text-lg font-semibold text-gray-800 mb-6 font-serif;
+    @apply text-base md:text-lg font-semibold text-gray-800 mb-4 md:mb-6 font-serif;
   }
   
   /* Problem List Styles */
@@ -211,104 +221,104 @@
 
   /* Enhanced Task Section Styles */
   .task-content {
-    @apply space-y-12;
+    @apply space-y-8 md:space-y-12;
   }
   
   .task-intro {
-    @apply mb-8;
+    @apply mb-6 md:mb-8;
   }
   
   .task-description {
-    @apply text-lg text-gray-700 leading-relaxed;
+    @apply text-base md:text-lg text-gray-700 leading-relaxed;
   }
   
   .task-item {
-    @apply bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-4 md:p-8 shadow-sm hover:shadow-md transition-all duration-300;
   }
   
   .task-header {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-3 md:gap-4;
   }
   
   .task-number {
-    @apply flex items-center gap-3;
+    @apply flex items-center gap-2 md:gap-3;
   }
   
   .task-number i {
-    @apply text-2xl flex-shrink-0;
+    @apply text-xl md:text-2xl flex-shrink-0;
   }
   
   .task-label {
-    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider;
+    @apply bg-gray-100 text-gray-700 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider;
   }
   
   .task-title {
-    @apply text-xl font-bold text-gray-900 font-serif leading-tight;
+    @apply text-lg md:text-xl font-bold text-gray-900 font-serif leading-tight;
   }
   
   .task-overview {
-    @apply text-gray-700 leading-relaxed text-base;
+    @apply text-base text-gray-700 leading-relaxed;
   }
   
   .task-needs-title {
-    @apply font-semibold text-gray-800 mb-4;
+    @apply font-semibold text-gray-800 mb-3 md:mb-4 text-base;
   }
   
   .task-list {
-    @apply space-y-3 ml-0 list-none;
+    @apply space-y-2 md:space-y-3 ml-0 list-none;
   }
   
   .task-list-item {
-    @apply flex items-start gap-4 text-gray-700 leading-relaxed;
+    @apply flex items-start gap-3 md:gap-4 text-gray-700 leading-relaxed;
   }
   
   .task-list-item i {
-    @apply text-lg flex-shrink-0;
+    @apply text-base md:text-lg flex-shrink-0;
   }
   
   .task-list-item span {
-    @apply flex-1 text-base;
+    @apply flex-1 text-sm md:text-base;
   }
 
   /* Enhanced Action Section Styles */
   .action-content {
-    @apply space-y-16;
+    @apply space-y-10 md:space-y-16;
   }
   
   .action-intro {
-    @apply mb-8;
+    @apply mb-6 md:mb-8;
   }
   
   .action-description {
-    @apply text-lg text-gray-700 leading-relaxed;
+    @apply text-base md:text-lg text-gray-700 leading-relaxed;
   }
   
   .action-item {
-    @apply bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-xl p-4 md:p-8 shadow-sm hover:shadow-md transition-all duration-300;
   }
   
   .action-header {
-    @apply flex flex-col gap-4 border-b border-blue-100 pb-6;
+    @apply flex flex-col gap-3 md:gap-4 border-b border-blue-100 pb-4 md:pb-6;
   }
   
   .action-number {
-    @apply flex items-center gap-3;
+    @apply flex items-center gap-2 md:gap-3;
   }
   
   .action-number i {
-    @apply text-2xl flex-shrink-0;
+    @apply text-xl md:text-2xl flex-shrink-0;
   }
   
   .action-label {
-    @apply bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider;
+    @apply bg-blue-100 text-blue-700 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider;
   }
   
   .action-title {
-    @apply text-xl font-bold text-gray-900 font-serif leading-tight;
+    @apply text-lg md:text-xl font-bold text-gray-900 font-serif leading-tight;
   }
   
   .action-subtitle {
-    @apply text-gray-600 italic;
+    @apply text-sm md:text-base text-gray-600 italic;
   }
   
   .action-details {
@@ -377,19 +387,19 @@
   
   /* Personas Viewer Styles */
   .personas-viewer {
-    @apply mt-16 p-8 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl;
+    @apply mt-10 md:mt-16 p-4 md:p-8 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl;
   }
   
   .personas-viewer-title {
-    @apply text-2xl font-bold text-gray-900 font-serif text-center mb-2;
+    @apply text-xl md:text-2xl font-bold text-gray-900 font-serif text-center mb-2;
   }
   
   .personas-viewer-subtitle {
-    @apply text-gray-600 text-center mb-8;
+    @apply text-sm md:text-base text-gray-600 text-center mb-6 md:mb-8;
   }
   
   .personas-grid {
-    @apply grid md:grid-cols-3 gap-6;
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6;
   }
   
   .persona-card {

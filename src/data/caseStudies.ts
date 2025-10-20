@@ -491,26 +491,26 @@ export const caseStudies: CaseStudy[] = [
     `,
     
     defineProblem: `
-      <div class="space-y-10">
+      <div class="space-y-8 md:space-y-10">
         
         <!-- Reframing the Challenge -->
         <div class="problem-card">
-          <div class="text-center mb-8">
-            <div class="w-24 h-24 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-6">
-              <i class="fas fa-star text-white text-3xl"></i>
+          <div class="text-center mb-6 md:mb-8">
+            <div class="w-20 h-20 md:w-24 md:h-24 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4 md:mb-6">
+              <i class="fas fa-star text-white text-2xl md:text-3xl"></i>
             </div>
-            <h3 class="font-bold text-gray-900 text-3xl mb-6">Reframing the Challenge</h3>
+            <h3 class="font-bold text-gray-900 text-xl md:text-3xl mb-4 md:mb-6 px-4">Reframing the Challenge</h3>
           </div>
           
-          <div class="space-y-6">
+          <div class="space-y-4 md:space-y-6 px-4 md:px-0">
             <div>
-              <p class="font-bold text-gray-900 text-xl mb-3">Original Brief:</p>
-              <p class="text-gray-700 text-xl italic leading-relaxed">"Build new dashboard according to Jira Requirements that allows for more filtering"</p>
+              <p class="font-bold text-gray-900 text-base md:text-xl mb-2 md:mb-3">Original Brief:</p>
+              <p class="text-gray-700 text-base md:text-xl italic leading-relaxed">"Build new dashboard according to Jira Requirements that allows for more filtering"</p>
             </div>
             
             <div>
-              <p class="font-bold text-gray-900 text-xl mb-3">Redefined Problem:</p>
-              <p class="text-gray-700 text-xl leading-relaxed">How might each persona start in the right place and, in minutes, use real-time deep filtering to reach a credible, explainable answer they can save and share—then assemble those saved views into dashboards for recurring storytelling and reviews?</p>
+              <p class="font-bold text-gray-900 text-base md:text-xl mb-2 md:mb-3">Redefined Problem:</p>
+              <p class="text-gray-700 text-base md:text-xl leading-relaxed">How might each persona start in the right place and, in minutes, use real-time deep filtering to reach a credible, explainable answer they can save and share—then assemble those saved views into dashboards for recurring storytelling and reviews?</p>
             </div>
           </div>
         </div>
@@ -519,15 +519,15 @@ export const caseStudies: CaseStudy[] = [
         
         <!-- Why It Matters -->
         <div class="problem-card">
-          <div class="text-center mb-8">
-            <div class="w-24 h-24 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-6">
-              <i class="fas fa-heart text-white text-3xl"></i>
+          <div class="text-center mb-6 md:mb-8">
+            <div class="w-20 h-20 md:w-24 md:h-24 mx-auto bg-blue-600 rounded-full flex items-center justify-center mb-4 md:mb-6">
+              <i class="fas fa-heart text-white text-2xl md:text-3xl"></i>
             </div>
-            <h3 class="font-bold text-gray-900 text-3xl mb-6">Why It Matters</h3>
+            <h3 class="font-bold text-gray-900 text-xl md:text-3xl mb-4 md:mb-6 px-4">Why It Matters</h3>
           </div>
           
-          <div>
-            <p class="text-gray-700 text-xl leading-relaxed">Helps more users start and reach a trustworthy answer quickly, increases ongoing use (views saved/shared), reduces support tickets by making it truly self-serve, and keeps metrics clear.</p>
+          <div class="px-4 md:px-0">
+            <p class="text-gray-700 text-base md:text-xl leading-relaxed">Helps more users start and reach a trustworthy answer quickly, increases ongoing use (views saved/shared), reduces support tickets by making it truly self-serve, and keeps metrics clear.</p>
           </div>
         </div>
         
@@ -738,9 +738,97 @@ export const caseStudies: CaseStudy[] = [
         
         <!-- Discovery to Product Roadmap -->
         <div class="roadmap-section">
-          <h3 class="font-bold text-gray-900 text-3xl mb-8 text-center">Discovery to Product Roadmap</h3>
+          <h3 class="font-bold text-gray-900 text-xl md:text-3xl mb-6 md:mb-8 text-center">Discovery to Product Roadmap</h3>
           
-          <div class="overflow-x-auto border border-gray-300 rounded-lg">
+          <!-- Mobile Card Layout (hidden on md and up) -->
+          <div class="md:hidden space-y-6 mb-6">
+            <!-- Release 1: Foundation (Now) -->
+            <div class="border border-gray-300 rounded-lg overflow-hidden">
+              <div class="bg-teal-500 text-white p-4">
+                <div class="font-bold text-lg mb-1">Release 1: Foundation (Now)</div>
+                <div class="text-sm italic">MVP shipped in 60 days</div>
+              </div>
+              <div class="divide-y divide-gray-200">
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-user-friends text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Reduce friction with persona-driven entry points</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> 3 persona tabs (Rights Holders / Brands / Placements)</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Tab navigation with role-specific data views</p>
+                </div>
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-search text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Make sponsorship data instantly explorable</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Real-time fast filters for key dimensions</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Sticky top filter bar</p>
+                </div>
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-graduation-cap text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Lower training burden for CS and users</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Navigation that matches user mental models</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Deep-dive drawer for focused detail without losing context</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Release 2: Intelligence (Next) -->
+            <div class="border border-gray-300 rounded-lg overflow-hidden">
+              <div class="bg-teal-500 text-white p-4">
+                <div class="font-bold text-lg mb-1">Release 2: Intelligence (Next)</div>
+              </div>
+              <div class="divide-y divide-gray-200">
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-save text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Let users save & reuse workflows</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Build-a-View with saved queries and persistent views</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Query views builder with instant data views + Saved Views list</p>
+                </div>
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-balance-scale text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Enable meaningful comparisons across assets/partners/placements</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Standardized placement taxonomy for consistent comparisons</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Deeper filter parameters in Build-a-View</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Release 3: Platform (Later) -->
+            <div class="border border-gray-300 rounded-lg overflow-hidden">
+              <div class="bg-teal-500 text-white p-4">
+                <div class="font-bold text-lg mb-1">Release 3: Platform (Later)</div>
+              </div>
+              <div class="divide-y divide-gray-200">
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-chart-pie text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Give each client type a clear, customized ROI view</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Build dashboards from Saved Views</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Drag-and-drop dashboard builder</p>
+                </div>
+                <div class="p-4 bg-white">
+                  <div class="flex items-start gap-2 mb-3">
+                    <i class="fas fa-chart-line text-teal-600 text-sm mt-1 flex-shrink-0"></i>
+                    <p class="text-gray-700 font-semibold text-sm">Show KPIs immediately for recurring storytelling/reviews</p>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-2"><span class="font-semibold">Solution:</span> Pre-built view library to jump-start narratives</p>
+                  <p class="text-gray-600 text-sm"><span class="font-semibold">Component:</span> Shareable dashboards for teams</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Desktop Table Layout (hidden on mobile, visible on md and up) -->
+          <div class="hidden md:block overflow-x-auto border border-gray-300 rounded-lg">
             <table class="w-full border-collapse bg-white">
               <thead>
                 <tr>
