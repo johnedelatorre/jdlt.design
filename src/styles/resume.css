@@ -5,6 +5,12 @@
   scrollbar-color: #888888 #e5e5e5;
 }
 
+/* Mobile PDF viewer improvements */
+.mobile-pdf-viewer {
+  /* Better mobile PDF handling */
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Webkit browsers (Chrome, Safari, Edge) */
 .pdf-viewer-container::-webkit-scrollbar {
   width: 4px;
