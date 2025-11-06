@@ -14,9 +14,8 @@ export const navigationItems: NavigationItem[] = [
     href: '/contact',
   },
   {
-    label: 'Download Resume',
-    href: '/resume.pdf',
-    external: true,
+    label: 'Resume',
+    href: '/resume',
     icon: 'download'
   }
 ]; 

@@ -1,0 +1,31 @@
+/* Custom scrollbar styles for PDF viewer */
+.pdf-viewer-container iframe {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.pdf-viewer-container iframe::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.pdf-viewer-container iframe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.pdf-viewer-container iframe::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-viewer-container iframe::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.pdf-viewer-container iframe::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import CaseStudyPage from './pages/CaseStudyPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import ResumePage from './pages/ResumePage';
 import './App.css';
 
 function AppRoutes() {
@@ -21,6 +22,7 @@ function AppRoutes() {
         <Route path="/case-study/:id" element={<CaseStudyPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/resume" element={<ResumePage />} />
       </Routes>
     </PageTransition>
   );
