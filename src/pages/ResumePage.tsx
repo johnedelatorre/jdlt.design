@@ -22,7 +22,13 @@ const ResumePage = () => {
       const pageHeaderHeight = 120; // Resume page header section
       const mobileToolbarHeight = isMobile ? 70 : 0; // Mobile toolbar when present
       const availableHeight = window.innerHeight - siteHeaderHeight - pageHeaderHeight - mobileToolbarHeight;
-      setPdfHeight(`${Math.max(availableHeight, 600)}px`); // Consistent minimum height
+      
+      if (isMobile) {
+        // On mobile, use most of the available height
+        setPdfHeight(`${Math.max(availableHeight - 40, 500)}px`);
+      } else {
+        setPdfHeight(`${Math.max(availableHeight, 600)}px`);
+      }
     };
 
     checkMobile();
@@ -86,10 +92,10 @@ const ResumePage = () => {
               </div>
             )}
             <iframe
-              src="/john-delatorre-ugarte-resume-2025.pdf"
+              src="/john-delatorre-ugarte-resume-2025.pdf#zoom=FitW&view=FitH"
               width="100%"
               height={pdfHeight}
-              className="border-0"
+              className={`border-0 ${isMobile ? 'mobile-pdf-scaled' : ''}`}
               title="John de la Torre-Ugarte Resume"
             />
           </div>

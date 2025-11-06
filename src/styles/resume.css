@@ -11,6 +11,30 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* Mobile-specific PDF container styling */
+@media (max-width: 768px) {
+  .pdf-viewer-container {
+    /* Ensure container takes full available space on mobile */
+    min-height: 70vh;
+    overflow: hidden;
+  }
+  
+  .pdf-viewer-container iframe {
+    /* Force PDF to render and scale properly on mobile */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .mobile-pdf-scaled {
+    /* Scale PDF to fit container width on mobile */
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 111% !important;
+  }
+}
+
 /* Webkit browsers (Chrome, Safari, Edge) */
 .pdf-viewer-container::-webkit-scrollbar {
   width: 4px;
