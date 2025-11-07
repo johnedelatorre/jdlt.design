@@ -38,32 +38,20 @@ const HomePage: React.FC = () => {
             <div className="mb-6">
               <div className="p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
                 <div className="grid gap-2.5 text-sm text-gray-700">
-                  <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🧭</span>
-                    <div>
-                      <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
-                    </div>
+                  <div>
+                    <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🛠️</span>
-                    <div>
-                      <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
-                    </div>
+                  <div>
+                    <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🔎</span>
-                    <div>
-                      <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
-                    </div>
+                  <div>
+                    <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0">🧱</span>
-                    <div>
-                      <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
-                    </div>
+                  <div>
+                    <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
                   </div>
                 </div>
               </div>
