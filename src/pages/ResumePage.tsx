@@ -63,15 +63,8 @@ const ResumePage = () => {
       {/* Header Section */}
       <section className="py-8 lg:py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center">
+          <div className="text-center">
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">Resume</h1>
-            <button
-              onClick={handleDownload}
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200 shadow-sm"
-            >
-              <FontAwesomeIcon icon={faDownload} className="mr-2 text-xs" />
-              Download PDF
-            </button>
           </div>
         </div>
       </section>
