@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       {/* Hero/About Me Section - Centered, Matches Case Studies Width */}
-      <section className="py-8 md:py-12 lg:py-16 bg-white">
+      <section className="pt-16 pb-8 md:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Profile Photo - Centered, Larger */}
@@ -29,15 +29,15 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Title - Single Line */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 px-4">
+            <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 px-4">
               Product Design & Usability Leader
             </h1>
             
             
             {/* Full Expertise Section - Compact & Elegant */}
             <div className="mb-6">
-              <div className="p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
-                <div className="grid gap-2.5 text-sm text-gray-700">
+              <div className="p-4 md:p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
+                <div className="grid gap-2 md:gap-2.5 text-xs md:text-sm text-gray-700">
                   <div>
                     <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
                   </div>
@@ -60,19 +60,19 @@ const HomePage: React.FC = () => {
             {/* Main Summary - Same Width as Cards Above/Below */}
             <div className="mb-6">
               <div className="space-y-4 text-left">
-                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems engineering chooses to use, and show up in <strong>Service</strong> by mentoring and unblocking delivery. I operate <strong>IC → Player-Coach → Org-Builder</strong> as the business scales, aligning user needs with company goals to balance <strong>value, velocity, and quality</strong>.
                 </p>
                 
-                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to the roadmap and lifting <strong>adoption and quality</strong>.
                 </p>
                 
-                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning <strong>Relo Census</strong> (0→1 analytics around saved views) and <strong>Relo Edge</strong> (flagship real-time analytics UX/UI overhaul).
                 </p>
 
-                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
                   <strong>Impact:</strong> Relo Edge — <strong>100% client migration with zero churn</strong>, <strong>+42% feature adoption</strong>, <strong>68% fewer UI complaints</strong>; cross-checking external revenue guardrails with our recent quarterly product-alignment and usage reviews, Edge contributes <strong>~$4–$5M ARR</strong>, with <strong>~76% active usage</strong> (87% repeat) and higher YoY time-in-product. Relo Census (0→1) — <strong>~60% growth in new signups</strong> with strong renewals and an outside-in <strong>~$1.2–$2.0M ARR</strong>; I also established design QA, handoff standards, and a repeatable discovery→delivery process. Recent Pendo signals show <strong>high NPS for Edge</strong> and similarly <strong>strong satisfaction for Census</strong>.
                 </p>
               </div>
