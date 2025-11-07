@@ -33,52 +33,34 @@ const HomePage: React.FC = () => {
               Product Design & Usability Leader
             </h1>
             
-            {/* Key Attributes as Badge Pills - Scaled Up ~12% */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
-              <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium whitespace-nowrap">
-                Founding Design Leader
-              </span>
-              <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium whitespace-nowrap">
-                IC → Player-Coach → Org-Builder
-              </span>
-              <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">
-                Discovery & Research-Led
-              </span>
-              <span className="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium whitespace-nowrap">
-                Systems Thinker
-              </span>
-              <span className="px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium whitespace-nowrap">
-                AI-Led Prototyping
-              </span>
-            </div>
             
-            {/* Full Expertise Section - Scaled +8%, More Padding */}
+            {/* Full Expertise Section - Compact & Elegant */}
             <div className="mb-6">
-              <div className="p-7 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
-                <div className="grid gap-3.5 text-base text-gray-700">
+              <div className="p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
+                <div className="grid gap-2.5 text-sm text-gray-700">
                   <div className="flex items-start gap-3">
-                    <span className="text-xl flex-shrink-0">🧭</span>
+                    <span className="text-lg flex-shrink-0">🧭</span>
                     <div>
                       <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-xl flex-shrink-0">🛠️</span>
+                    <span className="text-lg flex-shrink-0">🛠️</span>
                     <div>
                       <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-xl flex-shrink-0">🔎</span>
+                    <span className="text-lg flex-shrink-0">🔎</span>
                     <div>
                       <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <span className="text-xl flex-shrink-0">🧱</span>
+                    <span className="text-lg flex-shrink-0">🧱</span>
                     <div>
                       <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
                     </div>
@@ -88,18 +70,22 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Main Summary - Same Width as Cards Above/Below */}
-            <div className="mb-6 text-center">
-              <div className="space-y-4">
+            <div className="mb-6">
+              <div className="space-y-4 text-left">
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems that engineering chooses to use, and show up in <strong>Service</strong> by mentoring designers and unblocking delivery. I'm a <strong>Founding Product Design & Usability Leader</strong> who starts as an IC where risk is highest, then grows into <strong>player-coach</strong> and ultimately <strong>org-builder</strong> as the business scales. My north star is aligning user needs with the company's business goals—balancing <strong>value, velocity, and quality</strong> so the product performs and the experience earns trust.
+                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems engineering chooses to use, and show up in <strong>Service</strong> by mentoring and unblocking delivery. I operate <strong>IC → Player-Coach → Org-Builder</strong> as the business scales, aligning user needs with company goals to balance <strong>value, velocity, and quality</strong>.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to business needs and lifting <strong>adoption, and quality</strong>.
+                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to the roadmap and lifting <strong>adoption and quality</strong>.
                 </p>
                 
                 <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning two platforms: <strong>Relo Census</strong> (0→1 analytics built around saved views) and <strong>Relo Edge</strong> (flagship UX/UI overhaul of the real-time analytics experience).
+                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning <strong>Relo Census</strong> (0→1 analytics around saved views) and <strong>Relo Edge</strong> (flagship real-time analytics UX/UI overhaul).
+                </p>
+
+                <p className="text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                  <strong>Impact:</strong> Relo Edge — <strong>100% client migration with zero churn</strong>, <strong>+42% feature adoption</strong>, <strong>68% fewer UI complaints</strong>; cross-checking external revenue guardrails with our recent quarterly product-alignment and usage reviews, Edge contributes <strong>~$4–$5M ARR</strong>, with <strong>~76% active usage</strong> (87% repeat) and higher YoY time-in-product. Relo Census (0→1) — <strong>~60% growth in new signups</strong> with strong renewals and an outside-in <strong>~$1.2–$2.0M ARR</strong>; I also established design QA, handoff standards, and a repeatable discovery→delivery process. Recent Pendo signals show <strong>high NPS for Edge</strong> and similarly <strong>strong satisfaction for Census</strong>.
                 </p>
               </div>
             </div>
