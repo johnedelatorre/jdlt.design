@@ -421,22 +421,15 @@ const CaseStudyPage: React.FC = () => {
           {/* Project Brief */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              {caseStudy.id === 'relo-census-dashboard' ? (
-                <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
-                    Project Brief
-                  </h2>
-                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-                </div>
-              ) : (
-                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
+                <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 text-xl md:text-2xl lg:text-3xl" />
                   Project Brief
                 </h2>
-              )}
+                <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+              </div>
               <div 
-                className="text-lg text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: caseStudy.projectBrief }}
               />
             </div>
@@ -446,8 +439,15 @@ const CaseStudyPage: React.FC = () => {
           {caseStudy.designProcess && (
             <div className="mb-16">
               <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
+                <div className="flex items-center gap-4 mb-6 md:mb-8">
+                  <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faPalette} className="text-indigo-600 text-xl md:text-2xl lg:text-3xl" />
+                    Design Process
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
                 <div 
-                  className="text-lg text-gray-700 leading-relaxed"
+                  className="text-base md:text-lg text-gray-700 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: caseStudy.designProcess }}
                 />
               </div>
@@ -457,20 +457,13 @@ const CaseStudyPage: React.FC = () => {
           {/* Situation */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              {caseStudy.id === 'relo-census-dashboard' ? (
-                <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faSearch} className="text-blue-600 text-lg md:text-xl lg:text-2xl" />
-                    Discovery
-                  </h2>
-                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-                </div>
-              ) : (
-                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faExclamationTriangle} className="text-orange-600 text-lg md:text-xl lg:text-2xl" />
-                  Situation
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
+                <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                  <FontAwesomeIcon icon={caseStudy.id === 'relo-census-dashboard' ? faSearch : faExclamationTriangle} className={`text-xl md:text-2xl lg:text-3xl ${caseStudy.id === 'relo-census-dashboard' ? 'text-blue-600' : 'text-orange-600'}`} />
+                  {caseStudy.id === 'relo-census-dashboard' ? 'Discovery' : 'Situation'}
                 </h2>
-              )}
+                <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+              </div>
               {/* Split situation content at placeholders for proper positioning */}
               {(() => {
                 if (caseStudy.id === 'relo-census-dashboard') {
@@ -483,7 +476,7 @@ const CaseStudyPage: React.FC = () => {
                     const afterPersonas = parts[1];
                     
                     return (
-                      <div className="text-lg text-gray-700 leading-relaxed">
+                      <div className="text-base md:text-lg text-gray-700 leading-relaxed">
                         <div dangerouslySetInnerHTML={{ __html: beforePersonas }} />
                         <PersonaViewer onPersonaClick={openPersonaModal} />
                         <div dangerouslySetInnerHTML={{ __html: afterPersonas }} />
@@ -502,7 +495,7 @@ const CaseStudyPage: React.FC = () => {
                     const afterScreenshots = parts[1];
                     
                     return (
-                      <div className="text-lg text-gray-700 leading-relaxed">
+                      <div className="text-base md:text-lg text-gray-700 leading-relaxed">
                         <div dangerouslySetInnerHTML={{ __html: beforeScreenshots }} />
                         <LegacyScreenshotsViewer onScreenshotClick={openLegacyScreenshotsModal} />
                         <div dangerouslySetInnerHTML={{ __html: afterScreenshots }} />
@@ -514,7 +507,7 @@ const CaseStudyPage: React.FC = () => {
                 // Fallback for other case studies or if splitting fails
                 return (
                   <div 
-                    className="text-lg text-gray-700 leading-relaxed"
+                    className="text-base md:text-lg text-gray-700 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: caseStudy.situation }}
                   />
                 );
@@ -534,7 +527,7 @@ const CaseStudyPage: React.FC = () => {
                   <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
                 <div 
-                  className="text-lg text-gray-700 leading-relaxed"
+                  className="text-base md:text-lg text-gray-700 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: caseStudy.defineProblem }}
                 />
               </div>
@@ -544,20 +537,13 @@ const CaseStudyPage: React.FC = () => {
           {/* Task / Design */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              {caseStudy.id === 'relo-census-dashboard' ? (
-                <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faTasks} className="text-purple-600 text-lg md:text-xl lg:text-2xl" />
-                    Design (Iterate & Test)
-                  </h2>
-                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-                </div>
-              ) : (
-                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faTasks} className="text-purple-600 text-lg md:text-xl lg:text-2xl" />
-                  Task
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
+                <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTasks} className="text-purple-600 text-xl md:text-2xl lg:text-3xl" />
+                  {caseStudy.id === 'relo-census-dashboard' ? 'Design (Iterate & Test)' : 'Task'}
                 </h2>
-              )}
+                <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+              </div>
               {(() => {
                 if (caseStudy.id === 'relo-census-dashboard' && caseStudy.wireframeImages && caseStudy.componentImages && caseStudy.testingImages) {
                   let content = caseStudy.task;
@@ -639,7 +625,7 @@ const CaseStudyPage: React.FC = () => {
                   
                   return (
                     <div 
-                      className="text-lg text-gray-700 leading-relaxed"
+                      className="text-base md:text-lg text-gray-700 leading-relaxed"
                       dangerouslySetInnerHTML={{ __html: content }}
                       onClick={(e) => {
                         const target = e.target as HTMLElement;
@@ -682,7 +668,7 @@ const CaseStudyPage: React.FC = () => {
                 // Fallback for other case studies
                 return (
                   <div 
-                    className="text-lg text-gray-700 leading-relaxed"
+                    className="text-base md:text-lg text-gray-700 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: caseStudy.task }}
                   />
                 );
@@ -694,10 +680,13 @@ const CaseStudyPage: React.FC = () => {
           {caseStudy.id !== 'relo-census-dashboard' && (
             <div className="mb-16">
               <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faCogs} className="text-green-600 text-lg md:text-xl lg:text-2xl" />
-                  Action
-                </h2>
+                <div className="flex items-center gap-4 mb-6 md:mb-8">
+                  <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                    <FontAwesomeIcon icon={faCogs} className="text-green-600 text-xl md:text-2xl lg:text-3xl" />
+                    Action
+                  </h2>
+                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+                </div>
                 {/* Split action content at personas placeholder for proper positioning */}
                 {(() => {
                   if (caseStudy.id === 'relo-edge-redesign') {
@@ -710,7 +699,7 @@ const CaseStudyPage: React.FC = () => {
                     const afterPersonas = parts[1];
                     
                     return (
-                      <div className="text-lg text-gray-700 leading-relaxed">
+                      <div className="text-base md:text-lg text-gray-700 leading-relaxed">
                         <div dangerouslySetInnerHTML={{ __html: beforePersonas }} />
                         <PersonaViewer onPersonaClick={openPersonaModal} />
                         <div dangerouslySetInnerHTML={{ __html: afterPersonas }} />
@@ -729,7 +718,7 @@ const CaseStudyPage: React.FC = () => {
                     const afterArtifacts = parts[1];
                     
                     return (
-                      <div className="text-lg text-gray-700 leading-relaxed">
+                      <div className="text-base md:text-lg text-gray-700 leading-relaxed">
                         <div dangerouslySetInnerHTML={{ __html: beforeArtifacts }} />
                         <ResearchArtifactsViewer 
                           onArtifactClick={openResearchArtifactsModal} 
@@ -744,7 +733,7 @@ const CaseStudyPage: React.FC = () => {
                 // Fallback for other case studies or if splitting fails
                 return (
                   <div 
-                    className="text-lg text-gray-700 leading-relaxed"
+                    className="text-base md:text-lg text-gray-700 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: caseStudy.action }}
                   />
                 );
@@ -756,22 +745,15 @@ const CaseStudyPage: React.FC = () => {
           {/* Result */}
           <div className="mb-16">
             <div className="bg-white border border-gray-200 rounded-lg p-8 lg:p-16 shadow-sm">
-              {caseStudy.id === 'relo-census-dashboard' ? (
-                <div className="flex items-center gap-4 mb-8">
-                  <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
-                    <FontAwesomeIcon icon={faTrophy} className="text-yellow-600 text-lg md:text-xl lg:text-2xl" />
-                    Result
-                  </h2>
-                  <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-                </div>
-              ) : (
-                <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-black mb-6 flex items-center gap-3">
-                  <FontAwesomeIcon icon={faTrophy} className="text-yellow-600 text-lg md:text-xl lg:text-2xl" />
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
+                <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide flex items-center gap-3">
+                  <FontAwesomeIcon icon={faTrophy} className="text-yellow-600 text-xl md:text-2xl lg:text-3xl" />
                   Result
                 </h2>
-              )}
+                <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
+              </div>
               <div 
-                className="text-lg text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: caseStudy.result }}
               />
             </div>
