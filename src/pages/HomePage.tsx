@@ -29,33 +29,33 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Title - Single Line */}
-            <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-3 px-4">
+            <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-5 px-4">
               Product Design & Usability Leader
             </h1>
             
             {/* Subtitle - Current Role */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 px-4">
+            <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-800 font-medium mb-10 px-4">
               Chief Design Officer & Founding Partner at BrandPulse Media AI
             </p>
             
             {/* Full Expertise Section - Compact & Elegant */}
             <div className="mb-6">
               <div className="p-4 md:p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100 text-left">
-                <div className="grid gap-2 md:gap-2.5 text-xs md:text-sm text-gray-700">
+                <div className="grid gap-2 md:gap-2.5 text-sm md:text-base text-gray-700">
                   <div>
-                    <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Founding Product Design Leader</span> • Mission • Legacy • Service • Systems Thinker
+                    <span className="font-bold text-gray-900">WHO I AM:</span> <span className="font-semibold text-gray-900">Chief Design Officer</span> • Founding Partner • Product & UX Executive • Systems Thinker
                   </div>
                   
                   <div>
-                    <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Products & Teams Builder • IC → Player-Coach → Org-Builder
+                    <span className="font-bold text-gray-900">HOW I LEAD & SCALE:</span> Founder-Level Operator • IC → Player-Coach → Org-Builder
                   </div>
                   
                   <div>
-                    <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery & Research-Led <em>(Pendo • Stakeholder & User Interviews)</em> • Journey Mapping • Personas • UX Strategy • Human-Centric
+                    <span className="font-bold text-gray-900">DISCOVERY & STRATEGY:</span> Discovery-Led • Research-Driven • UX Strategy • Human-Centric
                   </div>
                   
                   <div>
-                    <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI Led UX — Claude • Figma • MCP Server • Cursor
+                    <span className="font-bold text-gray-900">SYSTEMS, AI & TOOLS:</span> Scalable UX Systems • AI-Led UX • Claude • Figma • MCP Server • Cursor
                   </div>
                 </div>
               </div>
@@ -65,20 +65,64 @@ const HomePage: React.FC = () => {
             <div className="mb-6">
               <div className="space-y-4 text-left">
                 <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  <strong>15+ years</strong> building and scaling <strong>mission-driven products and teams</strong>. I lead with <strong>Mission</strong> (outcomes over outputs), leave a <strong>Legacy</strong> of trust-first systems engineering chooses to use, and show up in <strong>Service</strong> by mentoring and unblocking delivery. I operate <strong>IC → Player-Coach → Org-Builder</strong> as the business scales, aligning user needs with company goals to balance <strong>value, velocity, and quality</strong>.
+                  <strong>15+ years</strong> building and scaling <strong>mission-driven, data-heavy products and teams</strong>. I'm a <strong>founder-level product design and usability leader</strong> operating at the intersection of <strong>AI, analytics, fintech, healthcare, and sports technology</strong>. I lead as an <strong>owner—not a service function</strong>—aligning product, design, and engineering to turn complex systems into trusted, scalable products that drive <strong>adoption, retention, and revenue</strong>.
                 </p>
                 
                 <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I blend <strong>discovery, research, and AI-led, code-connected prototyping</strong> (Figma MCP → Cursor) to turn ambiguity into <strong>measurable impact</strong>. At <strong>JPMorgan Chase</strong>, I grew design from <strong>1 → ~8 designers + 1 researcher</strong> in <strong>~12 months</strong>, sequencing hires to the roadmap and lifting <strong>adoption and quality</strong>.
+                  <strong>Currently:</strong> I serve as <strong>Chief Design Officer and Founding Partner</strong> at <strong>BrandPulse AI</strong>, where I co-own product definition, UX strategy, and MVP execution for an AI-driven sports sponsorship analytics platform. I work hands-on with engineering and AI leadership to translate <strong>computer vision, data science, and analytics</strong> into products that athletes, brands, and investors can clearly understand and trust—from <strong>0→1 MVP through early scale</strong>.
                 </p>
                 
                 <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  I'm currently <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning <strong>Relo Census</strong> (0→1 analytics around saved views) and <strong>Relo Edge</strong> (flagship real-time analytics UX/UI overhaul).
+                  <strong>Most recently:</strong> I was the <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning the <strong>0→1 launch of Relo Census</strong> and leading the end-to-end UX/UI overhaul of <strong>Relo Edge</strong>, the company's flagship real-time analytics platform.
                 </p>
 
+                <div className="mt-6">
+                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-4">Impact at Relo Metrics</h3>
+                  <ul className="space-y-2 md:space-y-3 list-none pl-0">
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span><strong>Relo Edge:</strong> <strong>100% client migration with zero churn</strong>, <strong>+42% feature adoption</strong>, and <strong>68% fewer UI complaints</strong>; contributing <strong>~$4–$5M ARR</strong> with <strong>~76% active usage</strong> and increased time-in-product.</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span><strong>Relo Census (0→1):</strong> <strong>~60% growth in new signups</strong>, strong renewals, and <strong>~$1.2–$2.0M ARR</strong>.</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>Established design QA, handoff standards, and a repeatable <strong>discovery → delivery system</strong> adopted across teams.</span>
+                    </li>
+                  </ul>
+                </div>
+
                 <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
-                  <strong>Impact:</strong> Relo Edge — <strong>100% client migration with zero churn</strong>, <strong>+42% feature adoption</strong>, <strong>68% fewer UI complaints</strong>; cross-checking external revenue guardrails with our recent quarterly product-alignment and usage reviews, Edge contributes <strong>~$4–$5M ARR</strong>, with <strong>~76% active usage</strong> (87% repeat) and higher YoY time-in-product. Relo Census (0→1) — <strong>~60% growth in new signups</strong> with strong renewals and an outside-in <strong>~$1.2–$2.0M ARR</strong>; I also established design QA, handoff standards, and a repeatable discovery→delivery process. Recent Pendo signals show <strong>high NPS for Edge</strong> and similarly <strong>strong satisfaction for Census</strong>.
+                  <strong>Earlier:</strong> At <strong>JPMorgan Chase</strong>, I led and scaled UX teams from <strong>1 → ~8 designers plus research</strong> in <strong>~12 months</strong>, owning complex, regulated commercial banking workflows. That experience shaped how I balance <strong>velocity, quality, compliance, and long-term systems thinking</strong> at scale.
                 </p>
+
+                <div className="mt-6">
+                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-4">I specialize in</h3>
+                  <ul className="space-y-2 md:space-y-3 list-none pl-0">
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>Founder-level product & UX leadership</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>AI- and analytics-driven platforms</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>0→1 MVPs and large-scale redesigns</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>Discovery-led, code-connected prototyping</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
+                      <span>Building systems teams actually want to use</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             
@@ -114,14 +158,15 @@ const HomePage: React.FC = () => {
                     <span className="text-2xl">📊</span>
                     <h3 className="font-serif text-2xl font-bold text-black">Relo Census</h3>
                   </div>
-                  <div className="max-w-prose">
-                    <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
-                      0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and the view-builder so teams can cut data their way and compose decision-ready dashboards.
+                  <div className="max-w-prose flex-grow mb-4">
+                    <p className="text-base text-gray-700" style={{ lineHeight: '1.6' }}>
+                      0→1 sponsorship analytics platform built around Saved Views.
+                      Defined personas, information architecture, and a flexible view builder so teams can analyze sponsorship data their way and compose decision-ready dashboards.
                     </p>
                   </div>
-                  <div className="flex items-start gap-2 text-green-700">
+                  <div className="flex items-start gap-2 text-green-700 mt-auto">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
-                    <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
+                    <span className="font-semibold text-sm">Enables faster analysis and clearer stakeholder sponsorhip narratives.</span>
                   </div>
                 </div>
 
@@ -131,14 +176,15 @@ const HomePage: React.FC = () => {
                     <span className="text-2xl">⚡</span>
                     <h3 className="font-serif text-2xl font-bold text-black">Relo Edge</h3>
                   </div>
-                  <div className="max-w-prose">
-                    <p className="text-base text-gray-700 mb-4 flex-grow" style={{ lineHeight: '1.6' }}>
-                      End-to-end UX/UI redesign of Relo's real-time analytics product. Simplified IA, rebuilt components, and clarified workflows to reduce friction across the board.
+                  <div className="max-w-prose flex-grow mb-4">
+                    <p className="text-base text-gray-700" style={{ lineHeight: '1.6' }}>
+                      End-to-end UX/UI redesign of Relo's flagship real-time analytics platform.
+                      Simplified information architecture, rebuilt core components, and clarified workflows to reduce friction across high-frequency analytical tasks.
                     </p>
                   </div>
-                  <div className="flex items-start gap-2 text-green-700">
+                  <div className="flex items-start gap-2 text-green-700 mt-auto">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0" />
-                    <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
+                    <span className="font-semibold text-sm">Designed to drive adoption, usability, and long-term engagement at scale.</span>
                   </div>
                 </div>
               </div>
@@ -150,9 +196,9 @@ const HomePage: React.FC = () => {
       {/* Case Studies Section */}
       <section id="case-studies" className="pt-6 pb-6 lg:pt-8 lg:pb-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6">
+          <div className="text-center mb-8 mt-8">
             <h2 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-3">
-              Featured Case Studies
+              Selected Work — Recently Delivered Platforms
             </h2>
             <p className="text-base text-gray-600 max-w-2xl mx-auto">
               Explore my work which showcases how UX Research meets Interaction Design, Visual Design meets Front-End Development, and AI meets human intuition.
