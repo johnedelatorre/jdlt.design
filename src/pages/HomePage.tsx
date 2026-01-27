@@ -29,10 +29,14 @@ const HomePage: React.FC = () => {
             </div>
             
             {/* Title - Single Line */}
-            <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 px-4">
+            <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-3 px-4">
               Product Design & Usability Leader
             </h1>
             
+            {/* Subtitle - Current Role */}
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 px-4">
+              Chief Design Officer & Founding Partner at BrandPulse Media AI
+            </p>
             
             {/* Full Expertise Section - Compact & Elegant */}
             <div className="mb-6">
