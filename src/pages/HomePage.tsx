@@ -63,61 +63,61 @@ const HomePage: React.FC = () => {
             
             {/* Main Summary - Same Width as Cards Above/Below */}
             <div className="mb-6">
-              <div className="space-y-4 text-left">
-                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+              <div className="space-y-3 text-left">
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                   <strong>15+ years</strong> building and scaling <strong>mission-driven, data-heavy products and teams</strong>. I'm a <strong>founder-level product design and usability leader</strong> operating at the intersection of <strong>AI, analytics, fintech, healthcare, and sports technology</strong>. I lead as an <strong>owner—not a service function</strong>—aligning product, design, and engineering to turn complex systems into trusted, scalable products that drive <strong>adoption, retention, and revenue</strong>.
                 </p>
                 
-                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                   <strong>Currently:</strong> I serve as <strong>Chief Design Officer and Founding Partner</strong> at <strong>BrandPulse AI</strong>, where I co-own product definition, UX strategy, and MVP execution for an AI-driven sports sponsorship analytics platform. I work hands-on with engineering and AI leadership to translate <strong>computer vision, data science, and analytics</strong> into products that athletes, brands, and investors can clearly understand and trust—from <strong>0→1 MVP through early scale</strong>.
                 </p>
                 
-                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                   <strong>Most recently:</strong> I was the <strong>Founding Product Design Lead</strong> at <strong>Relo Metrics</strong>, owning the <strong>0→1 launch of Relo Census</strong> and leading the end-to-end UX/UI overhaul of <strong>Relo Edge</strong>, the company's flagship real-time analytics platform.
                 </p>
 
-                <div className="mt-6">
-                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-4">Impact at Relo Metrics</h3>
-                  <ul className="space-y-2 md:space-y-3 list-none pl-0">
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <div className="mt-5">
+                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-3">Impact at Relo Metrics</h3>
+                  <ul className="space-y-1.5 md:space-y-2 list-none pl-0">
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span><strong>Relo Edge:</strong> <strong>100% client migration with zero churn</strong>, <strong>+42% feature adoption</strong>, and <strong>68% fewer UI complaints</strong>; contributing <strong>~$4–$5M ARR</strong> with <strong>~76% active usage</strong> and increased time-in-product.</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span><strong>Relo Census (0→1):</strong> <strong>~60% growth in new signups</strong>, strong renewals, and <strong>~$1.2–$2.0M ARR</strong>.</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>Established design QA, handoff standards, and a repeatable <strong>discovery → delivery system</strong> adopted across teams.</span>
                     </li>
                   </ul>
                 </div>
 
-                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                   <strong>Earlier:</strong> At <strong>JPMorgan Chase</strong>, I led and scaled UX teams from <strong>1 → ~8 designers plus research</strong> in <strong>~12 months</strong>, owning complex, regulated commercial banking workflows. That experience shaped how I balance <strong>velocity, quality, compliance, and long-term systems thinking</strong> at scale.
                 </p>
 
-                <div className="mt-6">
-                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-4">I specialize in</h3>
-                  <ul className="space-y-2 md:space-y-3 list-none pl-0">
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                <div className="mt-5">
+                  <h3 className="text-base md:text-lg font-serif font-bold text-gray-900 mb-3">I specialize in</h3>
+                  <ul className="space-y-1.5 md:space-y-2 list-none pl-0">
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>Founder-level product & UX leadership</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>AI- and analytics-driven platforms</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>0→1 MVPs and large-scale redesigns</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>Discovery-led, code-connected prototyping</span>
                     </li>
-                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.6' }}>
+                    <li className="flex items-start gap-3 text-sm md:text-lg text-gray-700" style={{ lineHeight: '1.5' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-black flex-shrink-0" style={{ marginTop: 'calc(0.4em + 2px)' }} />
                       <span>Building systems teams actually want to use</span>
                     </li>
