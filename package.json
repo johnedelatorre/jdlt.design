@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "clean": "rm -rf dist node_modules/.vite .cache",
+    "clean:build": "npm run clean && npm run build",
+    "rebuild": "npm run clean && npm run build",
     "lint": "eslint .",
     "preview": "vite preview",
     "serve": "serve -s dist -l 3000"

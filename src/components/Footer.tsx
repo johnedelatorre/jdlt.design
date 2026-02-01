@@ -142,6 +142,10 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} {personalInfo.name}. All rights reserved.
             </p>
+            {/* Visible build timestamp — confirms you're on the latest build when you scroll to footer */}
+            <p className="text-gray-500 text-xs mt-1 font-mono" aria-hidden>
+              Build: {typeof __BUILD_TIME__ !== 'undefined' ? __BUILD_TIME__ : 'dev'}
+            </p>
           </div>
         </div>
       </div>

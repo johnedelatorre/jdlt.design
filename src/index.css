@@ -601,6 +601,10 @@
   }
 }
 
+.animate-subtle-bounce {
+  animation: subtleBounce 2s ease-in-out infinite;
+}
+
 /* Custom modal image border */
 @layer components {
   .modal-image-border {

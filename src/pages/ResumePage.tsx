@@ -10,7 +10,7 @@ const ResumePage = () => {
   useEffect(() => {
     // Detect mobile devices
     const checkMobile = () => {
-      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      const userAgent = navigator.userAgent || navigator.vendor || (window as Window & { opera?: string }).opera ?? '';
       const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
       const isSmallScreen = window.innerWidth <= 768;
       setIsMobile(isMobileDevice || isSmallScreen);
@@ -43,7 +43,7 @@ const ResumePage = () => {
       checkMobile();
       calculateHeight();
     });
-  }, []);
+  }, [isMobile]);
 
   const handleDownload = () => {
     const link = document.createElement('a');
