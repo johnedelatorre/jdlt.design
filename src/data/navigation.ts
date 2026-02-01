@@ -17,5 +17,11 @@ export const navigationItems: NavigationItem[] = [
     label: 'Resume',
     href: '/resume',
     icon: 'download'
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/uesuxguy/',
+    external: true,
+    icon: 'linkedin'
   }
 ]; 

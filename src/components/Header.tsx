@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { navigationItems } from '../data/navigation';
 import { scrollToCaseStudies } from '../utils/scrollUtils';
 import { personalInfo } from '../data/personalInfo';
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
 
   const handleNavClick = (href: string, external?: boolean) => {
     if (external) {
-      window.open(href, '_blank');
+      window.open(href, '_blank', 'noopener,noreferrer');
       return;
     }
 
@@ -85,6 +86,9 @@ const Header: React.FC = () => {
                       {item.label}
                       {item.icon === 'download' && (
                         <FontAwesomeIcon icon={faDownload} className="text-sm" />
+                      )}
+                      {item.icon === 'linkedin' && (
+                        <FontAwesomeIcon icon={faLinkedin} className="text-sm" />
                       )}
                     </button>
                   );
@@ -145,6 +149,9 @@ const Header: React.FC = () => {
                       {item.label}
                       {item.icon === 'download' && (
                         <FontAwesomeIcon icon={faDownload} className="text-base" />
+                      )}
+                      {item.icon === 'linkedin' && (
+                        <FontAwesomeIcon icon={faLinkedin} className="text-base" />
                       )}
                     </button>
                   );
