@@ -152,17 +152,41 @@ const HomePage: React.FC = () => {
               </span>
               <h3 className="font-serif text-lg font-bold text-slate-600">Currently Founding Product Design Lead — Relo Metrics</h3>
             </div>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-              Built and scaled Relo's <strong>product design foundation</strong>—instilling a <strong>discovery-led design culture</strong>, establishing <strong>design ops</strong> and <strong>design-to-engineering handoffs</strong>, and launching the company's first <strong>design system</strong>. Embedded discovery discipline using <strong>Pendo and Looker</strong> to ground roadmap and UX decisions in real client behavior.
+            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+              Built and scaled Relo's product design foundation—instilling a discovery-led design culture, establishing design ops, design QA, and design-to-engineering handoffs, and launching the company's first design system. Embedded product analytics discipline using Pendo and Looker to ground roadmap and UX decisions in real client behavior.
             </p>
-            <p className="font-serif font-semibold text-slate-600 mb-2"><strong>Relo Edge (Flagship Analytics Platform)</strong></p>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-              Led a full UX/UI redesign focused on <strong>clarity, consistency, and trust</strong>: <strong>100% client migration, zero churn</strong>, +42% feature adoption, –68% UI complaints, contributing ~$4–$5M ARR.
-            </p>
-            <p className="font-serif font-semibold text-slate-600 mb-2"><strong>Relo Census (0→1 Platform)</strong></p>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-              Designed and launched a new analytics platform from the ground up: <strong>~60% signup growth</strong>, strong renewals, <strong>~$1.2–$2.0M ARR potential</strong>, with a <strong>repeatable discovery-to-delivery process</strong>.
-            </p>
+            <div className="grid sm:grid-cols-2 gap-6 text-left">
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+                    <FontAwesomeIcon icon={faChartBar} className="text-xl" />
+                  </span>
+                  <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Census</h3>
+                </div>
+                <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
+                  0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and a flexible view builder so teams can analyze sponsorship data their way and compose decision-ready dashboards.
+                </p>
+                <div className="flex items-start gap-2 text-green-700">
+                  <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
+                  <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
+                </div>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+                    <FontAwesomeIcon icon={faBolt} className="text-xl" />
+                  </span>
+                  <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Edge</h3>
+                </div>
+                <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
+                  End-to-end UX/UI redesign of Relo's flagship real-time analytics platform. Simplified information architecture, rebuilt core components, and clarified workflows to reduce friction across high-frequency analytical tasks.
+                </p>
+                <div className="flex items-start gap-2 text-green-700">
+                  <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
+                  <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
@@ -219,10 +243,10 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* CaseStudiesIntro — View Case Studies button + Relo Census / Relo Edge cards */}
+      {/* CaseStudiesIntro — View Case Studies button */}
       <section className="py-8 md:py-10 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center">
             <button
               onClick={scrollToCaseStudies}
               className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none animate-subtle-bounce"
@@ -238,38 +262,6 @@ const HomePage: React.FC = () => {
                 View Case Studies
               </span>
             </button>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-6 text-left">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
-                  <FontAwesomeIcon icon={faChartBar} className="text-xl" />
-                </span>
-                <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Census</h3>
-              </div>
-              <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
-                0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and a flexible view builder so teams can analyze sponsorship data their way and compose decision-ready dashboards.
-              </p>
-              <div className="flex items-start gap-2 text-green-700">
-                <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
-                <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
-              </div>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
-                  <FontAwesomeIcon icon={faBolt} className="text-xl" />
-                </span>
-                <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Edge</h3>
-              </div>
-              <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
-                End-to-end UX/UI redesign of Relo's flagship real-time analytics platform. Simplified information architecture, rebuilt core components, and clarified workflows to reduce friction across high-frequency analytical tasks.
-              </p>
-              <div className="flex items-start gap-2 text-green-700">
-                <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
-                <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
