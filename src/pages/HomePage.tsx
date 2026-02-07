@@ -10,7 +10,6 @@ import {
   faMagnifyingGlass,
   faSitemap,
   faCode,
-  faPeopleGroup,
   faRocket,
   faBuildingColumns,
   faHeartPulse,
@@ -139,17 +138,6 @@ const HomePage: React.FC = () => {
                 I use <strong>AI-augmented workflows</strong> (Figma MCP Server, Cursor, Claude) to rapidly move from concept to functional prototype—<em>aligning design and engineering early</em>, validating complex logic, and shortening time-to-value.
               </p>
             </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm md:col-span-2">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
-                  <FontAwesomeIcon icon={faPeopleGroup} className="text-lg" />
-                </span>
-                <h3 className="font-serif text-lg font-bold text-slate-600">Leadership, Mentorship & Quality Standards</h3>
-              </div>
-              <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-                I mentor designers, engineers, and product partners while establishing <strong>design ops</strong>, <strong>quality bars</strong>, <strong>clean handoffs</strong>, and <strong>usability standards</strong> that raise the level of the entire organization.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -215,13 +203,16 @@ const HomePage: React.FC = () => {
             </div>
             <div className="space-y-4 font-sans text-base md:text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong>Founding Design Lead, Advisor, and Mentor</strong> for early-stage startups including <strong>Alpha Recon</strong> and <strong>Really Global</strong>, where I partner closely with founders on <strong>product roadmap definition</strong>, <strong>usability strategy</strong>, and design leadership.
+                <strong>Founding Design Lead, Advisor, and Mentor</strong> for <strong>Alpha Recon</strong>, a platform transforming complex intelligence and risk data into clear, <em>decision-ready workflows</em>. Built the product <strong>from 0→1</strong>—establishing <strong>personas</strong>, <strong>design foundations</strong>, and a <strong>scalable design system</strong> while designing <strong>end-to-end UX</strong> for the MVP.
               </p>
               <p>
-                My primary goal in these engagements is to drive teams to a <strong>successful MVP launch</strong> while simultaneously defining a clear <strong>1–2 year product vision</strong> that supports <strong>scale</strong>, <strong>differentiation</strong>, and <strong>long-term usability</strong>.
+                Worked directly with <strong>AI engineers and computer scientists</strong> to translate early, complex data models into <em>usable product experiences</em>—shaping how raw signals became <strong>views, alerts, and actions</strong> analysts could trust and act on.
               </p>
               <p>
-                I am actively involved in <strong>investor and stakeholder meetings</strong>, helping establish <strong>working design demos</strong> and <strong>product narratives</strong> that communicate vision, feasibility, and value. In parallel, I help teams establish <strong>trustworthy product foundations</strong>, <strong>scalable UX systems</strong>, and strong design practices early, while <strong>mentoring designers and engineers</strong> and ensuring <strong>usability, clarity, and consistency</strong> are embedded <strong>from day one</strong>—without accruing long-term UX or technical debt.
+                My primary goal was to <em>ship a strong MVP</em> while shaping a clear <em>1–2 year vision</em> that enabled <strong>scale</strong>, <strong>differentiation</strong>, and <strong>lasting usability</strong>.
+              </p>
+              <p>
+                Owned both <strong>craft and strategy</strong>: created <strong>design QA</strong> and <strong>design-to-engineering handoff</strong> processes, partnered with founders on <strong>usability and product direction</strong>, and embedded <strong>human-centered design</strong> as a core discipline <strong>from day one</strong>.
               </p>
             </div>
           </div>
