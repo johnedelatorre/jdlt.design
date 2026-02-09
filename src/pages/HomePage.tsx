@@ -42,11 +42,11 @@ const HomePage: React.FC = () => {
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 tracking-tight">
             Product Design & Usability Leader
           </h1>
-          <p className="font-sans text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
-            I design clear, trustworthy product systems that turn complex data, AI, and workflows into transparent, explainable, decision-ready experiences people actually use.
+          <p className="font-sans text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
+            I design products that make <strong>complex data and AI</strong> actually usable—<strong>clear interfaces</strong>, <strong>explainable decisions</strong>, and <strong>workflows people can trust</strong>.
           </p>
-          <p className="font-sans text-base md:text-lg text-gray-700 leading-relaxed">
-            With 15+ years across fintech, healthcare, and AI-driven analytics, I lead 0→1 and enterprise-scale platforms by combining strong visual craft, systems thinking, and discovery-led UX. I design for business outcomes and real user impact—driving adoption, retention, and long-term trust through clarity, consistency, and best-practice UI design.
+          <p className="font-sans text-lg md:text-xl text-gray-700 leading-relaxed">
+            With <strong>15+ years</strong> across fintech, healthcare, and AI-driven analytics, I lead <strong>0→1 and enterprise-scale platforms</strong> by combining strong visual craft, systems thinking, and discovery-led UX. I design for <strong>business outcomes and real user impact</strong>—driving <strong>adoption, retention, and long-term trust</strong> through clarity, consistency, and best-practice UI design.
           </p>
         </div>
       </section>
@@ -99,7 +99,7 @@ const HomePage: React.FC = () => {
                 <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                   <FontAwesomeIcon icon={faShieldHalved} className="text-lg" />
                 </span>
-                <h3 className="font-serif text-lg font-bold text-slate-600">Designing for Trust</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-600">How I Build Trust</h3>
               </div>
               <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
                 I design for trust through <strong>transparency, explainability, and consistent UX patterns</strong>. Clear information hierarchy, predictable interactions, and proven UI best practices reduce cognitive load, help users understand <em>why the system behaves the way it does</em>, and build confidence over time—especially in <strong>data-dense and regulated environments</strong>.
@@ -110,7 +110,7 @@ const HomePage: React.FC = () => {
                 <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                   <FontAwesomeIcon icon={faMagnifyingGlass} className="text-lg" />
                 </span>
-                <h3 className="font-serif text-lg font-bold text-slate-600">Discovery-Led Product Strategy</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Teams</h3>
               </div>
               <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
                 I ground decisions in <strong>stakeholder interviews, user research, and product analytics (Pendo)</strong>, translating insight into clear UX strategy, information architecture, and <em>execution-ready direction</em> that reduces ambiguity and accelerates delivery.
@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
                 <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                   <FontAwesomeIcon icon={faSitemap} className="text-lg" />
                 </span>
-                <h3 className="font-serif text-lg font-bold text-slate-600">Expert Craft & Systems Thinking</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-600">How I Design Systems</h3>
               </div>
               <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
                 I bring <strong>senior-level craft</strong> to interaction design, visual design, and usability, paired with systems thinking—<em>design systems</em>, <em>interaction models</em>, and <em>scalable UX architectures</em> that balance speed, quality, and consistency.
@@ -132,7 +132,7 @@ const HomePage: React.FC = () => {
                 <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                   <FontAwesomeIcon icon={faCode} className="text-lg" />
                 </span>
-                <h3 className="font-serif text-lg font-bold text-slate-600">AI-Led, Code-Connected UX</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Engineers & AI</h3>
               </div>
               <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
                 I use <strong>AI-augmented workflows</strong> (Figma MCP Server, Cursor, Claude) to rapidly move from concept to functional prototype—<em>aligning design and engineering early</em>, validating complex logic, and shortening time-to-value.
