@@ -10,10 +10,10 @@ import {
   faMagnifyingGlass,
   faSitemap,
   faCode,
+  faHandshake,
   faRocket,
   faBuildingColumns,
   faHeartPulse,
-  faHandshake,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
@@ -21,13 +21,12 @@ import { personalInfo } from '../data/personalInfo';
 import { scrollToCaseStudies } from '../utils/scrollUtils';
 
 const HomePage: React.FC = () => {
-
   return (
     <div>
-      {/* HeroSection — no card, with photo */}
-      <section className="pt-16 pb-10 md:py-14 lg:py-20 bg-white">
+      {/* Hero — wider container, production-style typography */}
+      <section className="pt-12 pb-8 md:py-10 lg:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-6">
+          <div className="mb-8">
             <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 mx-auto rounded-full overflow-hidden border-4 border-gray-200 shadow-xl">
               <img
                 src={personalInfo.profileImage}
@@ -39,22 +38,73 @@ const HomePage: React.FC = () => {
               />
             </div>
           </div>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 tracking-tight">
-            Product Design & Usability Leader
-          </h1>
-          <p className="font-sans text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
-            I design products that make <strong>complex data and AI</strong> actually usable—<strong>clear interfaces</strong>, <strong>explainable decisions</strong>, and <strong>workflows people can trust</strong>.
-          </p>
-          <p className="font-sans text-lg md:text-xl text-gray-700 leading-relaxed">
-            With <strong>15+ years</strong> across fintech, healthcare, and AI-driven analytics, I lead <strong>0→1 and enterprise-scale platforms</strong> by combining strong visual craft, systems thinking, and discovery-led UX. I design for <strong>business outcomes and real user impact</strong>—driving <strong>adoption, retention, and long-term trust</strong> through clarity, consistency, and best-practice UI design.
-          </p>
+          <div className="w-full">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-5 tracking-tight">
+              Product Design Lead for AI, Data, Enterprise Systems and Mobile Native
+            </h1>
+            <p className="font-sans text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
+              I started my career as a visual designer in advertising and marketing agencies, then moved into frontend software engineering before transitioning into discovery- and research-led product design. That combination of visual craft, technical fluency, and systems thinking shapes how I design products that make complex data and AI usable—clear interfaces, explainable decisions, and workflows people can trust.
+            </p>
+            <p className="font-sans text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+              With <strong>15+ years</strong> across fintech, healthcare, and AI-driven analytics, I design <strong>0→1</strong> and <strong>enterprise-scale platforms</strong> by combining strong visual craft, systems thinking, and discovery-led UX. My work focuses on <strong>business outcomes</strong> and <strong>real user impact</strong>—driving adoption, retention, and <strong>long-term trust</strong> through clarity, consistency, and scalable UI design.
+            </p>
+            <div className="mt-10 flex flex-col items-center gap-12 font-sans">
+              <div className="text-center">
+                <h3 className="font-serif text-lg font-bold text-slate-600 mb-4">Platform Experience</h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {['0→1 Platforms', 'Enterprise Design Systems', 'AI-Driven Analytics Tools'].map((tag) => (
+                    <span key={tag} className="px-3.5 py-2 bg-slate-100 text-slate-700 text-base font-medium rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-lg font-bold text-slate-600 mb-4">Focus Areas</h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {['Data-Heavy SaaS Platforms', 'AI Analytics Systems', 'Design Systems', 'Dashboard UX', 'Native Mobile Product Design'].map((tag) => (
+                    <span key={tag} className="px-3.5 py-2 bg-slate-100 text-slate-700 text-base font-medium rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-lg font-bold text-slate-600 mb-4">Technical Collaboration</h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {['Figma', 'Design Tokens', 'Tailwind CSS', 'HTML/CSS', 'React Environments', 'Data Visualization'].map((tag) => (
+                    <span key={tag} className="px-3.5 py-2 bg-slate-100 text-slate-700 text-base font-medium rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center mt-12">
+              <button
+                onClick={scrollToCaseStudies}
+                className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none animate-subtle-bounce"
+                aria-label="Scroll to case studies"
+              >
+                <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
+                  <FontAwesomeIcon
+                    icon={faArrowDown}
+                    className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out"
+                  />
+                </div>
+                <span className="font-semibold text-gray-700 text-sm uppercase tracking-wider group-hover:text-gray-900 transition-colors duration-300">
+                  View Case Studies
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* WhoIAmCard — single wide soft card */}
-      <section className="py-8 md:py-10 bg-gray-50">
+      {/* Who I Am — single card, full content width */}
+      <section className="py-8 md:py-10 lg:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white/80 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-xl p-8 md:p-10 lg:p-12 shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                 <FontAwesomeIcon icon={faUser} className="text-xl" />
@@ -63,7 +113,7 @@ const HomePage: React.FC = () => {
                 Who I Am
               </h2>
             </div>
-            <div className="space-y-4 font-sans text-base md:text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-4 font-sans text-base md:text-lg text-gray-700 leading-loose">
               <p>
                 I started my career as a <strong>visual designer</strong> in advertising and marketing agencies, where I focused deeply on <em>visual craft, storytelling, and visual communication</em>. Those early years trained my eye for <strong>clarity, hierarchy, and meaning</strong>—how design communicates intent, builds confidence, and earns attention.
               </p>
@@ -90,8 +140,8 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* CoreStrengthsGrid — 5 distinct cards */}
-      <section className="py-10 md:py-12 bg-white">
+      {/* Skills / Approach — 2x2 grid, scannable */}
+      <section className="py-8 md:py-10 lg:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
@@ -101,8 +151,8 @@ const HomePage: React.FC = () => {
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Build Trust</h3>
               </div>
-              <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-                I design for trust through <strong>transparency, explainability, and consistent UX patterns</strong>. Clear information hierarchy, predictable interactions, and proven UI best practices reduce cognitive load, help users understand <em>why the system behaves the way it does</em>, and build confidence over time—especially in <strong>data-dense and regulated environments</strong>.
+              <p className="font-sans text-base text-gray-700 leading-relaxed">
+                Trust through <strong>transparency, explainability, and consistent UX patterns</strong>. Clear hierarchy and predictable interactions reduce cognitive load and build confidence—especially in <strong>data-dense and regulated environments</strong>.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
@@ -112,8 +162,8 @@ const HomePage: React.FC = () => {
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Teams</h3>
               </div>
-              <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-                I ground decisions in <strong>stakeholder interviews, user research, and product analytics (Pendo)</strong>, translating insight into clear UX strategy, information architecture, and <em>execution-ready direction</em> that reduces ambiguity and accelerates delivery.
+              <p className="font-sans text-base text-gray-700 leading-relaxed">
+                Decisions grounded in <strong>stakeholder interviews, user research, and product analytics (Pendo)</strong>—translating insight into clear UX strategy and <em>execution-ready direction</em> that reduces ambiguity and accelerates delivery.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
@@ -123,8 +173,8 @@ const HomePage: React.FC = () => {
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Design Systems</h3>
               </div>
-              <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-                I bring <strong>senior-level craft</strong> to interaction design, visual design, and usability, paired with systems thinking—<em>design systems</em>, <em>interaction models</em>, and <em>scalable UX architectures</em> that balance speed, quality, and consistency.
+              <p className="font-sans text-base text-gray-700 leading-relaxed">
+                <strong>Senior-level craft</strong> in interaction design, visual design, and usability—plus <em>design systems</em>, <em>interaction models</em>, and <em>scalable UX architectures</em> that balance speed, quality, and consistency.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
@@ -134,90 +184,98 @@ const HomePage: React.FC = () => {
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Engineers & AI</h3>
               </div>
-              <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-                I use <strong>AI-augmented workflows</strong> (Figma MCP Server, Cursor, Claude) to rapidly move from concept to functional prototype—<em>aligning design and engineering early</em>, validating complex logic, and shortening time-to-value.
+              <p className="font-sans text-base text-gray-700 leading-relaxed">
+                <strong>AI-augmented workflows</strong> (Figma MCP Server, Cursor, Claude) to move from concept to functional prototype—<em>aligning design and engineering early</em> and shortening time-to-value.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ProvenImpactSection — stacked executive cards */}
-      <section className="py-10 md:py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
+      {/* Relo section — container with title, intro paragraph, product cards */}
+      <section className="pt-8 pb-0 md:pt-10 md:pb-0 lg:pt-12 lg:pb-0 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 md:p-10 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                 <FontAwesomeIcon icon={faRocket} className="text-lg" />
               </span>
-              <h3 className="font-serif text-lg font-bold text-slate-600">Currently Founding Product Design Lead — Relo Metrics</h3>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-black">
+                Currently Founding Product Design Lead — Relo Metrics
+              </h2>
             </div>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+            <p className="font-sans text-base text-gray-700 leading-relaxed mb-8">
               Built and scaled Relo's product design foundation—instilling a discovery-led design culture, establishing design ops, design QA, and design-to-engineering handoffs, and launching the company's first design system. Embedded product analytics discipline using Pendo and Looker to ground roadmap and UX decisions in real client behavior.
             </p>
-            <div className="grid sm:grid-cols-2 gap-6 text-left">
-              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
-                    <FontAwesomeIcon icon={faChartBar} className="text-xl" />
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Census</h3>
-                </div>
-                <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
-                  0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and a flexible view builder so teams can analyze sponsorship data their way and compose decision-ready dashboards.
-                </p>
-                <div className="flex items-start gap-2 text-green-700">
-                  <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
-                  <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
-                </div>
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm flex flex-col">
+              <div className="flex items-center gap-4 mb-5">
+                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+                  <FontAwesomeIcon icon={faChartBar} className="text-2xl" />
+                </span>
+                <h3 className="font-serif text-2xl font-bold text-slate-700">Relo Census</h3>
               </div>
-              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
-                    <FontAwesomeIcon icon={faBolt} className="text-xl" />
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-slate-600">Relo Edge</h3>
-                </div>
-                <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-4">
-                  End-to-end UX/UI redesign of Relo's flagship real-time analytics platform. Simplified information architecture, rebuilt core components, and clarified workflows to reduce friction across high-frequency analytical tasks.
-                </p>
-                <div className="flex items-start gap-2 text-green-700">
-                  <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
-                  <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
-                </div>
+              <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-5">
+                0→1 sponsorship analytics platform built around Saved Views. Defined personas, information architecture, and a flexible view builder so teams can analyze sponsorship data their way and compose decision-ready dashboards.
+              </p>
+              <div className="flex items-start gap-2 text-green-700">
+                <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
+                <span className="font-semibold text-sm">Faster analysis, clearer stories to stakeholders, stronger revenue conversations.</span>
               </div>
             </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm flex flex-col">
+              <div className="flex items-center gap-4 mb-5">
+                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+                  <FontAwesomeIcon icon={faBolt} className="text-2xl" />
+                </span>
+                <h3 className="font-serif text-2xl font-bold text-slate-700">Relo Edge</h3>
+              </div>
+              <p className="font-sans text-base text-gray-700 leading-relaxed flex-grow mb-5">
+                End-to-end UX/UI redesign of Relo's flagship real-time analytics platform. Simplified information architecture, rebuilt core components, and clarified workflows to reduce friction across high-frequency analytical tasks.
+              </p>
+              <div className="flex items-start gap-2 text-green-700">
+                <FontAwesomeIcon icon={faCheckCircle} className="text-base mt-1 flex-shrink-0 text-green-600" />
+                <span className="font-semibold text-sm">Higher adoption, better satisfaction, deeper engagement.</span>
+              </div>
+            </div>
+            </div>
           </div>
-          <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
+        </div>
+      </section>
+
+      {/* Experience — standalone cards, same vertical gap as between Relo and these cards */}
+      <section className="pt-6 pb-8 md:pt-6 md:pb-10 lg:pt-6 lg:pb-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                 <FontAwesomeIcon icon={faBuildingColumns} className="text-lg" />
               </span>
               <h3 className="font-serif text-lg font-bold text-slate-600">VP, UX Design Lead — JPMorgan Chase</h3>
             </div>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-              Scaled design from <strong>1 to ~8 designers + researcher</strong>, establishing <em>design systems and design-ops foundations</em> that improved usability, adoption, and delivery predictability across commercial banking platforms.
+            <p className="font-sans text-base text-gray-700 leading-relaxed">
+              Scaled design from 1 to ~8 designers + researcher, establishing design systems and design-ops foundations that improved usability, adoption, and delivery predictability across commercial banking platforms.
             </p>
           </div>
-          <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                 <FontAwesomeIcon icon={faHeartPulse} className="text-lg" />
               </span>
               <h3 className="font-serif text-lg font-bold text-slate-600">Senior Product Designer — Medable & Medidata</h3>
             </div>
-            <p className="font-sans text-sm md:text-base text-gray-700 leading-relaxed">
-              Led UX and design systems for <strong>regulated healthcare platforms</strong>, delivering <em>accessible, compliant, explainable workflows</em> while reducing engineering rework and increasing product clarity.
+            <p className="font-sans text-base text-gray-700 leading-relaxed">
+              Led UX and design systems for regulated healthcare platforms, delivering accessible, compliant, explainable workflows while reducing engineering rework and increasing product clarity.
             </p>
           </div>
         </div>
       </section>
 
-      {/* StartupAdvisoryCard — single supporting card */}
-      <section className="py-8 md:py-10 bg-white">
+      {/* Startup & Advisory — paragraph structure, production-style typography */}
+      <section className="py-8 md:py-10 lg:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
-            <div className="flex items-center gap-3 mb-6">
+          <div className="bg-white border border-gray-200 rounded-xl p-8 md:p-10 lg:p-12 shadow-sm">
+            <div className="flex items-center gap-3 mb-8">
               <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
                 <FontAwesomeIcon icon={faHandshake} className="text-xl" />
               </span>
@@ -225,61 +283,60 @@ const HomePage: React.FC = () => {
                 Startup & Advisory Work
               </h2>
             </div>
-            <div className="space-y-4 font-sans text-base md:text-lg text-gray-700 leading-relaxed">
-              <p>
-                <strong>Founding Design Lead, Advisor, and Mentor</strong> for <strong>Alpha Recon</strong>, a platform transforming complex intelligence and risk data into clear, <em>decision-ready workflows</em>. Built the product <strong>from 0→1</strong>—establishing <strong>personas</strong>, <strong>design foundations</strong>, and a <strong>scalable design system</strong> while designing <strong>end-to-end UX</strong> for the MVP.
-              </p>
-              <p>
-                Worked directly with <strong>AI engineers and computer scientists</strong> to translate early, complex data models into <em>usable product experiences</em>—shaping how raw signals became <strong>views, alerts, and actions</strong> analysts could trust and act on.
-              </p>
-              <p>
-                My primary goal was to <em>ship a strong MVP</em> while shaping a clear <em>1–2 year vision</em> that enabled <strong>scale</strong>, <strong>differentiation</strong>, and <strong>lasting usability</strong>.
-              </p>
-              <p>
-                Owned both <strong>craft and strategy</strong>: created <strong>design QA</strong> and <strong>design-to-engineering handoff</strong> processes, partnered with founders on <strong>usability and product direction</strong>, and embedded <strong>human-centered design</strong> as a core discipline <strong>from day one</strong>.
-              </p>
+            <div className="font-sans text-gray-700 space-y-8">
+              <div>
+                <h3 className="font-serif text-lg md:text-xl font-bold text-slate-700 mb-5">Alpha Recon</h3>
+                <div className="space-y-5 text-base md:text-lg leading-loose">
+                  <p>
+                    Founding Design Lead and Advisor for <strong>Alpha Recon</strong>, a platform transforming complex intelligence and risk data into clear, <strong>decision-ready workflows</strong>. Built the product from <strong>0→1</strong>—establishing personas, design foundations, and a scalable design system while designing end-to-end UX for the MVP.
+                  </p>
+                  <p>
+                    Worked directly with <strong>AI engineers and computer scientists</strong> to translate early, complex data models into usable <em>product experiences</em>—shaping how raw signals became <strong>views, alerts, and actions</strong> analysts could trust and act on.
+                  </p>
+                  <p>
+                    Designed the platform's core interaction patterns, desktop workflows, and mobile experiences while building the design system from scratch, documenting components and tokens, and creating design-to-engineering handoff documentation.
+                  </p>
+                  <p>
+                    My focus was hands-on product design—crafting the interface, mapping flows, and ensuring the system could scale as the platform evolved.
+                  </p>
+                </div>
+              </div>
+              <div className="border-t border-gray-200 pt-8">
+                <h3 className="font-serif text-lg md:text-xl font-bold text-slate-700 mb-5">PrizeApp</h3>
+                <div className="space-y-5 text-base md:text-lg leading-loose">
+                  <p>
+                    Founding Product Design and UX Lead for a native mobile platform connecting veterans with services, community programs, and partner organizations.
+                  </p>
+                  <p>
+                    Established the platform's design foundations from the ground up—creating a tokenized design system and building a multi-theme architecture supporting both dark and light modes.
+                  </p>
+                  <p>
+                    Designed the end-to-end product experience, mapping core user flows and mobile interaction patterns while implementing the design system using NativeWind, Tailwind, and ShadCN UI components.
+                  </p>
+                  <p>
+                    Worked closely with research and product teams to test early concepts and prototypes, iterating on flows and interaction patterns based on user feedback to ensure the experience remained clear, accessible, and scalable as the platform evolved.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CaseStudiesIntro — View Case Studies button */}
-      <section className="py-8 md:py-10 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center">
-            <button
-              onClick={scrollToCaseStudies}
-              className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none animate-subtle-bounce"
-              aria-label="Scroll to case studies"
-            >
-              <div className="relative w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center">
-                <FontAwesomeIcon
-                  icon={faArrowDown}
-                  className="text-gray-700 text-xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out"
-                />
-              </div>
-              <span className="font-semibold text-gray-700 text-sm uppercase tracking-wider group-hover:text-gray-900 transition-colors duration-300">
-                View Case Studies
-              </span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Section — title and subtitle above grid */}
-      <section id="case-studies" className="pt-4 pb-6 lg:pt-6 lg:pb-8 bg-gray-50">
+      {/* Case Studies — section title, subtitle, cards unchanged */}
+      <section id="case-studies" className="pt-8 pb-10 lg:pt-10 lg:pb-14 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="text-center mb-8">
-            <h2 className="font-serif text-2xl lg:text-3xl font-bold text-black mb-3">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-black mb-4">
               Featured Case Studies
             </h2>
-            <p className="font-sans text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Explore my work which showcases how UX Research meets Interaction Design, Visual Design meets Front End Development, and AI meets human intuition.
+            <p className="font-sans text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Selected product design work across analytics platforms, enterprise systems, and design systems.
             </p>
           </header>
 
           {/* Featured Recent Projects */}
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="grid lg:grid-cols-3 gap-6">
               {caseStudies
                 .filter(caseStudy => caseStudy.isRecent)
