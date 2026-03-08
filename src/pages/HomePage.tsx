@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="w-full">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-5 tracking-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-3 md:mb-5 tracking-tight">
               Product Design Lead for AI, Data, Enterprise Systems and Mobile Native
             </h1>
             <p className="font-sans text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
@@ -48,7 +48,7 @@ const HomePage: React.FC = () => {
             <p className="font-sans text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
               With <strong>15+ years</strong> across fintech, healthcare, and AI-driven analytics, I design <strong>0→1</strong> and <strong>enterprise-scale platforms</strong> by combining strong visual craft, systems thinking, and discovery-led UX. My work focuses on <strong>business outcomes</strong> and <strong>real user impact</strong>—driving adoption, retention, and <strong>long-term trust</strong> through clarity, consistency, and scalable UI design.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-12 font-sans">
+            <div className="mt-12 md:mt-10 flex flex-col items-center gap-12 font-sans">
               <div className="text-center">
                 <h3 className="font-serif text-lg font-bold text-slate-600 mb-4">Platform Experience</h3>
                 <div className="flex flex-wrap justify-center gap-2">
@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-16 md:mt-12">
               <button
                 onClick={scrollToCaseStudies}
                 className="group flex items-center gap-4 transition-all duration-500 ease-out hover:animate-none animate-subtle-bounce"
@@ -105,8 +105,8 @@ const HomePage: React.FC = () => {
       <section className="py-8 md:py-10 lg:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white border border-gray-200 rounded-xl p-8 md:p-10 lg:p-12 shadow-sm">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+            <div className="flex items-center md:items-start gap-3 mb-6">
+              <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                 <FontAwesomeIcon icon={faUser} className="text-xl" />
               </span>
               <h2 className="font-serif text-xl md:text-2xl font-bold text-slate-600">
@@ -145,8 +145,8 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-3 mb-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faShieldHalved} className="text-lg" />
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Build Trust</h3>
@@ -156,8 +156,8 @@ const HomePage: React.FC = () => {
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-3 mb-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faMagnifyingGlass} className="text-lg" />
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Teams</h3>
@@ -167,8 +167,8 @@ const HomePage: React.FC = () => {
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-3 mb-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faSitemap} className="text-lg" />
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Design Systems</h3>
@@ -178,8 +178,8 @@ const HomePage: React.FC = () => {
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-3 mb-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faCode} className="text-lg" />
                 </span>
                 <h3 className="font-serif text-lg font-bold text-slate-600">How I Work with Engineers & AI</h3>
@@ -196,8 +196,8 @@ const HomePage: React.FC = () => {
       <section className="pt-8 pb-0 md:pt-10 md:pb-0 lg:pt-12 lg:pb-0 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 md:p-10 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+            <div className="flex items-center md:items-start gap-3 mb-4">
+              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                 <FontAwesomeIcon icon={faRocket} className="text-lg" />
               </span>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-black">
@@ -209,8 +209,8 @@ const HomePage: React.FC = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm flex flex-col">
-              <div className="flex items-center gap-4 mb-5">
-                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-4 mb-5">
+                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faChartBar} className="text-2xl" />
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-slate-700">Relo Census</h3>
@@ -224,8 +224,8 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm flex flex-col">
-              <div className="flex items-center gap-4 mb-5">
-                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm" aria-hidden>
+              <div className="flex items-center md:items-start gap-4 mb-5">
+                <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 border border-blue-200/80 shadow-sm flex-shrink-0" aria-hidden>
                   <FontAwesomeIcon icon={faBolt} className="text-2xl" />
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-slate-700">Relo Edge</h3>
@@ -247,8 +247,8 @@ const HomePage: React.FC = () => {
       <section className="pt-6 pb-8 md:pt-6 md:pb-10 lg:pt-6 lg:pb-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+            <div className="flex items-center md:items-start gap-3 mb-4">
+              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                 <FontAwesomeIcon icon={faBuildingColumns} className="text-lg" />
               </span>
               <h3 className="font-serif text-lg font-bold text-slate-600">VP, UX Design Lead — JPMorgan Chase</h3>
@@ -258,8 +258,8 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+            <div className="flex items-center md:items-start gap-3 mb-4">
+              <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                 <FontAwesomeIcon icon={faHeartPulse} className="text-lg" />
               </span>
               <h3 className="font-serif text-lg font-bold text-slate-600">Senior Product Designer — Medable & Medidata</h3>
@@ -275,8 +275,8 @@ const HomePage: React.FC = () => {
       <section className="py-8 md:py-10 lg:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white border border-gray-200 rounded-xl p-8 md:p-10 lg:p-12 shadow-sm">
-            <div className="flex items-center gap-3 mb-8">
-              <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm" aria-hidden>
+            <div className="flex items-center md:items-start gap-3 mb-8">
+              <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 text-slate-600 border border-slate-200/80 shadow-sm flex-shrink-0" aria-hidden>
                 <FontAwesomeIcon icon={faHandshake} className="text-xl" />
               </span>
               <h2 className="font-serif text-xl md:text-2xl font-bold text-slate-600">
