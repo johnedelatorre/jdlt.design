@@ -20,7 +20,7 @@ export const navigationItems: NavigationItem[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/uesuxguy/',
+    href: 'https://www.linkedin.com/in/johnericdelatorreugarte/',
     external: true,
     icon: 'linkedin'
   }

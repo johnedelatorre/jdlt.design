@@ -9,7 +9,7 @@ export const personalInfo: PersonalInfo = {
     email: 'john.edelatorre@gmail.com',
     phone: '+1 (703) 303-0684',
     location: 'New York, NY',
-    linkedin: 'https://www.linkedin.com/in/uesuxguy/',
+    linkedin: 'https://www.linkedin.com/in/johnericdelatorreugarte/',
     github: 'https://github.com/johnedelatorre',
     instagram: 'https://www.instagram.com/johneric72'
   },
